@@ -3,39 +3,39 @@
 #include <string>
 
 namespace Offsets {
-    inline std::string ClientVersion = "version-2366ba214ec740ca";
+    inline std::string ClientVersion = "version-02c37bc51a384b8f";
 
     namespace DeviceD3D11 {
-        inline constexpr uintptr_t VTableRva = 0x6CA2748;
-        inline constexpr uintptr_t IDXGIFactoryPtr = 0x1B8;
-        inline constexpr uintptr_t DevicePtr = 0x1C0;
-        inline constexpr uintptr_t ContextPtr = 0x1C8;
+        inline constexpr uintptr_t VTableRva = 0x6CF09B0;
+        inline constexpr uintptr_t IDXGIFactoryPtr = 0x170;
+        inline constexpr uintptr_t DevicePtr = 0x178;
+        inline constexpr uintptr_t ContextPtr = 0x180;
         inline constexpr uintptr_t SwapChainPtr = 0xC8;
-        inline constexpr uintptr_t DeviceContextD3D11Ptr = 0x1F8;
-        inline constexpr uintptr_t CtxWrapperVTableRva = 0x6CA2BB0;
-        inline constexpr uintptr_t CtxDrawDispatchRva = 0x2840560;
+        inline constexpr uintptr_t DeviceContextD3D11Ptr = 0x1B0;
+        inline constexpr uintptr_t CtxWrapperVTableRva = 0x6CF0E18;
+        inline constexpr uintptr_t CtxDrawDispatchRva = 0x28291D0;
         inline constexpr uintptr_t WrapperAllocSize = 1552;
     }
 
     namespace RenderView {
-        inline constexpr uintptr_t VTableRva = 0x6D089B8;
+        inline constexpr uintptr_t VTableRva = 0x0;
         inline constexpr uintptr_t DeviceD3D11 = 0x8;
     }
 
     namespace FastCluster {
-        inline constexpr uintptr_t VTableRvaA = 0x6D0C440;
-        inline constexpr uintptr_t VTableRvaB = 0x6D0C460;
+        inline constexpr uintptr_t VTableRvaA = 0x6D5BC50;
+        inline constexpr uintptr_t VTableRvaB = 0x6D5BC70;
     }
 
     namespace FastClusterBinding {
-        inline constexpr uintptr_t VTableRva = 0x6D0D1E8;
+        inline constexpr uintptr_t VTableRva = 0x6D5CD60;
         inline constexpr uintptr_t BoundPart = 0x60;
         inline constexpr uintptr_t ConnectionsBegin = 0x20;
         inline constexpr uintptr_t ConnectionsEnd = 0x28;
     }
 
     namespace FastClusterEntity {
-        inline constexpr uintptr_t VTableRva = 0x6D0D2C0;
+        inline constexpr uintptr_t VTableRva = 0x6D5CE38;
         inline constexpr uintptr_t TechniqueArrayPtr = 0x70;
         inline constexpr uintptr_t MaterialPtr = 0x20;
         inline constexpr uintptr_t DecalMaterialPtr = 0x48;
@@ -43,8 +43,8 @@ namespace Offsets {
     }
 
     namespace GeometryD3D11 {
-        inline constexpr uintptr_t VTableRva = 0x6CA2E98;
-        inline constexpr uintptr_t VTableRvaFallback = 0x6C58D48;
+        inline constexpr uintptr_t VTableRva = 0x6CF1120;
+        inline constexpr uintptr_t VTableRvaFallback = 0x0;
     }
 
     namespace MaterialLayer {
@@ -52,12 +52,11 @@ namespace Offsets {
         inline constexpr uintptr_t Param = 0x1C;
         inline constexpr uintptr_t Flags2 = 0x20;
         inline constexpr uintptr_t ColorData = 0x24;
-        inline constexpr uintptr_t Stride = 0x30;
     }
 
     namespace FFlags {
-        inline constexpr uintptr_t RenderFastClusterOcclusionCulling4 = 0x85BB3B0;
-        inline constexpr uintptr_t RenderFastCluster = 0x7D98B90;
+        inline constexpr uintptr_t RenderFastClusterOcclusionCulling4 = 0x86A5C90;
+        inline constexpr uintptr_t RenderFastCluster = 0x862BCF0;
     }
 
     namespace BasePart {
@@ -71,12 +70,12 @@ namespace Offsets {
     }
 
     namespace Highlight {
-        inline constexpr uintptr_t String = 0x6E0F608;
-        inline constexpr uintptr_t Create = 0xCAF650;
+        inline constexpr uintptr_t String = 0x6E601C0;
+        inline constexpr uintptr_t Create = 0x0;
     }
 
     namespace ClassDescriptor {
-        inline constexpr uintptr_t VTableRva = 0x6C89DF8;
+        inline constexpr uintptr_t VTableRva = 0x0;
         inline constexpr uintptr_t ClassName = 0x8;
         inline constexpr uintptr_t PropertyDescriptors = 0x40;
         inline constexpr uintptr_t Events = 0x88;
@@ -89,3 +88,4 @@ namespace Offsets {
         inline constexpr uintptr_t GetImmediateContextSlot = 40;
     }
 }
+
