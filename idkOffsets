@@ -1,9 +1,16 @@
 #pragma once
+/* =============================================================
+/*  Roblox Version  : version-11f155f3450f4c8e
+/*  Dumper Version  : 1.0.9
+/*  Dumped At       : 23:29 15/10/2026 (GMT)
+/*  Total Offsets   : 657
+/* =============================================================
+*/
+
 #include <cstdint>
 #include <string>
-
 namespace Offsets {
-    inline std::string ClientVersion = "version-7a0c6d10fcb34a2c";
+    inline std::string ClientVersion = "version-11f155f3450f4c8e";
 
     namespace AirProperties {
          inline constexpr uintptr_t AirDensity = 0x18;
@@ -93,11 +100,12 @@ namespace Offsets {
     }
 
     namespace Bytecode {
-         inline constexpr uintptr_t BytecodeVerificationTableA = 0x88874c0;
+         inline constexpr uintptr_t BytecodeVerificationTableA = 0xd22f50;
+         inline constexpr uintptr_t LuaVMLoad = 0x41a3610;
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -132,11 +140,11 @@ namespace Offsets {
     }
 
     namespace ClientBuild {
-         inline constexpr uintptr_t EntityDrawRva = 0x3997590;
-         inline constexpr uintptr_t EntitySubmitRva = 0x3997ae0;
-         inline constexpr uintptr_t ImageSize = 0x9316000;
-         inline constexpr uintptr_t MergeFlag = 0x888a438;
-         inline constexpr uintptr_t Timestamp = 0xfb09251c;
+         inline constexpr uintptr_t EntityDrawRva = 0x399f220;
+         inline constexpr uintptr_t EntitySubmitRva = 0x399f770;
+         inline constexpr uintptr_t ImageSize = 0x9318000;
+         inline constexpr uintptr_t MergeFlag = 0x888c668;
+         inline constexpr uintptr_t Timestamp = 0xfd803185;
     }
 
     namespace Clothing {
@@ -157,13 +165,13 @@ namespace Offsets {
     }
 
     namespace Coroutine {
-         inline constexpr uintptr_t create = 0x5903580;
-         inline constexpr uintptr_t finally = 0x59054d0;
-         inline constexpr uintptr_t isyieldable = 0x5903e80;
-         inline constexpr uintptr_t running = 0x5903e10;
-         inline constexpr uintptr_t status = 0x5901b10;
-         inline constexpr uintptr_t wrap = 0x5903b40;
-         inline constexpr uintptr_t yield = 0x5903db0;
+         inline constexpr uintptr_t create = 0x5904ca0;
+         inline constexpr uintptr_t finally = 0x5906bf0;
+         inline constexpr uintptr_t isyieldable = 0x59055a0;
+         inline constexpr uintptr_t running = 0x5905530;
+         inline constexpr uintptr_t status = 0x5903230;
+         inline constexpr uintptr_t wrap = 0x5905260;
+         inline constexpr uintptr_t yield = 0x59054d0;
     }
 
     namespace DataModel {
@@ -198,18 +206,18 @@ namespace Offsets {
          inline constexpr uintptr_t Context = 0x178;
          inline constexpr uintptr_t ContextObj = 0x1b0;
          inline constexpr uintptr_t ContextObjAlt = 0x268;
-         inline constexpr uintptr_t ContextObjDrawRva = 0x2811720;
+         inline constexpr uintptr_t ContextObjDrawRva = 0x2812ee0;
          inline constexpr uintptr_t ContextObjDrawSlot = 0x1c;
          inline constexpr uintptr_t ContextObjLegacy = 0x1f8;
          inline constexpr uintptr_t ContextObjLinkScan = 0x570;
          inline constexpr uintptr_t ContextObjToContext = 0x18;
          inline constexpr uintptr_t ContextObjVTableLen = 0x27;
-         inline constexpr uintptr_t ContextObjVTableRva = 0x6ebe2e8;
+         inline constexpr uintptr_t ContextObjVTableRva = 0x6ec0370;
          inline constexpr uintptr_t ContextPtr = 0x178;
          inline constexpr uintptr_t DevicePtr = 0x178;
          inline constexpr uintptr_t DevicePtrLegacy = 0x228;
          inline constexpr uintptr_t SwapChainPtr = 0x80;
-         inline constexpr uintptr_t VTableRva = 0x6ebe108;
+         inline constexpr uintptr_t VTableRva = 0x6ebfef8;
     }
 
     namespace DragDetector {
@@ -228,45 +236,41 @@ namespace Offsets {
 
     namespace EngineWallCheck {
          inline constexpr uintptr_t BoundFnOffset = 0x90;
-         inline constexpr uintptr_t KernelVtableRva = 0x70b0388;
-         inline constexpr uintptr_t RaycastDescriptorRva = 0x8555420;
-         inline constexpr uintptr_t RaycastWorkerRva = 0x21292f5;
-         inline constexpr uintptr_t RealWrapperRva = 0xd5c460;
-         inline constexpr uintptr_t StepWorldRva = 0x72a930;
+         inline constexpr uintptr_t KernelVtableRva = 0x70b22d0;
+         inline constexpr uintptr_t RaycastDescriptorRva = 0x8557620;
+         inline constexpr uintptr_t RaycastWorkerRva = 0x8f6754b;
+         inline constexpr uintptr_t RealWrapperRva = 0xd5c500;
+         inline constexpr uintptr_t StepWorldRva = 0x72a9d0;
     }
 
     namespace FFlags {
-         inline constexpr uintptr_t EnableLoadModule = 0x888f650;
-         inline constexpr uintptr_t GetFFlag = 0x49f7650;
-         inline constexpr uintptr_t NextGenReplicatorEnabledWrite4 = 0x8545ad8;
-         inline constexpr uintptr_t PhysicsSenderMaxBandwidthBps = 0x8024c90;
-         inline constexpr uintptr_t PhysicsSenderMaxBandwidthBpsScaling = 0x8024cb8;
-         inline constexpr uintptr_t RenderFastClusterOcclusionCulling4 = 0x8886310;
-         inline constexpr uintptr_t SetFFlag = 0x49f6b50;
+         inline constexpr uintptr_t EnableLoadModule = 0x8891880;
+         inline constexpr uintptr_t GetFFlag = 0x49f8d70;
+         inline constexpr uintptr_t NextGenReplicatorEnabledWrite4 = 0x85482f8;
+         inline constexpr uintptr_t PhysicsSenderMaxBandwidthBps = 0x8026ca8;
+         inline constexpr uintptr_t PhysicsSenderMaxBandwidthBpsScaling = 0x8026cd0;
+         inline constexpr uintptr_t RenderFastClusterOcclusionCulling4 = 0x88887d8;
+         inline constexpr uintptr_t SetFFlag = 0x49f8270;
     }
 
     namespace FakeDataModel {
-         inline constexpr uintptr_t Pointer = 0x8dc5d00;
+         inline constexpr uintptr_t Pointer = 0x8dc8000;
          inline constexpr uintptr_t RealDataModel = 0x1f8;
     }
 
     namespace FastCluster {
          inline constexpr uintptr_t ClusterNode = 0x188;
-         inline constexpr uintptr_t EntityBegin = 0x110;
-         inline constexpr uintptr_t EntityEnd = 0x118;
-         inline constexpr uintptr_t MeshEntityVTableRva = 0x6f2a138;
-         inline constexpr uintptr_t OcclEntityBegin = 0x138;
-         inline constexpr uintptr_t OcclEntityEnd = 0x140;
-         inline constexpr uintptr_t VTableRva = 0x6f288c8;
-         inline constexpr uintptr_t VTableRvaAlt = 0x6f288c8;
-         inline constexpr uintptr_t VTableRvaSub = 0x6f288a8;
-         inline constexpr uintptr_t VTableRvaSubAlt = 0x6f29048;
+         inline constexpr uintptr_t MeshEntityVTableRva = 0x6f2c1a0;
+         inline constexpr uintptr_t VTableRva = 0x6f2ada0;
+         inline constexpr uintptr_t VTableRvaAlt = 0x6f2ada0;
+         inline constexpr uintptr_t VTableRvaSub = 0x6f2ad80;
+         inline constexpr uintptr_t VTableRvaSubAlt = 0x6f2b0b0;
     }
 
     namespace FastClusterBinding {
          inline constexpr uintptr_t Owner = 0x60;
          inline constexpr uintptr_t Subobject = 0x90;
-         inline constexpr uintptr_t VTableRva = 0x6f2a018;
+         inline constexpr uintptr_t VTableRva = 0x6f2c080;
     }
 
     namespace FastClusterEntity {
@@ -285,7 +289,7 @@ namespace Offsets {
          inline constexpr uintptr_t PrimitiveIndexArrayPtr = 0x80;
          inline constexpr uintptr_t RenderQueueId = 0x10;
          inline constexpr uintptr_t TechniqueArrayPtr = 0x70;
-         inline constexpr uintptr_t VTableRva = 0x6f2a0f0;
+         inline constexpr uintptr_t VTableRva = 0x6f2c158;
          namespace Context {
               inline constexpr uintptr_t PrimitivePoolPtr = 0x198;
          }
@@ -310,7 +314,7 @@ namespace Offsets {
     }
 
     namespace Fire {
-         inline constexpr uintptr_t FireProximityPrompt = 0x30cff60;
+         inline constexpr uintptr_t FireProximityPrompt = 0x30d1720;
     }
 
     namespace Frame {
@@ -323,17 +327,17 @@ namespace Offsets {
     }
 
     namespace Functions {
-         inline constexpr uintptr_t CastArgs = 0x7bfe70;
-         inline constexpr uintptr_t Clone = 0x3686c0;
-         inline constexpr uintptr_t Destroy = 0x1a57720;
-         inline constexpr uintptr_t FireServer = 0x302c810;
-         inline constexpr uintptr_t Print = 0x1ce4150;
-         inline constexpr uintptr_t Shapecast = 0x488c83;
-         inline constexpr uintptr_t WaitForChild = 0x13ea9fd;
+         inline constexpr uintptr_t CastArgs = 0x7bff10;
+         inline constexpr uintptr_t Clone = 0x433c08b;
+         inline constexpr uintptr_t Destroy = 0x18687c0;
+         inline constexpr uintptr_t FireServer = 0x39ae800;
+         inline constexpr uintptr_t Print = 0x1ce58f0;
+         inline constexpr uintptr_t Shapecast = 0x2783244;
+         inline constexpr uintptr_t WaitForChild = 0x3b349ed;
     }
 
     namespace GeometryD3D11 {
-         inline constexpr uintptr_t VTableRva = 0x6ebe5e8;
+         inline constexpr uintptr_t VTableRva = 0x6ec0678;
     }
 
     inline constexpr uintptr_t ClusterNode = 0x188;
@@ -364,7 +368,7 @@ namespace Offsets {
     namespace Highlight {
          inline constexpr uintptr_t Adornee = 0xa8;
          inline constexpr uintptr_t DepthMode = 0xd0;
-         inline constexpr uintptr_t Enabled = 0xe4;
+         inline constexpr uintptr_t Enabled = 0xd8;
          inline constexpr uintptr_t FillColor = 0xb8;
          inline constexpr uintptr_t FillTransparency = 0xd4;
          inline constexpr uintptr_t OutlineColor = 0xc4;
@@ -388,7 +392,7 @@ namespace Offsets {
          inline constexpr uintptr_t GlobalNext = 0x26a8;
          inline constexpr uintptr_t GlobalOutline = 0x3bac;
          inline constexpr uintptr_t Manager = 0xc10;
-         inline constexpr uintptr_t MergeFlag = 0x888a438;
+         inline constexpr uintptr_t MergeFlag = 0x888c668;
     }
 
     namespace HopperBin {
@@ -419,7 +423,6 @@ namespace Offsets {
          inline constexpr uintptr_t MaxHealth = 0x1a4;
          inline constexpr uintptr_t MaxSlopeAngle = 0x1a8;
          inline constexpr uintptr_t MoveDirection = 0x13c;
-         inline constexpr uintptr_t MoveToPart = 0x108;
          inline constexpr uintptr_t MoveToPoint = 0x160;
          inline constexpr uintptr_t NameDisplayDistance = 0x1ac;
          inline constexpr uintptr_t NameOcclusion = 0x1b0;
@@ -430,7 +433,6 @@ namespace Offsets {
          inline constexpr uintptr_t Sit = 0x1da;
          inline constexpr uintptr_t TargetPoint = 0x148;
          inline constexpr uintptr_t UseJumpPower = 0x1dd;
-         inline constexpr uintptr_t WalkTimer = 0x3f0;
          inline constexpr uintptr_t Walkspeed = 0x1cc;
          inline constexpr uintptr_t WalkspeedCheck = 0x3a4;
     }
@@ -440,15 +442,15 @@ namespace Offsets {
          inline constexpr uintptr_t ChildrenStart = 0x78;
          inline constexpr uintptr_t ClassBase = 0x1b0;
          inline constexpr uintptr_t ClassDescriptor = 0x18;
-         inline constexpr uintptr_t FindFirstAncestorWhichIsA = 0x40aa818;
-         inline constexpr uintptr_t FindFirstChild = 0x3f88046;
-         inline constexpr uintptr_t FindFirstChildOfClass = 0x3f88046;
-         inline constexpr uintptr_t GetAttribute = 0x3d2bbcc;
-         inline constexpr uintptr_t GetChildren = 0x334c8ca;
-         inline constexpr uintptr_t Index = 0x412a0b0;
+         inline constexpr uintptr_t FindFirstAncestorWhichIsA = 0x20ac120;
+         inline constexpr uintptr_t FindFirstChild = 0xb2c868;
+         inline constexpr uintptr_t FindFirstChildOfClass = 0xb2c868;
+         inline constexpr uintptr_t GetAttribute = 0x23794;
+         inline constexpr uintptr_t GetChildren = 0x22ac8d0;
+         inline constexpr uintptr_t Index = 0x412b7d0;
          inline constexpr uintptr_t Name = 0x8;
          inline constexpr uintptr_t NameContainer = 0x70;
-         inline constexpr uintptr_t New = 0x42c7f80;
+         inline constexpr uintptr_t New = 0x42c96a0;
          inline constexpr uintptr_t Parent = 0x68;
          inline constexpr uintptr_t This = 0x8;
     }
@@ -459,7 +461,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -495,51 +497,51 @@ namespace Offsets {
     }
 
     namespace Luau {
-         inline constexpr uintptr_t Capability = 0x2656e00;
-         inline constexpr uintptr_t GetGlobalState = 0x41ab690;
-         inline constexpr uintptr_t LuaVMLoad = 0x985270;
-         inline constexpr uintptr_t dumpgco = 0x2659bb0;
-         inline constexpr uintptr_t ktable = 0x411a0b0;
-         inline constexpr uintptr_t luaB_assert = 0x26814b0;
-         inline constexpr uintptr_t luaB_error = 0x2679f90;
-         inline constexpr uintptr_t luaB_gcinfo = 0x267fdf0;
-         inline constexpr uintptr_t luaB_getfenv = 0x267b540;
-         inline constexpr uintptr_t luaB_getmetatable = 0x267a9d0;
-         inline constexpr uintptr_t luaB_newproxy = 0x26823d0;
-         inline constexpr uintptr_t luaB_next = 0x2680a00;
-         inline constexpr uintptr_t luaB_print = 0x2679b30;
-         inline constexpr uintptr_t luaB_rawequal = 0x267b830;
-         inline constexpr uintptr_t luaB_rawget = 0x267b940;
-         inline constexpr uintptr_t luaB_rawlen = 0x267fd50;
-         inline constexpr uintptr_t luaB_rawset = 0x267c7b0;
-         inline constexpr uintptr_t luaB_select = 0x2681560;
-         inline constexpr uintptr_t luaB_setfenv = 0x267b600;
-         inline constexpr uintptr_t luaB_setmetatable = 0x267ab60;
-         inline constexpr uintptr_t luaB_tonumber = 0x2679c00;
-         inline constexpr uintptr_t luaB_tostring = 0x2682370;
-         inline constexpr uintptr_t luaB_type = 0x267fe10;
-         inline constexpr uintptr_t luaB_typeof = 0x2680410;
-         inline constexpr uintptr_t luaC_init = 0x265c6b0;
-         inline constexpr uintptr_t luaC_step = 0x2642b60;
-         inline constexpr uintptr_t luaD_Throw = 0x262c620;
-         inline constexpr uintptr_t luaF_FreeProto = 0x1cda660;
-         inline constexpr uintptr_t luaG_runerror = 0x7bf890;
-         inline constexpr uintptr_t luaH_clone = 0x26929e0;
-         inline constexpr uintptr_t luaH_dummynode = 0x2618260;
-         inline constexpr uintptr_t luaL_argerror = 0x2621b60;
-         inline constexpr uintptr_t luaL_checktype = 0x2621080;
-         inline constexpr uintptr_t luaM_newgco = 0x265c540;
-         inline constexpr uintptr_t luaM_visitgco = 0x42953e0;
-         inline constexpr uintptr_t luaO_nilobject = 0x2618228;
-         inline constexpr uintptr_t luaO_pushfstring = 0x2655f70;
-         inline constexpr uintptr_t lua_checkstack = 0xcb8c60;
-         inline constexpr uintptr_t lua_error = 0x261bea0;
-         inline constexpr uintptr_t lua_newstate = 0x261f920;
-         inline constexpr uintptr_t lua_pushfstring = 0x26195d0;
-         inline constexpr uintptr_t luau_execute = 0x2668e3d;
-         inline constexpr uintptr_t print = 0x1ce4150;
-         inline constexpr uintptr_t pseudo2addr = 0x2618190;
-         inline constexpr uintptr_t tclone = 0x2692790;
+         inline constexpr uintptr_t Capability = 0x26585a0;
+         inline constexpr uintptr_t GetGlobalState = 0x41acdb0;
+         inline constexpr uintptr_t LuaVMLoad = 0x9f6d00;
+         inline constexpr uintptr_t dumpgco = 0x265b350;
+         inline constexpr uintptr_t ktable = 0x411b7d0;
+         inline constexpr uintptr_t luaB_assert = 0x2682c50;
+         inline constexpr uintptr_t luaB_error = 0x267b730;
+         inline constexpr uintptr_t luaB_gcinfo = 0x2681590;
+         inline constexpr uintptr_t luaB_getfenv = 0x267cce0;
+         inline constexpr uintptr_t luaB_getmetatable = 0x267c170;
+         inline constexpr uintptr_t luaB_newproxy = 0x2683b70;
+         inline constexpr uintptr_t luaB_next = 0x26821a0;
+         inline constexpr uintptr_t luaB_print = 0x267b2d0;
+         inline constexpr uintptr_t luaB_rawequal = 0x267cfd0;
+         inline constexpr uintptr_t luaB_rawget = 0x267d0e0;
+         inline constexpr uintptr_t luaB_rawlen = 0x26814f0;
+         inline constexpr uintptr_t luaB_rawset = 0x267df50;
+         inline constexpr uintptr_t luaB_select = 0x2682d00;
+         inline constexpr uintptr_t luaB_setfenv = 0x267cda0;
+         inline constexpr uintptr_t luaB_setmetatable = 0x267c300;
+         inline constexpr uintptr_t luaB_tonumber = 0x267b3a0;
+         inline constexpr uintptr_t luaB_tostring = 0x2683b10;
+         inline constexpr uintptr_t luaB_type = 0x26815b0;
+         inline constexpr uintptr_t luaB_typeof = 0x2681bb0;
+         inline constexpr uintptr_t luaC_init = 0x265de50;
+         inline constexpr uintptr_t luaC_step = 0x2644300;
+         inline constexpr uintptr_t luaD_Throw = 0x262ddc0;
+         inline constexpr uintptr_t luaF_FreeProto = 0xd195a0;
+         inline constexpr uintptr_t luaG_runerror = 0x7bf930;
+         inline constexpr uintptr_t luaH_clone = 0x2694180;
+         inline constexpr uintptr_t luaH_dummynode = 0x2619a00;
+         inline constexpr uintptr_t luaL_argerror = 0x2623300;
+         inline constexpr uintptr_t luaL_checktype = 0x2622820;
+         inline constexpr uintptr_t luaM_newgco = 0x265dce0;
+         inline constexpr uintptr_t luaM_visitgco = 0x66992cb;
+         inline constexpr uintptr_t luaO_nilobject = 0x26199c8;
+         inline constexpr uintptr_t luaO_pushfstring = 0x2657710;
+         inline constexpr uintptr_t lua_checkstack = 0xcb8d00;
+         inline constexpr uintptr_t lua_error = 0x261d640;
+         inline constexpr uintptr_t lua_newstate = 0x26210c0;
+         inline constexpr uintptr_t lua_pushfstring = 0x261ad70;
+         inline constexpr uintptr_t luau_execute = 0x266c81c;
+         inline constexpr uintptr_t print = 0x1ce58f0;
+         inline constexpr uintptr_t pseudo2addr = 0x2619930;
+         inline constexpr uintptr_t tclone = 0x2693f30;
     }
 
     namespace Luau::global_State {
@@ -600,7 +602,7 @@ namespace Offsets {
     namespace Misc {
          inline constexpr uintptr_t Adornee = 0xe0;
          inline constexpr uintptr_t AnimationId = 0xb0;
-         inline constexpr uintptr_t PrintIdentity = 0x425dff0;
+         inline constexpr uintptr_t PrintIdentity = 0x425f710;
          inline constexpr uintptr_t RequireBypass = 0xa81;
          inline constexpr uintptr_t StringLength = 0x10;
          inline constexpr uintptr_t Value = 0xa8;
@@ -615,7 +617,7 @@ namespace Offsets {
          inline constexpr uintptr_t ByteCode = 0x128;
          inline constexpr uintptr_t GUID = 0xc0;
          inline constexpr uintptr_t Hash = 0x190;
-         inline constexpr uintptr_t HashLookUp = 0x2a5c4d0;
+         inline constexpr uintptr_t HashLookUp = 0x72657a0;
          inline constexpr uintptr_t IsCoreScript = 0x158;
          inline constexpr uintptr_t IsRobloxScript = 0x9a;
     }
@@ -623,11 +625,10 @@ namespace Offsets {
     namespace Motor6D {
          inline constexpr uintptr_t ChildName = 0x118;
          inline constexpr uintptr_t ParentName = 0x108;
-         inline constexpr uintptr_t Transform = 0x128;
     }
 
     namespace Mouse {
-         inline constexpr uintptr_t FireProximityPrompt = 0x30cff60;
+         inline constexpr uintptr_t FireProximityPrompt = 0x30d1720;
     }
 
     namespace MouseService {
@@ -690,7 +691,7 @@ namespace Offsets {
     }
 
     namespace Property {
-         inline constexpr uintptr_t GetPropertyData = 0x7c4740;
+         inline constexpr uintptr_t GetPropertyData = 0x7c47e0;
     }
 
     namespace PropertyDescriptor {
@@ -710,46 +711,48 @@ namespace Offsets {
     }
 
     namespace RakNet {
-         inline constexpr uintptr_t RakNetReliabilityLayerSend = 0x985b70;
-         inline constexpr uintptr_t RakPeerReceive = 0x848860;
-         inline constexpr uintptr_t RakPeerVirtualTable = 0x6ebec40;
-         inline constexpr uintptr_t RaknetReportNetworkError = 0x47b69f0;
-         inline constexpr uintptr_t UpdateNetworkLoop = 0x80c570;
-         inline constexpr uintptr_t convertItemEnumToString = 0x48187f0;
+         inline constexpr uintptr_t RakNetReliabilityLayerSend = 0xba0160;
+         inline constexpr uintptr_t RakNetSend = 0x2852d00;
+         inline constexpr uintptr_t RakPeerProcessNetworkPacket = 0x28532c0;
+         inline constexpr uintptr_t RakPeerReceive = 0x848900;
+         inline constexpr uintptr_t RakPeerVirtualTable = 0x6ec0cd8;
+         inline constexpr uintptr_t RaknetReportNetworkError = 0x47b8110;
+         inline constexpr uintptr_t SendPacketsToSelf = 0x2852f50;
+         inline constexpr uintptr_t UpdateNetworkLoop = 0x495fae0;
+         inline constexpr uintptr_t convertItemEnumToString = 0x4819f10;
     }
 
     namespace RbxTransport {
-         inline constexpr uintptr_t AppDestructor = 0x21547f0;
-         inline constexpr uintptr_t AppRTTI = 0x82cd9d8;
-         inline constexpr uintptr_t AppReceive = 0x214f390;
-         inline constexpr uintptr_t AppReceiveMaxBytes = 0x214f490;
-         inline constexpr uintptr_t AppSend = 0x214e660;
-         inline constexpr uintptr_t AppVTable = 0x6eb18c0;
-         inline constexpr uintptr_t ClientChannelConfig = 0x3a85df0;
-         inline constexpr uintptr_t ClientDestructor = 0x3a85530;
-         inline constexpr uintptr_t ClientRTTI = 0x8339248;
-         inline constexpr uintptr_t ClientReceive = 0x3a85c10;
-         inline constexpr uintptr_t ClientSend = 0x3a85650;
-         inline constexpr uintptr_t ClientVTable = 0x6f2acb0;
-         inline constexpr uintptr_t FailureFallbackToRbxTransport = 0x47b5e95;
-         inline constexpr uintptr_t StreamClose = 0x214e6e0;
-         inline constexpr uintptr_t UseRbxTransportClient = 0x80078d8;
+         inline constexpr uintptr_t AppDestructor = 0x2155f90;
+         inline constexpr uintptr_t AppRTTI = 0x82cfb90;
+         inline constexpr uintptr_t AppReceive = 0x2150b30;
+         inline constexpr uintptr_t AppReceiveMaxBytes = 0x2150c30;
+         inline constexpr uintptr_t AppSend = 0x214fe00;
+         inline constexpr uintptr_t AppVTable = 0x6eb3930;
+         inline constexpr uintptr_t ClientChannelConfig = 0x3a87510;
+         inline constexpr uintptr_t ClientDestructor = 0x3a86c50;
+         inline constexpr uintptr_t ClientRTTI = 0x833b3b8;
+         inline constexpr uintptr_t ClientReceive = 0x3a87330;
+         inline constexpr uintptr_t ClientSend = 0x3a86cc0;
+         inline constexpr uintptr_t ClientVTable = 0x6f2cc08;
+         inline constexpr uintptr_t FailureFallbackToRbxTransport = 0x47b75b5;
+         inline constexpr uintptr_t StreamClose = 0x214fe80;
+         inline constexpr uintptr_t UseRbxTransportClient = 0x3a6cc65;
     }
 
     namespace RemoteEvent {
-         inline constexpr uintptr_t BaseVTableRva = 0x6f19f40;
-         inline constexpr uintptr_t DescBaseVTableRva = 0x6f19cd8;
-         inline constexpr uintptr_t FireAllClients = 0x3447f10;
-         inline constexpr uintptr_t FireServerRva = 0x71e720;
+         inline constexpr uintptr_t BaseVTableRva = 0x6f1bfb0;
+         inline constexpr uintptr_t DescBaseVTableRva = 0x6f1bd48;
+         inline constexpr uintptr_t FireClient = 0x3449d10;
+         inline constexpr uintptr_t FireServer = 0x3449b70;
+         inline constexpr uintptr_t FireServerRva = 0x71e7c0;
          inline constexpr uintptr_t FireServerVtableSlot = 0x4b;
          inline constexpr uintptr_t HookSlot7 = 0x7;
-         inline constexpr uintptr_t HookSlot7RemoteEventFn = 0x3522770;
+         inline constexpr uintptr_t HookSlot7RemoteEventFn = 0x3523e80;
          inline constexpr uintptr_t InstanceParentOffset = 0x68;
-         inline constexpr uintptr_t InstanceVTableRva = 0x6ea66f8;
-         inline constexpr uintptr_t InvokeClient = 0x351e630;
-         inline constexpr uintptr_t InvokeServer = 0x351e2e0;
-         inline constexpr uintptr_t RemoteFuncVTableRva = 0x6f1f500;
-         inline constexpr uintptr_t VTableRva = 0x6f1fb38;
+         inline constexpr uintptr_t InstanceVTableRva = 0x6ea8708;
+         inline constexpr uintptr_t RemoteFuncVTableRva = 0x6f216c0;
+         inline constexpr uintptr_t VTableRva = 0x6f21928;
          inline constexpr uintptr_t VtableSlotSignalFire = 0x2;
     }
 
@@ -798,7 +801,7 @@ namespace Offsets {
     }
 
     namespace ScriptContext {
-         inline constexpr uintptr_t Resume = 0x4256c10;
+         inline constexpr uintptr_t Resume = 0x4258330;
     }
 
     namespace Seat {
@@ -806,15 +809,15 @@ namespace Offsets {
     }
 
     namespace ShaderManager {
-         inline constexpr uintptr_t VTableRva = 0x6f27708;
+         inline constexpr uintptr_t VTableRva = 0x6f2a8a8;
     }
 
     namespace Sky {
-         inline constexpr uintptr_t CubeTextures = 0x2ea67a0;
+         inline constexpr uintptr_t CubeTextures = 0x2ea7f60;
+         inline constexpr uintptr_t DrawSkyEnv = 0x377be00;
          inline constexpr uintptr_t MoonAngularSize = 0x234;
          inline constexpr uintptr_t MoonTextureId = 0xb8;
-         inline constexpr uintptr_t SkyGroup = 0x8002008;
-         inline constexpr uintptr_t SkyThread = 0x374bf40;
+         inline constexpr uintptr_t SkyGroup = 0x8004a08;
          inline constexpr uintptr_t SkyboxBk = 0xe8;
          inline constexpr uintptr_t SkyboxDn = 0x118;
          inline constexpr uintptr_t SkyboxFt = 0x148;
@@ -842,7 +845,7 @@ namespace Offsets {
          inline constexpr uintptr_t AllowTeamChangeOnTouch = 0x1e2;
          inline constexpr uintptr_t Enabled = 0x1e1;
          inline constexpr uintptr_t ForcefieldDuration = 0x34;
-         inline constexpr uintptr_t Neutral = 0x1e0;
+         inline constexpr uintptr_t Neutral = 0x3d;
          inline constexpr uintptr_t TeamColor = 0x3c;
     }
 
@@ -852,7 +855,7 @@ namespace Offsets {
     }
 
     namespace StatsItem {
-         inline constexpr uintptr_t Value = 0xc00;
+         inline constexpr uintptr_t Value = 0x180;
     }
 
     namespace SunRaysEffect {
@@ -874,10 +877,10 @@ namespace Offsets {
     }
 
     namespace Task {
-         inline constexpr uintptr_t TaskDelay = 0x4322fd0;
-         inline constexpr uintptr_t TaskDesynchronize = 0x4321af0;
-         inline constexpr uintptr_t TaskSynchronize = 0x4321680;
-         inline constexpr uintptr_t TaskWait = 0x43232b0;
+         inline constexpr uintptr_t TaskDelay = 0x43246d0;
+         inline constexpr uintptr_t TaskDesynchronize = 0x4323210;
+         inline constexpr uintptr_t TaskSynchronize = 0x4322da0;
+         inline constexpr uintptr_t TaskWait = 0x43249d0;
     }
 
     namespace TaskScheduler {
@@ -885,8 +888,8 @@ namespace Offsets {
          inline constexpr uintptr_t JobName = 0x18;
          inline constexpr uintptr_t JobStart = 0xc8;
          inline constexpr uintptr_t MaxFPS = 0xb0;
-         inline constexpr uintptr_t Pointer = 0x8d6f048;
-         inline constexpr uintptr_t StepFunction = 0x2a20a60;
+         inline constexpr uintptr_t Pointer = 0x8d71348;
+         inline constexpr uintptr_t StepFunction = 0x2a22220;
     }
 
     namespace Team {
@@ -910,7 +913,7 @@ namespace Offsets {
     }
 
     namespace TextureManager2 {
-         inline constexpr uintptr_t VTableRva = 0x6f26aa0;
+         inline constexpr uintptr_t VTableRva = 0x6f28da0;
     }
 
     namespace Textures {
@@ -923,13 +926,13 @@ namespace Offsets {
          inline constexpr uintptr_t Enabled = 0x4a9;
          inline constexpr uintptr_t Grip = 0x49c;
          inline constexpr uintptr_t ManualActivationOnly = 0x4aa;
-         inline constexpr uintptr_t RequiresHandle = 0x4ab;
+         inline constexpr uintptr_t RequiresHandle = 0x9d;
          inline constexpr uintptr_t TextureId = 0x350;
          inline constexpr uintptr_t Tooltip = 0x458;
     }
 
     namespace Types {
-         inline constexpr uintptr_t AllTypes = 0x8d5a488;
+         inline constexpr uintptr_t AllTypes = 0x8d5c788;
     }
 
     namespace UnionOperation {
@@ -953,13 +956,13 @@ namespace Offsets {
     }
 
     namespace ViewBase {
-         inline constexpr uintptr_t VTableRva = 0x6f25e30;
+         inline constexpr uintptr_t VTableRva = 0x6f28260;
     }
 
     namespace VisualEngine {
          inline constexpr uintptr_t Dimensions = 0xb10;
          inline constexpr uintptr_t FakeDataModel = 0xaf0;
-         inline constexpr uintptr_t Pointer = 0x884a0b0;
+         inline constexpr uintptr_t Pointer = 0x884c2e0;
          inline constexpr uintptr_t RenderView = 0xc38;
          inline constexpr uintptr_t ViewMatrix = 0x1b0;
     }
@@ -995,16 +998,15 @@ namespace Offsets {
     }
 
     namespace WorldRoot {
-         inline constexpr uintptr_t FindPartOnRayBoundFnRva = 0xd65490;
-         inline constexpr uintptr_t FindPartOnRayDescriptorRva = 0x8555e60;
-         inline constexpr uintptr_t FindPartOnRayWithIgnoreListBoundFnRva = 0xd65510;
-         inline constexpr uintptr_t FindPartOnRayWithIgnoreListDescriptorRva = 0x8555f20;
-         inline constexpr uintptr_t FindPartOnRayWithWhitelistBoundFnRva = 0xd655a0;
-         inline constexpr uintptr_t FindPartOnRayWithWhitelistDescriptorRva = 0x8555fe0;
-         inline constexpr uintptr_t RaycastBoundFnRva = 0xd5c460;
-         inline constexpr uintptr_t RaycastDescriptorRva = 0x8555420;
-         inline constexpr uintptr_t RaycastDescriptorVtableRva = 0x6e08d30;
-         inline constexpr uintptr_t RaycastDirect = 0x6ea64a8;
+         inline constexpr uintptr_t FindPartOnRayBoundFnRva = 0xd65530;
+         inline constexpr uintptr_t FindPartOnRayDescriptorRva = 0x8558060;
+         inline constexpr uintptr_t FindPartOnRayWithIgnoreListBoundFnRva = 0xd655b0;
+         inline constexpr uintptr_t FindPartOnRayWithIgnoreListDescriptorRva = 0x8558120;
+         inline constexpr uintptr_t FindPartOnRayWithWhitelistBoundFnRva = 0xd65640;
+         inline constexpr uintptr_t FindPartOnRayWithWhitelistDescriptorRva = 0x85581e0;
+         inline constexpr uintptr_t RaycastBoundFnRva = 0xd5c500;
+         inline constexpr uintptr_t RaycastDescriptorRva = 0x8557620;
+         inline constexpr uintptr_t RaycastDescriptorVtableRva = 0x6e0ad60;
     }
 
 }
