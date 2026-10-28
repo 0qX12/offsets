@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:40 28/10/2026 (GMT)
+/*  Dumped At       : 22:50 28/10/2026 (GMT)
 /*  Total Offsets   : 508
 /* =============================================================
 */
@@ -381,15 +381,15 @@ namespace Structs {
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
         // alias: BackgroundTransparency = 0x514 (float)
-        char pad_3[0x24];
+        char pad_3[0x20];
+        bool Visible; // 0x540
+        char pad_4[0x3];
         int LayoutOrder; // 0x544
-        char pad_4[0x14];
+        char pad_5[0x14];
         float Rotation; // 0x55c
-        char pad_5[0xc];
+        char pad_6[0xc];
         int ZIndex; // 0x56c
-        char pad_6[0x5];
-        bool Visible; // 0x575
-        char pad_7[0x432];
+        char pad_7[0x438];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
@@ -460,20 +460,18 @@ namespace Structs {
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
         char pad_11[0x2];
-        bool Jump; // 0x1d0
-        char pad_12[0x1];
-        bool PlatformStand; // 0x1d2
-        bool RequiresNeck; // 0x1d3
+        int HumanoidStateID; // 0x1d0
+        // alias: Jump = 0x1d0 (bool)
+        // alias: PlatformStand = 0x1d2 (bool)
+        // alias: RequiresNeck = 0x1d3 (bool)
         // alias: Sit = 0x1d3 (bool)
-        char pad_13[0x2];
+        char pad_12[0x2];
         bool UseJumpPower; // 0x1d6
-        char pad_14[0x279];
-        int HumanoidStateID; // 0x450
-        char pad_15[0xc];
+        char pad_13[0x289];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_16[0x440];
+        char pad_14[0x440];
         int HumanoidState; // 0x8a8
-        char pad_17[0x182];
+        char pad_15[0x182];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
