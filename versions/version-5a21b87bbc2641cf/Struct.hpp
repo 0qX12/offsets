@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:50 28/10/2026 (GMT)
-/*  Total Offsets   : 508
+/*  Dumped At       : 00:22 29/10/2026 (GMT)
+/*  Total Offsets   : 506
 /* =============================================================
 */
 
@@ -380,16 +380,16 @@ namespace Structs {
         UDim2 Size; // 0x4f8
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
-        // alias: BackgroundTransparency = 0x514 (float)
-        char pad_3[0x20];
-        bool Visible; // 0x540
-        char pad_4[0x3];
+        // alias: BackgroundTransparency = 0x518 (float)
+        char pad_3[0x24];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_4[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_5[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x438];
+        char pad_6[0x5];
+        bool Visible; // 0x575
+        char pad_7[0x432];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
@@ -441,7 +441,8 @@ namespace Structs {
         int HealthDisplayType; // 0x180
         float Health; // 0x184
         float HipHeight; // 0x188
-        char pad_7[0x8];
+        char pad_7[0x4];
+        int HumanoidStateID; // 0x190
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
         float MaxHealth; // 0x19c
@@ -451,21 +452,20 @@ namespace Structs {
         char pad_8[0x8];
         int RigType; // 0x1b4
         char pad_9[0xc];
-        float Walkspeed; // 0x1c4
-        // alias: WalkSpeed = 0x1c4 (unsigned __int64)
-        bool AutoJumpEnabled; // 0x1c8
-        bool AutoRotate; // 0x1c9
-        bool AutomaticScalingEnabled; // 0x1ca
-        char pad_10[0x1];
+        uintptr_t WalkSpeed; // 0x1c4
+        // alias: Walkspeed = 0x1c4 (float)
+        // alias: AutoJumpEnabled = 0x1c8 (bool)
+        // alias: AutoRotate = 0x1c9 (bool)
+        // alias: AutomaticScalingEnabled = 0x1ca (bool)
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
-        char pad_11[0x2];
-        int HumanoidStateID; // 0x1d0
-        // alias: Jump = 0x1d0 (bool)
-        // alias: PlatformStand = 0x1d2 (bool)
-        // alias: RequiresNeck = 0x1d3 (bool)
-        // alias: Sit = 0x1d3 (bool)
-        char pad_12[0x2];
+        char pad_10[0x2];
+        bool Jump; // 0x1d0
+        char pad_11[0x1];
+        bool PlatformStand; // 0x1d2
+        bool Sit; // 0x1d3
+        bool RequiresNeck; // 0x1d4
+        char pad_12[0x1];
         bool UseJumpPower; // 0x1d6
         char pad_13[0x289];
         uintptr_t HumanoidRootPart; // 0x460
@@ -817,13 +817,6 @@ namespace Structs {
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
 
-    struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x60];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
-
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -842,27 +835,25 @@ namespace Structs {
     }; // sizeof = 0x208
 
     struct Sky {
-        char pad_0[0x10];
-        float MoonAngularSize; // 0x10
-        char pad_1[0x9c];
+        char pad_0[0xb0];
         std::string MoonTextureId; // 0xb0
-        char pad_2[0x10];
+        char pad_1[0x10];
         std::string SkyboxBk; // 0xe0
-        char pad_3[0x10];
+        char pad_2[0x10];
         std::string SkyboxDn; // 0x110
-        char pad_4[0x10];
+        char pad_3[0x10];
         std::string SkyboxFt; // 0x140
-        char pad_5[0x10];
+        char pad_4[0x10];
         std::string SkyboxLf; // 0x170
-        char pad_6[0x10];
+        char pad_5[0x10];
         std::string SkyboxRt; // 0x1a0
-        char pad_7[0x10];
+        char pad_6[0x10];
         std::string SkyboxUp; // 0x1d0
-        char pad_8[0x10];
+        char pad_7[0x10];
         std::string SunTextureId; // 0x200
         Vector3 SkyboxOrientation; // 0x220
         // alias: SunAngularSize = 0x224 (float)
-        char pad_9[0x4];
+        float MoonAngularSize; // 0x22c
         int StarCount; // 0x230
     }; // sizeof = 0x234
 
@@ -883,14 +874,13 @@ namespace Structs {
     }; // sizeof = 0x129
 
     struct SpawnLocation {
-        char pad_0[0x125];
-        bool Neutral; // 0x125
-        char pad_1[0xaa];
+        char pad_0[0x1d0];
         int ForcefieldDuration; // 0x1d0
         int TeamColor; // 0x1d4
         bool AllowTeamChangeOnTouch; // 0x1d8
         bool Enabled; // 0x1d9
-    }; // sizeof = 0x1da
+        bool Neutral; // 0x1da
+    }; // sizeof = 0x1db
 
     struct SpecialMesh {
         char pad_0[0xac];

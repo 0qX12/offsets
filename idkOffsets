@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:50 28/10/2026 (GMT)
-/*  Total Offsets   : 508
+/*  Dumped At       : 00:22 29/10/2026 (GMT)
+/*  Total Offsets   : 506
 /* =============================================================
 */
 
@@ -271,7 +271,7 @@ namespace Offsets {
 
     namespace GuiObject {
          inline constexpr uintptr_t BackgroundColor3 = 0x508;
-         inline constexpr uintptr_t BackgroundTransparency = 0x514;
+         inline constexpr uintptr_t BackgroundTransparency = 0x518;
          inline constexpr uintptr_t BorderColor3 = 0x514;
          inline constexpr uintptr_t Image = 0x9a8;
          inline constexpr uintptr_t LayoutOrder = 0x544;
@@ -282,7 +282,7 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x540;
+         inline constexpr uintptr_t Visible = 0x575;
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
@@ -315,7 +315,7 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0x1d0;
+         inline constexpr uintptr_t HumanoidStateID = 0x190;
          inline constexpr uintptr_t IsWalking = 0xa2e;
          inline constexpr uintptr_t Jump = 0x1d0;
          inline constexpr uintptr_t JumpHeight = 0x194;
@@ -328,7 +328,7 @@ namespace Offsets {
          inline constexpr uintptr_t NameDisplayDistance = 0x1a4;
          inline constexpr uintptr_t NameOcclusion = 0x1a8;
          inline constexpr uintptr_t PlatformStand = 0x1d2;
-         inline constexpr uintptr_t RequiresNeck = 0x1d3;
+         inline constexpr uintptr_t RequiresNeck = 0x1d4;
          inline constexpr uintptr_t RigType = 0x1b4;
          inline constexpr uintptr_t SeatPart = 0xf0;
          inline constexpr uintptr_t Sit = 0x1d3;
@@ -584,11 +584,6 @@ namespace Offsets {
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x70;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
-    }
-
     namespace Script {
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
@@ -603,7 +598,7 @@ namespace Offsets {
     }
 
     namespace Sky {
-         inline constexpr uintptr_t MoonAngularSize = 0x10;
+         inline constexpr uintptr_t MoonAngularSize = 0x22c;
          inline constexpr uintptr_t MoonTextureId = 0xb0;
          inline constexpr uintptr_t SkyboxBk = 0xe0;
          inline constexpr uintptr_t SkyboxDn = 0x110;
@@ -632,7 +627,7 @@ namespace Offsets {
          inline constexpr uintptr_t AllowTeamChangeOnTouch = 0x1d8;
          inline constexpr uintptr_t Enabled = 0x1d9;
          inline constexpr uintptr_t ForcefieldDuration = 0x1d0;
-         inline constexpr uintptr_t Neutral = 0x125;
+         inline constexpr uintptr_t Neutral = 0x1da;
          inline constexpr uintptr_t TeamColor = 0x1d4;
     }
 
