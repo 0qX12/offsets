@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:17 28/10/2026 (GMT)
-/*  Total Offsets   : 509
+/*  Dumped At       : 22:27 28/10/2026 (GMT)
+/*  Total Offsets   : 511
 /* =============================================================
 */
 
@@ -441,8 +441,7 @@ namespace Structs {
         int HealthDisplayType; // 0x180
         float Health; // 0x184
         float HipHeight; // 0x188
-        char pad_7[0x4];
-        int HumanoidStateID; // 0x190
+        char pad_7[0x8];
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
         float MaxHealth; // 0x19c
@@ -452,18 +451,19 @@ namespace Structs {
         char pad_8[0x8];
         int RigType; // 0x1b4
         char pad_9[0xc];
-        uintptr_t WalkSpeed; // 0x1c4
-        // alias: Walkspeed = 0x1c4 (float)
-        // alias: AutoJumpEnabled = 0x1c8 (bool)
-        // alias: AutoRotate = 0x1c9 (bool)
-        // alias: AutomaticScalingEnabled = 0x1ca (bool)
+        float Walkspeed; // 0x1c4
+        // alias: WalkSpeed = 0x1c4 (unsigned __int64)
+        bool AutoJumpEnabled; // 0x1c8
+        bool AutoRotate; // 0x1c9
+        bool AutomaticScalingEnabled; // 0x1ca
+        char pad_10[0x1];
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
-        char pad_10[0x2];
-        bool Jump; // 0x1d0
-        char pad_11[0x1];
-        bool PlatformStand; // 0x1d2
-        bool RequiresNeck; // 0x1d3
+        char pad_11[0x2];
+        int HumanoidStateID; // 0x1d0
+        // alias: Jump = 0x1d0 (bool)
+        // alias: PlatformStand = 0x1d2 (bool)
+        // alias: RequiresNeck = 0x1d3 (bool)
         // alias: Sit = 0x1d3 (bool)
         char pad_12[0x2];
         bool UseJumpPower; // 0x1d6
@@ -816,6 +816,13 @@ namespace Structs {
         char pad_1[0x8];
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
+
+    struct RunService {
+        char pad_0[0x70];
+        double HeartbeatFPS; // 0x70
+        char pad_1[0x60];
+        uintptr_t HeartbeatTask; // 0xd8
+    }; // sizeof = 0xe0
 
     struct Script {
         char pad_0[0xb8];
