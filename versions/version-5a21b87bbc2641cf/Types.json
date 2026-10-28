@@ -1,0 +1,713 @@
+{
+    "Roblox Version": "version-5a21b87bbc2641cf",
+    "Dumper Version": "1.0",
+    "Dumped With": "f4_byteDumper",
+    "Dumped At": "16:36 28/10/2026",
+    "Types": {
+        "TaskScheduler": {
+            "Pointer": "unsigned __int64",
+            "JobStart": "unsigned __int64",
+            "JobEnd": "unsigned __int64",
+            "JobName": "string",
+            "MaxFPS": "double"
+        },
+        "VisualEngine": {
+            "Pointer": "unsigned __int64",
+            "Dimensions": "Vector2",
+            "ViewMatrix": "ViewMatrix_t",
+            "RenderView": "unsigned __int64",
+            "FakeDataModel": "unsigned __int64"
+        },
+        "FakeDataModel": {
+            "Pointer": "unsigned __int64",
+            "RealDataModel": "unsigned __int64"
+        },
+        "RenderView": {
+            "LightingValid": "bool",
+            "SkyValid": "bool",
+            "DeviceD3D11": "unsigned __int64",
+            "VisualEngine": "unsigned __int64"
+        },
+        "MouseService": {
+            "SensitivityPointer": "float",
+            "InputObject": "unsigned __int64",
+            "InputObject2": "unsigned __int64",
+            "MousePosition": "Vector2"
+        },
+        "PlayerConfigurer": {
+            "Pointer": "unsigned __int64"
+        },
+        "Instance": {
+            "This": "unsigned __int64",
+            "NameContainer": "unsigned __int64",
+            "Name": "unsigned __int64",
+            "ChildrenStart": "unsigned __int64",
+            "ChildrenEnd": "unsigned __int64",
+            "Parent": "unsigned __int64",
+            "ClassDescriptor": "unsigned __int64",
+            "ClassName": "string",
+            "ClassBase": "unsigned __int64"
+        },
+        "Misc": {
+            "StringLength": "int",
+            "Adornee": "unsigned __int64",
+            "Value": "string",
+            "AnimationId": "string"
+        },
+        "Attribute": {
+            "Key": "unsigned __int64",
+            "Value": "unsigned __int64",
+            "Size": "unsigned __int64"
+        },
+        "DataModel": {
+            "PlaceId": "unsigned __int64",
+            "GameId": "unsigned __int64",
+            "CreatorId": "unsigned __int64",
+            "GameLoaded": "unsigned __int64",
+            "JobId": "string",
+            "Workspace": "unsigned __int64",
+            "ScriptContext": "unsigned __int64",
+            "PlaceVersion": "int",
+            "ServerIP": "string",
+            "ToRenderView1": "unsigned __int64",
+            "ToRenderView2": "unsigned __int64",
+            "ToRenderView3": "unsigned __int64",
+            "PrimitiveCount": "int",
+            "Services": "unsigned __int64"
+        },
+        "RunService": {
+            "HeartbeatTask": "unsigned __int64",
+            "HeartbeatFPS": "double"
+        },
+        "RenderJob": {
+            "RenderView": "unsigned __int64",
+            "FakeDataModel": "unsigned __int64",
+            "RealDataModel": "unsigned __int64"
+        },
+        "Workspace": {
+            "World": "unsigned __int64",
+            "ReadOnlyGravity": "float",
+            "DistributedGameTime": "double",
+            "CurrentCamera": "unsigned __int64"
+        },
+        "World": {
+            "Gravity": "float",
+            "worldStepsPerSec": "float",
+            "FallenPartsDestroyHeight": "float",
+            "AirProperties": "unsigned __int64",
+            "Primitives": "unsigned __int64",
+            "WorldSteps": "float"
+        },
+        "AirProperties": {
+            "AirDensity": "float",
+            "GlobalWind": "Vector3"
+        },
+        "Terrain": {
+            "GrassLength": "float",
+            "WaterReflectance": "float",
+            "WaterTransparency": "float",
+            "WaterWaveSize": "float",
+            "WaterWaveSpeed": "float",
+            "WaterColor": "Color3",
+            "MaterialColors": "unsigned __int64"
+        },
+        "MaterialColors": {
+            "Asphalt": "ColorUint_8",
+            "Basalt": "ColorUint_8",
+            "Brick": "ColorUint_8",
+            "Cobblestone": "ColorUint_8",
+            "Concrete": "ColorUint_8",
+            "CrackedLava": "ColorUint_8",
+            "Glacier": "ColorUint_8",
+            "Grass": "ColorUint_8",
+            "Ground": "ColorUint_8",
+            "Ice": "ColorUint_8",
+            "LeafyGrass": "ColorUint_8",
+            "Limestone": "ColorUint_8",
+            "Mud": "ColorUint_8",
+            "Pavement": "ColorUint_8",
+            "Rock": "ColorUint_8",
+            "Salt": "ColorUint_8",
+            "Sand": "ColorUint_8",
+            "Sandstone": "ColorUint_8",
+            "Slate": "ColorUint_8",
+            "Snow": "ColorUint_8",
+            "WoodPlanks": "ColorUint_8"
+        },
+        "Sound": {
+            "SoundId": "string",
+            "RollOffMaxDistance": "float",
+            "RollOffMinDistance": "float",
+            "PlaybackSpeed": "float",
+            "Volume": "float",
+            "SoundGroup": "unsigned __int64",
+            "IsPlaying": "bool",
+            "Looped": "bool"
+        },
+        "SpawnLocation": {
+            "AllowTeamChangeOnTouch": "bool",
+            "Enabled": "bool",
+            "Neutral": "bool",
+            "ForcefieldDuration": "int",
+            "TeamColor": "int"
+        },
+        "SurfaceAppearance": {
+            "AlphaMode": "int",
+            "Color": "Color3",
+            "ColorMap": "string",
+            "EmissiveMaskContent": "string",
+            "EmissiveStrength": "float",
+            "EmissiveTint": "Color3",
+            "MetalnessMap": "string",
+            "NormalMap": "string",
+            "RoughnessMap": "string"
+        },
+        "ParticleEmitter": {
+            "Brightness": "float",
+            "LightEmission": "float",
+            "LightInfluence": "float",
+            "Texture": "string",
+            "ZOffset": "float",
+            "Lifetime": "Vector2",
+            "Rate": "float",
+            "Rotation": "float",
+            "RotSpeed": "float",
+            "Speed": "float",
+            "SpreadAngle": "Vector2",
+            "Acceleration": "Vector3",
+            "Drag": "float",
+            "TimeScale": "float",
+            "VelocityInheritance": "float"
+        },
+        "Beam": {
+            "Brightness": "float",
+            "LightEmission": "float",
+            "LightInfluence": "float",
+            "Texture": "string",
+            "TextureLength": "float",
+            "TextureSpeed": "float",
+            "ZOffset": "float",
+            "Attachment0": "unsigned __int64",
+            "Attachment1": "unsigned __int64",
+            "CurveSize0": "float",
+            "CurveSize1": "float",
+            "Width0": "float",
+            "Width1": "float"
+        },
+        "Player": {
+            "LocalPlayer": "unsigned __int64",
+            "UserId": "unsigned __int64",
+            "DisplayName": "string",
+            "HealthDisplayDistance": "float",
+            "NameDisplayDistance": "float",
+            "ModelInstance": "unsigned __int64",
+            "Team": "unsigned __int64",
+            "TeamColor": "int",
+            "LocaleId": "string",
+            "AccountAge": "int",
+            "MinZoomDistance": "float",
+            "MaxZoomDistance": "float",
+            "CameraMode": "int",
+            "Mouse": "unsigned __int64"
+        },
+        "Team": {
+            "BrickColor": "int"
+        },
+        "Humanoid": {
+            "Health": "float",
+            "MaxHealth": "float",
+            "Walkspeed": "float",
+            "WalkspeedCheck": "float",
+            "JumpPower": "float",
+            "JumpHeight": "float",
+            "HipHeight": "float",
+            "MaxSlopeAngle": "float",
+            "SeatPart": "unsigned __int64",
+            "HumanoidRootPart": "unsigned __int64",
+            "CameraOffset": "Vector3",
+            "HealthDisplayDistance": "float",
+            "NameDisplayDistance": "float",
+            "DisplayDistanceType": "int",
+            "HealthDisplayType": "int",
+            "NameOcclusion": "int",
+            "DisplayName": "string",
+            "MoveDirection": "Vector3",
+            "RigType": "int",
+            "Jump": "bool",
+            "Sit": "bool",
+            "PlatformStand": "bool",
+            "UseJumpPower": "bool",
+            "AutomaticScalingEnabled": "bool",
+            "BreakJointsOnDeath": "bool",
+            "EvaluateStateMachine": "bool",
+            "RequiresNeck": "bool",
+            "AutoJumpEnabled": "bool",
+            "AutoRotate": "bool",
+            "IsWalking": "bool",
+            "MoveToPoint": "Vector3",
+            "MoveToPart": "unsigned __int64",
+            "WalkTimer": "double",
+            "HumanoidState": "int",
+            "HumanoidStateID": "int",
+            "FloorMaterial": "int",
+            "TargetPoint": "Vector3",
+            "WalkSpeed": "unsigned __int64"
+        },
+        "Seat": {
+            "Occupant": "unsigned __int64"
+        },
+        "VehicleSeat": {
+            "MaxSpeed": "float",
+            "SteerFloat": "float",
+            "ThrottleFloat": "float",
+            "Torque": "float",
+            "TurnSpeed": "float"
+        },
+        "Tool": {
+            "Tooltip": "string",
+            "TextureId": "string",
+            "Grip": "Vector3",
+            "Enabled": "bool",
+            "CanBeDropped": "bool",
+            "ManualActivationOnly": "bool",
+            "RequiresHandle": "bool"
+        },
+        "Clothing": {
+            "Template": "string",
+            "Color3": "Color3"
+        },
+        "CharacterMesh": {
+            "BaseTextureId": "string",
+            "OverlayTextureId": "string",
+            "MeshId": "string",
+            "BodyPart": "int"
+        },
+        "Camera": {
+            "Rotation": "Matrix3x3",
+            "Position": "Vector3",
+            "CameraSubject": "unsigned __int64",
+            "FieldOfView": "float",
+            "ImagePlaneDepth": "float",
+            "CameraType": "int",
+            "Viewport": "short",
+            "ViewportSize": "Vector2",
+            "CFrame": "unsigned __int64"
+        },
+        "BasePart": {
+            "Primitive": "unsigned __int64",
+            "Transparency": "float",
+            "Color3": "unsigned char",
+            "Shape": "int",
+            "Massless": "bool",
+            "CastShadow": "bool",
+            "Locked": "bool",
+            "Reflectance": "float",
+            "Color": "unsigned __int64",
+            "ClusterNode": "unsigned __int64"
+        },
+        "Primitive": {
+            "Position": "Vector3",
+            "Validate": "unsigned __int64",
+            "Owner": "unsigned __int64",
+            "Size": "Vector3",
+            "Rotation": "Matrix3x3",
+            "Flags": "BYTE",
+            "Material": "unsigned short",
+            "AssemblyLinearVelocity": "Vector3",
+            "AssemblyAngularVelocity": "Vector3"
+        },
+        "PrimitiveFlags": {
+            "Anchored": "unsigned __int64",
+            "CanCollide": "unsigned __int64",
+            "CanTouch": "unsigned __int64",
+            "CanQuery": "unsigned __int64"
+        },
+        "MeshPart": {
+            "MeshId": "string",
+            "Texture": "string",
+            "MeshSize": "Vector3"
+        },
+        "Model": {
+            "PrimaryPart": "unsigned __int64",
+            "Scale": "float"
+        },
+        "SpecialMesh": {
+            "Scale": "Vector3",
+            "MeshId": "string"
+        },
+        "Attachment": {
+            "Position": "Vector3"
+        },
+        "Weld": {
+            "Part0": "unsigned __int64",
+            "Part1": "unsigned __int64"
+        },
+        "WeldConstraint": {
+            "Part0": "unsigned __int64",
+            "Part1": "unsigned __int64"
+        },
+        "UnionOperation": {
+            "AssetId": "string"
+        },
+        "PlayerMouse": {
+            "Workspace": "unsigned __int64",
+            "Icon": "string"
+        },
+        "GuiObject": {
+            "ScreenGui_Enabled": "bool",
+            "Position": "UDim2",
+            "Size": "UDim2",
+            "Visible": "bool",
+            "Image": "string",
+            "Text": "string",
+            "RichText": "string",
+            "BackgroundColor3": "Color3",
+            "BorderColor3": "Color3",
+            "TextColor3": "Color3",
+            "LayoutOrder": "int",
+            "ZIndex": "int",
+            "BackgroundTransparency": "float",
+            "Rotation": "float"
+        },
+        "GuiBase2D": {
+            "AbsoluteSize": "float",
+            "AbsolutePosition": "float",
+            "AbsoluteRotation": "float"
+        },
+        "UserInputService": {
+            "WindowInputState": "unsigned __int64"
+        },
+        "WindowInputState": {
+            "CurrentTextBox": "unsigned __int64",
+            "CapsLock": "bool"
+        },
+        "Textures": {
+            "Decal_Texture": "string",
+            "Texture_Texture": "string"
+        },
+        "Lighting": {
+            "ClockTime": "unsigned __int64",
+            "Brightness": "float",
+            "EnvironmentDiffuseScale": "float",
+            "EnvironmentSpecularScale": "float",
+            "FogStart": "float",
+            "FogEnd": "float",
+            "FogColor": "Color3",
+            "Ambient": "Color3",
+            "OutdoorAmbient": "Color3",
+            "ColorShift_Top": "Color3",
+            "ColorShift_Bottom": "Color3",
+            "ExposureCompensation": "float",
+            "GeographicLatitude": "float",
+            "GlobalShadows": "bool",
+            "SunPosition": "Vector3",
+            "MoonPosition": "Vector3",
+            "Sky": "unsigned __int64",
+            "Atmosphere": "unsigned __int64"
+        },
+        "Sky": {
+            "SkyboxBk": "string",
+            "SkyboxDn": "string",
+            "SkyboxFt": "string",
+            "SkyboxLf": "string",
+            "SkyboxRt": "string",
+            "SkyboxUp": "string",
+            "SunAngularSize": "float",
+            "MoonAngularSize": "float",
+            "SunTextureId": "string",
+            "MoonTextureId": "string",
+            "SkyboxOrientation": "Vector3",
+            "StarCount": "int"
+        },
+        "Atmosphere": {
+            "Density": "float",
+            "Offset": "float",
+            "Color": "Color3",
+            "Decay": "Color3",
+            "Glare": "float",
+            "Haze": "float"
+        },
+        "BloomEffect": {
+            "Intensity": "float",
+            "Size": "float",
+            "Threshold": "float",
+            "Enabled": "bool"
+        },
+        "DepthOfFieldEffect": {
+            "FocusDistance": "float",
+            "FarIntensity": "float",
+            "NearIntensity": "float",
+            "InFocusRadius": "float",
+            "Enabled": "bool"
+        },
+        "SunRaysEffect": {
+            "Intensity": "float",
+            "Spread": "float",
+            "Enabled": "bool"
+        },
+        "ColorCorrectionEffect": {
+            "Brightness": "float",
+            "Contrast": "float",
+            "TintColor": "Color3",
+            "Enabled": "bool"
+        },
+        "ColorGradingEffect": {
+            "TonemapperPreset": "int",
+            "Enabled": "bool"
+        },
+        "BlurEffect": {
+            "Size": "float",
+            "Enabled": "bool"
+        },
+        "ProximityPrompt": {
+            "ActionText": "string",
+            "ObjectText": "string",
+            "HoldDuration": "float",
+            "MaxActivationDistance": "float",
+            "KeyCode": "int",
+            "GamepadKeyCode": "int",
+            "Enabled": "bool",
+            "RequiresLineOfSight": "bool"
+        },
+        "ClickDetector": {
+            "MaxActivationDistance": "float",
+            "MouseIcon": "string"
+        },
+        "DragDetector": {
+            "ReferenceInstance": "unsigned __int64",
+            "MaxActivationDistance": "float",
+            "MaxDragAngle": "float",
+            "MaxDragTranslation": "Vector3",
+            "MinDragAngle": "float",
+            "MinDragTranslation": "Vector3",
+            "ActivatedCursorIcon": "string",
+            "CursorIcon": "string",
+            "MaxForce": "float",
+            "MaxTorque": "float",
+            "Responsiveness": "float"
+        },
+        "AnimationTrack": {
+            "Animation": "unsigned __int64",
+            "Animator": "unsigned __int64",
+            "Speed": "float",
+            "TimePosition": "float",
+            "Looped": "bool",
+            "IsPlaying": "bool"
+        },
+        "Animator": {
+            "ActiveAnimations": "unsigned __int64"
+        },
+        "LocalScript": {
+            "GUID": "string",
+            "Hash": "string",
+            "ByteCode": "unsigned __int64"
+        },
+        "ModuleScript": {
+            "GUID": "string",
+            "IsCoreScript": "unsigned __int64",
+            "ByteCode": "unsigned __int64"
+        },
+        "Script": {
+            "GUID": "string",
+            "Hash": "string"
+        },
+        "MeshContentProvider": {
+            "LRUHolder": "unsigned __int64"
+        },
+        "LRUHolder": {
+            "MemEnforcedLRUCache": "unsigned __int64"
+        },
+        "MemEnforcedLRUCache": {
+            "Head": "unsigned __int64"
+        },
+        "LRUNode": {
+            "Next": "unsigned __int64",
+            "AssetID": "string",
+            "CachedItem": "unsigned __int64"
+        },
+        "CachedItem": {
+            "FileMeshData": "unsigned __int64"
+        },
+        "FileMeshData": {
+            "AABBMin": "Vector3",
+            "AABBMax": "Vector3",
+            "Vertices": "unsigned __int64",
+            "VerticesEnd": "unsigned __int64",
+            "Faces": "unsigned __int64",
+            "FacesEnd": "unsigned __int64"
+        },
+        "task_scheduler": {
+            "target_fps": "unsigned __int64"
+        },
+        "ScriptContext": {
+            "RequireBypass": "unsigned __int64"
+        },
+        "script": {
+            "modulescript::module_state": "unsigned __int64",
+            "core_script": "unsigned __int64",
+            "IsRobloxScript": "unsigned __int64",
+            "modulescript::detection": "unsigned __int64",
+            "modulescript::pointer": "unsigned __int64",
+            "localscript::pointer": "unsigned __int64",
+            "pointer": "unsigned __int64",
+            "size": "unsigned __int64"
+        },
+        "userdata": {
+            "Identity": "unsigned __int64",
+            "Capabilities": "unsigned __int64"
+        },
+        "Raycast": {
+            "RaycastBoundDesc": "unsigned __int64",
+            "RaycastBoundFn": "unsigned __int64"
+        },
+        "FastClusterEntity": {
+            "VTableRva": "unsigned __int64",
+            "ContextPtr": "unsigned __int64",
+            "RenderQueueId": "unsigned __int64",
+            "AlphaByte": "unsigned __int64",
+            "MaterialPtr": "unsigned __int64",
+            "DecalMaterialPtr": "unsigned __int64",
+            "TechniqueArrayPtr": "unsigned __int64",
+            "PrimitiveIndexArrayPtr": "unsigned __int64",
+            "BBoxMinX": "unsigned __int64",
+            "BBoxMinY": "unsigned __int64",
+            "BBoxMinZ": "unsigned __int64",
+            "BBoxMaxX": "unsigned __int64",
+            "BBoxMaxY": "unsigned __int64",
+            "BBoxMaxZ": "unsigned __int64"
+        },
+        "TechniqueArray": {
+            "BeginOffset": "unsigned __int64",
+            "EndOffset": "unsigned __int64",
+            "EntryStride": "unsigned __int64"
+        },
+        "MaterialLayer": {
+            "Stride": "unsigned __int64",
+            "FillModeByte": "unsigned __int64",
+            "MatFlags": "unsigned __int64",
+            "Param": "unsigned __int64",
+            "Flags2": "unsigned __int64",
+            "ColorData": "unsigned __int64"
+        },
+        "RemoteSpy": {
+            "RemoteEventVtableRva": "unsigned __int64",
+            "BaseRemoteEventVtableRva": "unsigned __int64",
+            "DescribedBaseRemoteEventVtableRva": "unsigned __int64",
+            "InstanceVtableRva": "unsigned __int64",
+            "FireServerRva": "unsigned __int64",
+            "FireServerVtableSlot": "unsigned __int64",
+            "InstanceParentOffset": "unsigned __int64",
+            "RemoteFuncVTableRva": "unsigned __int64"
+        },
+        "ClassDescriptor": {
+            "ClassName": "unsigned __int64",
+            "PropertyDescriptors": "unsigned __int64",
+            "EventDescriptors": "unsigned __int64",
+            "FunctionDescriptors": "unsigned __int64"
+        },
+        "Descriptor": {
+            "Name": "unsigned __int64"
+        },
+        "PropertyDescriptor": {
+            "TType": "unsigned __int64",
+            "GetSetImpl": "unsigned __int64"
+        },
+        "FunctionDescriptor": {
+            "Function": "unsigned __int64"
+        },
+        "lua_thread": {
+            "ref": "unsigned __int64",
+            "thread": "unsigned __int64",
+            "thread_ref_id": "unsigned __int64",
+            "control": "unsigned __int64",
+            "Value_Ref_Id": "unsigned __int64"
+        },
+        "": {
+            "OFF_STACKSIZE": "int",
+            "LUAI_STACKSIZE": "int",
+            "LS_ENC": "int"
+        },
+        "lua_state": {
+            "stack": "unsigned __int64",
+            "top": "unsigned __int64",
+            "stack_last": "unsigned __int64",
+            "global": "unsigned __int64"
+        },
+        "global_State": {
+            "mainthread": "unsigned __int64",
+            "ref_table": "unsigned __int64"
+        },
+        "ByteCode": {
+            "Pointer": "unsigned __int64",
+            "Size": "unsigned __int64"
+        },
+        "datamodel": {
+            "pointer": "unsigned __int64",
+            "real": "unsigned __int64",
+            "game_loaded": "unsigned __int64",
+            "script_context": "unsigned __int64",
+            "place_id": "unsigned __int64",
+            "game_id": "unsigned __int64"
+        },
+        "instance": {
+            "name": "unsigned __int64",
+            "name_str": "unsigned __int64",
+            "class_desc": "unsigned __int64",
+            "class_name": "string",
+            "children_start": "unsigned __int64",
+            "children_end": "unsigned __int64",
+            "local_player": "unsigned __int64",
+            "value_base": "string"
+        },
+        "RakNet": {
+            "RakNetEncrypt": "unsigned __int64",
+            "RakPeerVirtualTable": "unsigned __int64",
+            "RakNetReceive": "unsigned __int64",
+            "RakNetReliabilityLayerSend": "unsigned __int64",
+            "RakNetSend": "unsigned __int64",
+            "RakPeerProcessNetworkPacket": "unsigned __int64",
+            "RakPeerReceive": "unsigned __int64",
+            "RaknetHandleConnectionState": "unsigned __int64",
+            "RaknetReportNetworkError": "unsigned __int64",
+            "SendPacketsToSelf": "unsigned __int64",
+            "UpdateNetworkLoop": "unsigned __int64",
+            "convertItemEnumToString": "unsigned __int64"
+        },
+        "Highlight": {
+            "Adornee": "unsigned __int64",
+            "DepthMode": "unsigned __int64",
+            "Enabled": "unsigned __int64",
+            "FillColor": "unsigned __int64",
+            "FillTransparency": "unsigned __int64",
+            "LineThickness": "unsigned __int64",
+            "OutlineColor": "unsigned __int64",
+            "OutlineTransparency": "unsigned __int64",
+            "Prop": "unsigned __int64",
+            "SetEnabled": "unsigned __int64"
+        },
+        "DeviceD3D11Gfx": {
+            "VTableRva": "unsigned __int64",
+            "DevicePtr": "unsigned __int64",
+            "ContextPtr": "unsigned __int64",
+            "SwapChainPtr": "unsigned __int64",
+            "ContextObj": "unsigned __int64"
+        },
+        "FastClusterBinding": {
+            "VTableRva": "unsigned __int64",
+            "Owner": "unsigned __int64"
+        },
+        "GeometryD3D11": {
+            "VTableRva": "unsigned __int64"
+        },
+        "FastCluster": {
+            "VTableRva": "unsigned __int64",
+            "VTableRvaSub": "unsigned __int64",
+            "BindingSubobject": "unsigned __int64",
+            "EntityBegin": "unsigned __int64",
+            "EntityEnd": "unsigned __int64"
+        },
+        "FFlag": {
+            "RenderFastClusterOcclusionCulling4": "unsigned __int64"
+        }
+    }
+}
