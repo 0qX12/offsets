@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:36 28/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 20:39 28/10/2026 (GMT)
+/*  Total Offsets   : 508
 /* =============================================================
 */
 
@@ -259,11 +259,10 @@ namespace Structs {
         char pad_0[0x18];
         uintptr_t DevicePtr; // 0x18
         uintptr_t ContextPtr; // 0x20
-        char pad_1[0x8];
-        uintptr_t SwapChainPtr; // 0x30
-        char pad_2[0x178];
+        uintptr_t SwapChainPtr; // 0x28
+        char pad_1[0x180];
         uintptr_t ContextObj; // 0x1b0
-        char pad_3[0x6f5e390];
+        char pad_2[0x6f5e390];
         uintptr_t VTableRva; // 0x6f5e548
     }; // sizeof = 0x6f5e550
 
@@ -538,11 +537,11 @@ namespace Structs {
     struct LocalScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0xa0];
-        uintptr_t ByteCode; // 0x178
-        char pad_2[0x8];
+        char pad_1[0xb0];
         std::string Hash; // 0x188
-    }; // sizeof = 0x1a8
+        char pad_2[0x4b8];
+        uintptr_t ByteCode; // 0x660
+    }; // sizeof = 0x668
 
     struct MaterialColors {
         char pad_0[0x6];
@@ -620,11 +619,11 @@ namespace Structs {
     struct ModuleScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0x48];
-        uintptr_t ByteCode; // 0x120
-        char pad_2[0x28];
+        char pad_1[0x78];
         uintptr_t IsCoreScript; // 0x150
-    }; // sizeof = 0x158
+        char pad_2[0x508];
+        uintptr_t ByteCode; // 0x660
+    }; // sizeof = 0x668
 
     struct MouseService {
         float SensitivityPointer; // 0x0
@@ -637,28 +636,30 @@ namespace Structs {
     }; // sizeof = 0x100
 
     struct ParticleEmitter {
-        char pad_0[0x1a8];
+        char pad_0[0xd4];
+        float VelocityInheritance; // 0xd4
+        char pad_1[0xd0];
         std::string Texture; // 0x1a8
         Vector3 Acceleration; // 0x1c8
-        char pad_1[0x8];
+        char pad_2[0x8];
         Vector2 Lifetime; // 0x1dc
         float RotSpeed; // 0x1e4
-        char pad_2[0x4];
-        float Rotation; // 0x1ec
         char pad_3[0x4];
-        float Speed; // 0x1f4
+        float Rotation; // 0x1ec
         char pad_4[0x4];
+        float Speed; // 0x1f4
+        char pad_5[0x4];
         Vector2 SpreadAngle; // 0x1fc
         float Brightness; // 0x204
         float Drag; // 0x208
-        char pad_5[0x14];
+        char pad_6[0x14];
         float LightEmission; // 0x220
         float LightInfluence; // 0x224
-        char pad_6[0x8];
+        char pad_7[0x8];
         float Rate; // 0x230
-        char pad_7[0x10];
+        char pad_8[0x10];
         float TimeScale; // 0x244
-        float VelocityInheritance; // 0x248
+        char pad_9[0x4];
         float ZOffset; // 0x24c
     }; // sizeof = 0x250
 
@@ -919,10 +920,12 @@ namespace Structs {
         std::string NormalMap; // 0x140
         char pad_4[0x10];
         std::string RoughnessMap; // 0x170
-        char pad_5[0x30];
+        char pad_5[0x10];
+        int AlphaMode; // 0x1a0
+        char pad_6[0x1c];
         Color3 Color; // 0x1c0
         Color3 EmissiveTint; // 0x1cc
-        int AlphaMode; // 0x1d8
+        char pad_7[0x4];
         float EmissiveStrength; // 0x1dc
     }; // sizeof = 0x1e0
 
@@ -1075,13 +1078,6 @@ namespace Structs {
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
-    struct global_State {
-        char pad_0[0x70];
-        uintptr_t mainthread; // 0x70
-        char pad_1[0x5a0];
-        uintptr_t ref_table; // 0x618
-    }; // sizeof = 0x620
-
     struct instance {
         uintptr_t name_str; // 0x0
         std::string class_name; // 0x8
@@ -1097,9 +1093,7 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x38];
-        uintptr_t global; // 0x38
-        char pad_1[0x8];
+        char pad_0[0x48];
         uintptr_t stack; // 0x48
         uintptr_t top; // 0x50
         uintptr_t stack_last; // 0x58
@@ -1120,16 +1114,16 @@ namespace Structs {
         uintptr_t pointer; // 0x18
         char pad_1[0x8];
         uintptr_t size; // 0x28
-        char pad_2[0xf0];
-        uintptr_t modulescript_pointer; // 0x120
-        char pad_3[0x28];
+        char pad_2[0x120];
         uintptr_t modulescript_module_state; // 0x150
         // alias: core_script = 0x150 (unsigned __int64)
         // alias: IsRobloxScript = 0x150 (unsigned __int64)
-        char pad_4[0x20];
-        uintptr_t localscript_pointer; // 0x178
+        char pad_3[0x28];
         uintptr_t modulescript_detection; // 0x180
-    }; // sizeof = 0x188
+        char pad_4[0x4d8];
+        uintptr_t modulescript_pointer; // 0x660
+        // alias: localscript::pointer = 0x660 (unsigned __int64)
+    }; // sizeof = 0x668
 
     struct task_scheduler {
         char pad_0[0x7fd07c8];
