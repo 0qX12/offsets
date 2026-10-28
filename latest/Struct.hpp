@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 21:18 28/10/2026 (GMT)
-/*  Total Offsets   : 494
+/*  Dumped At       : 21:19 28/10/2026 (GMT)
+/*  Total Offsets   : 486
 /* =============================================================
 */
 
@@ -609,13 +609,7 @@ namespace Structs {
 
     struct MouseService {
         float SensitivityPointer; // 0x0
-        char pad_0[0xb8];
-        Vector2 MousePosition; // 0xbc
-        char pad_1[0x24];
-        uintptr_t InputObject; // 0xe8
-        char pad_2[0x8];
-        uintptr_t InputObject2; // 0xf8
-    }; // sizeof = 0x100
+    }; // sizeof = 0x4
 
     struct ParticleEmitter {
         char pad_0[0x1a8];
@@ -667,20 +661,11 @@ namespace Structs {
         char pad_9[0x380];
         int CameraMode; // 0x73c
         std::string LocaleId; // 0x740
-        char pad_10[0xa90];
-        uintptr_t Mouse; // 0x11f0
-    }; // sizeof = 0x11f8
+    }; // sizeof = 0x760
 
     struct PlayerConfigurer {
         uintptr_t Pointer; // 0x0
     }; // sizeof = 0x8
-
-    struct PlayerMouse {
-        char pad_0[0xb0];
-        std::string Icon; // 0xb0
-        char pad_1[0x68];
-        uintptr_t Workspace; // 0x138
-    }; // sizeof = 0x140
 
     struct Primitive {
         char pad_0[0x6];
@@ -801,13 +786,6 @@ namespace Structs {
         char pad_1[0x8];
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
-
-    struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x50];
-        uintptr_t HeartbeatTask; // 0xc8
-    }; // sizeof = 0xd0
 
     struct Script {
         char pad_0[0xb8];
