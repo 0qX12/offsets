@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:40 28/10/2026 (GMT)
-/*  Total Offsets   : 508
+/*  Dumped At       : 21:18 28/10/2026 (GMT)
+/*  Total Offsets   : 494
 /* =============================================================
 */
 
@@ -14,12 +14,6 @@
 #include <string>
 namespace Offsets {
     inline std::string ClientVersion = "version-5a21b87bbc2641cf";
-
-    namespace  {
-         inline constexpr uintptr_t LS_ENC = 0x2;
-         inline constexpr uintptr_t LUAI_STACKSIZE = 0x2d;
-         inline constexpr uintptr_t OFF_STACKSIZE = 0x70;
-    }
 
     namespace AirProperties {
          inline constexpr uintptr_t AirDensity = 0x18;
@@ -99,13 +93,8 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0xa0;
     }
 
-    namespace ByteCode {
-         inline constexpr uintptr_t Pointer = 0x18;
-         inline constexpr uintptr_t Size = 0x28;
-    }
-
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -265,7 +254,7 @@ namespace Offsets {
 
     namespace GuiBase2D {
          inline constexpr uintptr_t AbsolutePosition = 0xf4;
-         inline constexpr uintptr_t AbsoluteRotation = 0xd0;
+         inline constexpr uintptr_t AbsoluteRotation = 0x55c;
          inline constexpr uintptr_t AbsoluteSize = 0xfc;
     }
 
@@ -277,7 +266,7 @@ namespace Offsets {
          inline constexpr uintptr_t LayoutOrder = 0x544;
          inline constexpr uintptr_t Position = 0x4d8;
          inline constexpr uintptr_t RichText = 0xba0;
-         inline constexpr uintptr_t Rotation = 0xd0;
+         inline constexpr uintptr_t Rotation = 0x55c;
          inline constexpr uintptr_t ScreenGui_Enabled = 0x48c;
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
@@ -315,7 +304,7 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0x20;
+         inline constexpr uintptr_t HumanoidStateID = 0x190;
          inline constexpr uintptr_t IsWalking = 0xa2e;
          inline constexpr uintptr_t Jump = 0x1d0;
          inline constexpr uintptr_t JumpHeight = 0x194;
@@ -337,7 +326,7 @@ namespace Offsets {
          inline constexpr uintptr_t WalkSpeed = 0x1c4;
          inline constexpr uintptr_t WalkTimer = 0x0;
          inline constexpr uintptr_t Walkspeed = 0x1c4;
-         inline constexpr uintptr_t WalkspeedCheck = 0x39c;
+         inline constexpr uintptr_t WalkspeedCheck = 0x0;
     }
 
     namespace Instance {
@@ -358,7 +347,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -384,7 +373,6 @@ namespace Offsets {
     }
 
     namespace LocalScript {
-         inline constexpr uintptr_t ByteCode = 0x660;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
@@ -449,7 +437,6 @@ namespace Offsets {
     }
 
     namespace ModuleScript {
-         inline constexpr uintptr_t ByteCode = 0x660;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t IsCoreScript = 0x150;
     }
@@ -469,19 +456,19 @@ namespace Offsets {
          inline constexpr uintptr_t LightEmission = 0x220;
          inline constexpr uintptr_t LightInfluence = 0x224;
          inline constexpr uintptr_t Rate = 0x230;
-         inline constexpr uintptr_t RotSpeed = 0x1e4;
+         inline constexpr uintptr_t RotSpeed = 0x1e8;
          inline constexpr uintptr_t Rotation = 0x1ec;
          inline constexpr uintptr_t Speed = 0x1f4;
          inline constexpr uintptr_t SpreadAngle = 0x1fc;
          inline constexpr uintptr_t Texture = 0x1a8;
          inline constexpr uintptr_t TimeScale = 0x244;
-         inline constexpr uintptr_t VelocityInheritance = 0xd4;
+         inline constexpr uintptr_t VelocityInheritance = 0x248;
          inline constexpr uintptr_t ZOffset = 0x24c;
     }
 
     namespace Player {
          inline constexpr uintptr_t AccountAge = 0x364;
-         inline constexpr uintptr_t CameraMode = 0x378;
+         inline constexpr uintptr_t CameraMode = 0x73c;
          inline constexpr uintptr_t DisplayName = 0x120;
          inline constexpr uintptr_t HealthDisplayDistance = 0x3a0;
          inline constexpr uintptr_t LocalPlayer = 0x118;
@@ -586,7 +573,7 @@ namespace Offsets {
 
     namespace RunService {
          inline constexpr uintptr_t HeartbeatFPS = 0x70;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
+         inline constexpr uintptr_t HeartbeatTask = 0xc8;
     }
 
     namespace Script {
@@ -648,7 +635,7 @@ namespace Offsets {
     }
 
     namespace SurfaceAppearance {
-         inline constexpr uintptr_t AlphaMode = 0x1a0;
+         inline constexpr uintptr_t AlphaMode = 0x1d8;
          inline constexpr uintptr_t Color = 0x1c0;
          inline constexpr uintptr_t ColorMap = 0xb0;
          inline constexpr uintptr_t EmissiveMaskContent = 0xe0;
@@ -777,12 +764,6 @@ namespace Offsets {
          inline constexpr uintptr_t value_base = 0xa0;
     }
 
-    namespace lua_state {
-         inline constexpr uintptr_t stack = 0x48;
-         inline constexpr uintptr_t stack_last = 0x58;
-         inline constexpr uintptr_t top = 0x50;
-    }
-
     namespace lua_thread {
          inline constexpr uintptr_t Value_Ref_Id = 0x334;
          inline constexpr uintptr_t control = 0x318;
@@ -794,12 +775,8 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t IsRobloxScript = 0x150;
          inline constexpr uintptr_t core_script = 0x150;
-         inline constexpr uintptr_t localscript_pointer = 0x660;
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
-         inline constexpr uintptr_t modulescript_pointer = 0x660;
-         inline constexpr uintptr_t pointer = 0x18;
-         inline constexpr uintptr_t size = 0x28;
     }
 
     namespace task_scheduler {
