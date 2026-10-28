@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 21:19 28/10/2026 (GMT)
-/*  Total Offsets   : 486
+/*  Dumped At       : 21:21 28/10/2026 (GMT)
+/*  Total Offsets   : 492
 /* =============================================================
 */
 
@@ -442,6 +442,9 @@ namespace Offsets {
     }
 
     namespace MouseService {
+         inline constexpr uintptr_t InputObject = 0xe8;
+         inline constexpr uintptr_t InputObject2 = 0xf8;
+         inline constexpr uintptr_t MousePosition = 0xbc;
          inline constexpr uintptr_t SensitivityPointer = 0x0;
     }
 
@@ -473,6 +476,7 @@ namespace Offsets {
          inline constexpr uintptr_t MaxZoomDistance = 0x370;
          inline constexpr uintptr_t MinZoomDistance = 0x374;
          inline constexpr uintptr_t ModelInstance = 0x2a0;
+         inline constexpr uintptr_t Mouse = 0x11f0;
          inline constexpr uintptr_t NameDisplayDistance = 0x3b0;
          inline constexpr uintptr_t Team = 0x2e0;
          inline constexpr uintptr_t TeamColor = 0x3b8;
@@ -481,6 +485,11 @@ namespace Offsets {
 
     namespace PlayerConfigurer {
          inline constexpr uintptr_t Pointer = 0x0;
+    }
+
+    namespace PlayerMouse {
+         inline constexpr uintptr_t Icon = 0xb0;
+         inline constexpr uintptr_t Workspace = 0x138;
     }
 
     namespace Primitive {
