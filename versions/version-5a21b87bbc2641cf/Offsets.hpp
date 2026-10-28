@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 21:41 28/10/2026 (GMT)
-/*  Total Offsets   : 492
+/*  Dumped At       : 22:17 28/10/2026 (GMT)
+/*  Total Offsets   : 509
 /* =============================================================
 */
 
@@ -14,6 +14,12 @@
 #include <string>
 namespace Offsets {
     inline std::string ClientVersion = "version-5a21b87bbc2641cf";
+
+    namespace  {
+         inline constexpr uintptr_t LS_ENC = 0x2;
+         inline constexpr uintptr_t LUAI_STACKSIZE = 0x2d;
+         inline constexpr uintptr_t OFF_STACKSIZE = 0x70;
+    }
 
     namespace AirProperties {
          inline constexpr uintptr_t AirDensity = 0x18;
@@ -23,7 +29,7 @@ namespace Offsets {
     namespace AnimationTrack {
          inline constexpr uintptr_t Animation = 0xa0;
          inline constexpr uintptr_t Animator = 0xf8;
-         inline constexpr uintptr_t IsPlaying = 0xa10;
+         inline constexpr uintptr_t IsPlaying = 0x406;
          inline constexpr uintptr_t Looped = 0xcc;
          inline constexpr uintptr_t Speed = 0xbc;
          inline constexpr uintptr_t TimePosition = 0xc0;
@@ -82,19 +88,24 @@ namespace Offsets {
     }
 
     namespace BloomEffect {
-         inline constexpr uintptr_t Enabled = 0x37e;
+         inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t Intensity = 0xa0;
          inline constexpr uintptr_t Size = 0xa4;
          inline constexpr uintptr_t Threshold = 0xa8;
     }
 
     namespace BlurEffect {
-         inline constexpr uintptr_t Enabled = 0x37e;
+         inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t Size = 0xa0;
     }
 
+    namespace ByteCode {
+         inline constexpr uintptr_t Pointer = 0x18;
+         inline constexpr uintptr_t Size = 0x28;
+    }
+
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -136,12 +147,12 @@ namespace Offsets {
     namespace ColorCorrectionEffect {
          inline constexpr uintptr_t Brightness = 0xac;
          inline constexpr uintptr_t Contrast = 0xb0;
-         inline constexpr uintptr_t Enabled = 0x37e;
+         inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t TintColor = 0xa0;
     }
 
     namespace ColorGradingEffect {
-         inline constexpr uintptr_t Enabled = 0x37e;
+         inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t TonemapperPreset = 0xa0;
     }
 
@@ -163,7 +174,7 @@ namespace Offsets {
     }
 
     namespace DepthOfFieldEffect {
-         inline constexpr uintptr_t Enabled = 0x37e;
+         inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t FarIntensity = 0xa0;
          inline constexpr uintptr_t FocusDistance = 0xa4;
          inline constexpr uintptr_t InFocusRadius = 0xa8;
@@ -347,7 +358,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -373,6 +384,7 @@ namespace Offsets {
     }
 
     namespace LocalScript {
+         inline constexpr uintptr_t ByteCode = 0x178;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
@@ -437,6 +449,7 @@ namespace Offsets {
     }
 
     namespace ModuleScript {
+         inline constexpr uintptr_t ByteCode = 0x120;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t IsCoreScript = 0x150;
     }
@@ -624,7 +637,7 @@ namespace Offsets {
     }
 
     namespace SunRaysEffect {
-         inline constexpr uintptr_t Enabled = 0x37e;
+         inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t Intensity = 0xa0;
          inline constexpr uintptr_t Spread = 0xa4;
     }
@@ -748,6 +761,11 @@ namespace Offsets {
          inline constexpr uintptr_t script_context = 0x440;
     }
 
+    namespace global_State {
+         inline constexpr uintptr_t mainthread = 0x70;
+         inline constexpr uintptr_t ref_table = 0x618;
+    }
+
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -757,6 +775,13 @@ namespace Offsets {
          inline constexpr uintptr_t name = 0x68;
          inline constexpr uintptr_t name_str = 0x0;
          inline constexpr uintptr_t value_base = 0xa0;
+    }
+
+    namespace lua_state {
+         inline constexpr uintptr_t global = 0x38;
+         inline constexpr uintptr_t stack = 0x48;
+         inline constexpr uintptr_t stack_last = 0x58;
+         inline constexpr uintptr_t top = 0x50;
     }
 
     namespace lua_thread {
@@ -770,8 +795,12 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t IsRobloxScript = 0x150;
          inline constexpr uintptr_t core_script = 0x150;
+         inline constexpr uintptr_t localscript_pointer = 0x178;
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
+         inline constexpr uintptr_t modulescript_pointer = 0x120;
+         inline constexpr uintptr_t pointer = 0x18;
+         inline constexpr uintptr_t size = 0x28;
     }
 
     namespace task_scheduler {

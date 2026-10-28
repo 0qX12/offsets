@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 21:41 28/10/2026 (GMT)
-/*  Total Offsets   : 492
+/*  Dumped At       : 22:17 28/10/2026 (GMT)
+/*  Total Offsets   : 509
 /* =============================================================
 */
 
@@ -22,6 +22,10 @@ namespace Structs {
     struct Matrix3x3 { float data[9]; };
     struct UDim2 { uint8_t raw[16]; };
     struct ViewMatrix_t { float data[16]; };
+
+    inline constexpr uintptr_t LS_ENC = 0x2;
+    inline constexpr uintptr_t LUAI_STACKSIZE = 0x2d;
+    inline constexpr uintptr_t OFF_STACKSIZE = 0x70;
 
     struct AirProperties {
         char pad_0[0x18];
@@ -40,9 +44,9 @@ namespace Structs {
         bool Looped; // 0xcc
         char pad_3[0x2b];
         uintptr_t Animator; // 0xf8
-        char pad_4[0x910];
-        bool IsPlaying; // 0xa10
-    }; // sizeof = 0xa11
+        char pad_4[0x306];
+        bool IsPlaying; // 0x406
+    }; // sizeof = 0x407
 
     struct Animator {
         char pad_0[0x900];
@@ -113,25 +117,32 @@ namespace Structs {
     }; // sizeof = 0x19c
 
     struct BloomEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float Intensity; // 0xa0
         float Size; // 0xa4
         float Threshold; // 0xa8
-        char pad_1[0x2d2];
-        bool Enabled; // 0x37e
-    }; // sizeof = 0x37f
+    }; // sizeof = 0xac
 
     struct BlurEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float Size; // 0xa0
-        char pad_1[0x2da];
-        bool Enabled; // 0x37e
-    }; // sizeof = 0x37f
+    }; // sizeof = 0xa4
+
+    struct ByteCode {
+        char pad_0[0x18];
+        uintptr_t Pointer; // 0x18
+        char pad_1[0x8];
+        uintptr_t Size; // 0x28
+    }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -186,20 +197,20 @@ namespace Structs {
     }; // sizeof = 0x114
 
     struct ColorCorrectionEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         Color3 TintColor; // 0xa0
         float Brightness; // 0xac
         float Contrast; // 0xb0
-        char pad_1[0x2ca];
-        bool Enabled; // 0x37e
-    }; // sizeof = 0x37f
+    }; // sizeof = 0xb4
 
     struct ColorGradingEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         int TonemapperPreset; // 0xa0
-        char pad_1[0x2da];
-        bool Enabled; // 0x37e
-    }; // sizeof = 0x37f
+    }; // sizeof = 0xa4
 
     struct DataModel {
         char pad_0[0x8];
@@ -230,14 +241,14 @@ namespace Structs {
     }; // sizeof = 0x590
 
     struct DepthOfFieldEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float FarIntensity; // 0xa0
         float FocusDistance; // 0xa4
         float InFocusRadius; // 0xa8
         float NearIntensity; // 0xac
-        char pad_1[0x2ce];
-        bool Enabled; // 0x37e
-    }; // sizeof = 0x37f
+    }; // sizeof = 0xb0
 
     struct Descriptor {
         char pad_0[0x8];
@@ -488,9 +499,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb0];
@@ -523,7 +534,9 @@ namespace Structs {
     struct LocalScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0xb0];
+        char pad_1[0xa0];
+        uintptr_t ByteCode; // 0x178
+        char pad_2[0x8];
         std::string Hash; // 0x188
     }; // sizeof = 0x1a8
 
@@ -603,7 +616,9 @@ namespace Structs {
     struct ModuleScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0x78];
+        char pad_1[0x48];
+        uintptr_t ByteCode; // 0x120
+        char pad_2[0x28];
         uintptr_t IsCoreScript; // 0x150
     }; // sizeof = 0x158
 
@@ -875,12 +890,12 @@ namespace Structs {
     }; // sizeof = 0x100
 
     struct SunRaysEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float Intensity; // 0xa0
         float Spread; // 0xa4
-        char pad_1[0x2d6];
-        bool Enabled; // 0x37e
-    }; // sizeof = 0x37f
+    }; // sizeof = 0xa8
 
     struct SurfaceAppearance {
         char pad_0[0xb0];
@@ -1049,6 +1064,13 @@ namespace Structs {
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
+    struct global_State {
+        char pad_0[0x70];
+        uintptr_t mainthread; // 0x70
+        char pad_1[0x5a0];
+        uintptr_t ref_table; // 0x618
+    }; // sizeof = 0x620
+
     struct instance {
         uintptr_t name_str; // 0x0
         std::string class_name; // 0x8
@@ -1063,6 +1085,15 @@ namespace Structs {
         uintptr_t local_player; // 0x118
     }; // sizeof = 0x120
 
+    struct lua_state {
+        char pad_0[0x38];
+        uintptr_t global; // 0x38
+        char pad_1[0x8];
+        uintptr_t stack; // 0x48
+        uintptr_t top; // 0x50
+        uintptr_t stack_last; // 0x58
+    }; // sizeof = 0x60
+
     struct lua_thread {
         char pad_0[0x310];
         uintptr_t ref; // 0x310
@@ -1074,11 +1105,18 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x150];
+        char pad_0[0x18];
+        uintptr_t pointer; // 0x18
+        char pad_1[0x8];
+        uintptr_t size; // 0x28
+        char pad_2[0xf0];
+        uintptr_t modulescript_pointer; // 0x120
+        char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150
         // alias: core_script = 0x150 (unsigned __int64)
         // alias: IsRobloxScript = 0x150 (unsigned __int64)
-        char pad_1[0x28];
+        char pad_4[0x20];
+        uintptr_t localscript_pointer; // 0x178
         uintptr_t modulescript_detection; // 0x180
     }; // sizeof = 0x188
 

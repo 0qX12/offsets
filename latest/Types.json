@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "21:41 28/10/2026",
+    "Dumped At": "22:17 28/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -495,11 +495,13 @@
         },
         "LocalScript": {
             "GUID": "string",
-            "Hash": "string"
+            "Hash": "string",
+            "ByteCode": "unsigned __int64"
         },
         "ModuleScript": {
             "GUID": "string",
-            "IsCoreScript": "unsigned __int64"
+            "IsCoreScript": "unsigned __int64",
+            "ByteCode": "unsigned __int64"
         },
         "Script": {
             "GUID": "string",
@@ -540,7 +542,11 @@
             "modulescript::module_state": "unsigned __int64",
             "core_script": "unsigned __int64",
             "IsRobloxScript": "unsigned __int64",
-            "modulescript::detection": "unsigned __int64"
+            "modulescript::detection": "unsigned __int64",
+            "modulescript::pointer": "unsigned __int64",
+            "localscript::pointer": "unsigned __int64",
+            "pointer": "unsigned __int64",
+            "size": "unsigned __int64"
         },
         "userdata": {
             "Identity": "unsigned __int64",
@@ -611,6 +617,25 @@
             "thread_ref_id": "unsigned __int64",
             "control": "unsigned __int64",
             "Value_Ref_Id": "unsigned __int64"
+        },
+        "": {
+            "OFF_STACKSIZE": "int",
+            "LUAI_STACKSIZE": "int",
+            "LS_ENC": "int"
+        },
+        "lua_state": {
+            "stack": "unsigned __int64",
+            "top": "unsigned __int64",
+            "stack_last": "unsigned __int64",
+            "global": "unsigned __int64"
+        },
+        "global_State": {
+            "mainthread": "unsigned __int64",
+            "ref_table": "unsigned __int64"
+        },
+        "ByteCode": {
+            "Pointer": "unsigned __int64",
+            "Size": "unsigned __int64"
         },
         "datamodel": {
             "pointer": "unsigned __int64",
