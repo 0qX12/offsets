@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:27 28/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 22:40 28/10/2026 (GMT)
+/*  Total Offsets   : 508
 /* =============================================================
 */
 
@@ -44,9 +44,9 @@ namespace Structs {
         bool Looped; // 0xcc
         char pad_3[0x2b];
         uintptr_t Animator; // 0xf8
-        char pad_4[0x306];
-        bool IsPlaying; // 0x406
-    }; // sizeof = 0x407
+        char pad_4[0x910];
+        bool IsPlaying; // 0xa10
+    }; // sizeof = 0xa11
 
     struct Animator {
         char pad_0[0x900];
@@ -140,9 +140,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -381,15 +381,15 @@ namespace Structs {
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
         // alias: BackgroundTransparency = 0x514 (float)
-        char pad_3[0x20];
-        bool Visible; // 0x540
-        char pad_4[0x3];
+        char pad_3[0x24];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_4[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_5[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x438];
+        char pad_6[0x5];
+        bool Visible; // 0x575
+        char pad_7[0x432];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
@@ -460,18 +460,20 @@ namespace Structs {
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
         char pad_11[0x2];
-        int HumanoidStateID; // 0x1d0
-        // alias: Jump = 0x1d0 (bool)
-        // alias: PlatformStand = 0x1d2 (bool)
-        // alias: RequiresNeck = 0x1d3 (bool)
+        bool Jump; // 0x1d0
+        char pad_12[0x1];
+        bool PlatformStand; // 0x1d2
+        bool RequiresNeck; // 0x1d3
         // alias: Sit = 0x1d3 (bool)
-        char pad_12[0x2];
+        char pad_13[0x2];
         bool UseJumpPower; // 0x1d6
-        char pad_13[0x289];
+        char pad_14[0x279];
+        int HumanoidStateID; // 0x450
+        char pad_15[0xc];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_14[0x440];
+        char pad_16[0x440];
         int HumanoidState; // 0x8a8
-        char pad_15[0x182];
+        char pad_17[0x182];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
@@ -499,9 +501,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb0];
@@ -534,11 +536,11 @@ namespace Structs {
     struct LocalScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0xa0];
-        uintptr_t ByteCode; // 0x178
-        char pad_2[0x8];
+        char pad_1[0xb0];
         std::string Hash; // 0x188
-    }; // sizeof = 0x1a8
+        char pad_2[0x4b8];
+        uintptr_t ByteCode; // 0x660
+    }; // sizeof = 0x668
 
     struct MaterialColors {
         char pad_0[0x6];
@@ -616,11 +618,11 @@ namespace Structs {
     struct ModuleScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0x48];
-        uintptr_t ByteCode; // 0x120
-        char pad_2[0x28];
+        char pad_1[0x78];
         uintptr_t IsCoreScript; // 0x150
-    }; // sizeof = 0x158
+        char pad_2[0x508];
+        uintptr_t ByteCode; // 0x660
+    }; // sizeof = 0x668
 
     struct MouseService {
         float SensitivityPointer; // 0x0
@@ -842,25 +844,27 @@ namespace Structs {
     }; // sizeof = 0x208
 
     struct Sky {
-        char pad_0[0xb0];
+        char pad_0[0x10];
+        float MoonAngularSize; // 0x10
+        char pad_1[0x9c];
         std::string MoonTextureId; // 0xb0
-        char pad_1[0x10];
-        std::string SkyboxBk; // 0xe0
         char pad_2[0x10];
-        std::string SkyboxDn; // 0x110
+        std::string SkyboxBk; // 0xe0
         char pad_3[0x10];
-        std::string SkyboxFt; // 0x140
+        std::string SkyboxDn; // 0x110
         char pad_4[0x10];
-        std::string SkyboxLf; // 0x170
+        std::string SkyboxFt; // 0x140
         char pad_5[0x10];
-        std::string SkyboxRt; // 0x1a0
+        std::string SkyboxLf; // 0x170
         char pad_6[0x10];
-        std::string SkyboxUp; // 0x1d0
+        std::string SkyboxRt; // 0x1a0
         char pad_7[0x10];
+        std::string SkyboxUp; // 0x1d0
+        char pad_8[0x10];
         std::string SunTextureId; // 0x200
         Vector3 SkyboxOrientation; // 0x220
         // alias: SunAngularSize = 0x224 (float)
-        float MoonAngularSize; // 0x22c
+        char pad_9[0x4];
         int StarCount; // 0x230
     }; // sizeof = 0x234
 
@@ -881,13 +885,14 @@ namespace Structs {
     }; // sizeof = 0x129
 
     struct SpawnLocation {
-        char pad_0[0x1d0];
+        char pad_0[0x125];
+        bool Neutral; // 0x125
+        char pad_1[0xaa];
         int ForcefieldDuration; // 0x1d0
         int TeamColor; // 0x1d4
         bool AllowTeamChangeOnTouch; // 0x1d8
         bool Enabled; // 0x1d9
-        bool Neutral; // 0x1da
-    }; // sizeof = 0x1db
+    }; // sizeof = 0x1da
 
     struct SpecialMesh {
         char pad_0[0xac];
@@ -1001,13 +1006,13 @@ namespace Structs {
     struct VisualEngine {
         char pad_0[0x1b0];
         ViewMatrix_t ViewMatrix; // 0x1b0
-        char pad_1[0x920];
+        char pad_1[0x900];
+        uintptr_t FakeDataModel; // 0xaf0
+        char pad_2[0x18];
         Vector2 Dimensions; // 0xb10
-        char pad_2[0x128];
+        char pad_3[0x128];
         uintptr_t RenderView; // 0xc40
-        char pad_3[0x180];
-        uintptr_t FakeDataModel; // 0xdc8
-        char pad_4[0x8799448];
+        char pad_4[0x87995d0];
         uintptr_t Pointer; // 0x879a218
     }; // sizeof = 0x879a220
 
@@ -1071,13 +1076,6 @@ namespace Structs {
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
-    struct global_State {
-        char pad_0[0x70];
-        uintptr_t mainthread; // 0x70
-        char pad_1[0x5a0];
-        uintptr_t ref_table; // 0x618
-    }; // sizeof = 0x620
-
     struct instance {
         uintptr_t name_str; // 0x0
         std::string class_name; // 0x8
@@ -1093,9 +1091,7 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x38];
-        uintptr_t global; // 0x38
-        char pad_1[0x8];
+        char pad_0[0x48];
         uintptr_t stack; // 0x48
         uintptr_t top; // 0x50
         uintptr_t stack_last; // 0x58
@@ -1116,16 +1112,16 @@ namespace Structs {
         uintptr_t pointer; // 0x18
         char pad_1[0x8];
         uintptr_t size; // 0x28
-        char pad_2[0xf0];
-        uintptr_t modulescript_pointer; // 0x120
-        char pad_3[0x28];
+        char pad_2[0x120];
         uintptr_t modulescript_module_state; // 0x150
         // alias: core_script = 0x150 (unsigned __int64)
         // alias: IsRobloxScript = 0x150 (unsigned __int64)
-        char pad_4[0x20];
-        uintptr_t localscript_pointer; // 0x178
+        char pad_3[0x28];
         uintptr_t modulescript_detection; // 0x180
-    }; // sizeof = 0x188
+        char pad_4[0x4d8];
+        uintptr_t modulescript_pointer; // 0x660
+        // alias: localscript::pointer = 0x660 (unsigned __int64)
+    }; // sizeof = 0x668
 
     struct task_scheduler {
         char pad_0[0x7fd07c8];

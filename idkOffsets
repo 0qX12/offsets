@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:27 28/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 22:40 28/10/2026 (GMT)
+/*  Total Offsets   : 508
 /* =============================================================
 */
 
@@ -29,7 +29,7 @@ namespace Offsets {
     namespace AnimationTrack {
          inline constexpr uintptr_t Animation = 0xa0;
          inline constexpr uintptr_t Animator = 0xf8;
-         inline constexpr uintptr_t IsPlaying = 0x406;
+         inline constexpr uintptr_t IsPlaying = 0xa10;
          inline constexpr uintptr_t Looped = 0xcc;
          inline constexpr uintptr_t Speed = 0xbc;
          inline constexpr uintptr_t TimePosition = 0xc0;
@@ -105,7 +105,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -282,7 +282,7 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x540;
+         inline constexpr uintptr_t Visible = 0x575;
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
@@ -315,7 +315,7 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0x1d0;
+         inline constexpr uintptr_t HumanoidStateID = 0x450;
          inline constexpr uintptr_t IsWalking = 0xa2e;
          inline constexpr uintptr_t Jump = 0x1d0;
          inline constexpr uintptr_t JumpHeight = 0x194;
@@ -358,7 +358,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -384,7 +384,7 @@ namespace Offsets {
     }
 
     namespace LocalScript {
-         inline constexpr uintptr_t ByteCode = 0x178;
+         inline constexpr uintptr_t ByteCode = 0x660;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
@@ -449,7 +449,7 @@ namespace Offsets {
     }
 
     namespace ModuleScript {
-         inline constexpr uintptr_t ByteCode = 0x120;
+         inline constexpr uintptr_t ByteCode = 0x660;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t IsCoreScript = 0x150;
     }
@@ -603,7 +603,7 @@ namespace Offsets {
     }
 
     namespace Sky {
-         inline constexpr uintptr_t MoonAngularSize = 0x22c;
+         inline constexpr uintptr_t MoonAngularSize = 0x10;
          inline constexpr uintptr_t MoonTextureId = 0xb0;
          inline constexpr uintptr_t SkyboxBk = 0xe0;
          inline constexpr uintptr_t SkyboxDn = 0x110;
@@ -632,7 +632,7 @@ namespace Offsets {
          inline constexpr uintptr_t AllowTeamChangeOnTouch = 0x1d8;
          inline constexpr uintptr_t Enabled = 0x1d9;
          inline constexpr uintptr_t ForcefieldDuration = 0x1d0;
-         inline constexpr uintptr_t Neutral = 0x1da;
+         inline constexpr uintptr_t Neutral = 0x125;
          inline constexpr uintptr_t TeamColor = 0x1d4;
     }
 
@@ -720,7 +720,7 @@ namespace Offsets {
 
     namespace VisualEngine {
          inline constexpr uintptr_t Dimensions = 0xb10;
-         inline constexpr uintptr_t FakeDataModel = 0xdc8;
+         inline constexpr uintptr_t FakeDataModel = 0xaf0;
          inline constexpr uintptr_t Pointer = 0x879a218;
          inline constexpr uintptr_t RenderView = 0xc40;
          inline constexpr uintptr_t ViewMatrix = 0x1b0;
@@ -766,11 +766,6 @@ namespace Offsets {
          inline constexpr uintptr_t script_context = 0x440;
     }
 
-    namespace global_State {
-         inline constexpr uintptr_t mainthread = 0x70;
-         inline constexpr uintptr_t ref_table = 0x618;
-    }
-
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -783,7 +778,6 @@ namespace Offsets {
     }
 
     namespace lua_state {
-         inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x58;
          inline constexpr uintptr_t top = 0x50;
@@ -800,10 +794,10 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t IsRobloxScript = 0x150;
          inline constexpr uintptr_t core_script = 0x150;
-         inline constexpr uintptr_t localscript_pointer = 0x178;
+         inline constexpr uintptr_t localscript_pointer = 0x660;
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
-         inline constexpr uintptr_t modulescript_pointer = 0x120;
+         inline constexpr uintptr_t modulescript_pointer = 0x660;
          inline constexpr uintptr_t pointer = 0x18;
          inline constexpr uintptr_t size = 0x28;
     }

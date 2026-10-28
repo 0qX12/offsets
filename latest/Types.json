@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "22:27 28/10/2026",
+    "Dumped At": "22:40 28/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -630,12 +630,7 @@
         "lua_state": {
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
-            "stack_last": "unsigned __int64",
-            "global": "unsigned __int64"
-        },
-        "global_State": {
-            "mainthread": "unsigned __int64",
-            "ref_table": "unsigned __int64"
+            "stack_last": "unsigned __int64"
         },
         "ByteCode": {
             "Pointer": "unsigned __int64",
@@ -660,7 +655,6 @@
             "value_base": "string"
         },
         "RakNet": {
-            "RaknetReportNetworkError": "unsigned __int64",
             "RakNetEncrypt": "unsigned __int64",
             "RakPeerVirtualTable": "unsigned __int64",
             "RakNetReceive": "unsigned __int64",
@@ -669,6 +663,7 @@
             "RakPeerProcessNetworkPacket": "unsigned __int64",
             "RakPeerReceive": "unsigned __int64",
             "RaknetHandleConnectionState": "unsigned __int64",
+            "RaknetReportNetworkError": "unsigned __int64",
             "SendPacketsToSelf": "unsigned __int64",
             "UpdateNetworkLoop": "unsigned __int64",
             "convertItemEnumToString": "unsigned __int64"
