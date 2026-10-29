@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:25 29/10/2026 (GMT)
+/*  Dumped At       : 14:28 29/10/2026 (GMT)
 /*  Total Offsets   : 511
 /* =============================================================
 */
@@ -410,12 +410,11 @@ namespace Structs {
         char pad_3[0x4];
         uintptr_t DepthMode; // 0xc8
         // alias: FillTransparency = 0xcc (unsigned __int64)
+        uintptr_t LineThickness; // 0xd0
+        // alias: OutlineTransparency = 0xd4 (unsigned __int64)
         char pad_4[0x4];
-        uintptr_t OutlineTransparency; // 0xd4
         uintptr_t Enabled; // 0xdc
-        char pad_5[0x42];
-        uintptr_t LineThickness; // 0x126
-        char pad_6[0xbee4f2];
+        char pad_5[0xbee53c];
         uintptr_t SetEnabled; // 0xbee620
     }; // sizeof = 0xbee628
 
@@ -819,10 +818,11 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0xc0];
-        double HeartbeatFPS; // 0xc0
-        uintptr_t HeartbeatTask; // 0xc8
-    }; // sizeof = 0xd0
+        char pad_0[0x28];
+        double HeartbeatFPS; // 0x28
+        char pad_1[0x120];
+        uintptr_t HeartbeatTask; // 0x150
+    }; // sizeof = 0x158
 
     struct Script {
         char pad_0[0xb8];
