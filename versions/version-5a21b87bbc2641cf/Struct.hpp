@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:59 29/10/2026 (GMT)
+/*  Dumped At       : 18:02 29/10/2026 (GMT)
 /*  Total Offsets   : 509
 /* =============================================================
 */
@@ -505,8 +505,7 @@ namespace Structs {
     }; // sizeof = 0x40
 
     struct Lighting {
-        bool GlobalShadows; // 0x0
-        char pad_0[0xaf];
+        char pad_0[0xb0];
         uintptr_t ClockTime; // 0xb0
         Color3 Ambient; // 0xb8
         Color3 ColorShift_Bottom; // 0xc4
@@ -522,12 +521,14 @@ namespace Structs {
         float FogEnd; // 0x114
         float FogStart; // 0x118
         float GeographicLatitude; // 0x11c
-        char pad_3[0x40];
+        char pad_3[0xc];
+        bool GlobalShadows; // 0x12c
+        char pad_4[0x33];
         Vector3 SunPosition; // 0x160
         Vector3 MoonPosition; // 0x16c
-        char pad_4[0x38];
+        char pad_5[0x38];
         uintptr_t Sky; // 0x1b0
-        char pad_5[0x8];
+        char pad_6[0x8];
         uintptr_t Atmosphere; // 0x1c0
     }; // sizeof = 0x1c8
 
