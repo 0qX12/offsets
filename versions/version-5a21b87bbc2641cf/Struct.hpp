@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:18 29/10/2026 (GMT)
-/*  Total Offsets   : 505
+/*  Dumped At       : 14:19 29/10/2026 (GMT)
+/*  Total Offsets   : 511
 /* =============================================================
 */
 
@@ -212,7 +212,8 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct DataModel {
-        char pad_0[0x8];
+        int PrimitiveCount; // 0x0
+        char pad_0[0x4];
         uintptr_t ToRenderView2; // 0x8
         char pad_1[0x18];
         uintptr_t ToRenderView3; // 0x28
@@ -230,11 +231,9 @@ namespace Structs {
         int PlaceVersion; // 0x19c
         char pad_7[0x18];
         uintptr_t ToRenderView1; // 0x1b8
-        char pad_8[0x250];
-        int PrimitiveCount; // 0x410
-        char pad_9[0x2c];
+        char pad_8[0x280];
         uintptr_t ScriptContext; // 0x440
-        char pad_10[0x128];
+        char pad_9[0x128];
         std::string ServerIP; // 0x570
         // alias: GameLoaded = 0x588 (unsigned __int64)
     }; // sizeof = 0x590
@@ -381,15 +380,15 @@ namespace Structs {
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
         // alias: BackgroundTransparency = 0x518 (float)
-        char pad_3[0x20];
-        bool Visible; // 0x540
-        char pad_4[0x3];
+        char pad_3[0x24];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_4[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_5[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x438];
+        char pad_6[0x5];
+        bool Visible; // 0x575
+        char pad_7[0x432];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
@@ -625,7 +624,13 @@ namespace Structs {
 
     struct MouseService {
         float SensitivityPointer; // 0x0
-    }; // sizeof = 0x4
+        char pad_0[0xb8];
+        Vector2 MousePosition; // 0xbc
+        char pad_1[0x24];
+        uintptr_t InputObject; // 0xe8
+        char pad_2[0x8];
+        uintptr_t InputObject2; // 0xf8
+    }; // sizeof = 0x100
 
     struct ParticleEmitter {
         char pad_0[0x1a8];
@@ -677,11 +682,20 @@ namespace Structs {
         int TeamColor; // 0x3b8
         char pad_9[0x384];
         std::string LocaleId; // 0x740
-    }; // sizeof = 0x760
+        char pad_10[0xa90];
+        uintptr_t Mouse; // 0x11f0
+    }; // sizeof = 0x11f8
 
     struct PlayerConfigurer {
         uintptr_t Pointer; // 0x0
     }; // sizeof = 0x8
+
+    struct PlayerMouse {
+        char pad_0[0xb0];
+        std::string Icon; // 0xb0
+        char pad_1[0x68];
+        uintptr_t Workspace; // 0x138
+    }; // sizeof = 0x140
 
     struct Primitive {
         char pad_0[0x6];

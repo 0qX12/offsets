@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:18 29/10/2026 (GMT)
-/*  Total Offsets   : 505
+/*  Dumped At       : 14:19 29/10/2026 (GMT)
+/*  Total Offsets   : 511
 /* =============================================================
 */
 
@@ -163,7 +163,7 @@ namespace Offsets {
          inline constexpr uintptr_t JobId = 0x108;
          inline constexpr uintptr_t PlaceId = 0x180;
          inline constexpr uintptr_t PlaceVersion = 0x19c;
-         inline constexpr uintptr_t PrimitiveCount = 0x410;
+         inline constexpr uintptr_t PrimitiveCount = 0x0;
          inline constexpr uintptr_t ScriptContext = 0x440;
          inline constexpr uintptr_t ServerIP = 0x570;
          inline constexpr uintptr_t Services = 0x78;
@@ -282,7 +282,7 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x540;
+         inline constexpr uintptr_t Visible = 0x575;
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
@@ -455,6 +455,9 @@ namespace Offsets {
     }
 
     namespace MouseService {
+         inline constexpr uintptr_t InputObject = 0xe8;
+         inline constexpr uintptr_t InputObject2 = 0xf8;
+         inline constexpr uintptr_t MousePosition = 0xbc;
          inline constexpr uintptr_t SensitivityPointer = 0x0;
     }
 
@@ -486,6 +489,7 @@ namespace Offsets {
          inline constexpr uintptr_t MaxZoomDistance = 0x370;
          inline constexpr uintptr_t MinZoomDistance = 0x374;
          inline constexpr uintptr_t ModelInstance = 0x2a0;
+         inline constexpr uintptr_t Mouse = 0x11f0;
          inline constexpr uintptr_t NameDisplayDistance = 0x3b0;
          inline constexpr uintptr_t Team = 0x2e0;
          inline constexpr uintptr_t TeamColor = 0x3b8;
@@ -494,6 +498,11 @@ namespace Offsets {
 
     namespace PlayerConfigurer {
          inline constexpr uintptr_t Pointer = 0x0;
+    }
+
+    namespace PlayerMouse {
+         inline constexpr uintptr_t Icon = 0xb0;
+         inline constexpr uintptr_t Workspace = 0x138;
     }
 
     namespace Primitive {
