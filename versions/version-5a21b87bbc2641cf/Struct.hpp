@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:17 29/10/2026 (GMT)
+/*  Dumped At       : 16:22 29/10/2026 (GMT)
 /*  Total Offsets   : 511
 /* =============================================================
 */
@@ -382,15 +382,15 @@ namespace Structs {
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
         // alias: BackgroundTransparency = 0x518 (float)
-        char pad_3[0x24];
+        char pad_3[0x20];
+        bool Visible; // 0x540
+        char pad_4[0x3];
         int LayoutOrder; // 0x544
-        char pad_4[0x14];
+        char pad_5[0x14];
         float Rotation; // 0x55c
-        char pad_5[0xc];
+        char pad_6[0xc];
         int ZIndex; // 0x56c
-        char pad_6[0x5];
-        bool Visible; // 0x575
-        char pad_7[0x432];
+        char pad_7[0x438];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
