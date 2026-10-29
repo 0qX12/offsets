@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "16:49 29/10/2026",
+    "Dumped At": "16:56 29/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -29,10 +29,7 @@
             "VisualEngine": "unsigned __int64"
         },
         "MouseService": {
-            "SensitivityPointer": "float",
-            "InputObject": "unsigned __int64",
-            "InputObject2": "unsigned __int64",
-            "MousePosition": "Vector2"
+            "SensitivityPointer": "float"
         },
         "PlayerConfigurer": {
             "Pointer": "unsigned __int64"
@@ -74,10 +71,6 @@
             "ToRenderView3": "unsigned __int64",
             "PrimitiveCount": "int",
             "Services": "unsigned __int64"
-        },
-        "RunService": {
-            "HeartbeatTask": "unsigned __int64",
-            "HeartbeatFPS": "double"
         },
         "RenderJob": {
             "RenderView": "unsigned __int64",
@@ -207,8 +200,7 @@
             "AccountAge": "int",
             "MinZoomDistance": "float",
             "MaxZoomDistance": "float",
-            "CameraMode": "int",
-            "Mouse": "unsigned __int64"
+            "CameraMode": "int"
         },
         "Team": {
             "BrickColor": "int"
@@ -348,10 +340,6 @@
         },
         "UnionOperation": {
             "AssetId": "string"
-        },
-        "PlayerMouse": {
-            "Workspace": "unsigned __int64",
-            "Icon": "string"
         },
         "GuiObject": {
             "ScreenGui_Enabled": "bool",
