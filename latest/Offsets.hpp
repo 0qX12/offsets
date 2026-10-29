@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:42 29/10/2026 (GMT)
+/*  Dumped At       : 16:49 29/10/2026 (GMT)
 /*  Total Offsets   : 511
 /* =============================================================
 */
@@ -384,7 +384,7 @@ namespace Offsets {
     }
 
     namespace LocalScript {
-         inline constexpr uintptr_t ByteCode = 0x660;
+         inline constexpr uintptr_t ByteCode = 0x178;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
@@ -449,7 +449,7 @@ namespace Offsets {
     }
 
     namespace ModuleScript {
-         inline constexpr uintptr_t ByteCode = 0x660;
+         inline constexpr uintptr_t ByteCode = 0x120;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t IsCoreScript = 0x150;
     }
@@ -800,10 +800,10 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t IsRobloxScript = 0x150;
          inline constexpr uintptr_t core_script = 0x150;
-         inline constexpr uintptr_t localscript_pointer = 0x660;
+         inline constexpr uintptr_t localscript_pointer = 0x178;
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
-         inline constexpr uintptr_t modulescript_pointer = 0x660;
+         inline constexpr uintptr_t modulescript_pointer = 0x120;
          inline constexpr uintptr_t pointer = 0x18;
          inline constexpr uintptr_t size = 0x28;
     }

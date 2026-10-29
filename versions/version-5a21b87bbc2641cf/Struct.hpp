@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:42 29/10/2026 (GMT)
+/*  Dumped At       : 16:49 29/10/2026 (GMT)
 /*  Total Offsets   : 511
 /* =============================================================
 */
@@ -535,11 +535,11 @@ namespace Structs {
     struct LocalScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0xb0];
+        char pad_1[0xa0];
+        uintptr_t ByteCode; // 0x178
+        char pad_2[0x8];
         std::string Hash; // 0x188
-        char pad_2[0x4b8];
-        uintptr_t ByteCode; // 0x660
-    }; // sizeof = 0x668
+    }; // sizeof = 0x1a8
 
     struct MaterialColors {
         char pad_0[0x6];
@@ -617,11 +617,11 @@ namespace Structs {
     struct ModuleScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0x78];
+        char pad_1[0x48];
+        uintptr_t ByteCode; // 0x120
+        char pad_2[0x28];
         uintptr_t IsCoreScript; // 0x150
-        char pad_2[0x508];
-        uintptr_t ByteCode; // 0x660
-    }; // sizeof = 0x668
+    }; // sizeof = 0x158
 
     struct MouseService {
         float SensitivityPointer; // 0x0
@@ -1117,16 +1117,16 @@ namespace Structs {
         uintptr_t pointer; // 0x18
         char pad_1[0x8];
         uintptr_t size; // 0x28
-        char pad_2[0x120];
+        char pad_2[0xf0];
+        uintptr_t modulescript_pointer; // 0x120
+        char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150
         // alias: core_script = 0x150 (unsigned __int64)
         // alias: IsRobloxScript = 0x150 (unsigned __int64)
-        char pad_3[0x28];
+        char pad_4[0x20];
+        uintptr_t localscript_pointer; // 0x178
         uintptr_t modulescript_detection; // 0x180
-        char pad_4[0x4d8];
-        uintptr_t modulescript_pointer; // 0x660
-        // alias: localscript::pointer = 0x660 (unsigned __int64)
-    }; // sizeof = 0x668
+    }; // sizeof = 0x188
 
     struct task_scheduler {
         char pad_0[0x7fd07c8];
