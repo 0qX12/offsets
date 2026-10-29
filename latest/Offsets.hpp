@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:39 29/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 14:45 29/10/2026 (GMT)
+/*  Total Offsets   : 506
 /* =============================================================
 */
 
@@ -116,7 +116,7 @@ namespace Offsets {
          inline constexpr uintptr_t ImagePlaneDepth = 0x2d4;
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
-         inline constexpr uintptr_t Viewport = 0xb8;
+         inline constexpr uintptr_t Viewport = 0x284;
          inline constexpr uintptr_t ViewportSize = 0x2c4;
     }
 
@@ -455,9 +455,6 @@ namespace Offsets {
     }
 
     namespace MouseService {
-         inline constexpr uintptr_t InputObject = 0xe8;
-         inline constexpr uintptr_t InputObject2 = 0xf8;
-         inline constexpr uintptr_t MousePosition = 0xbc;
          inline constexpr uintptr_t SensitivityPointer = 0x0;
     }
 
@@ -489,7 +486,6 @@ namespace Offsets {
          inline constexpr uintptr_t MaxZoomDistance = 0x370;
          inline constexpr uintptr_t MinZoomDistance = 0x374;
          inline constexpr uintptr_t ModelInstance = 0x2a0;
-         inline constexpr uintptr_t Mouse = 0x11f0;
          inline constexpr uintptr_t NameDisplayDistance = 0x3b0;
          inline constexpr uintptr_t Team = 0x2e0;
          inline constexpr uintptr_t TeamColor = 0x3b8;
@@ -498,11 +494,6 @@ namespace Offsets {
 
     namespace PlayerConfigurer {
          inline constexpr uintptr_t Pointer = 0x0;
-    }
-
-    namespace PlayerMouse {
-         inline constexpr uintptr_t Icon = 0xb0;
-         inline constexpr uintptr_t Workspace = 0x138;
     }
 
     namespace Primitive {
@@ -641,6 +632,10 @@ namespace Offsets {
          inline constexpr uintptr_t Scale = 0xac;
     }
 
+    namespace StatsItem {
+         inline constexpr uintptr_t Value = 0x188;
+    }
+
     namespace SunRaysEffect {
          inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t Intensity = 0xa0;
@@ -689,7 +684,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x4c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {

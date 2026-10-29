@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:39 29/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 14:45 29/10/2026 (GMT)
+/*  Total Offsets   : 506
 /* =============================================================
 */
 
@@ -147,8 +147,7 @@ namespace Structs {
     struct Camera {
         char pad_0[0xb0];
         uintptr_t CameraSubject; // 0xb0
-        short Viewport; // 0xb8
-        char pad_1[0x6];
+        char pad_1[0x8];
         Matrix3x3 Rotation; // 0xc0
         // alias: CFrame = 0xc0 (unsigned __int64)
         Vector3 Position; // 0xe4
@@ -156,9 +155,11 @@ namespace Structs {
         int CameraType; // 0x120
         char pad_3[0x4];
         float FieldOfView; // 0x128
-        char pad_4[0x198];
+        char pad_4[0x158];
+        short Viewport; // 0x284
+        char pad_5[0x3e];
         Vector2 ViewportSize; // 0x2c4
-        char pad_5[0x8];
+        char pad_6[0x8];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 
@@ -624,13 +625,7 @@ namespace Structs {
 
     struct MouseService {
         float SensitivityPointer; // 0x0
-        char pad_0[0xb8];
-        Vector2 MousePosition; // 0xbc
-        char pad_1[0x24];
-        uintptr_t InputObject; // 0xe8
-        char pad_2[0x8];
-        uintptr_t InputObject2; // 0xf8
-    }; // sizeof = 0x100
+    }; // sizeof = 0x4
 
     struct ParticleEmitter {
         char pad_0[0x1a8];
@@ -682,20 +677,11 @@ namespace Structs {
         int TeamColor; // 0x3b8
         char pad_9[0x384];
         std::string LocaleId; // 0x740
-        char pad_10[0xa90];
-        uintptr_t Mouse; // 0x11f0
-    }; // sizeof = 0x11f8
+    }; // sizeof = 0x760
 
     struct PlayerConfigurer {
         uintptr_t Pointer; // 0x0
     }; // sizeof = 0x8
-
-    struct PlayerMouse {
-        char pad_0[0xb0];
-        std::string Icon; // 0xb0
-        char pad_1[0x68];
-        uintptr_t Workspace; // 0x138
-    }; // sizeof = 0x140
 
     struct Primitive {
         char pad_0[0x6];
@@ -896,6 +882,11 @@ namespace Structs {
         std::string MeshId; // 0xe0
     }; // sizeof = 0x100
 
+    struct StatsItem {
+        char pad_0[0x188];
+        double Value; // 0x188
+    }; // sizeof = 0x190
+
     struct SunRaysEffect {
         char pad_0[0x98];
         bool Enabled; // 0x98
@@ -963,9 +954,8 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        char pad_1[0x2e0];
-        std::string Texture_Texture; // 0x4c8
-    }; // sizeof = 0x4e8
+        // alias: Texture_Texture = 0x1c8 (string)
+    }; // sizeof = 0x1e8
 
     struct Tool {
         char pad_0[0x348];
