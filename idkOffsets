@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 15:07 29/10/2026 (GMT)
-/*  Total Offsets   : 512
+/*  Dumped At       : 15:33 29/10/2026 (GMT)
+/*  Total Offsets   : 511
 /* =============================================================
 */
 
@@ -105,7 +105,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -358,7 +358,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -639,10 +639,6 @@ namespace Offsets {
     namespace SpecialMesh {
          inline constexpr uintptr_t MeshId = 0xe0;
          inline constexpr uintptr_t Scale = 0xac;
-    }
-
-    namespace StatsItem {
-         inline constexpr uintptr_t Value = 0x188;
     }
 
     namespace SunRaysEffect {

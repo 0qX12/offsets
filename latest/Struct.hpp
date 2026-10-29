@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 15:07 29/10/2026 (GMT)
-/*  Total Offsets   : 512
+/*  Dumped At       : 15:33 29/10/2026 (GMT)
+/*  Total Offsets   : 511
 /* =============================================================
 */
 
@@ -140,9 +140,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -500,9 +500,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb0];
@@ -895,11 +895,6 @@ namespace Structs {
         char pad_1[0x28];
         std::string MeshId; // 0xe0
     }; // sizeof = 0x100
-
-    struct StatsItem {
-        char pad_0[0x188];
-        double Value; // 0x188
-    }; // sizeof = 0x190
 
     struct SunRaysEffect {
         char pad_0[0x98];
