@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:13 29/10/2026 (GMT)
+/*  Dumped At       : 16:17 29/10/2026 (GMT)
 /*  Total Offsets   : 511
 /* =============================================================
 */
@@ -821,9 +821,9 @@ namespace Structs {
     struct RunService {
         char pad_0[0x70];
         double HeartbeatFPS; // 0x70
-        char pad_1[0x50];
-        uintptr_t HeartbeatTask; // 0xc8
-    }; // sizeof = 0xd0
+        char pad_1[0x60];
+        uintptr_t HeartbeatTask; // 0xd8
+    }; // sizeof = 0xe0
 
     struct Script {
         char pad_0[0xb8];
