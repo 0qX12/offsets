@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "14:03 29/10/2026",
+    "Dumped At": "14:18 29/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -29,10 +29,7 @@
             "VisualEngine": "unsigned __int64"
         },
         "MouseService": {
-            "SensitivityPointer": "float",
-            "InputObject": "unsigned __int64",
-            "InputObject2": "unsigned __int64",
-            "MousePosition": "Vector2"
+            "SensitivityPointer": "float"
         },
         "PlayerConfigurer": {
             "Pointer": "unsigned __int64"
@@ -207,8 +204,7 @@
             "AccountAge": "int",
             "MinZoomDistance": "float",
             "MaxZoomDistance": "float",
-            "CameraMode": "int",
-            "Mouse": "unsigned __int64"
+            "CameraMode": "int"
         },
         "Team": {
             "BrickColor": "int"
@@ -348,10 +344,6 @@
         },
         "UnionOperation": {
             "AssetId": "string"
-        },
-        "PlayerMouse": {
-            "Workspace": "unsigned __int64",
-            "Icon": "string"
         },
         "GuiObject": {
             "ScreenGui_Enabled": "bool",
@@ -660,18 +652,18 @@
             "value_base": "string"
         },
         "RakNet": {
+            "RakNetReceive": "unsigned __int64",
+            "RaknetReportNetworkError": "unsigned __int64",
+            "RaknetHandleConnectionState": "unsigned __int64",
+            "RakNetSend": "unsigned __int64",
+            "RakNetReliabilityLayerSend": "unsigned __int64",
+            "RakPeerProcessNetworkPacket": "unsigned __int64",
+            "UpdateNetworkLoop": "unsigned __int64",
+            "SendPacketsToSelf": "unsigned __int64",
+            "RakPeerReceive": "unsigned __int64",
             "convertItemEnumToString": "unsigned __int64",
             "RakNetEncrypt": "unsigned __int64",
-            "RakPeerVirtualTable": "unsigned __int64",
-            "RakNetReceive": "unsigned __int64",
-            "RakNetReliabilityLayerSend": "unsigned __int64",
-            "RakNetSend": "unsigned __int64",
-            "RakPeerProcessNetworkPacket": "unsigned __int64",
-            "RakPeerReceive": "unsigned __int64",
-            "RaknetHandleConnectionState": "unsigned __int64",
-            "RaknetReportNetworkError": "unsigned __int64",
-            "SendPacketsToSelf": "unsigned __int64",
-            "UpdateNetworkLoop": "unsigned __int64"
+            "RakPeerVirtualTable": "unsigned __int64"
         },
         "Highlight": {
             "Adornee": "unsigned __int64",
