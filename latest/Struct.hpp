@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:19 29/10/2026 (GMT)
+/*  Dumped At       : 14:25 29/10/2026 (GMT)
 /*  Total Offsets   : 511
 /* =============================================================
 */
@@ -212,8 +212,7 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct DataModel {
-        int PrimitiveCount; // 0x0
-        char pad_0[0x4];
+        char pad_0[0x8];
         uintptr_t ToRenderView2; // 0x8
         char pad_1[0x18];
         uintptr_t ToRenderView3; // 0x28
@@ -231,9 +230,11 @@ namespace Structs {
         int PlaceVersion; // 0x19c
         char pad_7[0x18];
         uintptr_t ToRenderView1; // 0x1b8
-        char pad_8[0x280];
+        char pad_8[0x250];
+        int PrimitiveCount; // 0x410
+        char pad_9[0x2c];
         uintptr_t ScriptContext; // 0x440
-        char pad_9[0x128];
+        char pad_10[0x128];
         std::string ServerIP; // 0x570
         // alias: GameLoaded = 0x588 (unsigned __int64)
     }; // sizeof = 0x590
@@ -818,11 +819,10 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x60];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
+        char pad_0[0xc0];
+        double HeartbeatFPS; // 0xc0
+        uintptr_t HeartbeatTask; // 0xc8
+    }; // sizeof = 0xd0
 
     struct Script {
         char pad_0[0xb8];

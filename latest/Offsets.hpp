@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:19 29/10/2026 (GMT)
+/*  Dumped At       : 14:25 29/10/2026 (GMT)
 /*  Total Offsets   : 511
 /* =============================================================
 */
@@ -163,7 +163,7 @@ namespace Offsets {
          inline constexpr uintptr_t JobId = 0x108;
          inline constexpr uintptr_t PlaceId = 0x180;
          inline constexpr uintptr_t PlaceVersion = 0x19c;
-         inline constexpr uintptr_t PrimitiveCount = 0x0;
+         inline constexpr uintptr_t PrimitiveCount = 0x410;
          inline constexpr uintptr_t ScriptContext = 0x440;
          inline constexpr uintptr_t ServerIP = 0x570;
          inline constexpr uintptr_t Services = 0x78;
@@ -585,8 +585,8 @@ namespace Offsets {
     }
 
     namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x70;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
+         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
+         inline constexpr uintptr_t HeartbeatTask = 0xc8;
     }
 
     namespace Script {
