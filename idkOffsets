@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:21 29/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 17:31 29/10/2026 (GMT)
+/*  Total Offsets   : 502
 /* =============================================================
 */
 
@@ -14,12 +14,6 @@
 #include <string>
 namespace Offsets {
     inline std::string ClientVersion = "version-5a21b87bbc2641cf";
-
-    namespace  {
-         inline constexpr uintptr_t LS_ENC = 0x2;
-         inline constexpr uintptr_t LUAI_STACKSIZE = 0x2d;
-         inline constexpr uintptr_t OFF_STACKSIZE = 0x70;
-    }
 
     namespace AirProperties {
          inline constexpr uintptr_t AirDensity = 0x18;
@@ -766,11 +760,6 @@ namespace Offsets {
          inline constexpr uintptr_t script_context = 0x440;
     }
 
-    namespace global_State {
-         inline constexpr uintptr_t mainthread = 0x70;
-         inline constexpr uintptr_t ref_table = 0x618;
-    }
-
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -780,13 +769,6 @@ namespace Offsets {
          inline constexpr uintptr_t name = 0x68;
          inline constexpr uintptr_t name_str = 0x0;
          inline constexpr uintptr_t value_base = 0xa0;
-    }
-
-    namespace lua_state {
-         inline constexpr uintptr_t global = 0x38;
-         inline constexpr uintptr_t stack = 0x48;
-         inline constexpr uintptr_t stack_last = 0x58;
-         inline constexpr uintptr_t top = 0x50;
     }
 
     namespace lua_thread {

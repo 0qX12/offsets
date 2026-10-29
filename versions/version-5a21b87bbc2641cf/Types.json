@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "17:21 29/10/2026",
+    "Dumped At": "17:31 29/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -621,21 +621,6 @@
             "thread_ref_id": "unsigned __int64",
             "control": "unsigned __int64",
             "Value_Ref_Id": "unsigned __int64"
-        },
-        "": {
-            "OFF_STACKSIZE": "int",
-            "LUAI_STACKSIZE": "int",
-            "LS_ENC": "int"
-        },
-        "lua_state": {
-            "stack": "unsigned __int64",
-            "top": "unsigned __int64",
-            "stack_last": "unsigned __int64",
-            "global": "unsigned __int64"
-        },
-        "global_State": {
-            "mainthread": "unsigned __int64",
-            "ref_table": "unsigned __int64"
         },
         "ByteCode": {
             "Pointer": "unsigned __int64",
