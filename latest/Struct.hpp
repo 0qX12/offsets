@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:54 29/10/2026 (GMT)
-/*  Total Offsets   : 515
+/*  Dumped At       : 20:07 29/10/2026 (GMT)
+/*  Total Offsets   : 516
 /* =============================================================
 */
 
@@ -1102,18 +1102,18 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x18];
+        char pad_0[0x10];
+        uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
         uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
         uintptr_t top; // 0x50
         uintptr_t stack_last; // 0x58
-        char pad_3[0x30];
-        uintptr_t CallInfoSize; // 0x90
-    }; // sizeof = 0x98
+    }; // sizeof = 0x60
 
     struct lua_thread {
         char pad_0[0x310];
