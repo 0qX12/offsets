@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 18:24 29/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 18:27 29/10/2026 (GMT)
+/*  Total Offsets   : 513
 /* =============================================================
 */
 
@@ -783,6 +783,8 @@ namespace Offsets {
     }
 
     namespace lua_state {
+         inline constexpr uintptr_t ci = 0x18;
+         inline constexpr uintptr_t ci_base = 0x30;
          inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x58;
