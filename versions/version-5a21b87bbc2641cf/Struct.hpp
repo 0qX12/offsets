@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:45 29/10/2026 (GMT)
-/*  Total Offsets   : 502
+/*  Dumped At       : 17:53 29/10/2026 (GMT)
+/*  Total Offsets   : 508
 /* =============================================================
 */
 
@@ -22,6 +22,10 @@ namespace Structs {
     struct Matrix3x3 { float data[9]; };
     struct UDim2 { uint8_t raw[16]; };
     struct ViewMatrix_t { float data[16]; };
+
+    inline constexpr uintptr_t LS_ENC = 0x2;
+    inline constexpr uintptr_t LUAI_STACKSIZE = 0x2d;
+    inline constexpr uintptr_t OFF_STACKSIZE = 0x70;
 
     struct AirProperties {
         char pad_0[0x18];
@@ -960,8 +964,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1081,6 +1086,13 @@ namespace Structs {
         char pad_2[0x58];
         uintptr_t local_player; // 0x118
     }; // sizeof = 0x120
+
+    struct lua_state {
+        char pad_0[0x48];
+        uintptr_t stack; // 0x48
+        uintptr_t top; // 0x50
+        uintptr_t stack_last; // 0x58
+    }; // sizeof = 0x60
 
     struct lua_thread {
         char pad_0[0x310];
