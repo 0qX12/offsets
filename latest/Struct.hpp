@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:53 29/10/2026 (GMT)
-/*  Total Offsets   : 508
+/*  Dumped At       : 17:59 29/10/2026 (GMT)
+/*  Total Offsets   : 509
 /* =============================================================
 */
 
@@ -382,15 +382,15 @@ namespace Structs {
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
         // alias: BackgroundTransparency = 0x518 (float)
-        char pad_3[0x20];
-        bool Visible; // 0x540
-        char pad_4[0x3];
+        char pad_3[0x24];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_4[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_5[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x438];
+        char pad_6[0x5];
+        bool Visible; // 0x575
+        char pad_7[0x432];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
@@ -505,7 +505,8 @@ namespace Structs {
     }; // sizeof = 0x40
 
     struct Lighting {
-        char pad_0[0xb0];
+        bool GlobalShadows; // 0x0
+        char pad_0[0xaf];
         uintptr_t ClockTime; // 0xb0
         Color3 Ambient; // 0xb8
         Color3 ColorShift_Bottom; // 0xc4
@@ -521,14 +522,12 @@ namespace Structs {
         float FogEnd; // 0x114
         float FogStart; // 0x118
         float GeographicLatitude; // 0x11c
-        char pad_3[0xc];
-        bool GlobalShadows; // 0x12c
-        char pad_4[0x33];
+        char pad_3[0x40];
         Vector3 SunPosition; // 0x160
         Vector3 MoonPosition; // 0x16c
-        char pad_5[0x38];
+        char pad_4[0x38];
         uintptr_t Sky; // 0x1b0
-        char pad_6[0x8];
+        char pad_5[0x8];
         uintptr_t Atmosphere; // 0x1c0
     }; // sizeof = 0x1c8
 
@@ -748,13 +747,13 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct RakNet {
-        char pad_0[0x28140b0];
+        char pad_0[0x2810110];
+        uintptr_t UpdateNetworkLoop; // 0x2810110
+        char pad_1[0x3f98];
         uintptr_t SendPacketsToSelf; // 0x28140b0
-        char pad_1[0x408];
-        uintptr_t UpdateNetworkLoop; // 0x28144c0
-        char pad_2[0x16d8];
-        uintptr_t RakPeerReceive; // 0x2815ba0
-        char pad_3[0x8b68];
+        char pad_2[0x1b32];
+        uintptr_t RakPeerReceive; // 0x2815bea
+        char pad_3[0x8b1e];
         uintptr_t RakNetSend; // 0x281e710
         char pad_4[0xc588];
         uintptr_t RakPeerProcessNetworkPacket; // 0x282aca0
@@ -768,9 +767,9 @@ namespace Structs {
         uintptr_t RaknetReportNetworkError; // 0x47f1f70
         char pad_9[0x5ff88];
         uintptr_t convertItemEnumToString; // 0x4851f00
-        char pad_10[0x97098];
-        uintptr_t RaknetHandleConnectionState; // 0x48e8fa0
-        char pad_11[0x26760d8];
+        char pad_10[0x9711e];
+        uintptr_t RaknetHandleConnectionState; // 0x48e9026
+        char pad_11[0x2676052];
         uintptr_t RakPeerVirtualTable; // 0x6f5f080
     }; // sizeof = 0x6f5f088
 
@@ -817,13 +816,6 @@ namespace Structs {
         char pad_1[0x8];
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
-
-    struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x60];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
 
     struct Script {
         char pad_0[0xb8];
@@ -1073,6 +1065,13 @@ namespace Structs {
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
+    struct global_State {
+        char pad_0[0x70];
+        uintptr_t mainthread; // 0x70
+        char pad_1[0x5a0];
+        uintptr_t ref_table; // 0x618
+    }; // sizeof = 0x620
+
     struct instance {
         uintptr_t name_str; // 0x0
         std::string class_name; // 0x8
@@ -1088,7 +1087,9 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x48];
+        char pad_0[0x38];
+        uintptr_t global; // 0x38
+        char pad_1[0x8];
         uintptr_t stack; // 0x48
         uintptr_t top; // 0x50
         uintptr_t stack_last; // 0x58

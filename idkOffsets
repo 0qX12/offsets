@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:53 29/10/2026 (GMT)
-/*  Total Offsets   : 508
+/*  Dumped At       : 17:59 29/10/2026 (GMT)
+/*  Total Offsets   : 509
 /* =============================================================
 */
 
@@ -282,7 +282,7 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x540;
+         inline constexpr uintptr_t Visible = 0x575;
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
@@ -376,7 +376,7 @@ namespace Offsets {
          inline constexpr uintptr_t FogEnd = 0x114;
          inline constexpr uintptr_t FogStart = 0x118;
          inline constexpr uintptr_t GeographicLatitude = 0x11c;
-         inline constexpr uintptr_t GlobalShadows = 0x12c;
+         inline constexpr uintptr_t GlobalShadows = 0x0;
          inline constexpr uintptr_t MoonPosition = 0x16c;
          inline constexpr uintptr_t OutdoorAmbient = 0xe8;
          inline constexpr uintptr_t Sky = 0x1b0;
@@ -546,12 +546,12 @@ namespace Offsets {
          inline constexpr uintptr_t RakNetReliabilityLayerSend = 0x2833930;
          inline constexpr uintptr_t RakNetSend = 0x281e710;
          inline constexpr uintptr_t RakPeerProcessNetworkPacket = 0x282aca0;
-         inline constexpr uintptr_t RakPeerReceive = 0x2815ba0;
+         inline constexpr uintptr_t RakPeerReceive = 0x2815bea;
          inline constexpr uintptr_t RakPeerVirtualTable = 0x6f5f080;
-         inline constexpr uintptr_t RaknetHandleConnectionState = 0x48e8fa0;
+         inline constexpr uintptr_t RaknetHandleConnectionState = 0x48e9026;
          inline constexpr uintptr_t RaknetReportNetworkError = 0x47f1f70;
          inline constexpr uintptr_t SendPacketsToSelf = 0x28140b0;
-         inline constexpr uintptr_t UpdateNetworkLoop = 0x28144c0;
+         inline constexpr uintptr_t UpdateNetworkLoop = 0x2810110;
          inline constexpr uintptr_t convertItemEnumToString = 0x4851f00;
     }
 
@@ -582,11 +582,6 @@ namespace Offsets {
          inline constexpr uintptr_t LightingValid = 0x0;
          inline constexpr uintptr_t SkyValid = 0x0;
          inline constexpr uintptr_t VisualEngine = 0x18;
-    }
-
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x70;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
     namespace Script {
@@ -766,6 +761,11 @@ namespace Offsets {
          inline constexpr uintptr_t script_context = 0x440;
     }
 
+    namespace global_State {
+         inline constexpr uintptr_t mainthread = 0x70;
+         inline constexpr uintptr_t ref_table = 0x618;
+    }
+
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -778,6 +778,7 @@ namespace Offsets {
     }
 
     namespace lua_state {
+         inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x58;
          inline constexpr uintptr_t top = 0x50;
