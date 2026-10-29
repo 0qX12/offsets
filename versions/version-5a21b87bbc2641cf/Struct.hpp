@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 18:27 29/10/2026 (GMT)
-/*  Total Offsets   : 513
+/*  Dumped At       : 19:03 29/10/2026 (GMT)
+/*  Total Offsets   : 511
 /* =============================================================
 */
 
@@ -382,15 +382,15 @@ namespace Structs {
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
         // alias: BackgroundTransparency = 0x518 (float)
-        char pad_3[0x24];
+        char pad_3[0x20];
+        bool Visible; // 0x540
+        char pad_4[0x3];
         int LayoutOrder; // 0x544
-        char pad_4[0x14];
+        char pad_5[0x14];
         float Rotation; // 0x55c
-        char pad_5[0xc];
+        char pad_6[0xc];
         int ZIndex; // 0x56c
-        char pad_6[0x5];
-        bool Visible; // 0x575
-        char pad_7[0x432];
+        char pad_7[0x438];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
@@ -819,11 +819,11 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x60];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
+        char pad_0[0x93];
+        double HeartbeatFPS; // 0x93
+        char pad_1[0x1e5];
+        uintptr_t HeartbeatTask; // 0x280
+    }; // sizeof = 0x288
 
     struct Script {
         char pad_0[0xb8];
@@ -964,9 +964,8 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        char pad_1[0x2e0];
-        std::string Texture_Texture; // 0x4c8
-    }; // sizeof = 0x4e8
+        // alias: Texture_Texture = 0x1c8 (string)
+    }; // sizeof = 0x1e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1095,12 +1094,9 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x18];
-        uintptr_t ci; // 0x18
-        char pad_1[0x10];
-        uintptr_t ci_base; // 0x30
+        char pad_0[0x38];
         uintptr_t global; // 0x38
-        char pad_2[0x8];
+        char pad_1[0x8];
         uintptr_t stack; // 0x48
         uintptr_t top; // 0x50
         uintptr_t stack_last; // 0x58
