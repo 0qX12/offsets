@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:57 29/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 17:18 29/10/2026 (GMT)
+/*  Total Offsets   : 509
 /* =============================================================
 */
 
@@ -582,11 +582,6 @@ namespace Offsets {
          inline constexpr uintptr_t LightingValid = 0x0;
          inline constexpr uintptr_t SkyValid = 0x0;
          inline constexpr uintptr_t VisualEngine = 0x18;
-    }
-
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x70;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
     namespace Script {
