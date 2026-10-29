@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:05 29/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 19:54 29/10/2026 (GMT)
+/*  Total Offsets   : 515
 /* =============================================================
 */
 
@@ -30,7 +30,7 @@ namespace Offsets {
          inline constexpr uintptr_t Animation = 0xa0;
          inline constexpr uintptr_t Animator = 0xf8;
          inline constexpr uintptr_t IsPlaying = 0xa10;
-         inline constexpr uintptr_t Looped = 0xcc;
+         inline constexpr uintptr_t Looped = 0xf1;
          inline constexpr uintptr_t Speed = 0xbc;
          inline constexpr uintptr_t TimePosition = 0xc0;
     }
@@ -585,8 +585,8 @@ namespace Offsets {
     }
 
     namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x93;
-         inline constexpr uintptr_t HeartbeatTask = 0x280;
+         inline constexpr uintptr_t HeartbeatFPS = 0x70;
+         inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
     namespace Script {
@@ -603,7 +603,7 @@ namespace Offsets {
     }
 
     namespace Sky {
-         inline constexpr uintptr_t MoonAngularSize = 0x22c;
+         inline constexpr uintptr_t MoonAngularSize = 0x200;
          inline constexpr uintptr_t MoonTextureId = 0xb0;
          inline constexpr uintptr_t SkyboxBk = 0xe0;
          inline constexpr uintptr_t SkyboxDn = 0x110;
@@ -639,6 +639,10 @@ namespace Offsets {
     namespace SpecialMesh {
          inline constexpr uintptr_t MeshId = 0xe0;
          inline constexpr uintptr_t Scale = 0xac;
+    }
+
+    namespace StatsItem {
+         inline constexpr uintptr_t Value = 0x1a0;
     }
 
     namespace SunRaysEffect {
@@ -689,7 +693,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x4c8;
     }
 
     namespace Tool {
@@ -783,6 +787,9 @@ namespace Offsets {
     }
 
     namespace lua_state {
+         inline constexpr uintptr_t CallInfoSize = 0x90;
+         inline constexpr uintptr_t ci = 0x30;
+         inline constexpr uintptr_t ci_base = 0x18;
          inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x58;

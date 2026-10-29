@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:05 29/10/2026 (GMT)
-/*  Total Offsets   : 511
+/*  Dumped At       : 19:54 29/10/2026 (GMT)
+/*  Total Offsets   : 515
 /* =============================================================
 */
 
@@ -40,9 +40,9 @@ namespace Structs {
         char pad_1[0x14];
         float Speed; // 0xbc
         float TimePosition; // 0xc0
-        char pad_2[0x8];
-        bool Looped; // 0xcc
-        char pad_3[0x2b];
+        char pad_2[0x2d];
+        bool Looped; // 0xf1
+        char pad_3[0x6];
         uintptr_t Animator; // 0xf8
         char pad_4[0x910];
         bool IsPlaying; // 0xa10
@@ -819,11 +819,11 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0x93];
-        double HeartbeatFPS; // 0x93
-        char pad_1[0x1e5];
-        uintptr_t HeartbeatTask; // 0x280
-    }; // sizeof = 0x288
+        char pad_0[0x70];
+        double HeartbeatFPS; // 0x70
+        char pad_1[0x60];
+        uintptr_t HeartbeatTask; // 0xd8
+    }; // sizeof = 0xe0
 
     struct Script {
         char pad_0[0xb8];
@@ -858,10 +858,12 @@ namespace Structs {
         char pad_6[0x10];
         std::string SkyboxUp; // 0x1d0
         char pad_7[0x10];
-        std::string SunTextureId; // 0x200
+        float MoonAngularSize; // 0x200
+        // alias: SunTextureId = 0x200 (string)
+        char pad_8[0x1c];
         Vector3 SkyboxOrientation; // 0x220
         // alias: SunAngularSize = 0x224 (float)
-        float MoonAngularSize; // 0x22c
+        char pad_9[0x4];
         int StarCount; // 0x230
     }; // sizeof = 0x234
 
@@ -896,6 +898,11 @@ namespace Structs {
         char pad_1[0x28];
         std::string MeshId; // 0xe0
     }; // sizeof = 0x100
+
+    struct StatsItem {
+        char pad_0[0x1a0];
+        double Value; // 0x1a0
+    }; // sizeof = 0x1a8
 
     struct SunRaysEffect {
         char pad_0[0x98];
@@ -964,8 +971,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1094,13 +1102,18 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x38];
+        char pad_0[0x18];
+        uintptr_t ci_base; // 0x18
+        char pad_1[0x10];
+        uintptr_t ci; // 0x30
         uintptr_t global; // 0x38
-        char pad_1[0x8];
+        char pad_2[0x8];
         uintptr_t stack; // 0x48
         uintptr_t top; // 0x50
         uintptr_t stack_last; // 0x58
-    }; // sizeof = 0x60
+        char pad_3[0x30];
+        uintptr_t CallInfoSize; // 0x90
+    }; // sizeof = 0x98
 
     struct lua_thread {
         char pad_0[0x310];
