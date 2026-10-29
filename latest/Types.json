@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "16:34 29/10/2026",
+    "Dumped At": "16:35 29/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -74,6 +74,10 @@
             "ToRenderView3": "unsigned __int64",
             "PrimitiveCount": "int",
             "Services": "unsigned __int64"
+        },
+        "RunService": {
+            "HeartbeatTask": "unsigned __int64",
+            "HeartbeatFPS": "double"
         },
         "RenderJob": {
             "RenderView": "unsigned __int64",
