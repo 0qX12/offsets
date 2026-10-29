@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:22 29/10/2026 (GMT)
-/*  Total Offsets   : 506
+/*  Dumped At       : 13:46 29/10/2026 (GMT)
+/*  Total Offsets   : 508
 /* =============================================================
 */
 
@@ -105,7 +105,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -116,7 +116,7 @@ namespace Offsets {
          inline constexpr uintptr_t ImagePlaneDepth = 0x2d4;
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
-         inline constexpr uintptr_t Viewport = 0x284;
+         inline constexpr uintptr_t Viewport = 0xb8;
          inline constexpr uintptr_t ViewportSize = 0x2c4;
     }
 
@@ -189,7 +189,7 @@ namespace Offsets {
          inline constexpr uintptr_t ContextObj = 0x1b0;
          inline constexpr uintptr_t ContextPtr = 0x20;
          inline constexpr uintptr_t DevicePtr = 0x18;
-         inline constexpr uintptr_t SwapChainPtr = 0x28;
+         inline constexpr uintptr_t SwapChainPtr = 0x30;
          inline constexpr uintptr_t VTableRva = 0x6f5e548;
     }
 
@@ -292,7 +292,7 @@ namespace Offsets {
          inline constexpr uintptr_t Enabled = 0xdc;
          inline constexpr uintptr_t FillColor = 0xb0;
          inline constexpr uintptr_t FillTransparency = 0xcc;
-         inline constexpr uintptr_t LineThickness = 0xd0;
+         inline constexpr uintptr_t LineThickness = 0x126;
          inline constexpr uintptr_t OutlineColor = 0xbc;
          inline constexpr uintptr_t OutlineTransparency = 0xd4;
          inline constexpr uintptr_t Prop = 0x98;
@@ -358,7 +358,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -384,7 +384,7 @@ namespace Offsets {
     }
 
     namespace LocalScript {
-         inline constexpr uintptr_t ByteCode = 0x660;
+         inline constexpr uintptr_t ByteCode = 0x708;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
@@ -449,7 +449,7 @@ namespace Offsets {
     }
 
     namespace ModuleScript {
-         inline constexpr uintptr_t ByteCode = 0x660;
+         inline constexpr uintptr_t ByteCode = 0x708;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t IsCoreScript = 0x150;
     }
@@ -584,6 +584,11 @@ namespace Offsets {
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
+    namespace RunService {
+         inline constexpr uintptr_t HeartbeatFPS = 0x70;
+         inline constexpr uintptr_t HeartbeatTask = 0xd8;
+    }
+
     namespace Script {
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
@@ -684,7 +689,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x4c8;
     }
 
     namespace Tool {
@@ -789,10 +794,10 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t IsRobloxScript = 0x150;
          inline constexpr uintptr_t core_script = 0x150;
-         inline constexpr uintptr_t localscript_pointer = 0x660;
+         inline constexpr uintptr_t localscript_pointer = 0x708;
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
-         inline constexpr uintptr_t modulescript_pointer = 0x660;
+         inline constexpr uintptr_t modulescript_pointer = 0x708;
          inline constexpr uintptr_t pointer = 0x18;
          inline constexpr uintptr_t size = 0x28;
     }
