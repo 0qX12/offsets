@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:07 29/10/2026 (GMT)
-/*  Total Offsets   : 516
+/*  Dumped At       : 00:25 30/10/2026 (GMT)
+/*  Total Offsets   : 480
 /* =============================================================
 */
 
@@ -22,15 +22,15 @@ namespace Offsets {
     }
 
     namespace AirProperties {
-         inline constexpr uintptr_t AirDensity = 0x18;
-         inline constexpr uintptr_t GlobalWind = 0x3c;
+         inline constexpr uintptr_t AirDensity = 0xb6;
+         inline constexpr uintptr_t GlobalWind = 0x0;
     }
 
     namespace AnimationTrack {
          inline constexpr uintptr_t Animation = 0xa0;
          inline constexpr uintptr_t Animator = 0xf8;
          inline constexpr uintptr_t IsPlaying = 0xa10;
-         inline constexpr uintptr_t Looped = 0xf1;
+         inline constexpr uintptr_t Looped = 0xcc;
          inline constexpr uintptr_t Speed = 0xbc;
          inline constexpr uintptr_t TimePosition = 0xc0;
     }
@@ -105,7 +105,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -230,19 +230,6 @@ namespace Offsets {
     }
 
     namespace FastClusterEntity {
-         inline constexpr uintptr_t AlphaByte = 0x14;
-         inline constexpr uintptr_t BBoxMaxX = 0xa4;
-         inline constexpr uintptr_t BBoxMaxY = 0xa8;
-         inline constexpr uintptr_t BBoxMaxZ = 0xac;
-         inline constexpr uintptr_t BBoxMinX = 0x98;
-         inline constexpr uintptr_t BBoxMinY = 0x9c;
-         inline constexpr uintptr_t BBoxMinZ = 0xa0;
-         inline constexpr uintptr_t ContextPtr = 0x8;
-         inline constexpr uintptr_t DecalMaterialPtr = 0x48;
-         inline constexpr uintptr_t MaterialPtr = 0x20;
-         inline constexpr uintptr_t PrimitiveIndexArrayPtr = 0x80;
-         inline constexpr uintptr_t RenderQueueId = 0x10;
-         inline constexpr uintptr_t TechniqueArrayPtr = 0x70;
          inline constexpr uintptr_t VTableRva = 0x6fc30b0;
     }
 
@@ -253,10 +240,6 @@ namespace Offsets {
          inline constexpr uintptr_t FacesEnd = 0x38;
          inline constexpr uintptr_t Vertices = 0x0;
          inline constexpr uintptr_t VerticesEnd = 0x8;
-    }
-
-    namespace FunctionDescriptor {
-         inline constexpr uintptr_t Function = 0x80;
     }
 
     namespace GeometryD3D11 {
@@ -349,7 +332,6 @@ namespace Offsets {
          inline constexpr uintptr_t Name = 0x0;
          inline constexpr uintptr_t NameContainer = 0x68;
          inline constexpr uintptr_t Parent = 0x60;
-         inline constexpr uintptr_t This = 0x8;
     }
 
     namespace LRUHolder {
@@ -358,7 +340,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -413,15 +395,6 @@ namespace Offsets {
          inline constexpr uintptr_t WoodPlanks = 0x15;
     }
 
-    namespace MaterialLayer {
-         inline constexpr uintptr_t ColorData = 0x24;
-         inline constexpr uintptr_t FillModeByte = 0x11;
-         inline constexpr uintptr_t Flags2 = 0x20;
-         inline constexpr uintptr_t MatFlags = 0x18;
-         inline constexpr uintptr_t Param = 0x1c;
-         inline constexpr uintptr_t Stride = 0x88;
-    }
-
     namespace MemEnforcedLRUCache {
          inline constexpr uintptr_t Head = 0x8;
     }
@@ -458,7 +431,6 @@ namespace Offsets {
          inline constexpr uintptr_t InputObject = 0xe8;
          inline constexpr uintptr_t InputObject2 = 0xf8;
          inline constexpr uintptr_t MousePosition = 0xbc;
-         inline constexpr uintptr_t SensitivityPointer = 0x0;
     }
 
     namespace ParticleEmitter {
@@ -496,10 +468,6 @@ namespace Offsets {
          inline constexpr uintptr_t UserId = 0x318;
     }
 
-    namespace PlayerConfigurer {
-         inline constexpr uintptr_t Pointer = 0x0;
-    }
-
     namespace PlayerMouse {
          inline constexpr uintptr_t Icon = 0xb0;
          inline constexpr uintptr_t Workspace = 0x138;
@@ -514,7 +482,6 @@ namespace Offsets {
          inline constexpr uintptr_t Position = 0xd4;
          inline constexpr uintptr_t Rotation = 0xb0;
          inline constexpr uintptr_t Size = 0x1c4;
-         inline constexpr uintptr_t Validate = 0x6;
     }
 
     namespace PrimitiveFlags {
@@ -546,12 +513,12 @@ namespace Offsets {
          inline constexpr uintptr_t RakNetReliabilityLayerSend = 0x2833930;
          inline constexpr uintptr_t RakNetSend = 0x281e710;
          inline constexpr uintptr_t RakPeerProcessNetworkPacket = 0x282aca0;
-         inline constexpr uintptr_t RakPeerReceive = 0x2815bea;
+         inline constexpr uintptr_t RakPeerReceive = 0x2815ba0;
          inline constexpr uintptr_t RakPeerVirtualTable = 0x6f5f080;
-         inline constexpr uintptr_t RaknetHandleConnectionState = 0x48e9026;
+         inline constexpr uintptr_t RaknetHandleConnectionState = 0x48e8fa0;
          inline constexpr uintptr_t RaknetReportNetworkError = 0x47f1f70;
          inline constexpr uintptr_t SendPacketsToSelf = 0x28140b0;
-         inline constexpr uintptr_t UpdateNetworkLoop = 0x2810110;
+         inline constexpr uintptr_t UpdateNetworkLoop = 0x280ffe0;
          inline constexpr uintptr_t convertItemEnumToString = 0x4851f00;
     }
 
@@ -563,8 +530,9 @@ namespace Offsets {
     namespace RemoteSpy {
          inline constexpr uintptr_t BaseRemoteEventVtableRva = 0x6fb57a8;
          inline constexpr uintptr_t DescribedBaseRemoteEventVtableRva = 0x6fb5540;
-         inline constexpr uintptr_t FireServerRva = 0x70c170;
-         inline constexpr uintptr_t FireServerVtableSlot = 0x4b;
+         inline constexpr uintptr_t FireServerRva = 0x35264a0;
+         inline constexpr uintptr_t FireServerVtableByteOffset = 0x260;
+         inline constexpr uintptr_t FireServerVtableSlot = 0x4c;
          inline constexpr uintptr_t InstanceParentOffset = 0x60;
          inline constexpr uintptr_t InstanceVtableRva = 0x6f473b0;
          inline constexpr uintptr_t RemoteEventVtableRva = 0x6fba1c8;
@@ -579,8 +547,6 @@ namespace Offsets {
 
     namespace RenderView {
          inline constexpr uintptr_t DeviceD3D11 = 0x8;
-         inline constexpr uintptr_t LightingValid = 0x0;
-         inline constexpr uintptr_t SkyValid = 0x0;
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
@@ -603,7 +569,7 @@ namespace Offsets {
     }
 
     namespace Sky {
-         inline constexpr uintptr_t MoonAngularSize = 0x200;
+         inline constexpr uintptr_t MoonAngularSize = 0x22c;
          inline constexpr uintptr_t MoonTextureId = 0xb0;
          inline constexpr uintptr_t SkyboxBk = 0xe0;
          inline constexpr uintptr_t SkyboxDn = 0x110;
@@ -641,10 +607,6 @@ namespace Offsets {
          inline constexpr uintptr_t Scale = 0xac;
     }
 
-    namespace StatsItem {
-         inline constexpr uintptr_t Value = 0x1a0;
-    }
-
     namespace SunRaysEffect {
          inline constexpr uintptr_t Enabled = 0x98;
          inline constexpr uintptr_t Intensity = 0xa0;
@@ -675,12 +637,6 @@ namespace Offsets {
          inline constexpr uintptr_t BrickColor = 0xa0;
     }
 
-    namespace TechniqueArray {
-         inline constexpr uintptr_t BeginOffset = 0x0;
-         inline constexpr uintptr_t EndOffset = 0x8;
-         inline constexpr uintptr_t EntryStride = 0x88;
-    }
-
     namespace Terrain {
          inline constexpr uintptr_t GrassLength = 0x1d8;
          inline constexpr uintptr_t MaterialColors = 0x4a0;
@@ -693,7 +649,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x4c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {
@@ -753,7 +709,7 @@ namespace Offsets {
     }
 
     namespace World {
-         inline constexpr uintptr_t AirProperties = 0x230;
+         inline constexpr uintptr_t AirProperties = 0x122;
          inline constexpr uintptr_t FallenPartsDestroyHeight = 0x20c;
          inline constexpr uintptr_t Gravity = 0x218;
          inline constexpr uintptr_t Primitives = 0x2a0;
@@ -770,11 +726,6 @@ namespace Offsets {
          inline constexpr uintptr_t script_context = 0x440;
     }
 
-    namespace global_State {
-         inline constexpr uintptr_t mainthread = 0x70;
-         inline constexpr uintptr_t ref_table = 0x618;
-    }
-
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -787,11 +738,6 @@ namespace Offsets {
     }
 
     namespace lua_state {
-         inline constexpr uintptr_t CallInfoSize = 0x30;
-         inline constexpr uintptr_t ci = 0x30;
-         inline constexpr uintptr_t ci_base = 0x18;
-         inline constexpr uintptr_t ci_last = 0x10;
-         inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x58;
          inline constexpr uintptr_t top = 0x50;

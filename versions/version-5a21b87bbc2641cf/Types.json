@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "20:07 29/10/2026",
+    "Dumped At": "00:25 30/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -23,22 +23,10 @@
             "RealDataModel": "unsigned __int64"
         },
         "RenderView": {
-            "LightingValid": "bool",
-            "SkyValid": "bool",
             "DeviceD3D11": "unsigned __int64",
             "VisualEngine": "unsigned __int64"
         },
-        "MouseService": {
-            "SensitivityPointer": "float",
-            "InputObject": "unsigned __int64",
-            "InputObject2": "unsigned __int64",
-            "MousePosition": "Vector2"
-        },
-        "PlayerConfigurer": {
-            "Pointer": "unsigned __int64"
-        },
         "Instance": {
-            "This": "unsigned __int64",
             "NameContainer": "unsigned __int64",
             "Name": "unsigned __int64",
             "ChildrenStart": "unsigned __int64",
@@ -263,9 +251,6 @@
             "Torque": "float",
             "TurnSpeed": "float"
         },
-        "StatsItem": {
-            "Value": "double"
-        },
         "Tool": {
             "Tooltip": "string",
             "TextureId": "string",
@@ -310,7 +295,6 @@
         },
         "Primitive": {
             "Position": "Vector3",
-            "Validate": "unsigned __int64",
             "Owner": "unsigned __int64",
             "Size": "Vector3",
             "Rotation": "Matrix3x3",
@@ -318,12 +302,6 @@
             "Material": "unsigned short",
             "AssemblyLinearVelocity": "Vector3",
             "AssemblyAngularVelocity": "Vector3"
-        },
-        "PrimitiveFlags": {
-            "Anchored": "unsigned __int64",
-            "CanCollide": "unsigned __int64",
-            "CanTouch": "unsigned __int64",
-            "CanQuery": "unsigned __int64"
         },
         "MeshPart": {
             "MeshId": "string",
@@ -351,6 +329,11 @@
         },
         "UnionOperation": {
             "AssetId": "string"
+        },
+        "MouseService": {
+            "InputObject": "unsigned __int64",
+            "InputObject2": "unsigned __int64",
+            "MousePosition": "Vector2"
         },
         "PlayerMouse": {
             "Workspace": "unsigned __int64",
@@ -563,34 +546,14 @@
             "RaycastBoundDesc": "unsigned __int64",
             "RaycastBoundFn": "unsigned __int64"
         },
+        "PrimitiveFlags": {
+            "Anchored": "unsigned __int64",
+            "CanCollide": "unsigned __int64",
+            "CanTouch": "unsigned __int64",
+            "CanQuery": "unsigned __int64"
+        },
         "FastClusterEntity": {
-            "VTableRva": "unsigned __int64",
-            "ContextPtr": "unsigned __int64",
-            "RenderQueueId": "unsigned __int64",
-            "AlphaByte": "unsigned __int64",
-            "MaterialPtr": "unsigned __int64",
-            "DecalMaterialPtr": "unsigned __int64",
-            "TechniqueArrayPtr": "unsigned __int64",
-            "PrimitiveIndexArrayPtr": "unsigned __int64",
-            "BBoxMinX": "unsigned __int64",
-            "BBoxMinY": "unsigned __int64",
-            "BBoxMinZ": "unsigned __int64",
-            "BBoxMaxX": "unsigned __int64",
-            "BBoxMaxY": "unsigned __int64",
-            "BBoxMaxZ": "unsigned __int64"
-        },
-        "TechniqueArray": {
-            "BeginOffset": "unsigned __int64",
-            "EndOffset": "unsigned __int64",
-            "EntryStride": "unsigned __int64"
-        },
-        "MaterialLayer": {
-            "Stride": "unsigned __int64",
-            "FillModeByte": "unsigned __int64",
-            "MatFlags": "unsigned __int64",
-            "Param": "unsigned __int64",
-            "Flags2": "unsigned __int64",
-            "ColorData": "unsigned __int64"
+            "VTableRva": "unsigned __int64"
         },
         "RemoteSpy": {
             "RemoteEventVtableRva": "unsigned __int64",
@@ -599,6 +562,7 @@
             "InstanceVtableRva": "unsigned __int64",
             "FireServerRva": "unsigned __int64",
             "FireServerVtableSlot": "unsigned __int64",
+            "FireServerVtableByteOffset": "unsigned __int64",
             "InstanceParentOffset": "unsigned __int64",
             "RemoteFuncVTableRva": "unsigned __int64"
         },
@@ -615,9 +579,6 @@
             "TType": "unsigned __int64",
             "GetSetImpl": "unsigned __int64"
         },
-        "FunctionDescriptor": {
-            "Function": "unsigned __int64"
-        },
         "lua_thread": {
             "ref": "unsigned __int64",
             "thread": "unsigned __int64",
@@ -626,23 +587,14 @@
             "Value_Ref_Id": "unsigned __int64"
         },
         "": {
-            "OFF_STACKSIZE": "int",
+            "LS_ENC": "int",
             "LUAI_STACKSIZE": "int",
-            "LS_ENC": "int"
+            "OFF_STACKSIZE": "int"
         },
         "lua_state": {
             "stack": "unsigned __int64",
-            "top": "unsigned __int64",
             "stack_last": "unsigned __int64",
-            "ci": "unsigned __int64",
-            "ci_base": "unsigned __int64",
-            "ci_last": "unsigned __int64",
-            "CallInfoSize": "unsigned __int64",
-            "global": "unsigned __int64"
-        },
-        "global_State": {
-            "mainthread": "unsigned __int64",
-            "ref_table": "unsigned __int64"
+            "top": "unsigned __int64"
         },
         "ByteCode": {
             "Pointer": "unsigned __int64",
