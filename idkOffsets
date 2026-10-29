@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 13:46 29/10/2026 (GMT)
-/*  Total Offsets   : 508
+/*  Dumped At       : 14:03 29/10/2026 (GMT)
+/*  Total Offsets   : 511
 /* =============================================================
 */
 
@@ -766,6 +766,11 @@ namespace Offsets {
          inline constexpr uintptr_t script_context = 0x440;
     }
 
+    namespace global_State {
+         inline constexpr uintptr_t mainthread = 0x70;
+         inline constexpr uintptr_t ref_table = 0x618;
+    }
+
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -778,6 +783,7 @@ namespace Offsets {
     }
 
     namespace lua_state {
+         inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x58;
          inline constexpr uintptr_t top = 0x50;
