@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:29 30/10/2026 (GMT)
-/*  Total Offsets   : 488
+/*  Dumped At       : 00:17 31/10/2026 (GMT)
+/*  Total Offsets   : 493
 /* =============================================================
 */
 
@@ -108,7 +108,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -120,7 +120,7 @@ namespace Offsets {
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
          inline constexpr uintptr_t Viewport = 0x284;
-         inline constexpr uintptr_t ViewportSize = 0x288;
+         inline constexpr uintptr_t ViewportSize = 0x2c4;
     }
 
     namespace CharacterMesh {
@@ -222,6 +222,8 @@ namespace Offsets {
 
     namespace FastCluster {
          inline constexpr uintptr_t BindingSubobject = 0x90;
+         inline constexpr uintptr_t EntityBegin = 0x48;
+         inline constexpr uintptr_t EntityEnd = 0x50;
          inline constexpr uintptr_t VTableRva = 0x6fc1f20;
          inline constexpr uintptr_t VTableRvaSub = 0x6fc1f40;
     }
@@ -340,7 +342,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -554,6 +556,11 @@ namespace Offsets {
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
+    namespace RunService {
+         inline constexpr uintptr_t HeartbeatFPS = 0x70;
+         inline constexpr uintptr_t HeartbeatTask = 0xd8;
+    }
+
     namespace Script {
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
@@ -678,6 +685,7 @@ namespace Offsets {
     }
 
     namespace VisualEngine {
+         inline constexpr uintptr_t Dimensions = 0xb10;
          inline constexpr uintptr_t FakeDataModel = 0xaf0;
          inline constexpr uintptr_t Pointer = 0x879a218;
          inline constexpr uintptr_t RenderView = 0xc40;

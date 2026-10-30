@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:29 30/10/2026 (GMT)
-/*  Total Offsets   : 488
+/*  Dumped At       : 00:17 31/10/2026 (GMT)
+/*  Total Offsets   : 493
 /* =============================================================
 */
 
@@ -143,9 +143,9 @@ namespace Structs {
     }; // sizeof = 0x28
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -160,9 +160,9 @@ namespace Structs {
         float FieldOfView; // 0x128
         char pad_4[0x158];
         short Viewport; // 0x284
-        char pad_5[0x2];
-        uintptr_t ViewportSize; // 0x288
-        char pad_6[0x44];
+        char pad_5[0x3e];
+        Vector2 ViewportSize; // 0x2c4
+        char pad_6[0x8];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 
@@ -305,11 +305,14 @@ namespace Structs {
     }; // sizeof = 0x8d06608
 
     struct FastCluster {
-        char pad_0[0x90];
+        char pad_0[0x48];
+        uintptr_t EntityBegin; // 0x48
+        uintptr_t EntityEnd; // 0x50
+        char pad_1[0x38];
         uintptr_t BindingSubobject; // 0x90
-        char pad_1[0x6fc1e88];
+        char pad_2[0x6fc1e88];
         uintptr_t VTableRva; // 0x6fc1f20
-        char pad_2[0x18];
+        char pad_3[0x18];
         uintptr_t VTableRvaSub; // 0x6fc1f40
     }; // sizeof = 0x6fc1f48
 
@@ -476,9 +479,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb8];
@@ -783,6 +786,13 @@ namespace Structs {
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
 
+    struct RunService {
+        char pad_0[0x70];
+        double HeartbeatFPS; // 0x70
+        char pad_1[0x60];
+        uintptr_t HeartbeatTask; // 0xd8
+    }; // sizeof = 0xe0
+
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -955,9 +965,11 @@ namespace Structs {
         ViewMatrix_t ViewMatrix; // 0x1b0
         char pad_1[0x900];
         uintptr_t FakeDataModel; // 0xaf0
-        char pad_2[0x148];
+        char pad_2[0x18];
+        Vector2 Dimensions; // 0xb10
+        char pad_3[0x128];
         uintptr_t RenderView; // 0xc40
-        char pad_3[0x87995d0];
+        char pad_4[0x87995d0];
         uintptr_t Pointer; // 0x879a218
     }; // sizeof = 0x879a220
 

@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "20:29 30/10/2026",
+    "Dumped At": "00:17 31/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -13,6 +13,7 @@
         },
         "VisualEngine": {
             "Pointer": "unsigned __int64",
+            "Dimensions": "Vector2",
             "ViewMatrix": "ViewMatrix_t",
             "RenderView": "unsigned __int64",
             "FakeDataModel": "unsigned __int64"
@@ -64,6 +65,10 @@
             "ToRenderView3": "unsigned __int64",
             "PrimitiveCount": "int",
             "Services": "unsigned __int64"
+        },
+        "RunService": {
+            "HeartbeatTask": "unsigned __int64",
+            "HeartbeatFPS": "double"
         },
         "RenderJob": {
             "RenderView": "unsigned __int64",
@@ -274,8 +279,8 @@
             "ImagePlaneDepth": "float",
             "CameraType": "int",
             "Viewport": "short",
-            "CFrame": "unsigned __int64",
-            "ViewportSize": "unsigned __int64"
+            "ViewportSize": "Vector2",
+            "CFrame": "unsigned __int64"
         },
         "BasePart": {
             "Primitive": "unsigned __int64",
@@ -671,7 +676,9 @@
         "FastCluster": {
             "VTableRva": "unsigned __int64",
             "VTableRvaSub": "unsigned __int64",
-            "BindingSubobject": "unsigned __int64"
+            "BindingSubobject": "unsigned __int64",
+            "EntityBegin": "unsigned __int64",
+            "EntityEnd": "unsigned __int64"
         },
         "FFlag": {
             "RenderFastClusterOcclusionCulling4": "unsigned __int64"
