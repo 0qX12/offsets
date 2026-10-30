@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "16:12 30/10/2026",
+    "Dumped At": "16:41 30/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -205,10 +205,8 @@
             "Health": "float",
             "MaxHealth": "float",
             "Walkspeed": "float",
-            "WalkspeedCheck": "float",
             "JumpPower": "float",
             "JumpHeight": "float",
-            "HipHeight": "float",
             "MaxSlopeAngle": "float",
             "SeatPart": "unsigned __int64",
             "HumanoidRootPart": "unsigned __int64",
@@ -234,7 +232,6 @@
             "IsWalking": "bool",
             "MoveToPoint": "Vector3",
             "MoveToPart": "unsigned __int64",
-            "WalkTimer": "double",
             "HumanoidState": "int",
             "HumanoidStateID": "int",
             "FloorMaterial": "int",
@@ -372,7 +369,6 @@
             "Texture_Texture": "string"
         },
         "Lighting": {
-            "ClockTime": "unsigned __int64",
             "Brightness": "float",
             "EnvironmentDiffuseScale": "float",
             "EnvironmentSpecularScale": "float",
@@ -385,7 +381,6 @@
             "ColorShift_Bottom": "Color3",
             "ExposureCompensation": "float",
             "GeographicLatitude": "float",
-            "GlobalShadows": "bool",
             "SunPosition": "Vector3",
             "MoonPosition": "Vector3",
             "Sky": "unsigned __int64",
@@ -398,11 +393,11 @@
             "SkyboxLf": "string",
             "SkyboxRt": "string",
             "SkyboxUp": "string",
+            "SkyboxOrientation": "Vector3",
             "SunAngularSize": "float",
             "MoonAngularSize": "float",
             "SunTextureId": "string",
             "MoonTextureId": "string",
-            "SkyboxOrientation": "Vector3",
             "StarCount": "int"
         },
         "Atmosphere": {
@@ -564,9 +559,14 @@
             "FireServerVtableSlot": "unsigned __int64",
             "FireServerVtableByteOffset": "unsigned __int64",
             "InstanceParentOffset": "unsigned __int64",
+            "UnreliableRemoteEventVtableRva": "unsigned __int64",
+            "UnreliableRemoteEventFireServerRva": "unsigned __int64",
+            "UnreliableRemoteEventFireServerSlotByte": "unsigned __int64",
+            "RemoteFunctionInvokeServerRva": "unsigned __int64",
             "RemoteFuncVTableRva": "unsigned __int64"
         },
         "ClassDescriptor": {
+            "Superclass": "unsigned __int64",
             "ClassName": "unsigned __int64",
             "PropertyDescriptors": "unsigned __int64",
             "EventDescriptors": "unsigned __int64",

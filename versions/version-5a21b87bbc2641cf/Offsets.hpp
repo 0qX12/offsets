@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:12 30/10/2026 (GMT)
+/*  Dumped At       : 16:41 30/10/2026 (GMT)
 /*  Total Offsets   : 487
 /* =============================================================
 */
@@ -29,8 +29,8 @@ namespace Offsets {
     namespace AnimationTrack {
          inline constexpr uintptr_t Animation = 0xa0;
          inline constexpr uintptr_t Animator = 0xf8;
-         inline constexpr uintptr_t IsPlaying = 0xa10;
-         inline constexpr uintptr_t Looped = 0xcc;
+         inline constexpr uintptr_t IsPlaying = 0xa11;
+         inline constexpr uintptr_t Looped = 0xcd;
          inline constexpr uintptr_t Speed = 0xbc;
          inline constexpr uintptr_t TimePosition = 0xc0;
     }
@@ -132,6 +132,7 @@ namespace Offsets {
          inline constexpr uintptr_t EventDescriptors = 0x88;
          inline constexpr uintptr_t FunctionDescriptors = 0xd0;
          inline constexpr uintptr_t PropertyDescriptors = 0x1f0;
+         inline constexpr uintptr_t Superclass = 0x1b0;
     }
 
     namespace ClickDetector {
@@ -162,7 +163,7 @@ namespace Offsets {
          inline constexpr uintptr_t GameLoaded = 0x588;
          inline constexpr uintptr_t JobId = 0x108;
          inline constexpr uintptr_t PlaceId = 0x180;
-         inline constexpr uintptr_t PlaceVersion = 0x17c;
+         inline constexpr uintptr_t PlaceVersion = 0x19c;
          inline constexpr uintptr_t PrimitiveCount = 0x410;
          inline constexpr uintptr_t ScriptContext = 0x440;
          inline constexpr uintptr_t ServerIP = 0x570;
@@ -254,7 +255,7 @@ namespace Offsets {
 
     namespace GuiObject {
          inline constexpr uintptr_t BackgroundColor3 = 0x508;
-         inline constexpr uintptr_t BackgroundTransparency = 0x518;
+         inline constexpr uintptr_t BackgroundTransparency = 0x52c;
          inline constexpr uintptr_t BorderColor3 = 0x514;
          inline constexpr uintptr_t Image = 0x9a8;
          inline constexpr uintptr_t LayoutOrder = 0x544;
@@ -295,7 +296,6 @@ namespace Offsets {
          inline constexpr uintptr_t Health = 0x184;
          inline constexpr uintptr_t HealthDisplayDistance = 0x17c;
          inline constexpr uintptr_t HealthDisplayType = 0x180;
-         inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
          inline constexpr uintptr_t HumanoidStateID = 0x190;
@@ -318,9 +318,7 @@ namespace Offsets {
          inline constexpr uintptr_t TargetPoint = 0x140;
          inline constexpr uintptr_t UseJumpPower = 0x1d6;
          inline constexpr uintptr_t WalkSpeed = 0x1c4;
-         inline constexpr uintptr_t WalkTimer = 0x0;
          inline constexpr uintptr_t Walkspeed = 0x1c4;
-         inline constexpr uintptr_t WalkspeedCheck = 0x0;
     }
 
     namespace Instance {
@@ -348,7 +346,6 @@ namespace Offsets {
          inline constexpr uintptr_t Ambient = 0xb8;
          inline constexpr uintptr_t Atmosphere = 0x1c0;
          inline constexpr uintptr_t Brightness = 0x100;
-         inline constexpr uintptr_t ClockTime = 0xb0;
          inline constexpr uintptr_t ColorShift_Bottom = 0xc4;
          inline constexpr uintptr_t ColorShift_Top = 0xd0;
          inline constexpr uintptr_t EnvironmentDiffuseScale = 0x104;
@@ -358,7 +355,6 @@ namespace Offsets {
          inline constexpr uintptr_t FogEnd = 0x114;
          inline constexpr uintptr_t FogStart = 0x118;
          inline constexpr uintptr_t GeographicLatitude = 0x11c;
-         inline constexpr uintptr_t GlobalShadows = 0x12c;
          inline constexpr uintptr_t MoonPosition = 0x16c;
          inline constexpr uintptr_t OutdoorAmbient = 0xe8;
          inline constexpr uintptr_t Sky = 0x1b0;
@@ -537,6 +533,10 @@ namespace Offsets {
          inline constexpr uintptr_t InstanceVtableRva = 0x6f473b0;
          inline constexpr uintptr_t RemoteEventVtableRva = 0x6fba1c8;
          inline constexpr uintptr_t RemoteFuncVTableRva = 0x6fb9ce0;
+         inline constexpr uintptr_t RemoteFunctionInvokeServerRva = 0x35225f0;
+         inline constexpr uintptr_t UnreliableRemoteEventFireServerRva = 0x3477570;
+         inline constexpr uintptr_t UnreliableRemoteEventFireServerSlotByte = 0x260;
+         inline constexpr uintptr_t UnreliableRemoteEventVtableRva = 0x6fb6d98;
     }
 
     namespace RenderJob {
@@ -579,7 +579,7 @@ namespace Offsets {
          inline constexpr uintptr_t SkyboxRt = 0x1a0;
          inline constexpr uintptr_t SkyboxUp = 0x1d0;
          inline constexpr uintptr_t StarCount = 0x230;
-         inline constexpr uintptr_t SunAngularSize = 0x224;
+         inline constexpr uintptr_t SunAngularSize = 0x234;
          inline constexpr uintptr_t SunTextureId = 0x200;
     }
 
