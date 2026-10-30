@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:41 30/10/2026 (GMT)
-/*  Total Offsets   : 487
+/*  Dumped At       : 19:11 30/10/2026 (GMT)
+/*  Total Offsets   : 477
 /* =============================================================
 */
 
@@ -105,7 +105,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -219,8 +219,6 @@ namespace Offsets {
 
     namespace FastCluster {
          inline constexpr uintptr_t BindingSubobject = 0x90;
-         inline constexpr uintptr_t EntityBegin = 0x48;
-         inline constexpr uintptr_t EntityEnd = 0x50;
          inline constexpr uintptr_t VTableRva = 0x6fc1f20;
          inline constexpr uintptr_t VTableRvaSub = 0x6fc1f40;
     }
@@ -270,19 +268,6 @@ namespace Offsets {
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
-    namespace Highlight {
-         inline constexpr uintptr_t Adornee = 0xa0;
-         inline constexpr uintptr_t DepthMode = 0xc8;
-         inline constexpr uintptr_t Enabled = 0xdc;
-         inline constexpr uintptr_t FillColor = 0xb0;
-         inline constexpr uintptr_t FillTransparency = 0xcc;
-         inline constexpr uintptr_t LineThickness = 0xd0;
-         inline constexpr uintptr_t OutlineColor = 0xbc;
-         inline constexpr uintptr_t OutlineTransparency = 0xd4;
-         inline constexpr uintptr_t Prop = 0x98;
-         inline constexpr uintptr_t SetEnabled = 0xbee620;
-    }
-
     namespace Humanoid {
          inline constexpr uintptr_t AutoJumpEnabled = 0x1c8;
          inline constexpr uintptr_t AutoRotate = 0x1c9;
@@ -296,6 +281,7 @@ namespace Offsets {
          inline constexpr uintptr_t Health = 0x184;
          inline constexpr uintptr_t HealthDisplayDistance = 0x17c;
          inline constexpr uintptr_t HealthDisplayType = 0x180;
+         inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
          inline constexpr uintptr_t HumanoidStateID = 0x190;
@@ -338,7 +324,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -355,6 +341,7 @@ namespace Offsets {
          inline constexpr uintptr_t FogEnd = 0x114;
          inline constexpr uintptr_t FogStart = 0x118;
          inline constexpr uintptr_t GeographicLatitude = 0x11c;
+         inline constexpr uintptr_t GlobalShadows = 0x12c;
          inline constexpr uintptr_t MoonPosition = 0x16c;
          inline constexpr uintptr_t OutdoorAmbient = 0xe8;
          inline constexpr uintptr_t Sky = 0x1b0;

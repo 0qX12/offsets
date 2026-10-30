@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "16:41 30/10/2026",
+    "Dumped At": "19:11 30/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -207,6 +207,7 @@
             "Walkspeed": "float",
             "JumpPower": "float",
             "JumpHeight": "float",
+            "HipHeight": "unsigned __int64",
             "MaxSlopeAngle": "float",
             "SeatPart": "unsigned __int64",
             "HumanoidRootPart": "unsigned __int64",
@@ -381,6 +382,7 @@
             "ColorShift_Bottom": "Color3",
             "ExposureCompensation": "float",
             "GeographicLatitude": "float",
+            "GlobalShadows": "unsigned __int64",
             "SunPosition": "Vector3",
             "MoonPosition": "Vector3",
             "Sky": "unsigned __int64",
@@ -595,11 +597,11 @@
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
             "stack_last": "unsigned __int64",
+            "global": "unsigned __int64",
+            "CallInfoSize": "unsigned __int64",
             "ci": "unsigned __int64",
             "ci_base": "unsigned __int64",
-            "ci_last": "unsigned __int64",
-            "CallInfoSize": "unsigned __int64",
-            "global": "unsigned __int64"
+            "ci_last": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",
@@ -641,18 +643,6 @@
             "RakNetEncrypt": "unsigned __int64",
             "RakPeerVirtualTable": "unsigned __int64"
         },
-        "Highlight": {
-            "Adornee": "unsigned __int64",
-            "DepthMode": "unsigned __int64",
-            "Enabled": "unsigned __int64",
-            "FillColor": "unsigned __int64",
-            "FillTransparency": "unsigned __int64",
-            "LineThickness": "unsigned __int64",
-            "OutlineColor": "unsigned __int64",
-            "OutlineTransparency": "unsigned __int64",
-            "Prop": "unsigned __int64",
-            "SetEnabled": "unsigned __int64"
-        },
         "DeviceD3D11Gfx": {
             "VTableRva": "unsigned __int64",
             "DevicePtr": "unsigned __int64",
@@ -670,9 +660,7 @@
         "FastCluster": {
             "VTableRva": "unsigned __int64",
             "VTableRvaSub": "unsigned __int64",
-            "BindingSubobject": "unsigned __int64",
-            "EntityBegin": "unsigned __int64",
-            "EntityEnd": "unsigned __int64"
+            "BindingSubobject": "unsigned __int64"
         },
         "FFlag": {
             "RenderFastClusterOcclusionCulling4": "unsigned __int64"

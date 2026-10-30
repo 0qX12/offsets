@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:41 30/10/2026 (GMT)
-/*  Total Offsets   : 487
+/*  Dumped At       : 19:11 30/10/2026 (GMT)
+/*  Total Offsets   : 477
 /* =============================================================
 */
 
@@ -140,9 +140,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -302,14 +302,11 @@ namespace Structs {
     }; // sizeof = 0x8d06608
 
     struct FastCluster {
-        char pad_0[0x48];
-        uintptr_t EntityBegin; // 0x48
-        uintptr_t EntityEnd; // 0x50
-        char pad_1[0x38];
+        char pad_0[0x90];
         uintptr_t BindingSubobject; // 0x90
-        char pad_2[0x6fc1e88];
+        char pad_1[0x6fc1e88];
         uintptr_t VTableRva; // 0x6fc1f20
-        char pad_3[0x18];
+        char pad_2[0x18];
         uintptr_t VTableRvaSub; // 0x6fc1f40
     }; // sizeof = 0x6fc1f48
 
@@ -379,25 +376,6 @@ namespace Structs {
         Color3 TextColor3; // 0xeb8
     }; // sizeof = 0xec4
 
-    struct Highlight {
-        char pad_0[0x98];
-        uintptr_t Prop; // 0x98
-        uintptr_t Adornee; // 0xa0
-        char pad_1[0x8];
-        uintptr_t FillColor; // 0xb0
-        char pad_2[0x4];
-        uintptr_t OutlineColor; // 0xbc
-        char pad_3[0x4];
-        uintptr_t DepthMode; // 0xc8
-        // alias: FillTransparency = 0xcc (unsigned __int64)
-        uintptr_t LineThickness; // 0xd0
-        // alias: OutlineTransparency = 0xd4 (unsigned __int64)
-        char pad_4[0x4];
-        uintptr_t Enabled; // 0xdc
-        char pad_5[0xbee53c];
-        uintptr_t SetEnabled; // 0xbee620
-    }; // sizeof = 0xbee628
-
     struct Humanoid {
         char pad_0[0xa0];
         std::string DisplayName; // 0xa0
@@ -418,7 +396,7 @@ namespace Structs {
         float HealthDisplayDistance; // 0x17c
         int HealthDisplayType; // 0x180
         float Health; // 0x184
-        char pad_7[0x8];
+        uintptr_t HipHeight; // 0x188
         int HumanoidStateID; // 0x190
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
@@ -426,30 +404,30 @@ namespace Structs {
         float MaxSlopeAngle; // 0x1a0
         float NameDisplayDistance; // 0x1a4
         int NameOcclusion; // 0x1a8
-        char pad_8[0x8];
+        char pad_7[0x8];
         int RigType; // 0x1b4
-        char pad_9[0xc];
+        char pad_8[0xc];
         float Walkspeed; // 0x1c4
         // alias: WalkSpeed = 0x1c4 (unsigned __int64)
         bool AutoJumpEnabled; // 0x1c8
         bool AutoRotate; // 0x1c9
         bool AutomaticScalingEnabled; // 0x1ca
-        char pad_10[0x1];
+        char pad_9[0x1];
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
-        char pad_11[0x2];
+        char pad_10[0x2];
         bool Jump; // 0x1d0
-        char pad_12[0x1];
+        char pad_11[0x1];
         bool PlatformStand; // 0x1d2
         bool Sit; // 0x1d3
         bool RequiresNeck; // 0x1d4
-        char pad_13[0x1];
+        char pad_12[0x1];
         bool UseJumpPower; // 0x1d6
-        char pad_14[0x289];
+        char pad_13[0x289];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_15[0x440];
+        char pad_14[0x440];
         int HumanoidState; // 0x8a8
-        char pad_16[0x182];
+        char pad_15[0x182];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
@@ -476,9 +454,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb8];
@@ -496,12 +474,14 @@ namespace Structs {
         float FogEnd; // 0x114
         float FogStart; // 0x118
         float GeographicLatitude; // 0x11c
-        char pad_3[0x40];
+        char pad_3[0xc];
+        uintptr_t GlobalShadows; // 0x12c
+        char pad_4[0x2c];
         Vector3 SunPosition; // 0x160
         Vector3 MoonPosition; // 0x16c
-        char pad_4[0x38];
+        char pad_5[0x38];
         uintptr_t Sky; // 0x1b0
-        char pad_5[0x8];
+        char pad_6[0x8];
         uintptr_t Atmosphere; // 0x1c0
     }; // sizeof = 0x1c8
 
@@ -1052,8 +1032,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t ci; // 0x30
-        // alias: CallInfoSize = 0x30 (unsigned __int64)
+        uintptr_t CallInfoSize; // 0x30
+        // alias: ci = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
