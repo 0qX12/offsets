@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "19:27 30/10/2026",
+    "Dumped At": "19:55 30/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -45,7 +45,10 @@
         "Attribute": {
             "Key": "unsigned __int64",
             "Value": "unsigned __int64",
-            "Size": "unsigned __int64"
+            "Size": "unsigned __int64",
+            "ComponentMap": "unsigned __int64",
+            "ComponentStride": "unsigned __int64",
+            "ComponentIdOffset": "unsigned __int16"
         },
         "DataModel": {
             "PlaceId": "unsigned __int64",

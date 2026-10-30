@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:27 30/10/2026 (GMT)
-/*  Total Offsets   : 487
+/*  Dumped At       : 19:55 30/10/2026 (GMT)
+/*  Total Offsets   : 490
 /* =============================================================
 */
 
@@ -53,9 +53,12 @@ namespace Offsets {
     }
 
     namespace Attribute {
-         inline constexpr uintptr_t Key = 0x8;
+         inline constexpr uintptr_t ComponentIdOffset = 0x8;
+         inline constexpr uintptr_t ComponentMap = 0x38;
+         inline constexpr uintptr_t ComponentStride = 0x10;
+         inline constexpr uintptr_t Key = 0x0;
          inline constexpr uintptr_t Size = 0x58;
-         inline constexpr uintptr_t Value = 0x20;
+         inline constexpr uintptr_t Value = 0x18;
     }
 
     namespace BasePart {
@@ -551,8 +554,8 @@ namespace Offsets {
     }
 
     namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x28;
-         inline constexpr uintptr_t HeartbeatTask = 0x110;
+         inline constexpr uintptr_t HeartbeatFPS = 0x70;
+         inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
     namespace Script {
