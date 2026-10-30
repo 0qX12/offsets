@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 15:56 30/10/2026 (GMT)
+/*  Dumped At       : 16:12 30/10/2026 (GMT)
 /*  Total Offsets   : 487
 /* =============================================================
 */
@@ -621,16 +621,16 @@ namespace Structs {
     }; // sizeof = 0x250
 
     struct Player {
-        char pad_0[0x118];
+        char pad_0[0xb8];
+        uintptr_t UserId; // 0xb8
+        char pad_1[0x58];
         uintptr_t LocalPlayer; // 0x118
         std::string DisplayName; // 0x120
-        char pad_1[0x160];
+        char pad_2[0x160];
         uintptr_t ModelInstance; // 0x2a0
-        char pad_2[0x38];
+        char pad_3[0x38];
         uintptr_t Team; // 0x2e0
-        char pad_3[0x30];
-        uintptr_t UserId; // 0x318
-        char pad_4[0x44];
+        char pad_4[0x7c];
         int AccountAge; // 0x364
         char pad_5[0x8];
         float MaxZoomDistance; // 0x370

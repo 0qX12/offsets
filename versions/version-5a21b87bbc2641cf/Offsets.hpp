@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 15:56 30/10/2026 (GMT)
+/*  Dumped At       : 16:12 30/10/2026 (GMT)
 /*  Total Offsets   : 487
 /* =============================================================
 */
@@ -465,7 +465,7 @@ namespace Offsets {
          inline constexpr uintptr_t NameDisplayDistance = 0x3b0;
          inline constexpr uintptr_t Team = 0x2e0;
          inline constexpr uintptr_t TeamColor = 0x3b8;
-         inline constexpr uintptr_t UserId = 0x318;
+         inline constexpr uintptr_t UserId = 0xb8;
     }
 
     namespace PlayerMouse {
