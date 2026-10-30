@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:47 31/10/2026 (GMT)
-/*  Total Offsets   : 493
+/*  Dumped At       : 00:49 31/10/2026 (GMT)
+/*  Total Offsets   : 495
 /* =============================================================
 */
 
@@ -71,12 +71,13 @@ namespace Structs {
     struct Attribute {
         uintptr_t Key; // 0x0
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
-        char pad_0[0x8];
+        uintptr_t Payload; // 0x8
         uintptr_t ComponentStride; // 0x10
+        // alias: Count = 0x10 (unsigned __int32)
         uintptr_t Value; // 0x18
-        char pad_1[0x18];
+        char pad_0[0x18];
         uintptr_t ComponentMap; // 0x38
-        char pad_2[0x18];
+        char pad_1[0x18];
         uintptr_t Size; // 0x58
     }; // sizeof = 0x60
 
