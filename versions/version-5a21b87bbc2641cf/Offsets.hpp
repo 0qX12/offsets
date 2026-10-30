@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:55 30/10/2026 (GMT)
-/*  Total Offsets   : 490
+/*  Dumped At       : 20:29 30/10/2026 (GMT)
+/*  Total Offsets   : 488
 /* =============================================================
 */
 
@@ -103,8 +103,8 @@ namespace Offsets {
     }
 
     namespace ByteCode {
-         inline constexpr uintptr_t Pointer = 0x18;
-         inline constexpr uintptr_t Size = 0x28;
+         inline constexpr uintptr_t Pointer = 0x10;
+         inline constexpr uintptr_t Size = 0x20;
     }
 
     namespace CachedItem {
@@ -120,7 +120,7 @@ namespace Offsets {
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
          inline constexpr uintptr_t Viewport = 0x284;
-         inline constexpr uintptr_t ViewportSize = 0x2c4;
+         inline constexpr uintptr_t ViewportSize = 0x288;
     }
 
     namespace CharacterMesh {
@@ -424,6 +424,7 @@ namespace Offsets {
          inline constexpr uintptr_t ByteCode = 0x120;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t IsCoreScript = 0x150;
+         inline constexpr uintptr_t IsCoreScriptMask = 0x1;
     }
 
     namespace MouseService {
@@ -553,11 +554,6 @@ namespace Offsets {
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x70;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
-    }
-
     namespace Script {
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
@@ -682,7 +678,6 @@ namespace Offsets {
     }
 
     namespace VisualEngine {
-         inline constexpr uintptr_t Dimensions = 0xb10;
          inline constexpr uintptr_t FakeDataModel = 0xaf0;
          inline constexpr uintptr_t Pointer = 0x879a218;
          inline constexpr uintptr_t RenderView = 0xc40;
@@ -771,8 +766,8 @@ namespace Offsets {
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;
-         inline constexpr uintptr_t pointer = 0x18;
-         inline constexpr uintptr_t size = 0x28;
+         inline constexpr uintptr_t pointer = 0x10;
+         inline constexpr uintptr_t size = 0x20;
     }
 
     namespace task_scheduler {

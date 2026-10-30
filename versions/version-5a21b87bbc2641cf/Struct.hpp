@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:55 30/10/2026 (GMT)
-/*  Total Offsets   : 490
+/*  Dumped At       : 20:29 30/10/2026 (GMT)
+/*  Total Offsets   : 488
 /* =============================================================
 */
 
@@ -136,11 +136,11 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct ByteCode {
-        char pad_0[0x18];
-        uintptr_t Pointer; // 0x18
+        char pad_0[0x10];
+        uintptr_t Pointer; // 0x10
         char pad_1[0x8];
-        uintptr_t Size; // 0x28
-    }; // sizeof = 0x30
+        uintptr_t Size; // 0x20
+    }; // sizeof = 0x28
 
     struct CachedItem {
         char pad_0[0x40];
@@ -160,9 +160,9 @@ namespace Structs {
         float FieldOfView; // 0x128
         char pad_4[0x158];
         short Viewport; // 0x284
-        char pad_5[0x3e];
-        Vector2 ViewportSize; // 0x2c4
-        char pad_6[0x8];
+        char pad_5[0x2];
+        uintptr_t ViewportSize; // 0x288
+        char pad_6[0x44];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 
@@ -578,13 +578,15 @@ namespace Structs {
     }; // sizeof = 0x248
 
     struct ModuleScript {
-        char pad_0[0xb8];
+        char pad_0[0x1];
+        uintptr_t IsCoreScriptMask; // 0x1
+        char pad_1[0xaf];
         std::string GUID; // 0xb8
-        char pad_1[0x48];
+        char pad_2[0x48];
         uintptr_t ByteCode; // 0x120
-        char pad_2[0x28];
-        uintptr_t IsCoreScript; // 0x150
-    }; // sizeof = 0x158
+        char pad_3[0x28];
+        uint8_t IsCoreScript; // 0x150
+    }; // sizeof = 0x151
 
     struct MouseService {
         char pad_0[0xbc];
@@ -781,13 +783,6 @@ namespace Structs {
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
 
-    struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x60];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
-
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -960,11 +955,9 @@ namespace Structs {
         ViewMatrix_t ViewMatrix; // 0x1b0
         char pad_1[0x900];
         uintptr_t FakeDataModel; // 0xaf0
-        char pad_2[0x18];
-        Vector2 Dimensions; // 0xb10
-        char pad_3[0x128];
+        char pad_2[0x148];
         uintptr_t RenderView; // 0xc40
-        char pad_4[0x87995d0];
+        char pad_3[0x87995d0];
         uintptr_t Pointer; // 0x879a218
     }; // sizeof = 0x879a220
 
@@ -1054,8 +1047,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
@@ -1074,11 +1067,11 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x18];
-        uintptr_t pointer; // 0x18
+        char pad_0[0x10];
+        uintptr_t pointer; // 0x10
         char pad_1[0x8];
-        uintptr_t size; // 0x28
-        char pad_2[0xf0];
+        uintptr_t size; // 0x20
+        char pad_2[0xf8];
         uintptr_t modulescript_pointer; // 0x120
         char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150
