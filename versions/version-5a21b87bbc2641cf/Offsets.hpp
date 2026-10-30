@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:25 30/10/2026 (GMT)
-/*  Total Offsets   : 480
+/*  Dumped At       : 15:50 30/10/2026 (GMT)
+/*  Total Offsets   : 487
 /* =============================================================
 */
 
@@ -22,8 +22,8 @@ namespace Offsets {
     }
 
     namespace AirProperties {
-         inline constexpr uintptr_t AirDensity = 0xb6;
-         inline constexpr uintptr_t GlobalWind = 0x0;
+         inline constexpr uintptr_t AirDensity = 0x18;
+         inline constexpr uintptr_t GlobalWind = 0x3c;
     }
 
     namespace AnimationTrack {
@@ -105,7 +105,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -162,7 +162,7 @@ namespace Offsets {
          inline constexpr uintptr_t GameLoaded = 0x588;
          inline constexpr uintptr_t JobId = 0x108;
          inline constexpr uintptr_t PlaceId = 0x180;
-         inline constexpr uintptr_t PlaceVersion = 0x19c;
+         inline constexpr uintptr_t PlaceVersion = 0x17c;
          inline constexpr uintptr_t PrimitiveCount = 0x410;
          inline constexpr uintptr_t ScriptContext = 0x440;
          inline constexpr uintptr_t ServerIP = 0x570;
@@ -265,7 +265,7 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x540;
+         inline constexpr uintptr_t Visible = 0x575;
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
@@ -340,7 +340,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -709,7 +709,7 @@ namespace Offsets {
     }
 
     namespace World {
-         inline constexpr uintptr_t AirProperties = 0x122;
+         inline constexpr uintptr_t AirProperties = 0x230;
          inline constexpr uintptr_t FallenPartsDestroyHeight = 0x20c;
          inline constexpr uintptr_t Gravity = 0x218;
          inline constexpr uintptr_t Primitives = 0x2a0;
@@ -726,6 +726,11 @@ namespace Offsets {
          inline constexpr uintptr_t script_context = 0x440;
     }
 
+    namespace global_State {
+         inline constexpr uintptr_t mainthread = 0x70;
+         inline constexpr uintptr_t ref_table = 0x618;
+    }
+
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -738,6 +743,11 @@ namespace Offsets {
     }
 
     namespace lua_state {
+         inline constexpr uintptr_t CallInfoSize = 0x30;
+         inline constexpr uintptr_t ci = 0x30;
+         inline constexpr uintptr_t ci_base = 0x18;
+         inline constexpr uintptr_t ci_last = 0x10;
+         inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x58;
          inline constexpr uintptr_t top = 0x50;

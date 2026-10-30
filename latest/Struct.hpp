@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:25 30/10/2026 (GMT)
-/*  Total Offsets   : 480
+/*  Dumped At       : 15:50 30/10/2026 (GMT)
+/*  Total Offsets   : 487
 /* =============================================================
 */
 
@@ -28,10 +28,11 @@ namespace Structs {
     inline constexpr uintptr_t OFF_STACKSIZE = 0x70;
 
     struct AirProperties {
-        Vector3 GlobalWind; // 0x0
-        char pad_0[0xaa];
-        float AirDensity; // 0xb6
-    }; // sizeof = 0xba
+        char pad_0[0x18];
+        float AirDensity; // 0x18
+        char pad_1[0x20];
+        Vector3 GlobalWind; // 0x3c
+    }; // sizeof = 0x48
 
     struct AnimationTrack {
         char pad_0[0xa0];
@@ -139,9 +140,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -225,16 +226,15 @@ namespace Structs {
         char pad_5[0x20];
         uintptr_t CreatorId; // 0x170
         uintptr_t GameId; // 0x178
+        // alias: PlaceVersion = 0x17c (int)
         uintptr_t PlaceId; // 0x180
-        char pad_6[0x14];
-        int PlaceVersion; // 0x19c
-        char pad_7[0x18];
+        char pad_6[0x30];
         uintptr_t ToRenderView1; // 0x1b8
-        char pad_8[0x250];
+        char pad_7[0x250];
         int PrimitiveCount; // 0x410
-        char pad_9[0x2c];
+        char pad_8[0x2c];
         uintptr_t ScriptContext; // 0x440
-        char pad_10[0x128];
+        char pad_9[0x128];
         std::string ServerIP; // 0x570
         // alias: GameLoaded = 0x588 (unsigned __int64)
     }; // sizeof = 0x590
@@ -357,15 +357,15 @@ namespace Structs {
         Color3 BackgroundColor3; // 0x508
         Color3 BorderColor3; // 0x514
         // alias: BackgroundTransparency = 0x518 (float)
-        char pad_3[0x20];
-        bool Visible; // 0x540
-        char pad_4[0x3];
+        char pad_3[0x24];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_4[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_5[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x438];
+        char pad_6[0x5];
+        bool Visible; // 0x575
+        char pad_7[0x432];
         std::string Image; // 0x9a8
         char pad_8[0x1d8];
         std::string RichText; // 0xba0
@@ -474,9 +474,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb0];
@@ -993,13 +993,13 @@ namespace Structs {
     }; // sizeof = 0x9c4
 
     struct World {
-        char pad_0[0x122];
-        uintptr_t AirProperties; // 0x122
-        char pad_1[0xe2];
+        char pad_0[0x20c];
         float FallenPartsDestroyHeight; // 0x20c
-        char pad_2[0x8];
+        char pad_1[0x8];
         float Gravity; // 0x218
-        char pad_3[0x84];
+        char pad_2[0x14];
+        uintptr_t AirProperties; // 0x230
+        char pad_3[0x68];
         uintptr_t Primitives; // 0x2a0
         char pad_4[0x5b0];
         float worldStepsPerSec; // 0x858
@@ -1020,6 +1020,13 @@ namespace Structs {
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
+    struct global_State {
+        char pad_0[0x70];
+        uintptr_t mainthread; // 0x70
+        char pad_1[0x5a0];
+        uintptr_t ref_table; // 0x618
+    }; // sizeof = 0x620
+
     struct instance {
         uintptr_t name_str; // 0x0
         std::string class_name; // 0x8
@@ -1035,7 +1042,14 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x48];
+        char pad_0[0x10];
+        uintptr_t ci_last; // 0x10
+        uintptr_t ci_base; // 0x18
+        char pad_1[0x10];
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
+        uintptr_t global; // 0x38
+        char pad_2[0x8];
         uintptr_t stack; // 0x48
         uintptr_t top; // 0x50
         uintptr_t stack_last; // 0x58
