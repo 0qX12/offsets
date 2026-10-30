@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "19:11 30/10/2026",
+    "Dumped At": "19:27 30/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -642,6 +642,18 @@
             "convertItemEnumToString": "unsigned __int64",
             "RakNetEncrypt": "unsigned __int64",
             "RakPeerVirtualTable": "unsigned __int64"
+        },
+        "Highlight": {
+            "Adornee": "unsigned __int64",
+            "DepthMode": "unsigned __int64",
+            "Enabled": "unsigned __int64",
+            "FillColor": "unsigned __int64",
+            "FillTransparency": "unsigned __int64",
+            "LineThickness": "unsigned __int64",
+            "OutlineColor": "unsigned __int64",
+            "OutlineTransparency": "unsigned __int64",
+            "Prop": "unsigned __int64",
+            "SetEnabled": "unsigned __int64"
         },
         "DeviceD3D11Gfx": {
             "VTableRva": "unsigned __int64",

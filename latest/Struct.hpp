@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:11 30/10/2026 (GMT)
-/*  Total Offsets   : 477
+/*  Dumped At       : 19:27 30/10/2026 (GMT)
+/*  Total Offsets   : 487
 /* =============================================================
 */
 
@@ -375,6 +375,25 @@ namespace Structs {
         char pad_11[0x90];
         Color3 TextColor3; // 0xeb8
     }; // sizeof = 0xec4
+
+    struct Highlight {
+        char pad_0[0x98];
+        uintptr_t Prop; // 0x98
+        uintptr_t Adornee; // 0xa0
+        char pad_1[0x8];
+        uintptr_t FillColor; // 0xb0
+        char pad_2[0x4];
+        uintptr_t OutlineColor; // 0xbc
+        char pad_3[0x4];
+        uintptr_t DepthMode; // 0xc8
+        // alias: FillTransparency = 0xcc (unsigned __int64)
+        uintptr_t LineThickness; // 0xd0
+        // alias: OutlineTransparency = 0xd4 (unsigned __int64)
+        char pad_4[0x4];
+        uintptr_t Enabled; // 0xdc
+        char pad_5[0xbee53c];
+        uintptr_t SetEnabled; // 0xbee620
+    }; // sizeof = 0xbee628
 
     struct Humanoid {
         char pad_0[0xa0];
@@ -760,11 +779,11 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x60];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
+        char pad_0[0x28];
+        double HeartbeatFPS; // 0x28
+        char pad_1[0xe0];
+        uintptr_t HeartbeatTask; // 0x110
+    }; // sizeof = 0x118
 
     struct Script {
         char pad_0[0xb8];
