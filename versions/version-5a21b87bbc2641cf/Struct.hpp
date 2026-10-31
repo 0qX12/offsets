@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:13 01/11/2026 (GMT)
-/*  Total Offsets   : 486
+/*  Dumped At       : 00:17 01/11/2026 (GMT)
+/*  Total Offsets   : 487
 /* =============================================================
 */
 
@@ -86,7 +86,9 @@ namespace Structs {
         int Shape; // 0x1a0
         char pad_5[0x20];
         Vector3 Size; // 0x1c4
-    }; // sizeof = 0x1d0
+        char pad_6[0x120];
+        uintptr_t SetSizeVirtualSlot; // 0x2f0
+    }; // sizeof = 0x2f8
 
     struct Beam {
         char pad_0[0x128];
@@ -133,9 +135,9 @@ namespace Structs {
     }; // sizeof = 0x28
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -354,15 +356,15 @@ namespace Structs {
         Color3 BorderColor3; // 0x514
         char pad_3[0xc];
         float BackgroundTransparency; // 0x52c
-        char pad_4[0x14];
+        char pad_4[0x10];
+        bool Visible; // 0x540
+        char pad_5[0x3];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_6[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_7[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x5];
-        bool Visible; // 0x575
-        char pad_8[0x432];
+        char pad_8[0x438];
         std::string Image; // 0x9a8
         char pad_9[0x1d8];
         std::string RichText; // 0xba0
@@ -469,9 +471,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb8];
@@ -805,12 +807,13 @@ namespace Structs {
         std::string SkyboxLf; // 0x170
         char pad_5[0x10];
         std::string SkyboxRt; // 0x1a0
-        char pad_6[0x10];
+        char pad_6[0xc];
+        float MoonAngularSize; // 0x1cc
         std::string SkyboxUp; // 0x1d0
         char pad_7[0x10];
         std::string SunTextureId; // 0x200
         Vector3 SkyboxOrientation; // 0x220
-        float MoonAngularSize; // 0x22c
+        char pad_8[0x4];
         int StarCount; // 0x230
         float SunAngularSize; // 0x234
     }; // sizeof = 0x238
@@ -1041,8 +1044,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
