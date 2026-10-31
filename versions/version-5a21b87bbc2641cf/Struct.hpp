@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 15:44 31/10/2026 (GMT)
-/*  Total Offsets   : 500
+/*  Dumped At       : 16:19 31/10/2026 (GMT)
+/*  Total Offsets   : 504
 /* =============================================================
 */
 
@@ -77,6 +77,8 @@ namespace Structs {
         // alias: Count = 0x10 (unsigned __int32)
         uintptr_t Value; // 0x18
         // alias: NumberValue = 0x18 (unsigned __int64)
+        // alias: Vector3Value = 0x18 (unsigned __int64)
+        // alias: Color3Value = 0x18 (unsigned __int64)
         char pad_0[0x18];
         uintptr_t ComponentMap; // 0x38
         char pad_1[0x18];
@@ -87,7 +89,11 @@ namespace Structs {
         uintptr_t TypeNumber; // 0x8c883c0
         char pad_4[0x48];
         uintptr_t TypeString; // 0x8c88410
-    }; // sizeof = 0x8c88418
+        char pad_5[0x48];
+        uintptr_t TypeVector3; // 0x8c88460
+        char pad_6[0x278];
+        uintptr_t TypeColor3; // 0x8c886e0
+    }; // sizeof = 0x8c886e8
 
     struct BasePart {
         char pad_0[0xf4];
@@ -1068,8 +1074,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
