@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "19:35 31/10/2026",
+    "Dumped At": "19:37 31/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -45,6 +45,7 @@
         "DataModel": {
             "PlaceId": "unsigned __int64",
             "GameId": "unsigned __int64",
+            "CreatorId": "unsigned __int64",
             "GameLoaded": "unsigned __int64",
             "JobId": "string",
             "Workspace": "unsigned __int64",

@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:35 31/10/2026 (GMT)
-/*  Total Offsets   : 486
+/*  Dumped At       : 19:37 31/10/2026 (GMT)
+/*  Total Offsets   : 487
 /* =============================================================
 */
 
@@ -124,11 +124,11 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct ByteCode {
-        char pad_0[0x50];
-        uintptr_t Pointer; // 0x50
+        char pad_0[0x18];
+        uintptr_t Pointer; // 0x18
         char pad_1[0x8];
-        uintptr_t Size; // 0x60
-    }; // sizeof = 0x68
+        uintptr_t Size; // 0x28
+    }; // sizeof = 0x30
 
     struct CachedItem {
         char pad_0[0x28];
@@ -216,7 +216,8 @@ namespace Structs {
         std::string JobId; // 0x108
         char pad_4[0x20];
         uintptr_t Workspace; // 0x148
-        char pad_5[0x28];
+        char pad_5[0x20];
+        uintptr_t CreatorId; // 0x170
         uintptr_t GameId; // 0x178
         uintptr_t PlaceId; // 0x180
         char pad_6[0x14];
@@ -1066,11 +1067,11 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x50];
-        uintptr_t pointer; // 0x50
+        char pad_0[0x18];
+        uintptr_t pointer; // 0x18
         char pad_1[0x8];
-        uintptr_t size; // 0x60
-        char pad_2[0xb8];
+        uintptr_t size; // 0x28
+        char pad_2[0xf0];
         uintptr_t modulescript_pointer; // 0x120
         char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150
