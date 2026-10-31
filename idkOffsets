@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:54 31/10/2026 (GMT)
-/*  Total Offsets   : 487
+/*  Dumped At       : 20:29 31/10/2026 (GMT)
+/*  Total Offsets   : 485
 /* =============================================================
 */
 
@@ -260,7 +260,7 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x540;
+         inline constexpr uintptr_t Visible = 0x575;
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
@@ -367,21 +367,21 @@ namespace Offsets {
          inline constexpr uintptr_t Asphalt = 0x30;
          inline constexpr uintptr_t Basalt = 0x27;
          inline constexpr uintptr_t Brick = 0xf;
-         inline constexpr uintptr_t Cobblestone = 0x33;
-         inline constexpr uintptr_t Concrete = 0xc;
-         inline constexpr uintptr_t CrackedLava = 0x2d;
+         inline constexpr uintptr_t Cobblestone = 0xc33;
+         inline constexpr uintptr_t Concrete = 0xc0c;
+         inline constexpr uintptr_t CrackedLava = 0xc2d;
          inline constexpr uintptr_t Glacier = 0x1b;
-         inline constexpr uintptr_t Grass = 0x6;
-         inline constexpr uintptr_t Ground = 0x2a;
+         inline constexpr uintptr_t Grass = 0xc06;
+         inline constexpr uintptr_t Ground = 0xc2a;
          inline constexpr uintptr_t Ice = 0x36;
          inline constexpr uintptr_t LeafyGrass = 0x39;
-         inline constexpr uintptr_t Limestone = 0x3f;
-         inline constexpr uintptr_t Mud = 0x24;
+         inline constexpr uintptr_t Limestone = 0xc3f;
+         inline constexpr uintptr_t Mud = 0xc24;
          inline constexpr uintptr_t Pavement = 0x42;
-         inline constexpr uintptr_t Rock = 0x18;
+         inline constexpr uintptr_t Rock = 0xc18;
          inline constexpr uintptr_t Salt = 0x3c;
          inline constexpr uintptr_t Sand = 0x12;
-         inline constexpr uintptr_t Sandstone = 0x21;
+         inline constexpr uintptr_t Sandstone = 0xc21;
          inline constexpr uintptr_t Slate = 0x9;
          inline constexpr uintptr_t Snow = 0x1e;
          inline constexpr uintptr_t WoodPlanks = 0x15;
@@ -545,11 +545,6 @@ namespace Offsets {
     namespace RenderView {
          inline constexpr uintptr_t DeviceD3D11 = 0x8;
          inline constexpr uintptr_t VisualEngine = 0x18;
-    }
-
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
     namespace Script {
