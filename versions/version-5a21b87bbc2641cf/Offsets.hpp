@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:29 31/10/2026 (GMT)
-/*  Total Offsets   : 485
+/*  Dumped At       : 20:37 31/10/2026 (GMT)
+/*  Total Offsets   : 487
 /* =============================================================
 */
 
@@ -82,14 +82,14 @@ namespace Offsets {
     }
 
     namespace BloomEffect {
-         inline constexpr uintptr_t Enabled = 0x98;
+         inline constexpr uintptr_t Enabled = 0xac;
          inline constexpr uintptr_t Intensity = 0xa0;
          inline constexpr uintptr_t Size = 0xa4;
          inline constexpr uintptr_t Threshold = 0xa8;
     }
 
     namespace BlurEffect {
-         inline constexpr uintptr_t Enabled = 0x98;
+         inline constexpr uintptr_t Enabled = 0xac;
          inline constexpr uintptr_t Size = 0xa0;
     }
 
@@ -142,12 +142,12 @@ namespace Offsets {
     namespace ColorCorrectionEffect {
          inline constexpr uintptr_t Brightness = 0xac;
          inline constexpr uintptr_t Contrast = 0xb0;
-         inline constexpr uintptr_t Enabled = 0x98;
+         inline constexpr uintptr_t Enabled = 0xac;
          inline constexpr uintptr_t TintColor = 0xa0;
     }
 
     namespace ColorGradingEffect {
-         inline constexpr uintptr_t Enabled = 0x98;
+         inline constexpr uintptr_t Enabled = 0xac;
          inline constexpr uintptr_t TonemapperPreset = 0xa0;
     }
 
@@ -169,7 +169,7 @@ namespace Offsets {
     }
 
     namespace DepthOfFieldEffect {
-         inline constexpr uintptr_t Enabled = 0x98;
+         inline constexpr uintptr_t Enabled = 0xac;
          inline constexpr uintptr_t FarIntensity = 0xa0;
          inline constexpr uintptr_t FocusDistance = 0xa4;
          inline constexpr uintptr_t InFocusRadius = 0xa8;
@@ -367,21 +367,21 @@ namespace Offsets {
          inline constexpr uintptr_t Asphalt = 0x30;
          inline constexpr uintptr_t Basalt = 0x27;
          inline constexpr uintptr_t Brick = 0xf;
-         inline constexpr uintptr_t Cobblestone = 0xc33;
-         inline constexpr uintptr_t Concrete = 0xc0c;
-         inline constexpr uintptr_t CrackedLava = 0xc2d;
+         inline constexpr uintptr_t Cobblestone = 0xcf3;
+         inline constexpr uintptr_t Concrete = 0xccc;
+         inline constexpr uintptr_t CrackedLava = 0xced;
          inline constexpr uintptr_t Glacier = 0x1b;
-         inline constexpr uintptr_t Grass = 0xc06;
-         inline constexpr uintptr_t Ground = 0xc2a;
+         inline constexpr uintptr_t Grass = 0xcc6;
+         inline constexpr uintptr_t Ground = 0xcea;
          inline constexpr uintptr_t Ice = 0x36;
          inline constexpr uintptr_t LeafyGrass = 0x39;
-         inline constexpr uintptr_t Limestone = 0xc3f;
-         inline constexpr uintptr_t Mud = 0xc24;
+         inline constexpr uintptr_t Limestone = 0xcff;
+         inline constexpr uintptr_t Mud = 0xce4;
          inline constexpr uintptr_t Pavement = 0x42;
-         inline constexpr uintptr_t Rock = 0xc18;
+         inline constexpr uintptr_t Rock = 0xcd8;
          inline constexpr uintptr_t Salt = 0x3c;
          inline constexpr uintptr_t Sand = 0x12;
-         inline constexpr uintptr_t Sandstone = 0xc21;
+         inline constexpr uintptr_t Sandstone = 0xce1;
          inline constexpr uintptr_t Slate = 0x9;
          inline constexpr uintptr_t Snow = 0x1e;
          inline constexpr uintptr_t WoodPlanks = 0x15;
@@ -547,6 +547,11 @@ namespace Offsets {
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
+    namespace RunService {
+         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
+         inline constexpr uintptr_t HeartbeatTask = 0xd8;
+    }
+
     namespace Script {
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
@@ -600,7 +605,7 @@ namespace Offsets {
     }
 
     namespace SunRaysEffect {
-         inline constexpr uintptr_t Enabled = 0x98;
+         inline constexpr uintptr_t Enabled = 0xac;
          inline constexpr uintptr_t Intensity = 0xa0;
          inline constexpr uintptr_t Spread = 0xa4;
     }
@@ -641,7 +646,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x4c8;
     }
 
     namespace Tool {

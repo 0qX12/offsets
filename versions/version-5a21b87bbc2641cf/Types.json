@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "20:29 31/10/2026",
+    "Dumped At": "20:37 31/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -57,6 +57,10 @@
             "ToRenderView3": "unsigned __int64",
             "PrimitiveCount": "int",
             "Services": "unsigned __int64"
+        },
+        "RunService": {
+            "HeartbeatTask": "unsigned __int64",
+            "HeartbeatFPS": "double"
         },
         "RenderJob": {
             "RenderView": "unsigned __int64",
@@ -581,19 +585,19 @@
             "Value_Ref_Id": "unsigned __int64"
         },
         "": {
-            "LS_ENC": "int",
+            "OFF_STACKSIZE": "int",
             "LUAI_STACKSIZE": "int",
-            "OFF_STACKSIZE": "int"
+            "LS_ENC": "int"
         },
         "lua_state": {
-            "CallInfoSize": "unsigned __int64",
+            "stack": "unsigned __int64",
+            "top": "unsigned __int64",
+            "stack_last": "unsigned __int64",
             "ci": "unsigned __int64",
             "ci_base": "unsigned __int64",
             "ci_last": "unsigned __int64",
-            "global": "unsigned __int64",
-            "stack": "unsigned __int64",
-            "stack_last": "unsigned __int64",
-            "top": "unsigned __int64"
+            "CallInfoSize": "unsigned __int64",
+            "global": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",

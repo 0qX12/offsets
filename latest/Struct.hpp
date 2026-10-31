@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:29 31/10/2026 (GMT)
-/*  Total Offsets   : 485
+/*  Dumped At       : 20:37 31/10/2026 (GMT)
+/*  Total Offsets   : 487
 /* =============================================================
 */
 
@@ -108,20 +108,19 @@ namespace Structs {
     }; // sizeof = 0x19c
 
     struct BloomEffect {
-        char pad_0[0x98];
-        bool Enabled; // 0x98
-        char pad_1[0x7];
+        char pad_0[0xa0];
         float Intensity; // 0xa0
         float Size; // 0xa4
         float Threshold; // 0xa8
-    }; // sizeof = 0xac
+        bool Enabled; // 0xac
+    }; // sizeof = 0xad
 
     struct BlurEffect {
-        char pad_0[0x98];
-        bool Enabled; // 0x98
-        char pad_1[0x7];
+        char pad_0[0xa0];
         float Size; // 0xa0
-    }; // sizeof = 0xa4
+        char pad_1[0x8];
+        bool Enabled; // 0xac
+    }; // sizeof = 0xad
 
     struct ByteCode {
         char pad_0[0x10];
@@ -190,20 +189,19 @@ namespace Structs {
     }; // sizeof = 0x114
 
     struct ColorCorrectionEffect {
-        char pad_0[0x98];
-        bool Enabled; // 0x98
-        char pad_1[0x7];
+        char pad_0[0xa0];
         Color3 TintColor; // 0xa0
         float Brightness; // 0xac
+        // alias: Enabled = 0xac (bool)
         float Contrast; // 0xb0
     }; // sizeof = 0xb4
 
     struct ColorGradingEffect {
-        char pad_0[0x98];
-        bool Enabled; // 0x98
-        char pad_1[0x7];
+        char pad_0[0xa0];
         int TonemapperPreset; // 0xa0
-    }; // sizeof = 0xa4
+        char pad_1[0x8];
+        bool Enabled; // 0xac
+    }; // sizeof = 0xad
 
     struct DataModel {
         char pad_0[0x8];
@@ -234,13 +232,12 @@ namespace Structs {
     }; // sizeof = 0x590
 
     struct DepthOfFieldEffect {
-        char pad_0[0x98];
-        bool Enabled; // 0x98
-        char pad_1[0x7];
+        char pad_0[0xa0];
         float FarIntensity; // 0xa0
         float FocusDistance; // 0xa4
         float InFocusRadius; // 0xa8
         float NearIntensity; // 0xac
+        // alias: Enabled = 0xac (bool)
     }; // sizeof = 0xb0
 
     struct Descriptor {
@@ -527,23 +524,23 @@ namespace Structs {
         ColorUint_8 Salt; // 0x3c
         char pad_6[0x3];
         ColorUint_8 Pavement; // 0x42
-        char pad_7[0xbc1];
-        ColorUint_8 Grass; // 0xc06
+        char pad_7[0xc81];
+        ColorUint_8 Grass; // 0xcc6
         char pad_8[0x3];
-        ColorUint_8 Concrete; // 0xc0c
+        ColorUint_8 Concrete; // 0xccc
         char pad_9[0x9];
-        ColorUint_8 Rock; // 0xc18
+        ColorUint_8 Rock; // 0xcd8
         char pad_10[0x6];
-        ColorUint_8 Sandstone; // 0xc21
-        ColorUint_8 Mud; // 0xc24
+        ColorUint_8 Sandstone; // 0xce1
+        ColorUint_8 Mud; // 0xce4
         char pad_11[0x3];
-        ColorUint_8 Ground; // 0xc2a
-        ColorUint_8 CrackedLava; // 0xc2d
+        ColorUint_8 Ground; // 0xcea
+        ColorUint_8 CrackedLava; // 0xced
         char pad_12[0x3];
-        ColorUint_8 Cobblestone; // 0xc33
+        ColorUint_8 Cobblestone; // 0xcf3
         char pad_13[0x9];
-        ColorUint_8 Limestone; // 0xc3f
-    }; // sizeof = 0xc42
+        ColorUint_8 Limestone; // 0xcff
+    }; // sizeof = 0xd02
 
     struct MemEnforcedLRUCache {
         char pad_0[0x8];
@@ -786,6 +783,13 @@ namespace Structs {
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
 
+    struct RunService {
+        char pad_0[0xc0];
+        double HeartbeatFPS; // 0xc0
+        char pad_1[0x10];
+        uintptr_t HeartbeatTask; // 0xd8
+    }; // sizeof = 0xe0
+
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -859,12 +863,12 @@ namespace Structs {
     }; // sizeof = 0x100
 
     struct SunRaysEffect {
-        char pad_0[0x98];
-        bool Enabled; // 0x98
-        char pad_1[0x7];
+        char pad_0[0xa0];
         float Intensity; // 0xa0
         float Spread; // 0xa4
-    }; // sizeof = 0xa8
+        char pad_1[0x4];
+        bool Enabled; // 0xac
+    }; // sizeof = 0xad
 
     struct SurfaceAppearance {
         char pad_0[0xb0];
@@ -918,8 +922,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1052,8 +1057,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
