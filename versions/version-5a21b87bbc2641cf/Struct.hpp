@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:37 31/10/2026 (GMT)
+/*  Dumped At       : 19:53 31/10/2026 (GMT)
 /*  Total Offsets   : 487
 /* =============================================================
 */
@@ -124,16 +124,16 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct ByteCode {
-        char pad_0[0x18];
-        uintptr_t Pointer; // 0x18
+        char pad_0[0x10];
+        uintptr_t Pointer; // 0x10
         char pad_1[0x8];
-        uintptr_t Size; // 0x28
-    }; // sizeof = 0x30
+        uintptr_t Size; // 0x20
+    }; // sizeof = 0x28
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -410,21 +410,22 @@ namespace Structs {
         int HealthDisplayType; // 0x180
         float Health; // 0x184
         uintptr_t HipHeight; // 0x188
-        char pad_7[0x4];
+        int HumanoidStateID; // 0x190
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
         float MaxHealth; // 0x19c
         float MaxSlopeAngle; // 0x1a0
         float NameDisplayDistance; // 0x1a4
         int NameOcclusion; // 0x1a8
-        char pad_8[0x8];
+        char pad_7[0x8];
         int RigType; // 0x1b4
-        char pad_9[0xc];
-        uintptr_t WalkSpeed; // 0x1c4
-        // alias: Walkspeed = 0x1c4 (float)
-        // alias: AutoJumpEnabled = 0x1c8 (bool)
-        // alias: AutoRotate = 0x1c9 (bool)
-        // alias: AutomaticScalingEnabled = 0x1ca (bool)
+        char pad_8[0xc];
+        float Walkspeed; // 0x1c4
+        // alias: WalkSpeed = 0x1c4 (unsigned __int64)
+        bool AutoJumpEnabled; // 0x1c8
+        bool AutoRotate; // 0x1c9
+        bool AutomaticScalingEnabled; // 0x1ca
+        char pad_9[0x1];
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
         char pad_10[0x2];
@@ -437,11 +438,9 @@ namespace Structs {
         bool UseJumpPower; // 0x1d6
         char pad_13[0x289];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_14[0x41c];
-        int HumanoidStateID; // 0x884
-        char pad_15[0x20];
+        char pad_14[0x440];
         int HumanoidState; // 0x8a8
-        char pad_16[0x182];
+        char pad_15[0x182];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
@@ -468,9 +467,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb8];
@@ -775,9 +774,9 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0xc0];
-        double HeartbeatFPS; // 0xc0
-        char pad_1[0x10];
+        char pad_0[0xc8];
+        double HeartbeatFPS; // 0xc8
+        char pad_1[0x8];
         uintptr_t HeartbeatTask; // 0xd8
     }; // sizeof = 0xe0
 
@@ -913,9 +912,8 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        char pad_1[0x2e0];
-        std::string Texture_Texture; // 0x4c8
-    }; // sizeof = 0x4e8
+        // alias: Texture_Texture = 0x1c8 (string)
+    }; // sizeof = 0x1e8
 
     struct Tool {
         char pad_0[0x348];
@@ -995,14 +993,15 @@ namespace Structs {
     }; // sizeof = 0x9c4
 
     struct World {
-        uintptr_t Primitives; // 0x0
-        char pad_0[0x204];
+        char pad_0[0x20c];
         float FallenPartsDestroyHeight; // 0x20c
         char pad_1[0x8];
         float Gravity; // 0x218
         char pad_2[0x14];
         uintptr_t AirProperties; // 0x230
-        char pad_3[0x620];
+        char pad_3[0x68];
+        uintptr_t Primitives; // 0x2a0
+        char pad_4[0x5b0];
         float worldStepsPerSec; // 0x858
         // alias: WorldSteps = 0x858 (float)
     }; // sizeof = 0x85c
@@ -1047,8 +1046,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t ci; // 0x30
-        // alias: CallInfoSize = 0x30 (unsigned __int64)
+        uintptr_t CallInfoSize; // 0x30
+        // alias: ci = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
@@ -1067,11 +1066,11 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x18];
-        uintptr_t pointer; // 0x18
+        char pad_0[0x10];
+        uintptr_t pointer; // 0x10
         char pad_1[0x8];
-        uintptr_t size; // 0x28
-        char pad_2[0xf0];
+        uintptr_t size; // 0x20
+        char pad_2[0xf8];
         uintptr_t modulescript_pointer; // 0x120
         char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150

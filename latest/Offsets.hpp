@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:37 31/10/2026 (GMT)
+/*  Dumped At       : 19:53 31/10/2026 (GMT)
 /*  Total Offsets   : 487
 /* =============================================================
 */
@@ -94,12 +94,12 @@ namespace Offsets {
     }
 
     namespace ByteCode {
-         inline constexpr uintptr_t Pointer = 0x18;
-         inline constexpr uintptr_t Size = 0x28;
+         inline constexpr uintptr_t Pointer = 0x10;
+         inline constexpr uintptr_t Size = 0x20;
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -293,7 +293,7 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0x884;
+         inline constexpr uintptr_t HumanoidStateID = 0x190;
          inline constexpr uintptr_t IsWalking = 0xa2e;
          inline constexpr uintptr_t Jump = 0x1d0;
          inline constexpr uintptr_t JumpHeight = 0x194;
@@ -333,7 +333,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -548,7 +548,7 @@ namespace Offsets {
     }
 
     namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
+         inline constexpr uintptr_t HeartbeatFPS = 0xc8;
          inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
@@ -646,7 +646,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x4c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {
@@ -709,7 +709,7 @@ namespace Offsets {
          inline constexpr uintptr_t AirProperties = 0x230;
          inline constexpr uintptr_t FallenPartsDestroyHeight = 0x20c;
          inline constexpr uintptr_t Gravity = 0x218;
-         inline constexpr uintptr_t Primitives = 0x0;
+         inline constexpr uintptr_t Primitives = 0x2a0;
          inline constexpr uintptr_t WorldSteps = 0x858;
          inline constexpr uintptr_t worldStepsPerSec = 0x858;
     }
@@ -765,8 +765,8 @@ namespace Offsets {
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;
-         inline constexpr uintptr_t pointer = 0x18;
-         inline constexpr uintptr_t size = 0x28;
+         inline constexpr uintptr_t pointer = 0x10;
+         inline constexpr uintptr_t size = 0x20;
     }
 
     namespace task_scheduler {
