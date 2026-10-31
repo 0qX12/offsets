@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 15:33 31/10/2026 (GMT)
-/*  Total Offsets   : 495
+/*  Dumped At       : 15:44 31/10/2026 (GMT)
+/*  Total Offsets   : 500
 /* =============================================================
 */
 
@@ -72,14 +72,22 @@ namespace Structs {
         uintptr_t Key; // 0x0
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         uintptr_t Payload; // 0x8
+        // alias: Type = 0x8 (unsigned __int64)
         uintptr_t ComponentStride; // 0x10
         // alias: Count = 0x10 (unsigned __int32)
         uintptr_t Value; // 0x18
+        // alias: NumberValue = 0x18 (unsigned __int64)
         char pad_0[0x18];
         uintptr_t ComponentMap; // 0x38
         char pad_1[0x18];
         uintptr_t Size; // 0x58
-    }; // sizeof = 0x60
+        char pad_2[0x8c88220];
+        uintptr_t TypeBool; // 0x8c88280
+        char pad_3[0x138];
+        uintptr_t TypeNumber; // 0x8c883c0
+        char pad_4[0x48];
+        uintptr_t TypeString; // 0x8c88410
+    }; // sizeof = 0x8c88418
 
     struct BasePart {
         char pad_0[0xf4];
