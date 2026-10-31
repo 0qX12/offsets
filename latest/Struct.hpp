@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:37 31/10/2026 (GMT)
-/*  Total Offsets   : 487
+/*  Dumped At       : 21:37 31/10/2026 (GMT)
+/*  Total Offsets   : 486
 /* =============================================================
 */
 
@@ -84,7 +84,9 @@ namespace Structs {
         uintptr_t ClusterNode; // 0x180
         char pad_4[0x18];
         int Shape; // 0x1a0
-    }; // sizeof = 0x1a4
+        char pad_5[0x20];
+        Vector3 Size; // 0x1c4
+    }; // sizeof = 0x1d0
 
     struct Beam {
         char pad_0[0x128];
@@ -108,19 +110,20 @@ namespace Structs {
     }; // sizeof = 0x19c
 
     struct BloomEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float Intensity; // 0xa0
         float Size; // 0xa4
         float Threshold; // 0xa8
-        bool Enabled; // 0xac
-    }; // sizeof = 0xad
+    }; // sizeof = 0xac
 
     struct BlurEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float Size; // 0xa0
-        char pad_1[0x8];
-        bool Enabled; // 0xac
-    }; // sizeof = 0xad
+    }; // sizeof = 0xa4
 
     struct ByteCode {
         char pad_0[0x10];
@@ -130,9 +133,9 @@ namespace Structs {
     }; // sizeof = 0x28
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -189,19 +192,20 @@ namespace Structs {
     }; // sizeof = 0x114
 
     struct ColorCorrectionEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         Color3 TintColor; // 0xa0
         float Brightness; // 0xac
-        // alias: Enabled = 0xac (bool)
         float Contrast; // 0xb0
     }; // sizeof = 0xb4
 
     struct ColorGradingEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         int TonemapperPreset; // 0xa0
-        char pad_1[0x8];
-        bool Enabled; // 0xac
-    }; // sizeof = 0xad
+    }; // sizeof = 0xa4
 
     struct DataModel {
         char pad_0[0x8];
@@ -232,12 +236,13 @@ namespace Structs {
     }; // sizeof = 0x590
 
     struct DepthOfFieldEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float FarIntensity; // 0xa0
         float FocusDistance; // 0xa4
         float InFocusRadius; // 0xa8
         float NearIntensity; // 0xac
-        // alias: Enabled = 0xac (bool)
     }; // sizeof = 0xb0
 
     struct Descriptor {
@@ -387,57 +392,59 @@ namespace Structs {
     }; // sizeof = 0xbee628
 
     struct Humanoid {
-        char pad_0[0xa0];
+        char pad_0[0x20];
+        int HumanoidStateID; // 0x20
+        char pad_1[0x7c];
         std::string DisplayName; // 0xa0
-        char pad_1[0x30];
+        char pad_2[0x30];
         uintptr_t SeatPart; // 0xf0
-        char pad_2[0x8];
-        uintptr_t MoveToPart; // 0x100
         char pad_3[0x8];
+        uintptr_t MoveToPart; // 0x100
+        char pad_4[0x8];
         Vector3 CameraOffset; // 0x110
-        char pad_4[0x18];
+        char pad_5[0x18];
         Vector3 MoveDirection; // 0x134
         Vector3 TargetPoint; // 0x140
-        char pad_5[0xc];
+        char pad_6[0xc];
         Vector3 MoveToPoint; // 0x158
-        char pad_6[0x10];
+        char pad_7[0x10];
         int DisplayDistanceType; // 0x174
         int FloorMaterial; // 0x178
         float HealthDisplayDistance; // 0x17c
         int HealthDisplayType; // 0x180
         float Health; // 0x184
         uintptr_t HipHeight; // 0x188
-        int HumanoidStateID; // 0x190
+        char pad_8[0x4];
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
         float MaxHealth; // 0x19c
         float MaxSlopeAngle; // 0x1a0
         float NameDisplayDistance; // 0x1a4
         int NameOcclusion; // 0x1a8
-        char pad_7[0x8];
+        char pad_9[0x8];
         int RigType; // 0x1b4
-        char pad_8[0xc];
+        char pad_10[0xc];
         float Walkspeed; // 0x1c4
         // alias: WalkSpeed = 0x1c4 (unsigned __int64)
         bool AutoJumpEnabled; // 0x1c8
         bool AutoRotate; // 0x1c9
         bool AutomaticScalingEnabled; // 0x1ca
-        char pad_9[0x1];
+        char pad_11[0x1];
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
-        char pad_10[0x2];
+        char pad_12[0x2];
         bool Jump; // 0x1d0
-        char pad_11[0x1];
+        char pad_13[0x1];
         bool PlatformStand; // 0x1d2
         bool Sit; // 0x1d3
         bool RequiresNeck; // 0x1d4
-        char pad_12[0x1];
+        char pad_14[0x1];
         bool UseJumpPower; // 0x1d6
-        char pad_13[0x289];
+        char pad_15[0x289];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_14[0x440];
+        char pad_16[0x440];
         int HumanoidState; // 0x8a8
-        char pad_15[0x182];
+        char pad_17[0x182];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
@@ -464,9 +471,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb8];
@@ -505,42 +512,29 @@ namespace Structs {
     }; // sizeof = 0x1a8
 
     struct MaterialColors {
-        char pad_0[0x9];
+        char pad_0[0x6];
+        ColorUint_8 Grass; // 0x6
         ColorUint_8 Slate; // 0x9
-        char pad_1[0x3];
+        ColorUint_8 Concrete; // 0xc
         ColorUint_8 Brick; // 0xf
         ColorUint_8 Sand; // 0x12
         ColorUint_8 WoodPlanks; // 0x15
-        char pad_2[0x3];
+        ColorUint_8 Rock; // 0x18
         ColorUint_8 Glacier; // 0x1b
         ColorUint_8 Snow; // 0x1e
-        char pad_3[0x6];
+        ColorUint_8 Sandstone; // 0x21
+        ColorUint_8 Mud; // 0x24
         ColorUint_8 Basalt; // 0x27
-        char pad_4[0x6];
+        ColorUint_8 Ground; // 0x2a
+        ColorUint_8 CrackedLava; // 0x2d
         ColorUint_8 Asphalt; // 0x30
-        char pad_5[0x3];
+        ColorUint_8 Cobblestone; // 0x33
         ColorUint_8 Ice; // 0x36
         ColorUint_8 LeafyGrass; // 0x39
         ColorUint_8 Salt; // 0x3c
-        char pad_6[0x3];
+        ColorUint_8 Limestone; // 0x3f
         ColorUint_8 Pavement; // 0x42
-        char pad_7[0xc81];
-        ColorUint_8 Grass; // 0xcc6
-        char pad_8[0x3];
-        ColorUint_8 Concrete; // 0xccc
-        char pad_9[0x9];
-        ColorUint_8 Rock; // 0xcd8
-        char pad_10[0x6];
-        ColorUint_8 Sandstone; // 0xce1
-        ColorUint_8 Mud; // 0xce4
-        char pad_11[0x3];
-        ColorUint_8 Ground; // 0xcea
-        ColorUint_8 CrackedLava; // 0xced
-        char pad_12[0x3];
-        ColorUint_8 Cobblestone; // 0xcf3
-        char pad_13[0x9];
-        ColorUint_8 Limestone; // 0xcff
-    }; // sizeof = 0xd02
+    }; // sizeof = 0x45
 
     struct MemEnforcedLRUCache {
         char pad_0[0x8];
@@ -783,13 +777,6 @@ namespace Structs {
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
 
-    struct RunService {
-        char pad_0[0xc0];
-        double HeartbeatFPS; // 0xc0
-        char pad_1[0x10];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
-
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -863,12 +850,12 @@ namespace Structs {
     }; // sizeof = 0x100
 
     struct SunRaysEffect {
-        char pad_0[0xa0];
+        char pad_0[0x98];
+        bool Enabled; // 0x98
+        char pad_1[0x7];
         float Intensity; // 0xa0
         float Spread; // 0xa4
-        char pad_1[0x4];
-        bool Enabled; // 0xac
-    }; // sizeof = 0xad
+    }; // sizeof = 0xa8
 
     struct SurfaceAppearance {
         char pad_0[0xb0];
