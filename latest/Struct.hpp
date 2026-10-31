@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:30 31/10/2026 (GMT)
+/*  Dumped At       : 19:35 31/10/2026 (GMT)
 /*  Total Offsets   : 486
 /* =============================================================
 */
@@ -436,11 +436,11 @@ namespace Structs {
         bool UseJumpPower; // 0x1d6
         char pad_13[0x289];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_14[0x440];
+        char pad_14[0x41c];
+        int HumanoidStateID; // 0x884
+        char pad_15[0x20];
         int HumanoidState; // 0x8a8
-        char pad_15[0x164];
-        int HumanoidStateID; // 0xa10
-        char pad_16[0x1a];
+        char pad_16[0x182];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
@@ -774,9 +774,9 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0xc8];
-        double HeartbeatFPS; // 0xc8
-        char pad_1[0x8];
+        char pad_0[0xc0];
+        double HeartbeatFPS; // 0xc0
+        char pad_1[0x10];
         uintptr_t HeartbeatTask; // 0xd8
     }; // sizeof = 0xe0
 
@@ -1046,8 +1046,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48

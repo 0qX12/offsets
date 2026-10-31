@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:30 31/10/2026 (GMT)
+/*  Dumped At       : 19:35 31/10/2026 (GMT)
 /*  Total Offsets   : 486
 /* =============================================================
 */
@@ -292,7 +292,7 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0xa10;
+         inline constexpr uintptr_t HumanoidStateID = 0x884;
          inline constexpr uintptr_t IsWalking = 0xa2e;
          inline constexpr uintptr_t Jump = 0x1d0;
          inline constexpr uintptr_t JumpHeight = 0x194;
@@ -547,7 +547,7 @@ namespace Offsets {
     }
 
     namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0xc8;
+         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
          inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
