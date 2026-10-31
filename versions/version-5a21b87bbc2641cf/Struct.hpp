@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:26 31/10/2026 (GMT)
-/*  Total Offsets   : 482
+/*  Dumped At       : 19:30 31/10/2026 (GMT)
+/*  Total Offsets   : 486
 /* =============================================================
 */
 
@@ -124,11 +124,11 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct ByteCode {
-        char pad_0[0x18];
-        uintptr_t Pointer; // 0x18
+        char pad_0[0x50];
+        uintptr_t Pointer; // 0x50
         char pad_1[0x8];
-        uintptr_t Size; // 0x28
-    }; // sizeof = 0x30
+        uintptr_t Size; // 0x60
+    }; // sizeof = 0x68
 
     struct CachedItem {
         char pad_0[0x28];
@@ -216,15 +216,18 @@ namespace Structs {
         std::string JobId; // 0x108
         char pad_4[0x20];
         uintptr_t Workspace; // 0x148
-        char pad_5[0x4c];
+        char pad_5[0x28];
+        uintptr_t GameId; // 0x178
+        uintptr_t PlaceId; // 0x180
+        char pad_6[0x14];
         int PlaceVersion; // 0x19c
-        char pad_6[0x18];
+        char pad_7[0x18];
         uintptr_t ToRenderView1; // 0x1b8
-        char pad_7[0x250];
+        char pad_8[0x250];
         int PrimitiveCount; // 0x410
-        char pad_8[0x2c];
+        char pad_9[0x2c];
         uintptr_t ScriptContext; // 0x440
-        char pad_9[0x128];
+        char pad_10[0x128];
         std::string ServerIP; // 0x570
         // alias: GameLoaded = 0x588 (unsigned __int64)
     }; // sizeof = 0x590
@@ -771,9 +774,9 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0xc0];
-        double HeartbeatFPS; // 0xc0
-        char pad_1[0x10];
+        char pad_0[0xc8];
+        double HeartbeatFPS; // 0xc8
+        char pad_1[0x8];
         uintptr_t HeartbeatTask; // 0xd8
     }; // sizeof = 0xe0
 
@@ -1004,13 +1007,16 @@ namespace Structs {
     }; // sizeof = 0x85c
 
     struct datamodel {
-        char pad_0[0x1f8];
+        char pad_0[0x178];
+        uintptr_t game_id; // 0x178
+        uintptr_t place_id; // 0x180
+        char pad_1[0x70];
         uintptr_t real; // 0x1f8
-        char pad_1[0x240];
+        char pad_2[0x240];
         uintptr_t script_context; // 0x440
-        char pad_2[0x140];
+        char pad_3[0x140];
         uintptr_t game_loaded; // 0x588
-        char pad_3[0x8d06070];
+        char pad_4[0x8d06070];
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
@@ -1040,8 +1046,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t ci; // 0x30
-        // alias: CallInfoSize = 0x30 (unsigned __int64)
+        uintptr_t CallInfoSize; // 0x30
+        // alias: ci = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
@@ -1060,11 +1066,11 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x18];
-        uintptr_t pointer; // 0x18
+        char pad_0[0x50];
+        uintptr_t pointer; // 0x50
         char pad_1[0x8];
-        uintptr_t size; // 0x28
-        char pad_2[0xf0];
+        uintptr_t size; // 0x60
+        char pad_2[0xb8];
         uintptr_t modulescript_pointer; // 0x120
         char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150

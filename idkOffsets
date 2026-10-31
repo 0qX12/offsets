@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 19:26 31/10/2026 (GMT)
-/*  Total Offsets   : 482
+/*  Dumped At       : 19:30 31/10/2026 (GMT)
+/*  Total Offsets   : 486
 /* =============================================================
 */
 
@@ -94,8 +94,8 @@ namespace Offsets {
     }
 
     namespace ByteCode {
-         inline constexpr uintptr_t Pointer = 0x18;
-         inline constexpr uintptr_t Size = 0x28;
+         inline constexpr uintptr_t Pointer = 0x50;
+         inline constexpr uintptr_t Size = 0x60;
     }
 
     namespace CachedItem {
@@ -152,8 +152,10 @@ namespace Offsets {
     }
 
     namespace DataModel {
+         inline constexpr uintptr_t GameId = 0x178;
          inline constexpr uintptr_t GameLoaded = 0x588;
          inline constexpr uintptr_t JobId = 0x108;
+         inline constexpr uintptr_t PlaceId = 0x180;
          inline constexpr uintptr_t PlaceVersion = 0x19c;
          inline constexpr uintptr_t PrimitiveCount = 0x410;
          inline constexpr uintptr_t ScriptContext = 0x440;
@@ -545,7 +547,7 @@ namespace Offsets {
     }
 
     namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
+         inline constexpr uintptr_t HeartbeatFPS = 0xc8;
          inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
@@ -712,7 +714,9 @@ namespace Offsets {
     }
 
     namespace datamodel {
+         inline constexpr uintptr_t game_id = 0x178;
          inline constexpr uintptr_t game_loaded = 0x588;
+         inline constexpr uintptr_t place_id = 0x180;
          inline constexpr uintptr_t pointer = 0x8d06600;
          inline constexpr uintptr_t real = 0x1f8;
          inline constexpr uintptr_t script_context = 0x440;
@@ -760,8 +764,8 @@ namespace Offsets {
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;
-         inline constexpr uintptr_t pointer = 0x18;
-         inline constexpr uintptr_t size = 0x28;
+         inline constexpr uintptr_t pointer = 0x50;
+         inline constexpr uintptr_t size = 0x60;
     }
 
     namespace task_scheduler {
