@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:11 01/11/2026 (GMT)
-/*  Total Offsets   : 485
+/*  Dumped At       : 00:13 01/11/2026 (GMT)
+/*  Total Offsets   : 486
 /* =============================================================
 */
 
@@ -126,11 +126,11 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct ByteCode {
-        char pad_0[0x20];
-        uintptr_t Pointer; // 0x20
+        char pad_0[0x10];
+        uintptr_t Pointer; // 0x10
         char pad_1[0x8];
-        uintptr_t Size; // 0x30
-    }; // sizeof = 0x38
+        uintptr_t Size; // 0x20
+    }; // sizeof = 0x28
 
     struct CachedItem {
         char pad_0[0x28];
@@ -947,9 +947,11 @@ namespace Structs {
         ViewMatrix_t ViewMatrix; // 0x1b0
         char pad_1[0x900];
         uintptr_t FakeDataModel; // 0xaf0
-        char pad_2[0x148];
+        char pad_2[0x18];
+        Vector2 Dimensions; // 0xb10
+        char pad_3[0x128];
         uintptr_t RenderView; // 0xc40
-        char pad_3[0x87995d0];
+        char pad_4[0x87995d0];
         uintptr_t Pointer; // 0x879a218
     }; // sizeof = 0x879a220
 
@@ -1039,8 +1041,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t ci; // 0x30
-        // alias: CallInfoSize = 0x30 (unsigned __int64)
+        uintptr_t CallInfoSize; // 0x30
+        // alias: ci = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
@@ -1059,11 +1061,11 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x20];
-        uintptr_t pointer; // 0x20
+        char pad_0[0x10];
+        uintptr_t pointer; // 0x10
         char pad_1[0x8];
-        uintptr_t size; // 0x30
-        char pad_2[0xe8];
+        uintptr_t size; // 0x20
+        char pad_2[0xf8];
         uintptr_t modulescript_pointer; // 0x120
         char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150
