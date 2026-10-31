@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:49 31/10/2026 (GMT)
+/*  Dumped At       : 15:11 31/10/2026 (GMT)
 /*  Total Offsets   : 495
 /* =============================================================
 */
@@ -144,9 +144,9 @@ namespace Structs {
     }; // sizeof = 0x28
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -365,15 +365,15 @@ namespace Structs {
         Color3 BorderColor3; // 0x514
         char pad_3[0xc];
         float BackgroundTransparency; // 0x52c
-        char pad_4[0x14];
+        char pad_4[0x10];
+        bool Visible; // 0x540
+        char pad_5[0x3];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_6[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_7[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x5];
-        bool Visible; // 0x575
-        char pad_8[0x432];
+        char pad_8[0x438];
         std::string Image; // 0x9a8
         char pad_9[0x1d8];
         std::string RichText; // 0xba0
@@ -480,9 +480,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb8];
