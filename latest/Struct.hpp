@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:19 31/10/2026 (GMT)
-/*  Total Offsets   : 504
+/*  Dumped At       : 19:26 31/10/2026 (GMT)
+/*  Total Offsets   : 482
 /* =============================================================
 */
 
@@ -68,33 +68,6 @@ namespace Structs {
         Vector3 Position; // 0xac
     }; // sizeof = 0xb8
 
-    struct Attribute {
-        uintptr_t Key; // 0x0
-        // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
-        uintptr_t Payload; // 0x8
-        // alias: Type = 0x8 (unsigned __int64)
-        uintptr_t ComponentStride; // 0x10
-        // alias: Count = 0x10 (unsigned __int32)
-        uintptr_t Value; // 0x18
-        // alias: NumberValue = 0x18 (unsigned __int64)
-        // alias: Vector3Value = 0x18 (unsigned __int64)
-        // alias: Color3Value = 0x18 (unsigned __int64)
-        char pad_0[0x18];
-        uintptr_t ComponentMap; // 0x38
-        char pad_1[0x18];
-        uintptr_t Size; // 0x58
-        char pad_2[0x8c88220];
-        uintptr_t TypeBool; // 0x8c88280
-        char pad_3[0x138];
-        uintptr_t TypeNumber; // 0x8c883c0
-        char pad_4[0x48];
-        uintptr_t TypeString; // 0x8c88410
-        char pad_5[0x48];
-        uintptr_t TypeVector3; // 0x8c88460
-        char pad_6[0x278];
-        uintptr_t TypeColor3; // 0x8c886e0
-    }; // sizeof = 0x8c886e8
-
     struct BasePart {
         char pad_0[0xf4];
         float Reflectance; // 0xf4
@@ -151,16 +124,16 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct ByteCode {
-        char pad_0[0x10];
-        uintptr_t Pointer; // 0x10
+        char pad_0[0x18];
+        uintptr_t Pointer; // 0x18
         char pad_1[0x8];
-        uintptr_t Size; // 0x20
-    }; // sizeof = 0x28
+        uintptr_t Size; // 0x28
+    }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -243,19 +216,15 @@ namespace Structs {
         std::string JobId; // 0x108
         char pad_4[0x20];
         uintptr_t Workspace; // 0x148
-        char pad_5[0x20];
-        uintptr_t CreatorId; // 0x170
-        uintptr_t GameId; // 0x178
-        uintptr_t PlaceId; // 0x180
-        char pad_6[0x14];
+        char pad_5[0x4c];
         int PlaceVersion; // 0x19c
-        char pad_7[0x18];
+        char pad_6[0x18];
         uintptr_t ToRenderView1; // 0x1b8
-        char pad_8[0x250];
+        char pad_7[0x250];
         int PrimitiveCount; // 0x410
-        char pad_9[0x2c];
+        char pad_8[0x2c];
         uintptr_t ScriptContext; // 0x440
-        char pad_10[0x128];
+        char pad_9[0x128];
         std::string ServerIP; // 0x570
         // alias: GameLoaded = 0x588 (unsigned __int64)
     }; // sizeof = 0x590
@@ -437,22 +406,21 @@ namespace Structs {
         int HealthDisplayType; // 0x180
         float Health; // 0x184
         uintptr_t HipHeight; // 0x188
-        int HumanoidStateID; // 0x190
+        char pad_7[0x4];
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
         float MaxHealth; // 0x19c
         float MaxSlopeAngle; // 0x1a0
         float NameDisplayDistance; // 0x1a4
         int NameOcclusion; // 0x1a8
-        char pad_7[0x8];
+        char pad_8[0x8];
         int RigType; // 0x1b4
-        char pad_8[0xc];
-        float Walkspeed; // 0x1c4
-        // alias: WalkSpeed = 0x1c4 (unsigned __int64)
-        bool AutoJumpEnabled; // 0x1c8
-        bool AutoRotate; // 0x1c9
-        bool AutomaticScalingEnabled; // 0x1ca
-        char pad_9[0x1];
+        char pad_9[0xc];
+        uintptr_t WalkSpeed; // 0x1c4
+        // alias: Walkspeed = 0x1c4 (float)
+        // alias: AutoJumpEnabled = 0x1c8 (bool)
+        // alias: AutoRotate = 0x1c9 (bool)
+        // alias: AutomaticScalingEnabled = 0x1ca (bool)
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
         char pad_10[0x2];
@@ -467,7 +435,9 @@ namespace Structs {
         uintptr_t HumanoidRootPart; // 0x460
         char pad_14[0x440];
         int HumanoidState; // 0x8a8
-        char pad_15[0x182];
+        char pad_15[0x164];
+        int HumanoidStateID; // 0xa10
+        char pad_16[0x1a];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
@@ -494,9 +464,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb8];
@@ -644,28 +614,27 @@ namespace Structs {
     struct Player {
         char pad_0[0xb8];
         uintptr_t UserId; // 0xb8
-        char pad_1[0x58];
+        char pad_1[0x54];
+        int AccountAge; // 0x114
         uintptr_t LocalPlayer; // 0x118
         std::string DisplayName; // 0x120
         char pad_2[0x160];
         uintptr_t ModelInstance; // 0x2a0
         char pad_3[0x38];
         uintptr_t Team; // 0x2e0
-        char pad_4[0x7c];
-        int AccountAge; // 0x364
-        char pad_5[0x8];
+        char pad_4[0x88];
         float MaxZoomDistance; // 0x370
         float MinZoomDistance; // 0x374
         int CameraMode; // 0x378
-        char pad_6[0x24];
+        char pad_5[0x24];
         float HealthDisplayDistance; // 0x3a0
-        char pad_7[0xc];
+        char pad_6[0xc];
         float NameDisplayDistance; // 0x3b0
-        char pad_8[0x4];
+        char pad_7[0x4];
         int TeamColor; // 0x3b8
-        char pad_9[0x384];
+        char pad_8[0x384];
         std::string LocaleId; // 0x740
-        char pad_10[0xa90];
+        char pad_9[0xa90];
         uintptr_t Mouse; // 0x11f0
     }; // sizeof = 0x11f8
 
@@ -802,9 +771,9 @@ namespace Structs {
     }; // sizeof = 0x20
 
     struct RunService {
-        char pad_0[0x70];
-        double HeartbeatFPS; // 0x70
-        char pad_1[0x60];
+        char pad_0[0xc0];
+        double HeartbeatFPS; // 0xc0
+        char pad_1[0x10];
         uintptr_t HeartbeatTask; // 0xd8
     }; // sizeof = 0xe0
 
@@ -940,8 +909,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1021,30 +991,26 @@ namespace Structs {
     }; // sizeof = 0x9c4
 
     struct World {
-        char pad_0[0x20c];
+        uintptr_t Primitives; // 0x0
+        char pad_0[0x204];
         float FallenPartsDestroyHeight; // 0x20c
         char pad_1[0x8];
         float Gravity; // 0x218
         char pad_2[0x14];
         uintptr_t AirProperties; // 0x230
-        char pad_3[0x68];
-        uintptr_t Primitives; // 0x2a0
-        char pad_4[0x5b0];
+        char pad_3[0x620];
         float worldStepsPerSec; // 0x858
         // alias: WorldSteps = 0x858 (float)
     }; // sizeof = 0x85c
 
     struct datamodel {
-        char pad_0[0x178];
-        uintptr_t game_id; // 0x178
-        uintptr_t place_id; // 0x180
-        char pad_1[0x70];
+        char pad_0[0x1f8];
         uintptr_t real; // 0x1f8
-        char pad_2[0x240];
+        char pad_1[0x240];
         uintptr_t script_context; // 0x440
-        char pad_3[0x140];
+        char pad_2[0x140];
         uintptr_t game_loaded; // 0x588
-        char pad_4[0x8d06070];
+        char pad_3[0x8d06070];
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
@@ -1094,11 +1060,11 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x10];
-        uintptr_t pointer; // 0x10
+        char pad_0[0x18];
+        uintptr_t pointer; // 0x18
         char pad_1[0x8];
-        uintptr_t size; // 0x20
-        char pad_2[0xf8];
+        uintptr_t size; // 0x28
+        char pad_2[0xf0];
         uintptr_t modulescript_pointer; // 0x120
         char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150

@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:19 31/10/2026 (GMT)
-/*  Total Offsets   : 504
+/*  Dumped At       : 19:26 31/10/2026 (GMT)
+/*  Total Offsets   : 482
 /* =============================================================
 */
 
@@ -52,26 +52,6 @@ namespace Offsets {
          inline constexpr uintptr_t Position = 0xac;
     }
 
-    namespace Attribute {
-         inline constexpr uintptr_t Color3Value = 0x18;
-         inline constexpr uintptr_t ComponentIdOffset = 0x8;
-         inline constexpr uintptr_t ComponentMap = 0x38;
-         inline constexpr uintptr_t ComponentStride = 0x10;
-         inline constexpr uintptr_t Count = 0x10;
-         inline constexpr uintptr_t Key = 0x0;
-         inline constexpr uintptr_t NumberValue = 0x18;
-         inline constexpr uintptr_t Payload = 0x8;
-         inline constexpr uintptr_t Size = 0x58;
-         inline constexpr uintptr_t Type = 0x8;
-         inline constexpr uintptr_t TypeBool = 0x8c88280;
-         inline constexpr uintptr_t TypeColor3 = 0x8c886e0;
-         inline constexpr uintptr_t TypeNumber = 0x8c883c0;
-         inline constexpr uintptr_t TypeString = 0x8c88410;
-         inline constexpr uintptr_t TypeVector3 = 0x8c88460;
-         inline constexpr uintptr_t Value = 0x18;
-         inline constexpr uintptr_t Vector3Value = 0x18;
-    }
-
     namespace BasePart {
          inline constexpr uintptr_t CastShadow = 0x120;
          inline constexpr uintptr_t ClusterNode = 0x180;
@@ -114,12 +94,12 @@ namespace Offsets {
     }
 
     namespace ByteCode {
-         inline constexpr uintptr_t Pointer = 0x10;
-         inline constexpr uintptr_t Size = 0x20;
+         inline constexpr uintptr_t Pointer = 0x18;
+         inline constexpr uintptr_t Size = 0x28;
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -172,11 +152,8 @@ namespace Offsets {
     }
 
     namespace DataModel {
-         inline constexpr uintptr_t CreatorId = 0x170;
-         inline constexpr uintptr_t GameId = 0x178;
          inline constexpr uintptr_t GameLoaded = 0x588;
          inline constexpr uintptr_t JobId = 0x108;
-         inline constexpr uintptr_t PlaceId = 0x180;
          inline constexpr uintptr_t PlaceVersion = 0x19c;
          inline constexpr uintptr_t PrimitiveCount = 0x410;
          inline constexpr uintptr_t ScriptContext = 0x440;
@@ -313,7 +290,7 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0x190;
+         inline constexpr uintptr_t HumanoidStateID = 0xa10;
          inline constexpr uintptr_t IsWalking = 0xa2e;
          inline constexpr uintptr_t Jump = 0x1d0;
          inline constexpr uintptr_t JumpHeight = 0x194;
@@ -353,7 +330,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -465,7 +442,7 @@ namespace Offsets {
     }
 
     namespace Player {
-         inline constexpr uintptr_t AccountAge = 0x364;
+         inline constexpr uintptr_t AccountAge = 0x114;
          inline constexpr uintptr_t CameraMode = 0x378;
          inline constexpr uintptr_t DisplayName = 0x120;
          inline constexpr uintptr_t HealthDisplayDistance = 0x3a0;
@@ -568,7 +545,7 @@ namespace Offsets {
     }
 
     namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x70;
+         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
          inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
@@ -666,7 +643,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x4c8;
     }
 
     namespace Tool {
@@ -729,15 +706,13 @@ namespace Offsets {
          inline constexpr uintptr_t AirProperties = 0x230;
          inline constexpr uintptr_t FallenPartsDestroyHeight = 0x20c;
          inline constexpr uintptr_t Gravity = 0x218;
-         inline constexpr uintptr_t Primitives = 0x2a0;
+         inline constexpr uintptr_t Primitives = 0x0;
          inline constexpr uintptr_t WorldSteps = 0x858;
          inline constexpr uintptr_t worldStepsPerSec = 0x858;
     }
 
     namespace datamodel {
-         inline constexpr uintptr_t game_id = 0x178;
          inline constexpr uintptr_t game_loaded = 0x588;
-         inline constexpr uintptr_t place_id = 0x180;
          inline constexpr uintptr_t pointer = 0x8d06600;
          inline constexpr uintptr_t real = 0x1f8;
          inline constexpr uintptr_t script_context = 0x440;
@@ -785,8 +760,8 @@ namespace Offsets {
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;
-         inline constexpr uintptr_t pointer = 0x10;
-         inline constexpr uintptr_t size = 0x20;
+         inline constexpr uintptr_t pointer = 0x18;
+         inline constexpr uintptr_t size = 0x28;
     }
 
     namespace task_scheduler {

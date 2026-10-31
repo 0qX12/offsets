@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "16:19 31/10/2026",
+    "Dumped At": "19:26 31/10/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -42,29 +42,7 @@
             "Value": "string",
             "AnimationId": "string"
         },
-        "Attribute": {
-            "Key": "unsigned __int64",
-            "Value": "unsigned __int64",
-            "Size": "unsigned __int64",
-            "ComponentMap": "unsigned __int64",
-            "ComponentStride": "unsigned __int64",
-            "ComponentIdOffset": "unsigned __int16",
-            "Payload": "unsigned __int64",
-            "Count": "unsigned __int32",
-            "Type": "unsigned __int64",
-            "TypeString": "unsigned __int64",
-            "TypeNumber": "unsigned __int64",
-            "TypeBool": "unsigned __int64",
-            "NumberValue": "unsigned __int64",
-            "TypeVector3": "unsigned __int64",
-            "TypeColor3": "unsigned __int64",
-            "Vector3Value": "unsigned __int64",
-            "Color3Value": "unsigned __int64"
-        },
         "DataModel": {
-            "PlaceId": "unsigned __int64",
-            "GameId": "unsigned __int64",
-            "CreatorId": "unsigned __int64",
             "GameLoaded": "unsigned __int64",
             "JobId": "string",
             "Workspace": "unsigned __int64",
@@ -630,9 +608,7 @@
             "pointer": "unsigned __int64",
             "real": "unsigned __int64",
             "game_loaded": "unsigned __int64",
-            "script_context": "unsigned __int64",
-            "place_id": "unsigned __int64",
-            "game_id": "unsigned __int64"
+            "script_context": "unsigned __int64"
         },
         "instance": {
             "name": "unsigned __int64",
