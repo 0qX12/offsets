@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:42 31/10/2026 (GMT)
-/*  Total Offsets   : 486
+/*  Dumped At       : 00:11 01/11/2026 (GMT)
+/*  Total Offsets   : 485
 /* =============================================================
 */
 
@@ -95,8 +95,8 @@ namespace Offsets {
     }
 
     namespace ByteCode {
-         inline constexpr uintptr_t Pointer = 0x10;
-         inline constexpr uintptr_t Size = 0x20;
+         inline constexpr uintptr_t Pointer = 0x20;
+         inline constexpr uintptr_t Size = 0x30;
     }
 
     namespace CachedItem {
@@ -672,7 +672,6 @@ namespace Offsets {
     }
 
     namespace VisualEngine {
-         inline constexpr uintptr_t Dimensions = 0xb10;
          inline constexpr uintptr_t FakeDataModel = 0xaf0;
          inline constexpr uintptr_t Pointer = 0x879a218;
          inline constexpr uintptr_t RenderView = 0xc40;
@@ -761,8 +760,8 @@ namespace Offsets {
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;
-         inline constexpr uintptr_t pointer = 0x10;
-         inline constexpr uintptr_t size = 0x20;
+         inline constexpr uintptr_t pointer = 0x20;
+         inline constexpr uintptr_t size = 0x30;
     }
 
     namespace task_scheduler {
