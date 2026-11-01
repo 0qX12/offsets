@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "16:12 01/11/2026",
+    "Dumped At": "22:14 01/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -406,11 +406,17 @@
             "ColorShift_Bottom": "Color3",
             "ExposureCompensation": "float",
             "GeographicLatitude": "float",
-            "GlobalShadows": "unsigned __int64",
+            "LightDirection": "Vector3",
+            "LightColor": "Color3",
+            "GradientTop": "Color3",
+            "GradientBottom": "Color3",
             "SunPosition": "Vector3",
             "MoonPosition": "Vector3",
             "Source": "int",
+            "GlobalShadows": "bool",
             "Sky": "unsigned __int64",
+            "ClockTime": "unsigned __int64",
+            "ShadowSoftness": "float",
             "Atmosphere": "unsigned __int64"
         },
         "Sky": {

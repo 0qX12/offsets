@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:12 01/11/2026 (GMT)
-/*  Total Offsets   : 516
+/*  Dumped At       : 22:14 01/11/2026 (GMT)
+/*  Total Offsets   : 522
 /* =============================================================
 */
 
@@ -134,7 +134,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -219,7 +219,7 @@ namespace Offsets {
          inline constexpr uintptr_t ContextObj = 0x1b0;
          inline constexpr uintptr_t ContextPtr = 0x20;
          inline constexpr uintptr_t DevicePtr = 0x18;
-         inline constexpr uintptr_t SwapChainPtr = 0x28;
+         inline constexpr uintptr_t SwapChainPtr = 0x30;
          inline constexpr uintptr_t VTableRva = 0x6f5e548;
     }
 
@@ -369,7 +369,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -377,6 +377,7 @@ namespace Offsets {
          inline constexpr uintptr_t Ambient = 0xb8;
          inline constexpr uintptr_t Atmosphere = 0x1c0;
          inline constexpr uintptr_t Brightness = 0x100;
+         inline constexpr uintptr_t ClockTime = 0xb0;
          inline constexpr uintptr_t ColorShift_Bottom = 0xc4;
          inline constexpr uintptr_t ColorShift_Top = 0xd0;
          inline constexpr uintptr_t EnvironmentDiffuseScale = 0x104;
@@ -387,8 +388,13 @@ namespace Offsets {
          inline constexpr uintptr_t FogStart = 0x118;
          inline constexpr uintptr_t GeographicLatitude = 0x11c;
          inline constexpr uintptr_t GlobalShadows = 0x12c;
+         inline constexpr uintptr_t GradientBottom = 0x178;
+         inline constexpr uintptr_t GradientTop = 0x138;
+         inline constexpr uintptr_t LightColor = 0x144;
+         inline constexpr uintptr_t LightDirection = 0x150;
          inline constexpr uintptr_t MoonPosition = 0x16c;
          inline constexpr uintptr_t OutdoorAmbient = 0xe8;
+         inline constexpr uintptr_t ShadowSoftness = 0x124;
          inline constexpr uintptr_t Sky = 0x1b0;
          inline constexpr uintptr_t Source = 0x15c;
          inline constexpr uintptr_t SunPosition = 0x160;
@@ -404,21 +410,21 @@ namespace Offsets {
          inline constexpr uintptr_t Asphalt = 0x30;
          inline constexpr uintptr_t Basalt = 0x27;
          inline constexpr uintptr_t Brick = 0xf;
-         inline constexpr uintptr_t Cobblestone = 0x93;
-         inline constexpr uintptr_t Concrete = 0x6c;
-         inline constexpr uintptr_t CrackedLava = 0x8d;
+         inline constexpr uintptr_t Cobblestone = 0x33;
+         inline constexpr uintptr_t Concrete = 0xc;
+         inline constexpr uintptr_t CrackedLava = 0x2d;
          inline constexpr uintptr_t Glacier = 0x1b;
-         inline constexpr uintptr_t Grass = 0x66;
-         inline constexpr uintptr_t Ground = 0x8a;
+         inline constexpr uintptr_t Grass = 0x6;
+         inline constexpr uintptr_t Ground = 0x2a;
          inline constexpr uintptr_t Ice = 0x36;
          inline constexpr uintptr_t LeafyGrass = 0x39;
-         inline constexpr uintptr_t Limestone = 0x9f;
-         inline constexpr uintptr_t Mud = 0x84;
+         inline constexpr uintptr_t Limestone = 0x3f;
+         inline constexpr uintptr_t Mud = 0x24;
          inline constexpr uintptr_t Pavement = 0x42;
-         inline constexpr uintptr_t Rock = 0x78;
+         inline constexpr uintptr_t Rock = 0x18;
          inline constexpr uintptr_t Salt = 0x3c;
          inline constexpr uintptr_t Sand = 0x12;
-         inline constexpr uintptr_t Sandstone = 0x81;
+         inline constexpr uintptr_t Sandstone = 0x21;
          inline constexpr uintptr_t Slate = 0x9;
          inline constexpr uintptr_t Snow = 0x1e;
          inline constexpr uintptr_t WoodPlanks = 0x15;
@@ -678,7 +684,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x4c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {
