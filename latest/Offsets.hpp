@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 11:18 01/11/2026 (GMT)
-/*  Total Offsets   : 499
+/*  Dumped At       : 12:06 01/11/2026 (GMT)
+/*  Total Offsets   : 500
 /* =============================================================
 */
 
@@ -53,23 +53,15 @@ namespace Offsets {
     }
 
     namespace Attribute {
-         inline constexpr uintptr_t ComponentIdOffset = 0x8;
          inline constexpr uintptr_t ComponentId = 0xb;
+         inline constexpr uintptr_t ComponentIdOffset = 0x8;
          inline constexpr uintptr_t ComponentMap = 0x38;
          inline constexpr uintptr_t ComponentStride = 0x10;
-         inline constexpr uintptr_t Count = 0x8;
+         inline constexpr uintptr_t Count = 0x20;
          inline constexpr uintptr_t Key = 0x0;
-         inline constexpr uintptr_t NumberValue = 0x18;
          inline constexpr uintptr_t Payload = 0x18;
          inline constexpr uintptr_t Size = 0x58;
-         inline constexpr uintptr_t Type = 0x8;
-         inline constexpr uintptr_t TypeBool = 0x8c8280;
-         inline constexpr uintptr_t TypeColor3 = 0x8c886e0;
-         inline constexpr uintptr_t TypeNumber = 0x8c83c0;
-         inline constexpr uintptr_t TypeString = 0x8c88410;
-         inline constexpr uintptr_t TypeVector3 = 0x8c88460;
          inline constexpr uintptr_t Value = 0x18;
-         inline constexpr uintptr_t Vector3Value = 0x18;
     }
 
     namespace AttributesMap {
@@ -126,7 +118,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -361,7 +353,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -600,7 +592,7 @@ namespace Offsets {
          inline constexpr uintptr_t SkyboxRt = 0x1a0;
          inline constexpr uintptr_t SkyboxUp = 0x1d0;
          inline constexpr uintptr_t StarCount = 0x230;
-         inline constexpr uintptr_t SunAngularSize = 0x60;
+         inline constexpr uintptr_t SunAngularSize = 0x234;
          inline constexpr uintptr_t SunTextureId = 0x200;
     }
 
@@ -670,7 +662,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x7c8;
     }
 
     namespace Tool {

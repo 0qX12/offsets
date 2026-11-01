@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "00:17 01/11/2026",
+    "Dumped At": "12:06 01/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -27,6 +27,7 @@
             "VisualEngine": "unsigned __int64"
         },
         "Instance": {
+            "This": "unsigned __int64",
             "NameContainer": "unsigned __int64",
             "Name": "unsigned __int64",
             "ChildrenStart": "unsigned __int64",
@@ -41,6 +42,21 @@
             "Adornee": "unsigned __int64",
             "Value": "string",
             "AnimationId": "string"
+        },
+        "Attribute": {
+            "Key": "unsigned __int64",
+            "Value": "unsigned __int64",
+            "Size": "unsigned __int64",
+            "Payload": "unsigned __int64",
+            "Count": "unsigned __int32",
+            "ComponentId": "unsigned __int16",
+            "ComponentMap": "unsigned __int64",
+            "ComponentStride": "unsigned __int64",
+            "ComponentIdOffset": "unsigned __int16"
+        },
+        "AttributesMap": {
+            "Attributes": "unsigned __int64",
+            "Length": "unsigned __int32"
         },
         "DataModel": {
             "PlaceId": "unsigned __int64",
@@ -378,6 +394,7 @@
             "GlobalShadows": "unsigned __int64",
             "SunPosition": "Vector3",
             "MoonPosition": "Vector3",
+            "Source": "int",
             "Sky": "unsigned __int64",
             "Atmosphere": "unsigned __int64"
         },
@@ -591,11 +608,11 @@
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
             "stack_last": "unsigned __int64",
+            "global": "unsigned __int64",
+            "CallInfoSize": "unsigned __int64",
             "ci": "unsigned __int64",
             "ci_base": "unsigned __int64",
-            "ci_last": "unsigned __int64",
-            "CallInfoSize": "unsigned __int64",
-            "global": "unsigned __int64"
+            "ci_last": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",
