@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 13:30 01/11/2026 (GMT)
+/*  Dumped At       : 13:37 01/11/2026 (GMT)
 /*  Total Offsets   : 509
 /* =============================================================
 */
@@ -73,6 +73,7 @@ namespace Structs {
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
+        // alias: ComponentId = 0xb (unsigned __int16)
         // alias: ComponentId = 0xb (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
         uintptr_t Value; // 0x18
@@ -187,9 +188,9 @@ namespace Structs {
         float FieldOfView; // 0x128
         char pad_4[0x158];
         short Viewport; // 0x284
-        char pad_5[0x3e];
-        Vector2 ViewportSize; // 0x2c4
-        char pad_6[0x8];
+        char pad_5[0x2];
+        uintptr_t ViewportSize; // 0x288
+        char pad_6[0x44];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 
@@ -391,15 +392,15 @@ namespace Structs {
         Color3 BorderColor3; // 0x514
         char pad_3[0xc];
         float BackgroundTransparency; // 0x52c
-        char pad_4[0x10];
-        bool Visible; // 0x540
-        char pad_5[0x3];
+        char pad_4[0x14];
         int LayoutOrder; // 0x544
-        char pad_6[0x14];
+        char pad_5[0x14];
         float Rotation; // 0x55c
-        char pad_7[0xc];
+        char pad_6[0xc];
         int ZIndex; // 0x56c
-        char pad_8[0x438];
+        char pad_7[0x5];
+        bool Visible; // 0x575
+        char pad_8[0x432];
         std::string Image; // 0x9a8
         char pad_9[0x1d8];
         std::string RichText; // 0xba0
@@ -986,11 +987,9 @@ namespace Structs {
         ViewMatrix_t ViewMatrix; // 0x1b0
         char pad_1[0x900];
         uintptr_t FakeDataModel; // 0xaf0
-        char pad_2[0x18];
-        Vector2 Dimensions; // 0xb10
-        char pad_3[0x128];
+        char pad_2[0x148];
         uintptr_t RenderView; // 0xc40
-        char pad_4[0x87995d0];
+        char pad_3[0x87995d0];
         uintptr_t Pointer; // 0x879a218
     }; // sizeof = 0x879a220
 

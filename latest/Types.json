@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "13:30 01/11/2026",
+    "Dumped At": "13:37 01/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -13,7 +13,6 @@
         },
         "VisualEngine": {
             "Pointer": "unsigned __int64",
-            "Dimensions": "Vector2",
             "ViewMatrix": "ViewMatrix_t",
             "RenderView": "unsigned __int64",
             "FakeDataModel": "unsigned __int64"
@@ -50,9 +49,9 @@
             "ComponentMap": "unsigned __int64",
             "ComponentStride": "unsigned __int64",
             "ComponentIdOffset": "unsigned __int16",
+            "ComponentId": "unsigned __int16",
             "Payload": "unsigned __int64",
             "Count": "unsigned __int32",
-            "ComponentId": "unsigned __int16",
             "Type": "unsigned __int64",
             "TypeString": "unsigned __int64",
             "TypeNumber": "unsigned __int64",
@@ -292,8 +291,8 @@
             "ImagePlaneDepth": "float",
             "CameraType": "int",
             "Viewport": "short",
-            "ViewportSize": "Vector2",
-            "CFrame": "unsigned __int64"
+            "CFrame": "unsigned __int64",
+            "ViewportSize": "unsigned __int64"
         },
         "BasePart": {
             "Primitive": "unsigned __int64",
