@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 12:12 01/11/2026 (GMT)
-/*  Total Offsets   : 494
+/*  Dumped At       : 12:32 01/11/2026 (GMT)
+/*  Total Offsets   : 496
 /* =============================================================
 */
 
@@ -109,7 +109,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -344,7 +344,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -370,7 +370,7 @@ namespace Offsets {
     }
 
     namespace LocalScript {
-         inline constexpr uintptr_t ByteCode = 0x178;
+         inline constexpr uintptr_t ByteCode = 0xb8;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
@@ -559,6 +559,11 @@ namespace Offsets {
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
+    namespace RunService {
+         inline constexpr uintptr_t HeartbeatFPS = 0x128;
+         inline constexpr uintptr_t HeartbeatTask = 0x1e0;
+    }
+
     namespace Script {
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
@@ -633,7 +638,7 @@ namespace Offsets {
          inline constexpr uintptr_t JobEnd = 0xd0;
          inline constexpr uintptr_t JobName = 0x18;
          inline constexpr uintptr_t JobStart = 0xc8;
-         inline constexpr uintptr_t MaxFPS = 0xb0;
+         inline constexpr uintptr_t MaxFPS = 0x1000;
          inline constexpr uintptr_t Pointer = 0x8c9d698;
     }
 
@@ -653,7 +658,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x7c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {
@@ -768,7 +773,7 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t IsRobloxScript = 0x150;
          inline constexpr uintptr_t core_script = 0x150;
-         inline constexpr uintptr_t localscript_pointer = 0x178;
+         inline constexpr uintptr_t localscript_pointer = 0xb8;
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;

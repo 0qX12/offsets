@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 12:12 01/11/2026 (GMT)
-/*  Total Offsets   : 494
+/*  Dumped At       : 12:32 01/11/2026 (GMT)
+/*  Total Offsets   : 496
 /* =============================================================
 */
 
@@ -148,9 +148,9 @@ namespace Structs {
     }; // sizeof = 0x28
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -485,9 +485,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb8];
@@ -520,9 +520,8 @@ namespace Structs {
     struct LocalScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        char pad_1[0xa0];
-        uintptr_t ByteCode; // 0x178
-        char pad_2[0x8];
+        // alias: ByteCode = 0xb8 (unsigned __int64)
+        char pad_1[0xb0];
         std::string Hash; // 0x188
     }; // sizeof = 0x1a8
 
@@ -792,6 +791,13 @@ namespace Structs {
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
 
+    struct RunService {
+        char pad_0[0x128];
+        double HeartbeatFPS; // 0x128
+        char pad_1[0xb0];
+        uintptr_t HeartbeatTask; // 0x1e0
+    }; // sizeof = 0x1e8
+
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -893,12 +899,12 @@ namespace Structs {
     struct TaskScheduler {
         char pad_0[0x18];
         std::string JobName; // 0x18
-        char pad_1[0x78];
-        double MaxFPS; // 0xb0
-        char pad_2[0x10];
+        char pad_1[0x90];
         uintptr_t JobStart; // 0xc8
         uintptr_t JobEnd; // 0xd0
-        char pad_3[0x8c9d5c0];
+        char pad_2[0xf28];
+        double MaxFPS; // 0x1000
+        char pad_3[0x8c9c690];
         uintptr_t Pointer; // 0x8c9d698
     }; // sizeof = 0x8c9d6a0
 
@@ -924,9 +930,8 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        char pad_1[0x5e0];
-        std::string Texture_Texture; // 0x7c8
-    }; // sizeof = 0x7e8
+        // alias: Texture_Texture = 0x1c8 (string)
+    }; // sizeof = 0x1e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1083,14 +1088,15 @@ namespace Structs {
         uintptr_t pointer; // 0x10
         char pad_1[0x8];
         uintptr_t size; // 0x20
-        char pad_2[0xf8];
+        char pad_2[0x90];
+        uintptr_t localscript_pointer; // 0xb8
+        char pad_3[0x60];
         uintptr_t modulescript_pointer; // 0x120
-        char pad_3[0x28];
+        char pad_4[0x28];
         uintptr_t modulescript_module_state; // 0x150
         // alias: core_script = 0x150 (unsigned __int64)
         // alias: IsRobloxScript = 0x150 (unsigned __int64)
-        char pad_4[0x20];
-        uintptr_t localscript_pointer; // 0x178
+        char pad_5[0x28];
         uintptr_t modulescript_detection; // 0x180
     }; // sizeof = 0x188
 
