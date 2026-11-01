@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:14 01/11/2026 (GMT)
+/*  Dumped At       : 22:32 01/11/2026 (GMT)
 /*  Total Offsets   : 522
 /* =============================================================
 */
@@ -345,7 +345,7 @@ namespace Offsets {
          inline constexpr uintptr_t RigType = 0x1b4;
          inline constexpr uintptr_t SeatPart = 0xf0;
          inline constexpr uintptr_t Sit = 0x1d3;
-         inline constexpr uintptr_t TargetPoint = 0x140;
+         inline constexpr uintptr_t TargetPoint = 0x1ac;
          inline constexpr uintptr_t UseJumpPower = 0x1d6;
          inline constexpr uintptr_t WalkSpeed = 0x1c4;
          inline constexpr uintptr_t Walkspeed = 0x1c4;
@@ -374,7 +374,7 @@ namespace Offsets {
     }
 
     namespace Lighting {
-         inline constexpr uintptr_t Ambient = 0xb8;
+         inline constexpr uintptr_t Ambient = 0xc0;
          inline constexpr uintptr_t Atmosphere = 0x1c0;
          inline constexpr uintptr_t Brightness = 0x100;
          inline constexpr uintptr_t ClockTime = 0xb0;
@@ -393,7 +393,7 @@ namespace Offsets {
          inline constexpr uintptr_t LightColor = 0x144;
          inline constexpr uintptr_t LightDirection = 0x150;
          inline constexpr uintptr_t MoonPosition = 0x16c;
-         inline constexpr uintptr_t OutdoorAmbient = 0xe8;
+         inline constexpr uintptr_t OutdoorAmbient = 0xf0;
          inline constexpr uintptr_t ShadowSoftness = 0x124;
          inline constexpr uintptr_t Sky = 0x1b0;
          inline constexpr uintptr_t Source = 0x15c;

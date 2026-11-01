@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:14 01/11/2026 (GMT)
+/*  Dumped At       : 22:32 01/11/2026 (GMT)
 /*  Total Offsets   : 522
 /* =============================================================
 */
@@ -452,8 +452,7 @@ namespace Structs {
         Vector3 CameraOffset; // 0x110
         char pad_4[0x18];
         Vector3 MoveDirection; // 0x134
-        Vector3 TargetPoint; // 0x140
-        char pad_5[0xc];
+        char pad_5[0x18];
         Vector3 MoveToPoint; // 0x158
         char pad_6[0x10];
         int DisplayDistanceType; // 0x174
@@ -469,30 +468,30 @@ namespace Structs {
         float MaxSlopeAngle; // 0x1a0
         float NameDisplayDistance; // 0x1a4
         int NameOcclusion; // 0x1a8
-        char pad_7[0x8];
-        int RigType; // 0x1b4
-        char pad_8[0xc];
+        Vector3 TargetPoint; // 0x1ac
+        // alias: RigType = 0x1b4 (int)
+        char pad_7[0xc];
         float Walkspeed; // 0x1c4
         // alias: WalkSpeed = 0x1c4 (unsigned __int64)
         bool AutoJumpEnabled; // 0x1c8
         bool AutoRotate; // 0x1c9
         bool AutomaticScalingEnabled; // 0x1ca
-        char pad_9[0x1];
+        char pad_8[0x1];
         bool BreakJointsOnDeath; // 0x1cc
         bool EvaluateStateMachine; // 0x1cd
-        char pad_10[0x2];
+        char pad_9[0x2];
         bool Jump; // 0x1d0
-        char pad_11[0x1];
+        char pad_10[0x1];
         bool PlatformStand; // 0x1d2
         bool Sit; // 0x1d3
         bool RequiresNeck; // 0x1d4
-        char pad_12[0x1];
+        char pad_11[0x1];
         bool UseJumpPower; // 0x1d6
-        char pad_13[0x289];
+        char pad_12[0x289];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_14[0x440];
+        char pad_13[0x440];
         int HumanoidState; // 0x8a8
-        char pad_15[0x182];
+        char pad_14[0x182];
         bool IsWalking; // 0xa2e
     }; // sizeof = 0xa2f
 
@@ -527,25 +526,28 @@ namespace Structs {
     struct Lighting {
         char pad_0[0xb0];
         uintptr_t ClockTime; // 0xb0
-        Color3 Ambient; // 0xb8
-        Color3 ColorShift_Bottom; // 0xc4
+        char pad_1[0x8];
+        Color3 Ambient; // 0xc0
+        // alias: ColorShift_Bottom = 0xc4 (Color3)
+        char pad_2[0x4];
         Color3 ColorShift_Top; // 0xd0
         Color3 FogColor; // 0xdc
-        Color3 OutdoorAmbient; // 0xe8
-        char pad_1[0xc];
+        char pad_3[0x8];
+        Color3 OutdoorAmbient; // 0xf0
+        char pad_4[0x4];
         float Brightness; // 0x100
         float EnvironmentDiffuseScale; // 0x104
         float EnvironmentSpecularScale; // 0x108
         float ExposureCompensation; // 0x10c
-        char pad_2[0x4];
+        char pad_5[0x4];
         float FogEnd; // 0x114
         float FogStart; // 0x118
         float GeographicLatitude; // 0x11c
-        char pad_3[0x4];
+        char pad_6[0x4];
         float ShadowSoftness; // 0x124
-        char pad_4[0x4];
+        char pad_7[0x4];
         bool GlobalShadows; // 0x12c
-        char pad_5[0xb];
+        char pad_8[0xb];
         Color3 GradientTop; // 0x138
         Color3 LightColor; // 0x144
         Vector3 LightDirection; // 0x150
@@ -553,9 +555,9 @@ namespace Structs {
         Vector3 SunPosition; // 0x160
         Vector3 MoonPosition; // 0x16c
         Color3 GradientBottom; // 0x178
-        char pad_6[0x2c];
+        char pad_9[0x2c];
         uintptr_t Sky; // 0x1b0
-        char pad_7[0x8];
+        char pad_10[0x8];
         uintptr_t Atmosphere; // 0x1c0
     }; // sizeof = 0x1c8
 
@@ -1100,8 +1102,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48

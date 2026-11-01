@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "22:14 01/11/2026",
+    "Dumped At": "22:32 01/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -394,14 +394,11 @@
             "Texture_Texture": "string"
         },
         "Lighting": {
-            "Brightness": "float",
             "EnvironmentDiffuseScale": "float",
             "EnvironmentSpecularScale": "float",
             "FogStart": "float",
             "FogEnd": "float",
             "FogColor": "Color3",
-            "Ambient": "Color3",
-            "OutdoorAmbient": "Color3",
             "ColorShift_Top": "Color3",
             "ColorShift_Bottom": "Color3",
             "ExposureCompensation": "float",
@@ -417,6 +414,9 @@
             "Sky": "unsigned __int64",
             "ClockTime": "unsigned __int64",
             "ShadowSoftness": "float",
+            "Ambient": "Color3",
+            "OutdoorAmbient": "Color3",
+            "Brightness": "float",
             "Atmosphere": "unsigned __int64"
         },
         "Sky": {
@@ -629,11 +629,11 @@
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
             "stack_last": "unsigned __int64",
-            "global": "unsigned __int64",
-            "CallInfoSize": "unsigned __int64",
             "ci": "unsigned __int64",
             "ci_base": "unsigned __int64",
-            "ci_last": "unsigned __int64"
+            "ci_last": "unsigned __int64",
+            "CallInfoSize": "unsigned __int64",
+            "global": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",
