@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 12:34 01/11/2026 (GMT)
-/*  Total Offsets   : 496
+/*  Dumped At       : 13:19 01/11/2026 (GMT)
+/*  Total Offsets   : 507
 /* =============================================================
 */
 
@@ -53,11 +53,27 @@ namespace Offsets {
     }
 
     namespace Attribute {
+         inline constexpr uintptr_t Color3Value = 0x18;
+         inline constexpr uintptr_t ComponentId = 0xb;
+         inline constexpr uintptr_t ComponentIdOffset = 0x8;
+         inline constexpr uintptr_t ComponentMap = 0x38;
+         inline constexpr uintptr_t ComponentStride = 0x10;
+         inline constexpr uintptr_t Key = 0x0;
          inline constexpr uintptr_t NumberValue = 0x18;
+         inline constexpr uintptr_t Payload = 0x18;
+         inline constexpr uintptr_t Size = 0x58;
          inline constexpr uintptr_t Type = 0x8;
          inline constexpr uintptr_t TypeBool = 0x8c88280;
+         inline constexpr uintptr_t TypeColor3 = 0x8c886e0;
          inline constexpr uintptr_t TypeNumber = 0x8c883c0;
          inline constexpr uintptr_t TypeString = 0x8c88410;
+         inline constexpr uintptr_t TypeVector3 = 0x8c88460;
+         inline constexpr uintptr_t Value = 0x18;
+         inline constexpr uintptr_t Vector3Value = 0x18;
+    }
+
+    namespace AttributesMap {
+         inline constexpr uintptr_t Attributes = 0x18;
     }
 
     namespace BasePart {
@@ -370,7 +386,7 @@ namespace Offsets {
     }
 
     namespace LocalScript {
-         inline constexpr uintptr_t ByteCode = 0xb8;
+         inline constexpr uintptr_t ByteCode = 0x178;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
@@ -559,11 +575,6 @@ namespace Offsets {
          inline constexpr uintptr_t VisualEngine = 0x18;
     }
 
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0x128;
-         inline constexpr uintptr_t HeartbeatTask = 0x1e0;
-    }
-
     namespace Script {
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
@@ -638,7 +649,7 @@ namespace Offsets {
          inline constexpr uintptr_t JobEnd = 0xd0;
          inline constexpr uintptr_t JobName = 0x18;
          inline constexpr uintptr_t JobStart = 0xc8;
-         inline constexpr uintptr_t MaxFPS = 0x1000;
+         inline constexpr uintptr_t MaxFPS = 0xb0;
          inline constexpr uintptr_t Pointer = 0x8c9d698;
     }
 
@@ -773,7 +784,7 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t IsRobloxScript = 0x150;
          inline constexpr uintptr_t core_script = 0x150;
-         inline constexpr uintptr_t localscript_pointer = 0xb8;
+         inline constexpr uintptr_t localscript_pointer = 0x178;
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;

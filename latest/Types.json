@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "12:34 01/11/2026",
+    "Dumped At": "13:19 01/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -44,11 +44,26 @@
             "AnimationId": "string"
         },
         "Attribute": {
+            "Key": "unsigned __int64",
+            "Value": "unsigned __int64",
+            "Size": "unsigned __int64",
+            "ComponentMap": "unsigned __int64",
+            "ComponentStride": "unsigned __int64",
+            "ComponentIdOffset": "unsigned __int16",
+            "Payload": "unsigned __int64",
+            "ComponentId": "unsigned __int16",
             "Type": "unsigned __int64",
             "TypeString": "unsigned __int64",
             "TypeNumber": "unsigned __int64",
             "TypeBool": "unsigned __int64",
-            "NumberValue": "unsigned __int64"
+            "NumberValue": "unsigned __int64",
+            "TypeVector3": "unsigned __int64",
+            "TypeColor3": "unsigned __int64",
+            "Vector3Value": "unsigned __int64",
+            "Color3Value": "unsigned __int64"
+        },
+        "AttributesMap": {
+            "Attributes": "unsigned __int64"
         },
         "DataModel": {
             "PlaceId": "unsigned __int64",
@@ -65,10 +80,6 @@
             "ToRenderView3": "unsigned __int64",
             "PrimitiveCount": "int",
             "Services": "unsigned __int64"
-        },
-        "RunService": {
-            "HeartbeatTask": "unsigned __int64",
-            "HeartbeatFPS": "double"
         },
         "RenderJob": {
             "RenderView": "unsigned __int64",
@@ -604,11 +615,11 @@
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
             "stack_last": "unsigned __int64",
-            "global": "unsigned __int64",
             "CallInfoSize": "unsigned __int64",
             "ci": "unsigned __int64",
             "ci_base": "unsigned __int64",
-            "ci_last": "unsigned __int64"
+            "ci_last": "unsigned __int64",
+            "global": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",

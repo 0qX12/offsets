@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 12:34 01/11/2026 (GMT)
-/*  Total Offsets   : 496
+/*  Dumped At       : 13:19 01/11/2026 (GMT)
+/*  Total Offsets   : 507
 /* =============================================================
 */
 
@@ -69,17 +69,36 @@ namespace Structs {
     }; // sizeof = 0xb8
 
     struct Attribute {
-        char pad_0[0x8];
+        uintptr_t Key; // 0x0
+        // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
-        char pad_1[0x8];
-        uintptr_t NumberValue; // 0x18
-        char pad_2[0x8c88260];
+        // alias: ComponentId = 0xb (unsigned __int16)
+        uintptr_t ComponentStride; // 0x10
+        uintptr_t Value; // 0x18
+        // alias: Payload = 0x18 (unsigned __int64)
+        // alias: NumberValue = 0x18 (unsigned __int64)
+        // alias: Vector3Value = 0x18 (unsigned __int64)
+        // alias: Color3Value = 0x18 (unsigned __int64)
+        char pad_0[0x18];
+        uintptr_t ComponentMap; // 0x38
+        char pad_1[0x18];
+        uintptr_t Size; // 0x58
+        char pad_2[0x8c88220];
         uintptr_t TypeBool; // 0x8c88280
         char pad_3[0x138];
         uintptr_t TypeNumber; // 0x8c883c0
         char pad_4[0x48];
         uintptr_t TypeString; // 0x8c88410
-    }; // sizeof = 0x8c88418
+        char pad_5[0x48];
+        uintptr_t TypeVector3; // 0x8c88460
+        char pad_6[0x278];
+        uintptr_t TypeColor3; // 0x8c886e0
+    }; // sizeof = 0x8c886e8
+
+    struct AttributesMap {
+        char pad_0[0x18];
+        uintptr_t Attributes; // 0x18
+    }; // sizeof = 0x20
 
     struct BasePart {
         char pad_0[0xf4];
@@ -520,8 +539,9 @@ namespace Structs {
     struct LocalScript {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
-        // alias: ByteCode = 0xb8 (unsigned __int64)
-        char pad_1[0xb0];
+        char pad_1[0xa0];
+        uintptr_t ByteCode; // 0x178
+        char pad_2[0x8];
         std::string Hash; // 0x188
     }; // sizeof = 0x1a8
 
@@ -791,13 +811,6 @@ namespace Structs {
         uintptr_t VisualEngine; // 0x18
     }; // sizeof = 0x20
 
-    struct RunService {
-        char pad_0[0x128];
-        double HeartbeatFPS; // 0x128
-        char pad_1[0xb0];
-        uintptr_t HeartbeatTask; // 0x1e0
-    }; // sizeof = 0x1e8
-
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -899,12 +912,12 @@ namespace Structs {
     struct TaskScheduler {
         char pad_0[0x18];
         std::string JobName; // 0x18
-        char pad_1[0x90];
+        char pad_1[0x78];
+        double MaxFPS; // 0xb0
+        char pad_2[0x10];
         uintptr_t JobStart; // 0xc8
         uintptr_t JobEnd; // 0xd0
-        char pad_2[0xf28];
-        double MaxFPS; // 0x1000
-        char pad_3[0x8c9c690];
+        char pad_3[0x8c9d5c0];
         uintptr_t Pointer; // 0x8c9d698
     }; // sizeof = 0x8c9d6a0
 
@@ -1088,15 +1101,14 @@ namespace Structs {
         uintptr_t pointer; // 0x10
         char pad_1[0x8];
         uintptr_t size; // 0x20
-        char pad_2[0x90];
-        uintptr_t localscript_pointer; // 0xb8
-        char pad_3[0x60];
+        char pad_2[0xf8];
         uintptr_t modulescript_pointer; // 0x120
-        char pad_4[0x28];
+        char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150
         // alias: core_script = 0x150 (unsigned __int64)
         // alias: IsRobloxScript = 0x150 (unsigned __int64)
-        char pad_5[0x28];
+        char pad_4[0x20];
+        uintptr_t localscript_pointer; // 0x178
         uintptr_t modulescript_detection; // 0x180
     }; // sizeof = 0x188
 
