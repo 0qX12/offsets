@@ -54,7 +54,7 @@ namespace Offsets {
 
     namespace Attribute {
          inline constexpr uintptr_t ComponentIdOffset = 0x8;
-         inline constexpr uintptr_t ComponentIdRVA = 0x8bdc4ac;
+         inline constexpr uintptr_t ComponentId = 0xb;
          inline constexpr uintptr_t ComponentMap = 0x38;
          inline constexpr uintptr_t ComponentStride = 0x10;
          inline constexpr uintptr_t Count = 0x8;
