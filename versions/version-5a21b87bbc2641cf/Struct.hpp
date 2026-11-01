@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 13:21 01/11/2026 (GMT)
-/*  Total Offsets   : 507
+/*  Dumped At       : 13:30 01/11/2026 (GMT)
+/*  Total Offsets   : 509
 /* =============================================================
 */
 
@@ -71,6 +71,7 @@ namespace Structs {
     struct Attribute {
         uintptr_t Key; // 0x0
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
+        // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
         // alias: ComponentId = 0xb (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
@@ -96,7 +97,9 @@ namespace Structs {
     }; // sizeof = 0x8c886e8
 
     struct AttributesMap {
-        char pad_0[0x18];
+        char pad_0[0x8];
+        // unsigned __int32 Length; // 0x8 (type unresolved)
+        char pad_1[0x10];
         uintptr_t Attributes; // 0x18
     }; // sizeof = 0x20
 
@@ -388,15 +391,15 @@ namespace Structs {
         Color3 BorderColor3; // 0x514
         char pad_3[0xc];
         float BackgroundTransparency; // 0x52c
-        char pad_4[0x14];
+        char pad_4[0x10];
+        bool Visible; // 0x540
+        char pad_5[0x3];
         int LayoutOrder; // 0x544
-        char pad_5[0x14];
+        char pad_6[0x14];
         float Rotation; // 0x55c
-        char pad_6[0xc];
+        char pad_7[0xc];
         int ZIndex; // 0x56c
-        char pad_7[0x5];
-        bool Visible; // 0x575
-        char pad_8[0x432];
+        char pad_8[0x438];
         std::string Image; // 0x9a8
         char pad_9[0x1d8];
         std::string RichText; // 0xba0
@@ -1077,8 +1080,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
