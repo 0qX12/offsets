@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 12:06 01/11/2026 (GMT)
-/*  Total Offsets   : 500
+/*  Dumped At       : 12:12 01/11/2026 (GMT)
+/*  Total Offsets   : 494
 /* =============================================================
 */
 
@@ -69,26 +69,17 @@ namespace Structs {
     }; // sizeof = 0xb8
 
     struct Attribute {
-        uintptr_t Key; // 0x0
-        // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
-        char pad_0[0x3];
-        // unsigned __int16 ComponentId; // 0xb (type unresolved)
-        char pad_1[0x5];
-        uintptr_t ComponentStride; // 0x10
-        uintptr_t Value; // 0x18
-        // alias: Payload = 0x18 (unsigned __int64)
-        // unsigned __int32 Count; // 0x20 (type unresolved)
-        char pad_2[0x18];
-        uintptr_t ComponentMap; // 0x38
-        char pad_3[0x18];
-        uintptr_t Size; // 0x58
-    }; // sizeof = 0x60
-
-    struct AttributesMap {
         char pad_0[0x8];
-        uintptr_t Attributes; // 0x8
-        // unsigned __int32 Length; // 0x10 (type unresolved)
-    }; // sizeof = 0x10
+        uintptr_t Type; // 0x8
+        char pad_1[0x8];
+        uintptr_t NumberValue; // 0x18
+        char pad_2[0x8c88260];
+        uintptr_t TypeBool; // 0x8c88280
+        char pad_3[0x138];
+        uintptr_t TypeNumber; // 0x8c883c0
+        char pad_4[0x48];
+        uintptr_t TypeString; // 0x8c88410
+    }; // sizeof = 0x8c88418
 
     struct BasePart {
         char pad_0[0xf4];
@@ -1068,8 +1059,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
