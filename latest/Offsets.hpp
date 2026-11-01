@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 13:37 01/11/2026 (GMT)
-/*  Total Offsets   : 509
+/*  Dumped At       : 14:39 01/11/2026 (GMT)
+/*  Total Offsets   : 510
 /* =============================================================
 */
 
@@ -128,7 +128,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -140,7 +140,7 @@ namespace Offsets {
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
          inline constexpr uintptr_t Viewport = 0x284;
-         inline constexpr uintptr_t ViewportSize = 0x288;
+         inline constexpr uintptr_t ViewportSize = 0x2c4;
     }
 
     namespace CharacterMesh {
@@ -363,7 +363,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -702,6 +702,7 @@ namespace Offsets {
     }
 
     namespace VisualEngine {
+         inline constexpr uintptr_t Dimensions = 0xb10;
          inline constexpr uintptr_t FakeDataModel = 0xaf0;
          inline constexpr uintptr_t Pointer = 0x879a218;
          inline constexpr uintptr_t RenderView = 0xc40;
