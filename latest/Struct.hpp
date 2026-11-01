@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:09 01/11/2026 (GMT)
+/*  Dumped At       : 16:12 01/11/2026 (GMT)
 /*  Total Offsets   : 516
 /* =============================================================
 */
@@ -304,11 +304,10 @@ namespace Structs {
         char pad_0[0x18];
         uintptr_t DevicePtr; // 0x18
         uintptr_t ContextPtr; // 0x20
-        char pad_1[0x8];
-        uintptr_t SwapChainPtr; // 0x30
-        char pad_2[0x178];
+        uintptr_t SwapChainPtr; // 0x28
+        char pad_1[0x180];
         uintptr_t ContextObj; // 0x1b0
-        char pad_3[0x6f5e390];
+        char pad_2[0x6f5e390];
         uintptr_t VTableRva; // 0x6f5e548
     }; // sizeof = 0x6f5e550
 
@@ -562,29 +561,42 @@ namespace Structs {
     }; // sizeof = 0x1a8
 
     struct MaterialColors {
-        char pad_0[0x6];
-        ColorUint_8 Grass; // 0x6
+        char pad_0[0x9];
         ColorUint_8 Slate; // 0x9
-        ColorUint_8 Concrete; // 0xc
+        char pad_1[0x3];
         ColorUint_8 Brick; // 0xf
         ColorUint_8 Sand; // 0x12
         ColorUint_8 WoodPlanks; // 0x15
-        ColorUint_8 Rock; // 0x18
+        char pad_2[0x3];
         ColorUint_8 Glacier; // 0x1b
         ColorUint_8 Snow; // 0x1e
-        ColorUint_8 Sandstone; // 0x21
-        ColorUint_8 Mud; // 0x24
+        char pad_3[0x6];
         ColorUint_8 Basalt; // 0x27
-        ColorUint_8 Ground; // 0x2a
-        ColorUint_8 CrackedLava; // 0x2d
+        char pad_4[0x6];
         ColorUint_8 Asphalt; // 0x30
-        ColorUint_8 Cobblestone; // 0x33
+        char pad_5[0x3];
         ColorUint_8 Ice; // 0x36
         ColorUint_8 LeafyGrass; // 0x39
         ColorUint_8 Salt; // 0x3c
-        ColorUint_8 Limestone; // 0x3f
+        char pad_6[0x3];
         ColorUint_8 Pavement; // 0x42
-    }; // sizeof = 0x45
+        char pad_7[0x21];
+        ColorUint_8 Grass; // 0x66
+        char pad_8[0x3];
+        ColorUint_8 Concrete; // 0x6c
+        char pad_9[0x9];
+        ColorUint_8 Rock; // 0x78
+        char pad_10[0x6];
+        ColorUint_8 Sandstone; // 0x81
+        ColorUint_8 Mud; // 0x84
+        char pad_11[0x3];
+        ColorUint_8 Ground; // 0x8a
+        ColorUint_8 CrackedLava; // 0x8d
+        char pad_12[0x3];
+        ColorUint_8 Cobblestone; // 0x93
+        char pad_13[0x9];
+        ColorUint_8 Limestone; // 0x9f
+    }; // sizeof = 0xa2
 
     struct MemEnforcedLRUCache {
         char pad_0[0x8];
@@ -959,8 +971,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
