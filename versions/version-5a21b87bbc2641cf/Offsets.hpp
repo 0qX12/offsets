@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:39 01/11/2026 (GMT)
-/*  Total Offsets   : 510
+/*  Dumped At       : 15:55 01/11/2026 (GMT)
+/*  Total Offsets   : 516
 /* =============================================================
 */
 
@@ -66,9 +66,15 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x58;
          inline constexpr uintptr_t Type = 0x8;
          inline constexpr uintptr_t TypeBool = 0x8c88280;
+         inline constexpr uintptr_t TypeBrickColor = 0x8c87a30;
+         inline constexpr uintptr_t TypeCFrame = 0x8c88a60;
          inline constexpr uintptr_t TypeColor3 = 0x8c886e0;
          inline constexpr uintptr_t TypeNumber = 0x8c883c0;
+         inline constexpr uintptr_t TypeRange = 0x8c877a0;
          inline constexpr uintptr_t TypeString = 0x8c88410;
+         inline constexpr uintptr_t TypeUDim = 0x8c87b20;
+         inline constexpr uintptr_t TypeUDim2 = 0x8c87b70;
+         inline constexpr uintptr_t TypeVector2 = 0x8c884b0;
          inline constexpr uintptr_t TypeVector3 = 0x8c88460;
          inline constexpr uintptr_t Value = 0x18;
          inline constexpr uintptr_t Vector3Value = 0x18;

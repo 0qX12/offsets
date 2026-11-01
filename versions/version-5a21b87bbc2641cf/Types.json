@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "14:39 01/11/2026",
+    "Dumped At": "15:55 01/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -58,6 +58,12 @@
             "TypeNumber": "unsigned __int64",
             "TypeBool": "unsigned __int64",
             "NumberValue": "unsigned __int64",
+            "TypeVector2": "unsigned __int64",
+            "TypeBrickColor": "unsigned __int64",
+            "TypeUDim": "unsigned __int64",
+            "TypeUDim2": "unsigned __int64",
+            "TypeCFrame": "unsigned __int64",
+            "TypeRange": "unsigned __int64",
             "TypeVector3": "unsigned __int64",
             "TypeColor3": "unsigned __int64",
             "Vector3Value": "unsigned __int64",
@@ -609,19 +615,19 @@
             "Value_Ref_Id": "unsigned __int64"
         },
         "": {
-            "OFF_STACKSIZE": "int",
+            "LS_ENC": "int",
             "LUAI_STACKSIZE": "int",
-            "LS_ENC": "int"
+            "OFF_STACKSIZE": "int"
         },
         "lua_state": {
-            "stack": "unsigned __int64",
-            "top": "unsigned __int64",
-            "stack_last": "unsigned __int64",
             "CallInfoSize": "unsigned __int64",
             "ci": "unsigned __int64",
             "ci_base": "unsigned __int64",
             "ci_last": "unsigned __int64",
-            "global": "unsigned __int64"
+            "global": "unsigned __int64",
+            "stack": "unsigned __int64",
+            "stack_last": "unsigned __int64",
+            "top": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",

@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:39 01/11/2026 (GMT)
-/*  Total Offsets   : 510
+/*  Dumped At       : 15:55 01/11/2026 (GMT)
+/*  Total Offsets   : 516
 /* =============================================================
 */
 
@@ -85,17 +85,29 @@ namespace Structs {
         uintptr_t ComponentMap; // 0x38
         char pad_1[0x18];
         uintptr_t Size; // 0x58
-        char pad_2[0x8c88220];
-        uintptr_t TypeBool; // 0x8c88280
-        char pad_3[0x138];
-        uintptr_t TypeNumber; // 0x8c883c0
-        char pad_4[0x48];
-        uintptr_t TypeString; // 0x8c88410
+        char pad_2[0x8c87740];
+        uintptr_t TypeRange; // 0x8c877a0
+        char pad_3[0x288];
+        uintptr_t TypeBrickColor; // 0x8c87a30
+        char pad_4[0xe8];
+        uintptr_t TypeUDim; // 0x8c87b20
         char pad_5[0x48];
+        uintptr_t TypeUDim2; // 0x8c87b70
+        char pad_6[0x708];
+        uintptr_t TypeBool; // 0x8c88280
+        char pad_7[0x138];
+        uintptr_t TypeNumber; // 0x8c883c0
+        char pad_8[0x48];
+        uintptr_t TypeString; // 0x8c88410
+        char pad_9[0x48];
         uintptr_t TypeVector3; // 0x8c88460
-        char pad_6[0x278];
+        char pad_10[0x48];
+        uintptr_t TypeVector2; // 0x8c884b0
+        char pad_11[0x228];
         uintptr_t TypeColor3; // 0x8c886e0
-    }; // sizeof = 0x8c886e8
+        char pad_12[0x378];
+        uintptr_t TypeCFrame; // 0x8c88a60
+    }; // sizeof = 0x8c88a68
 
     struct AttributesMap {
         char pad_0[0x8];
