@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:48 02/11/2026 (GMT)
-/*  Total Offsets   : 526
+/*  Dumped At       : 23:09 02/11/2026 (GMT)
+/*  Total Offsets   : 525
 /* =============================================================
 */
 
@@ -93,7 +93,6 @@ namespace Offsets {
          inline constexpr uintptr_t Massless = 0x122;
          inline constexpr uintptr_t Primitive = 0x178;
          inline constexpr uintptr_t Reflectance = 0xf4;
-         inline constexpr uintptr_t SetSizeVirtualSlot = 0x2f0;
          inline constexpr uintptr_t Shape = 0x1a0;
          inline constexpr uintptr_t Size = 0x1c4;
          inline constexpr uintptr_t Transparency = 0x118;
@@ -592,12 +591,9 @@ namespace Offsets {
 
     namespace RenderView {
          inline constexpr uintptr_t DeviceD3D11 = 0x8;
+         inline constexpr uintptr_t LightingValid = 0x279;
+         inline constexpr uintptr_t SkyValid = 0x278;
          inline constexpr uintptr_t VisualEngine = 0x18;
-    }
-
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
     namespace Script {

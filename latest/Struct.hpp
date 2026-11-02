@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:48 02/11/2026 (GMT)
-/*  Total Offsets   : 526
+/*  Dumped At       : 23:09 02/11/2026 (GMT)
+/*  Total Offsets   : 525
 /* =============================================================
 */
 
@@ -133,9 +133,7 @@ namespace Structs {
         int Shape; // 0x1a0
         char pad_5[0x20];
         Vector3 Size; // 0x1c4
-        char pad_6[0x120];
-        uintptr_t SetSizeVirtualSlot; // 0x2f0
-    }; // sizeof = 0x2f8
+    }; // sizeof = 0x1d0
 
     struct Beam {
         char pad_0[0x128];
@@ -842,14 +840,10 @@ namespace Structs {
         uintptr_t DeviceD3D11; // 0x8
         char pad_1[0x8];
         uintptr_t VisualEngine; // 0x18
-    }; // sizeof = 0x20
-
-    struct RunService {
-        char pad_0[0xc0];
-        double HeartbeatFPS; // 0xc0
-        char pad_1[0x10];
-        uintptr_t HeartbeatTask; // 0xd8
-    }; // sizeof = 0xe0
+        char pad_2[0x258];
+        bool SkyValid; // 0x278
+        bool LightingValid; // 0x279
+    }; // sizeof = 0x27a
 
     struct Script {
         char pad_0[0xb8];
@@ -1117,8 +1111,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
