@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 22:32 01/11/2026 (GMT)
-/*  Total Offsets   : 522
+/*  Dumped At       : 20:44 02/11/2026 (GMT)
+/*  Total Offsets   : 527
 /* =============================================================
 */
 
@@ -54,8 +54,8 @@ namespace Offsets {
 
     namespace Attribute {
          inline constexpr uintptr_t Color3Value = 0x18;
-         inline constexpr uintptr_t ComponentId = 0xb;
-         inline constexpr uintptr_t ComponentId = 0xb;
+         inline constexpr uintptr_t ComponentId = 0x9;
+         inline constexpr uintptr_t ComponentId = 0x9;
          inline constexpr uintptr_t ComponentIdOffset = 0x8;
          inline constexpr uintptr_t ComponentMap = 0x38;
          inline constexpr uintptr_t ComponentStride = 0x10;
@@ -134,7 +134,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -295,8 +295,14 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x575;
+         inline constexpr uintptr_t Visible = 0x540;
          inline constexpr uintptr_t ZIndex = 0x56c;
+    }
+
+    namespace GuiService {
+         inline constexpr uintptr_t AutoUIScale = 0x58c;
+         inline constexpr uintptr_t UIScale = 0x588;
+         inline constexpr uintptr_t UIScaleMultiplierHundredths = 0x590;
     }
 
     namespace Highlight {
@@ -345,7 +351,7 @@ namespace Offsets {
          inline constexpr uintptr_t RigType = 0x1b4;
          inline constexpr uintptr_t SeatPart = 0xf0;
          inline constexpr uintptr_t Sit = 0x1d3;
-         inline constexpr uintptr_t TargetPoint = 0x1ac;
+         inline constexpr uintptr_t TargetPoint = 0x140;
          inline constexpr uintptr_t UseJumpPower = 0x1d6;
          inline constexpr uintptr_t WalkSpeed = 0x1c4;
          inline constexpr uintptr_t Walkspeed = 0x1c4;
@@ -369,7 +375,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -488,7 +494,7 @@ namespace Offsets {
     }
 
     namespace Player {
-         inline constexpr uintptr_t AccountAge = 0x3bc;
+         inline constexpr uintptr_t AccountAge = 0x110;
          inline constexpr uintptr_t CameraMode = 0x378;
          inline constexpr uintptr_t DisplayName = 0x120;
          inline constexpr uintptr_t HealthDisplayDistance = 0x3a0;
@@ -588,6 +594,11 @@ namespace Offsets {
     namespace RenderView {
          inline constexpr uintptr_t DeviceD3D11 = 0x8;
          inline constexpr uintptr_t VisualEngine = 0x18;
+    }
+
+    namespace RunService {
+         inline constexpr uintptr_t HeartbeatFPS = 0xc0;
+         inline constexpr uintptr_t HeartbeatTask = 0xd8;
     }
 
     namespace Script {
