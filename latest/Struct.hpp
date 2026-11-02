@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:44 02/11/2026 (GMT)
-/*  Total Offsets   : 527
+/*  Dumped At       : 20:48 02/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -73,7 +73,6 @@ namespace Structs {
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
-        // alias: ComponentId = 0x9 (unsigned __int16)
         // alias: ComponentId = 0x9 (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
         uintptr_t Value; // 0x18
@@ -404,15 +403,15 @@ namespace Structs {
         Color3 BorderColor3; // 0x514
         char pad_3[0xc];
         float BackgroundTransparency; // 0x52c
-        char pad_4[0x10];
-        bool Visible; // 0x540
-        char pad_5[0x3];
+        char pad_4[0x14];
         int LayoutOrder; // 0x544
-        char pad_6[0x14];
+        char pad_5[0x14];
         float Rotation; // 0x55c
-        char pad_7[0xc];
+        char pad_6[0xc];
         int ZIndex; // 0x56c
-        char pad_8[0x438];
+        char pad_7[0x5];
+        bool Visible; // 0x575
+        char pad_8[0x432];
         std::string Image; // 0x9a8
         char pad_9[0x1d8];
         std::string RichText; // 0xba0

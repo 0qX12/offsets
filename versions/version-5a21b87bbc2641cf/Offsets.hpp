@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 20:44 02/11/2026 (GMT)
-/*  Total Offsets   : 527
+/*  Dumped At       : 20:48 02/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -54,7 +54,6 @@ namespace Offsets {
 
     namespace Attribute {
          inline constexpr uintptr_t Color3Value = 0x18;
-         inline constexpr uintptr_t ComponentId = 0x9;
          inline constexpr uintptr_t ComponentId = 0x9;
          inline constexpr uintptr_t ComponentIdOffset = 0x8;
          inline constexpr uintptr_t ComponentMap = 0x38;
@@ -295,7 +294,7 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x4f8;
          inline constexpr uintptr_t Text = 0xe08;
          inline constexpr uintptr_t TextColor3 = 0xeb8;
-         inline constexpr uintptr_t Visible = 0x540;
+         inline constexpr uintptr_t Visible = 0x575;
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
