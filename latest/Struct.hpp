@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 23:09 02/11/2026 (GMT)
-/*  Total Offsets   : 525
+/*  Dumped At       : 23:45 02/11/2026 (GMT)
+/*  Total Offsets   : 527
 /* =============================================================
 */
 
@@ -73,7 +73,7 @@ namespace Structs {
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
-        // alias: ComponentId = 0x9 (unsigned __int16)
+        // alias: ComponentId = 0xb (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
         uintptr_t Value; // 0x18
         // alias: Payload = 0x18 (unsigned __int64)
@@ -187,7 +187,8 @@ namespace Structs {
     struct Camera {
         char pad_0[0xb0];
         uintptr_t CameraSubject; // 0xb0
-        char pad_1[0x8];
+        short Viewport; // 0xb8
+        char pad_1[0x6];
         Matrix3x3 Rotation; // 0xc0
         // alias: CFrame = 0xc0 (unsigned __int64)
         Vector3 Position; // 0xe4
@@ -195,11 +196,9 @@ namespace Structs {
         int CameraType; // 0x120
         char pad_3[0x4];
         float FieldOfView; // 0x128
-        char pad_4[0x158];
-        short Viewport; // 0x284
-        char pad_5[0x3e];
+        char pad_4[0x198];
         Vector2 ViewportSize; // 0x2c4
-        char pad_6[0x8];
+        char pad_5[0x8];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 
@@ -301,11 +300,10 @@ namespace Structs {
         char pad_0[0x18];
         uintptr_t DevicePtr; // 0x18
         uintptr_t ContextPtr; // 0x20
-        char pad_1[0x8];
-        uintptr_t SwapChainPtr; // 0x30
-        char pad_2[0x178];
+        uintptr_t SwapChainPtr; // 0x28
+        char pad_1[0x180];
         uintptr_t ContextObj; // 0x1b0
-        char pad_3[0x6f5e390];
+        char pad_2[0x6f5e390];
         uintptr_t VTableRva; // 0x6f5e548
     }; // sizeof = 0x6f5e550
 
@@ -576,29 +574,42 @@ namespace Structs {
     }; // sizeof = 0x1a8
 
     struct MaterialColors {
-        char pad_0[0x6];
-        ColorUint_8 Grass; // 0x6
+        char pad_0[0x9];
         ColorUint_8 Slate; // 0x9
-        ColorUint_8 Concrete; // 0xc
+        char pad_1[0x3];
         ColorUint_8 Brick; // 0xf
         ColorUint_8 Sand; // 0x12
         ColorUint_8 WoodPlanks; // 0x15
-        ColorUint_8 Rock; // 0x18
+        char pad_2[0x3];
         ColorUint_8 Glacier; // 0x1b
         ColorUint_8 Snow; // 0x1e
-        ColorUint_8 Sandstone; // 0x21
-        ColorUint_8 Mud; // 0x24
+        char pad_3[0x6];
         ColorUint_8 Basalt; // 0x27
-        ColorUint_8 Ground; // 0x2a
-        ColorUint_8 CrackedLava; // 0x2d
+        char pad_4[0x6];
         ColorUint_8 Asphalt; // 0x30
-        ColorUint_8 Cobblestone; // 0x33
+        char pad_5[0x3];
         ColorUint_8 Ice; // 0x36
         ColorUint_8 LeafyGrass; // 0x39
         ColorUint_8 Salt; // 0x3c
-        ColorUint_8 Limestone; // 0x3f
+        char pad_6[0x3];
         ColorUint_8 Pavement; // 0x42
-    }; // sizeof = 0x45
+        char pad_7[0x21];
+        ColorUint_8 Grass; // 0x66
+        char pad_8[0x3];
+        ColorUint_8 Concrete; // 0x6c
+        char pad_9[0x9];
+        ColorUint_8 Rock; // 0x78
+        char pad_10[0x6];
+        ColorUint_8 Sandstone; // 0x81
+        ColorUint_8 Mud; // 0x84
+        char pad_11[0x3];
+        ColorUint_8 Ground; // 0x8a
+        ColorUint_8 CrackedLava; // 0x8d
+        char pad_12[0x3];
+        ColorUint_8 Cobblestone; // 0x93
+        char pad_13[0x9];
+        ColorUint_8 Limestone; // 0x9f
+    }; // sizeof = 0xa2
 
     struct MemEnforcedLRUCache {
         char pad_0[0x8];
@@ -845,6 +856,13 @@ namespace Structs {
         bool LightingValid; // 0x279
     }; // sizeof = 0x27a
 
+    struct RunService {
+        char pad_0[0xc8];
+        double HeartbeatFPS; // 0xc8
+        char pad_1[0x8];
+        uintptr_t HeartbeatTask; // 0xd8
+    }; // sizeof = 0xe0
+
     struct Script {
         char pad_0[0xb8];
         std::string GUID; // 0xb8
@@ -977,8 +995,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x5e0];
+        std::string Texture_Texture; // 0x7c8
+    }; // sizeof = 0x7e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1111,8 +1130,8 @@ namespace Structs {
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
         char pad_1[0x10];
-        uintptr_t ci; // 0x30
-        // alias: CallInfoSize = 0x30 (unsigned __int64)
+        uintptr_t CallInfoSize; // 0x30
+        // alias: ci = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
         char pad_2[0x8];
         uintptr_t stack; // 0x48
