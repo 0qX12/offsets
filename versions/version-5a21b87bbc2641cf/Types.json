@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "20:38 03/11/2026",
+    "Dumped At": "23:08 03/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -407,14 +407,10 @@
             "ColorShift_Bottom": "Color3",
             "ExposureCompensation": "float",
             "GeographicLatitude": "float",
-            "LightDirection": "Vector3",
-            "LightColor": "Color3",
-            "GradientTop": "Color3",
-            "GradientBottom": "Color3",
             "SunPosition": "Vector3",
             "MoonPosition": "Vector3",
             "Source": "int",
-            "GlobalShadows": "bool",
+            "GlobalShadows": "unsigned __int64",
             "Sky": "unsigned __int64",
             "ClockTime": "unsigned __int64",
             "ShadowSoftness": "float",
@@ -522,8 +518,6 @@
         },
         "ModuleScript": {
             "GUID": "string",
-            "IsCoreScript": "BYTE",
-            "IsCoreScriptMask": "unsigned __int64",
             "ByteCode": "unsigned __int64"
         },
         "Script": {
@@ -572,9 +566,6 @@
             "CoreStateEncoding": "int"
         },
         "script": {
-            "modulescript::module_state": "unsigned __int64",
-            "core_script": "unsigned __int64",
-            "IsRobloxScript": "unsigned __int64",
             "modulescript::detection": "unsigned __int64",
             "modulescript::pointer": "unsigned __int64",
             "localscript::pointer": "unsigned __int64",
@@ -617,6 +608,7 @@
             "Superclass": "unsigned __int64",
             "ClassName": "unsigned __int64",
             "PropertyDescriptors": "unsigned __int64",
+            "PropertyCount": "unsigned __int64",
             "EventDescriptors": "unsigned __int64",
             "FunctionDescriptors": "unsigned __int64"
         },
@@ -645,10 +637,6 @@
             "top": "unsigned __int64",
             "base": "unsigned __int64",
             "stack_last": "unsigned __int64",
-            "ci": "unsigned __int64",
-            "ci_base": "unsigned __int64",
-            "ci_last": "unsigned __int64",
-            "CallInfoSize": "unsigned __int64",
             "global": "unsigned __int64"
         },
         "global_State": {
@@ -657,7 +645,9 @@
         },
         "ByteCode": {
             "Pointer": "unsigned __int64",
-            "Size": "unsigned __int64"
+            "Size": "unsigned __int64",
+            "Capacity": "unsigned __int64",
+            "CacheKey": "unsigned __int64"
         },
         "datamodel": {
             "pointer": "unsigned __int64",
