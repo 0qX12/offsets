@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 23:45 02/11/2026 (GMT)
-/*  Total Offsets   : 527
+/*  Dumped At       : 20:38 03/11/2026 (GMT)
+/*  Total Offsets   : 530
 /* =============================================================
 */
 
@@ -127,12 +127,12 @@ namespace Offsets {
     }
 
     namespace ByteCode {
-         inline constexpr uintptr_t Pointer = 0x10;
-         inline constexpr uintptr_t Size = 0x20;
+         inline constexpr uintptr_t Pointer = 0x18;
+         inline constexpr uintptr_t Size = 0x28;
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -143,7 +143,7 @@ namespace Offsets {
          inline constexpr uintptr_t ImagePlaneDepth = 0x2d4;
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
-         inline constexpr uintptr_t Viewport = 0xb8;
+         inline constexpr uintptr_t Viewport = 0x284;
          inline constexpr uintptr_t ViewportSize = 0x2c4;
     }
 
@@ -192,7 +192,6 @@ namespace Offsets {
          inline constexpr uintptr_t PlaceId = 0x180;
          inline constexpr uintptr_t PlaceVersion = 0x19c;
          inline constexpr uintptr_t PrimitiveCount = 0x410;
-         inline constexpr uintptr_t ScriptContext = 0x440;
          inline constexpr uintptr_t ServerIP = 0x570;
          inline constexpr uintptr_t Services = 0x78;
          inline constexpr uintptr_t ToRenderView1 = 0x1b8;
@@ -217,7 +216,7 @@ namespace Offsets {
          inline constexpr uintptr_t ContextObj = 0x1b0;
          inline constexpr uintptr_t ContextPtr = 0x20;
          inline constexpr uintptr_t DevicePtr = 0x18;
-         inline constexpr uintptr_t SwapChainPtr = 0x28;
+         inline constexpr uintptr_t SwapChainPtr = 0x30;
          inline constexpr uintptr_t VTableRva = 0x6f5e548;
     }
 
@@ -373,7 +372,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -408,6 +407,10 @@ namespace Offsets {
          inline constexpr uintptr_t ByteCode = 0x178;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
+    }
+
+    namespace LuaTable {
+         inline constexpr uintptr_t ReadOnly = 0x5;
     }
 
     namespace MaterialColors {
@@ -492,7 +495,7 @@ namespace Offsets {
     }
 
     namespace Player {
-         inline constexpr uintptr_t AccountAge = 0x110;
+         inline constexpr uintptr_t AccountAge = 0x364;
          inline constexpr uintptr_t CameraMode = 0x378;
          inline constexpr uintptr_t DisplayName = 0x120;
          inline constexpr uintptr_t HealthDisplayDistance = 0x3a0;
@@ -607,6 +610,8 @@ namespace Offsets {
     }
 
     namespace ScriptContext {
+         inline constexpr uintptr_t CoreState = 0x530;
+         inline constexpr uintptr_t CoreStateEncoding = 0x1;
          inline constexpr uintptr_t RequireBypass = 0xb50;
     }
 
@@ -695,7 +700,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x7c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {
@@ -769,7 +774,6 @@ namespace Offsets {
          inline constexpr uintptr_t place_id = 0x180;
          inline constexpr uintptr_t pointer = 0x8d06600;
          inline constexpr uintptr_t real = 0x1f8;
-         inline constexpr uintptr_t script_context = 0x440;
     }
 
     namespace global_State {
@@ -790,13 +794,15 @@ namespace Offsets {
 
     namespace lua_state {
          inline constexpr uintptr_t CallInfoSize = 0x30;
+         inline constexpr uintptr_t base = 0x50;
          inline constexpr uintptr_t ci = 0x30;
          inline constexpr uintptr_t ci_base = 0x18;
          inline constexpr uintptr_t ci_last = 0x10;
          inline constexpr uintptr_t global = 0x38;
-         inline constexpr uintptr_t stack = 0x48;
+         inline constexpr uintptr_t stack = 0x40;
          inline constexpr uintptr_t stack_last = 0x58;
-         inline constexpr uintptr_t top = 0x50;
+         inline constexpr uintptr_t top = 0x48;
+         inline constexpr uintptr_t userdata = 0x20;
     }
 
     namespace lua_thread {
@@ -814,8 +820,8 @@ namespace Offsets {
          inline constexpr uintptr_t modulescript_detection = 0x180;
          inline constexpr uintptr_t modulescript_module_state = 0x150;
          inline constexpr uintptr_t modulescript_pointer = 0x120;
-         inline constexpr uintptr_t pointer = 0x10;
-         inline constexpr uintptr_t size = 0x20;
+         inline constexpr uintptr_t pointer = 0x18;
+         inline constexpr uintptr_t size = 0x28;
     }
 
     namespace task_scheduler {
@@ -823,7 +829,7 @@ namespace Offsets {
     }
 
     namespace userdata {
-         inline constexpr uintptr_t Capabilities = 0x70;
+         inline constexpr uintptr_t Capabilities = 0x80;
          inline constexpr uintptr_t Identity = 0x60;
     }
 

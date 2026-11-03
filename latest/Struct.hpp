@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 23:45 02/11/2026 (GMT)
-/*  Total Offsets   : 527
+/*  Dumped At       : 20:38 03/11/2026 (GMT)
+/*  Total Offsets   : 530
 /* =============================================================
 */
 
@@ -173,22 +173,21 @@ namespace Structs {
     }; // sizeof = 0xa4
 
     struct ByteCode {
-        char pad_0[0x10];
-        uintptr_t Pointer; // 0x10
+        char pad_0[0x18];
+        uintptr_t Pointer; // 0x18
         char pad_1[0x8];
-        uintptr_t Size; // 0x20
-    }; // sizeof = 0x28
+        uintptr_t Size; // 0x28
+    }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
         uintptr_t CameraSubject; // 0xb0
-        short Viewport; // 0xb8
-        char pad_1[0x6];
+        char pad_1[0x8];
         Matrix3x3 Rotation; // 0xc0
         // alias: CFrame = 0xc0 (unsigned __int64)
         Vector3 Position; // 0xe4
@@ -196,9 +195,11 @@ namespace Structs {
         int CameraType; // 0x120
         char pad_3[0x4];
         float FieldOfView; // 0x128
-        char pad_4[0x198];
+        char pad_4[0x158];
+        short Viewport; // 0x284
+        char pad_5[0x3e];
         Vector2 ViewportSize; // 0x2c4
-        char pad_5[0x8];
+        char pad_6[0x8];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 
@@ -274,9 +275,7 @@ namespace Structs {
         uintptr_t ToRenderView1; // 0x1b8
         char pad_8[0x250];
         int PrimitiveCount; // 0x410
-        char pad_9[0x2c];
-        uintptr_t ScriptContext; // 0x440
-        char pad_10[0x128];
+        char pad_9[0x15c];
         std::string ServerIP; // 0x570
         // alias: GameLoaded = 0x588 (unsigned __int64)
     }; // sizeof = 0x590
@@ -300,10 +299,11 @@ namespace Structs {
         char pad_0[0x18];
         uintptr_t DevicePtr; // 0x18
         uintptr_t ContextPtr; // 0x20
-        uintptr_t SwapChainPtr; // 0x28
-        char pad_1[0x180];
+        char pad_1[0x8];
+        uintptr_t SwapChainPtr; // 0x30
+        char pad_2[0x178];
         uintptr_t ContextObj; // 0x1b0
-        char pad_2[0x6f5e390];
+        char pad_3[0x6f5e390];
         uintptr_t VTableRva; // 0x6f5e548
     }; // sizeof = 0x6f5e550
 
@@ -522,9 +522,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb0];
@@ -572,6 +572,11 @@ namespace Structs {
         char pad_2[0x8];
         std::string Hash; // 0x188
     }; // sizeof = 0x1a8
+
+    struct LuaTable {
+        char pad_0[0x5];
+        uintptr_t ReadOnly; // 0x5
+    }; // sizeof = 0xd
 
     struct MaterialColors {
         char pad_0[0x9];
@@ -696,16 +701,16 @@ namespace Structs {
     struct Player {
         char pad_0[0xb8];
         uintptr_t UserId; // 0xb8
-        char pad_1[0x50];
-        int AccountAge; // 0x110
-        char pad_2[0x4];
+        char pad_1[0x58];
         uintptr_t LocalPlayer; // 0x118
         std::string DisplayName; // 0x120
-        char pad_3[0x160];
+        char pad_2[0x160];
         uintptr_t ModelInstance; // 0x2a0
-        char pad_4[0x38];
+        char pad_3[0x38];
         uintptr_t Team; // 0x2e0
-        char pad_5[0x88];
+        char pad_4[0x7c];
+        int AccountAge; // 0x364
+        char pad_5[0x8];
         float MaxZoomDistance; // 0x370
         float MinZoomDistance; // 0x374
         int CameraMode; // 0x378
@@ -871,7 +876,11 @@ namespace Structs {
     }; // sizeof = 0x1a8
 
     struct ScriptContext {
-        char pad_0[0xb50];
+        char pad_0[0x1];
+        int CoreStateEncoding; // 0x1
+        char pad_1[0x52b];
+        uintptr_t CoreState; // 0x530
+        char pad_2[0x618];
         uintptr_t RequireBypass; // 0xb50
     }; // sizeof = 0xb58
 
@@ -995,9 +1004,8 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        char pad_1[0x5e0];
-        std::string Texture_Texture; // 0x7c8
-    }; // sizeof = 0x7e8
+        // alias: Texture_Texture = 0x1c8 (string)
+    }; // sizeof = 0x1e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1096,11 +1104,9 @@ namespace Structs {
         uintptr_t place_id; // 0x180
         char pad_1[0x70];
         uintptr_t real; // 0x1f8
-        char pad_2[0x240];
-        uintptr_t script_context; // 0x440
-        char pad_3[0x140];
+        char pad_2[0x388];
         uintptr_t game_loaded; // 0x588
-        char pad_4[0x8d06070];
+        char pad_3[0x8d06070];
         uintptr_t pointer; // 0x8d06600
     }; // sizeof = 0x8d06608
 
@@ -1129,13 +1135,14 @@ namespace Structs {
         char pad_0[0x10];
         uintptr_t ci_last; // 0x10
         uintptr_t ci_base; // 0x18
-        char pad_1[0x10];
-        uintptr_t CallInfoSize; // 0x30
-        // alias: ci = 0x30 (unsigned __int64)
+        uintptr_t userdata; // 0x20
+        char pad_1[0x8];
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
         uintptr_t global; // 0x38
-        char pad_2[0x8];
-        uintptr_t stack; // 0x48
-        uintptr_t top; // 0x50
+        uintptr_t stack; // 0x40
+        uintptr_t top; // 0x48
+        uintptr_t base; // 0x50
         uintptr_t stack_last; // 0x58
     }; // sizeof = 0x60
 
@@ -1150,11 +1157,11 @@ namespace Structs {
     }; // sizeof = 0x338
 
     struct script {
-        char pad_0[0x10];
-        uintptr_t pointer; // 0x10
+        char pad_0[0x18];
+        uintptr_t pointer; // 0x18
         char pad_1[0x8];
-        uintptr_t size; // 0x20
-        char pad_2[0xf8];
+        uintptr_t size; // 0x28
+        char pad_2[0xf0];
         uintptr_t modulescript_pointer; // 0x120
         char pad_3[0x28];
         uintptr_t modulescript_module_state; // 0x150
@@ -1173,8 +1180,8 @@ namespace Structs {
     struct userdata {
         char pad_0[0x60];
         uintptr_t Identity; // 0x60
-        char pad_1[0x8];
-        uintptr_t Capabilities; // 0x70
-    }; // sizeof = 0x78
+        char pad_1[0x18];
+        uintptr_t Capabilities; // 0x80
+    }; // sizeof = 0x88
 
 }

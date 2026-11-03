@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "23:45 02/11/2026",
+    "Dumped At": "20:38 03/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -82,7 +82,6 @@
             "GameLoaded": "unsigned __int64",
             "JobId": "string",
             "Workspace": "unsigned __int64",
-            "ScriptContext": "unsigned __int64",
             "PlaceVersion": "int",
             "ServerIP": "string",
             "ToRenderView1": "unsigned __int64",
@@ -561,11 +560,16 @@
             "AutoUIScale": "float",
             "UIScaleMultiplierHundredths": "unsigned __int32"
         },
+        "LuaTable": {
+            "ReadOnly": "unsigned __int64"
+        },
         "task_scheduler": {
             "target_fps": "unsigned __int64"
         },
         "ScriptContext": {
-            "RequireBypass": "unsigned __int64"
+            "RequireBypass": "unsigned __int64",
+            "CoreState": "unsigned __int64",
+            "CoreStateEncoding": "int"
         },
         "script": {
             "modulescript::module_state": "unsigned __int64",
@@ -636,14 +640,16 @@
             "LS_ENC": "int"
         },
         "lua_state": {
+            "userdata": "unsigned __int64",
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
+            "base": "unsigned __int64",
             "stack_last": "unsigned __int64",
-            "global": "unsigned __int64",
-            "CallInfoSize": "unsigned __int64",
             "ci": "unsigned __int64",
             "ci_base": "unsigned __int64",
-            "ci_last": "unsigned __int64"
+            "ci_last": "unsigned __int64",
+            "CallInfoSize": "unsigned __int64",
+            "global": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",
@@ -657,7 +663,6 @@
             "pointer": "unsigned __int64",
             "real": "unsigned __int64",
             "game_loaded": "unsigned __int64",
-            "script_context": "unsigned __int64",
             "place_id": "unsigned __int64",
             "game_id": "unsigned __int64"
         },
