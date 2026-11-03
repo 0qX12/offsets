@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "23:08 03/11/2026",
+    "Dumped At": "00:00 04/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -407,10 +407,14 @@
             "ColorShift_Bottom": "Color3",
             "ExposureCompensation": "float",
             "GeographicLatitude": "float",
+            "LightDirection": "Vector3",
+            "LightColor": "Color3",
+            "GradientTop": "Color3",
+            "GradientBottom": "Color3",
             "SunPosition": "Vector3",
             "MoonPosition": "Vector3",
             "Source": "int",
-            "GlobalShadows": "unsigned __int64",
+            "GlobalShadows": "bool",
             "Sky": "unsigned __int64",
             "ClockTime": "unsigned __int64",
             "ShadowSoftness": "float",
@@ -637,7 +641,13 @@
             "top": "unsigned __int64",
             "base": "unsigned __int64",
             "stack_last": "unsigned __int64",
-            "global": "unsigned __int64"
+            "ci": "unsigned __int64",
+            "ci_base": "unsigned __int64",
+            "ci_last": "unsigned __int64",
+            "CallInfoSize": "unsigned __int64",
+            "global": "unsigned __int64",
+            "g_ptrenckey_new": "unsigned __int64",
+            "g_ptrenc_active": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",

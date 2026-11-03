@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 23:08 03/11/2026 (GMT)
-/*  Total Offsets   : 520
+/*  Dumped At       : 00:00 04/11/2026 (GMT)
+/*  Total Offsets   : 530
 /* =============================================================
 */
 
@@ -394,6 +394,10 @@ namespace Offsets {
          inline constexpr uintptr_t FogStart = 0x118;
          inline constexpr uintptr_t GeographicLatitude = 0x11c;
          inline constexpr uintptr_t GlobalShadows = 0x12c;
+         inline constexpr uintptr_t GradientBottom = 0x178;
+         inline constexpr uintptr_t GradientTop = 0x138;
+         inline constexpr uintptr_t LightColor = 0x144;
+         inline constexpr uintptr_t LightDirection = 0x150;
          inline constexpr uintptr_t MoonPosition = 0x16c;
          inline constexpr uintptr_t OutdoorAmbient = 0xf0;
          inline constexpr uintptr_t ShadowSoftness = 0x124;
@@ -790,7 +794,13 @@ namespace Offsets {
     }
 
     namespace lua_state {
+         inline constexpr uintptr_t CallInfoSize = 0x30;
          inline constexpr uintptr_t base = 0x50;
+         inline constexpr uintptr_t ci = 0x30;
+         inline constexpr uintptr_t ci_base = 0x18;
+         inline constexpr uintptr_t ci_last = 0x10;
+         inline constexpr uintptr_t g_ptrenc_active = 0x54c8;
+         inline constexpr uintptr_t g_ptrenckey_new = 0x5488;
          inline constexpr uintptr_t global = 0x38;
          inline constexpr uintptr_t stack = 0x40;
          inline constexpr uintptr_t stack_last = 0x58;
