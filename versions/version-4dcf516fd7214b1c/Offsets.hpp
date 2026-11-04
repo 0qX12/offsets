@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 12:43 04/11/2026 (GMT)
-/*  Total Offsets   : 501
+/*  Dumped At       : 23:58 04/11/2026 (GMT)
+/*  Total Offsets   : 500
 /* =============================================================
 */
 
@@ -305,6 +305,7 @@ namespace Offsets {
          inline constexpr uintptr_t Enabled = 0xdc;
          inline constexpr uintptr_t FillColor = 0xb0;
          inline constexpr uintptr_t FillTransparency = 0xcc;
+         inline constexpr uintptr_t LineThickness = 0xd0;
          inline constexpr uintptr_t OutlineColor = 0xbc;
          inline constexpr uintptr_t OutlineTransparency = 0xd4;
          inline constexpr uintptr_t Prop = 0x98;
@@ -404,32 +405,28 @@ namespace Offsets {
          inline constexpr uintptr_t Hash = 0x188;
     }
 
-    namespace LuaTable {
-         inline constexpr uintptr_t ReadOnly = 0x6;
-    }
-
     namespace MaterialColors {
          inline constexpr uintptr_t Asphalt = 0x30;
          inline constexpr uintptr_t Basalt = 0x27;
          inline constexpr uintptr_t Brick = 0xf;
-         inline constexpr uintptr_t Cobblestone = 0x33;
-         inline constexpr uintptr_t Concrete = 0xc;
-         inline constexpr uintptr_t CrackedLava = 0x2d;
+         inline constexpr uintptr_t Cobblestone = 0x153;
+         inline constexpr uintptr_t Concrete = 0x12c;
+         inline constexpr uintptr_t CrackedLava = 0x14d;
          inline constexpr uintptr_t Glacier = 0x1b;
-         inline constexpr uintptr_t Grass = 0x6;
-         inline constexpr uintptr_t Ground = 0x2a;
+         inline constexpr uintptr_t Grass = 0x126;
+         inline constexpr uintptr_t Ground = 0x14a;
          inline constexpr uintptr_t Ice = 0x36;
          inline constexpr uintptr_t LeafyGrass = 0x39;
-         inline constexpr uintptr_t Limestone = 0x3f;
-         inline constexpr uintptr_t Mud = 0x24;
+         inline constexpr uintptr_t Limestone = 0x15f;
+         inline constexpr uintptr_t Mud = 0x144;
          inline constexpr uintptr_t Pavement = 0x42;
-         inline constexpr uintptr_t Rock = 0x18;
+         inline constexpr uintptr_t Rock = 0x138;
          inline constexpr uintptr_t Salt = 0x3c;
          inline constexpr uintptr_t Sand = 0x12;
-         inline constexpr uintptr_t Sandstone = 0x21;
+         inline constexpr uintptr_t Sandstone = 0x141;
          inline constexpr uintptr_t Slate = 0x9;
          inline constexpr uintptr_t Snow = 0x1e;
-         inline constexpr uintptr_t WoodPlanks = 0x75;
+         inline constexpr uintptr_t WoodPlanks = 0x15;
     }
 
     namespace MemEnforcedLRUCache {
@@ -794,7 +791,6 @@ namespace Offsets {
     }
 
     namespace userdata {
-         inline constexpr uintptr_t Capabilities = 0x138;
          inline constexpr uintptr_t Identity = 0x70;
     }
 
