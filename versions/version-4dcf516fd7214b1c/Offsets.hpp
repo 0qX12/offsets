@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 11:12 04/11/2026 (GMT)
+/*  Dumped At       : 11:14 04/11/2026 (GMT)
 /*  Total Offsets   : 489
 /* =============================================================
 */
@@ -368,7 +368,7 @@ namespace Offsets {
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
          inline constexpr uintptr_t CachedItem = 0x38;
-         inline constexpr uintptr_t Next = 0xf0;
+         inline constexpr uintptr_t Next = 0x0;
     }
 
     namespace Lighting {

@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 11:12 04/11/2026 (GMT)
+/*  Dumped At       : 11:14 04/11/2026 (GMT)
 /*  Total Offsets   : 489
 /* =============================================================
 */
@@ -513,13 +513,12 @@ namespace Structs {
     }; // sizeof = 0x28
 
     struct LRUNode {
-        char pad_0[0x10];
+        uintptr_t Next; // 0x0
+        char pad_0[0x8];
         std::string AssetID; // 0x10
         char pad_1[0x8];
         uintptr_t CachedItem; // 0x38
-        char pad_2[0xb0];
-        uintptr_t Next; // 0xf0
-    }; // sizeof = 0xf8
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb0];
