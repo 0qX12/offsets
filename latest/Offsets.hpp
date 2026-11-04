@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 11:14 04/11/2026 (GMT)
-/*  Total Offsets   : 489
+/*  Dumped At       : 12:43 04/11/2026 (GMT)
+/*  Total Offsets   : 501
 /* =============================================================
 */
 
@@ -54,7 +54,7 @@ namespace Offsets {
 
     namespace Attribute {
          inline constexpr uintptr_t Color3Value = 0x18;
-         inline constexpr uintptr_t ComponentId = 0xb;
+         inline constexpr uintptr_t ComponentId = 0x9;
          inline constexpr uintptr_t ComponentIdOffset = 0x8;
          inline constexpr uintptr_t ComponentMap = 0x38;
          inline constexpr uintptr_t ComponentStride = 0x10;
@@ -412,24 +412,24 @@ namespace Offsets {
          inline constexpr uintptr_t Asphalt = 0x30;
          inline constexpr uintptr_t Basalt = 0x27;
          inline constexpr uintptr_t Brick = 0xf;
-         inline constexpr uintptr_t Cobblestone = 0x93;
-         inline constexpr uintptr_t Concrete = 0x6c;
-         inline constexpr uintptr_t CrackedLava = 0x8d;
+         inline constexpr uintptr_t Cobblestone = 0x33;
+         inline constexpr uintptr_t Concrete = 0xc;
+         inline constexpr uintptr_t CrackedLava = 0x2d;
          inline constexpr uintptr_t Glacier = 0x1b;
-         inline constexpr uintptr_t Grass = 0x66;
-         inline constexpr uintptr_t Ground = 0x8a;
+         inline constexpr uintptr_t Grass = 0x6;
+         inline constexpr uintptr_t Ground = 0x2a;
          inline constexpr uintptr_t Ice = 0x36;
          inline constexpr uintptr_t LeafyGrass = 0x39;
-         inline constexpr uintptr_t Limestone = 0x9f;
-         inline constexpr uintptr_t Mud = 0x84;
+         inline constexpr uintptr_t Limestone = 0x3f;
+         inline constexpr uintptr_t Mud = 0x24;
          inline constexpr uintptr_t Pavement = 0x42;
-         inline constexpr uintptr_t Rock = 0x78;
+         inline constexpr uintptr_t Rock = 0x18;
          inline constexpr uintptr_t Salt = 0x3c;
          inline constexpr uintptr_t Sand = 0x12;
-         inline constexpr uintptr_t Sandstone = 0x81;
+         inline constexpr uintptr_t Sandstone = 0x21;
          inline constexpr uintptr_t Slate = 0x9;
          inline constexpr uintptr_t Snow = 0x1e;
-         inline constexpr uintptr_t WoodPlanks = 0x15;
+         inline constexpr uintptr_t WoodPlanks = 0x75;
     }
 
     namespace MemEnforcedLRUCache {
@@ -539,7 +539,6 @@ namespace Offsets {
     namespace RakNet {
          inline constexpr uintptr_t RakNetEncrypt = 0x289d913;
          inline constexpr uintptr_t RakPeerVirtualTable = 0x70e84b8;
-         inline constexpr uintptr_t RaknetReportNetworkError = 0x49b6847;
          inline constexpr uintptr_t convertItemEnumToString = 0x491ede4;
     }
 
@@ -668,7 +667,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x4c8;
     }
 
     namespace Tool {
@@ -744,6 +743,11 @@ namespace Offsets {
          inline constexpr uintptr_t real = 0x1f8;
     }
 
+    namespace global_State {
+         inline constexpr uintptr_t mainthread = 0x78;
+         inline constexpr uintptr_t ref_table = 0x630;
+    }
+
     namespace instance {
          inline constexpr uintptr_t children_end = 0x8;
          inline constexpr uintptr_t children_start = 0x70;
@@ -753,6 +757,19 @@ namespace Offsets {
          inline constexpr uintptr_t name = 0x68;
          inline constexpr uintptr_t name_str = 0x0;
          inline constexpr uintptr_t value_base = 0xa0;
+    }
+
+    namespace lua_state {
+         inline constexpr uintptr_t CallInfoSize = 0x30;
+         inline constexpr uintptr_t base = 0x60;
+         inline constexpr uintptr_t ci = 0x70;
+         inline constexpr uintptr_t ci_base = 0x28;
+         inline constexpr uintptr_t ci_last = 0x20;
+         inline constexpr uintptr_t global = 0x50;
+         inline constexpr uintptr_t stack = 0x48;
+         inline constexpr uintptr_t stack_last = 0x68;
+         inline constexpr uintptr_t top = 0x58;
+         inline constexpr uintptr_t userdata = 0x10;
     }
 
     namespace lua_thread {
@@ -777,6 +794,7 @@ namespace Offsets {
     }
 
     namespace userdata {
+         inline constexpr uintptr_t Capabilities = 0x138;
          inline constexpr uintptr_t Identity = 0x70;
     }
 

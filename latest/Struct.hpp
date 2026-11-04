@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 11:14 04/11/2026 (GMT)
-/*  Total Offsets   : 489
+/*  Dumped At       : 12:43 04/11/2026 (GMT)
+/*  Total Offsets   : 501
 /* =============================================================
 */
 
@@ -73,7 +73,7 @@ namespace Structs {
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
-        // alias: ComponentId = 0xb (unsigned __int16)
+        // alias: ComponentId = 0x9 (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
         uintptr_t Value; // 0x18
         // alias: Payload = 0x18 (unsigned __int64)
@@ -573,42 +573,31 @@ namespace Structs {
     }; // sizeof = 0xe
 
     struct MaterialColors {
-        char pad_0[0x9];
+        char pad_0[0x6];
+        ColorUint_8 Grass; // 0x6
         ColorUint_8 Slate; // 0x9
-        char pad_1[0x3];
+        ColorUint_8 Concrete; // 0xc
         ColorUint_8 Brick; // 0xf
         ColorUint_8 Sand; // 0x12
-        ColorUint_8 WoodPlanks; // 0x15
-        char pad_2[0x3];
+        char pad_1[0x3];
+        ColorUint_8 Rock; // 0x18
         ColorUint_8 Glacier; // 0x1b
         ColorUint_8 Snow; // 0x1e
-        char pad_3[0x6];
+        ColorUint_8 Sandstone; // 0x21
+        ColorUint_8 Mud; // 0x24
         ColorUint_8 Basalt; // 0x27
-        char pad_4[0x6];
+        ColorUint_8 Ground; // 0x2a
+        ColorUint_8 CrackedLava; // 0x2d
         ColorUint_8 Asphalt; // 0x30
-        char pad_5[0x3];
+        ColorUint_8 Cobblestone; // 0x33
         ColorUint_8 Ice; // 0x36
         ColorUint_8 LeafyGrass; // 0x39
         ColorUint_8 Salt; // 0x3c
-        char pad_6[0x3];
+        ColorUint_8 Limestone; // 0x3f
         ColorUint_8 Pavement; // 0x42
-        char pad_7[0x21];
-        ColorUint_8 Grass; // 0x66
-        char pad_8[0x3];
-        ColorUint_8 Concrete; // 0x6c
-        char pad_9[0x9];
-        ColorUint_8 Rock; // 0x78
-        char pad_10[0x6];
-        ColorUint_8 Sandstone; // 0x81
-        ColorUint_8 Mud; // 0x84
-        char pad_11[0x3];
-        ColorUint_8 Ground; // 0x8a
-        ColorUint_8 CrackedLava; // 0x8d
-        char pad_12[0x3];
-        ColorUint_8 Cobblestone; // 0x93
-        char pad_13[0x9];
-        ColorUint_8 Limestone; // 0x9f
-    }; // sizeof = 0xa2
+        char pad_2[0x30];
+        ColorUint_8 WoodPlanks; // 0x75
+    }; // sizeof = 0x78
 
     struct MemEnforcedLRUCache {
         char pad_0[0x8];
@@ -765,9 +754,7 @@ namespace Structs {
         uintptr_t RakNetEncrypt; // 0x289d913
         char pad_1[0x20814c9];
         uintptr_t convertItemEnumToString; // 0x491ede4
-        char pad_2[0x97a5b];
-        uintptr_t RaknetReportNetworkError; // 0x49b6847
-        char pad_3[0x2731c69];
+        char pad_2[0x27c96cc];
         uintptr_t RakPeerVirtualTable; // 0x70e84b8
     }; // sizeof = 0x70e84c0
 
@@ -950,8 +937,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1056,6 +1044,13 @@ namespace Structs {
         uintptr_t pointer; // 0x8eb6960
     }; // sizeof = 0x8eb6968
 
+    struct global_State {
+        char pad_0[0x78];
+        uintptr_t mainthread; // 0x78
+        char pad_1[0x5b0];
+        uintptr_t ref_table; // 0x630
+    }; // sizeof = 0x638
+
     struct instance {
         uintptr_t name_str; // 0x0
         std::string class_name; // 0x8
@@ -1069,6 +1064,22 @@ namespace Structs {
         char pad_2[0x58];
         uintptr_t local_player; // 0x118
     }; // sizeof = 0x120
+
+    struct lua_state {
+        char pad_0[0x10];
+        uintptr_t userdata; // 0x10
+        char pad_1[0x8];
+        uintptr_t ci_last; // 0x20
+        uintptr_t ci_base; // 0x28
+        uintptr_t CallInfoSize; // 0x30
+        char pad_2[0x10];
+        uintptr_t stack; // 0x48
+        uintptr_t global; // 0x50
+        uintptr_t top; // 0x58
+        uintptr_t base; // 0x60
+        uintptr_t stack_last; // 0x68
+        uintptr_t ci; // 0x70
+    }; // sizeof = 0x78
 
     struct lua_thread {
         char pad_0[0x310];
@@ -1102,6 +1113,8 @@ namespace Structs {
     struct userdata {
         char pad_0[0x70];
         uintptr_t Identity; // 0x70
-    }; // sizeof = 0x78
+        char pad_1[0xc0];
+        uintptr_t Capabilities; // 0x138
+    }; // sizeof = 0x140
 
 }

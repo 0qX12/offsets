@@ -2,7 +2,7 @@
     "Roblox Version": "version-4dcf516fd7214b1c",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "11:14 04/11/2026",
+    "Dumped At": "12:43 04/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -568,7 +568,8 @@
             "size": "unsigned __int64"
         },
         "userdata": {
-            "Identity": "unsigned __int64"
+            "Identity": "unsigned __int64",
+            "Capabilities": "unsigned __int64"
         },
         "Raycast": {
             "RaycastBoundDesc": "unsigned __int64",
@@ -613,6 +614,22 @@
             "LUAI_STACKSIZE": "int",
             "LS_ENC": "int"
         },
+        "lua_state": {
+            "userdata": "unsigned __int64",
+            "stack": "unsigned __int64",
+            "top": "unsigned __int64",
+            "base": "unsigned __int64",
+            "stack_last": "unsigned __int64",
+            "ci": "unsigned __int64",
+            "ci_base": "unsigned __int64",
+            "ci_last": "unsigned __int64",
+            "CallInfoSize": "unsigned __int64",
+            "global": "unsigned __int64"
+        },
+        "global_State": {
+            "mainthread": "unsigned __int64",
+            "ref_table": "unsigned __int64"
+        },
         "ByteCode": {
             "Pointer": "unsigned __int64",
             "Size": "unsigned __int64",
@@ -637,7 +654,6 @@
             "value_base": "string"
         },
         "RakNet": {
-            "RaknetReportNetworkError": "unsigned __int64",
             "convertItemEnumToString": "unsigned __int64",
             "RakNetEncrypt": "unsigned __int64",
             "RakPeerVirtualTable": "unsigned __int64"
