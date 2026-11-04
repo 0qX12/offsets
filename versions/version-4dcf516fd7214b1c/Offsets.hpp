@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 23:58 04/11/2026 (GMT)
-/*  Total Offsets   : 500
+/*  Dumped At       : 00:29 05/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -299,6 +299,12 @@ namespace Offsets {
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
+    namespace GuiService {
+         inline constexpr uintptr_t AutoUIScale = 0x58c;
+         inline constexpr uintptr_t UIScale = 0x588;
+         inline constexpr uintptr_t UIScaleMultiplierHundredths = 0x590;
+    }
+
     namespace Highlight {
          inline constexpr uintptr_t Adornee = 0xa0;
          inline constexpr uintptr_t DepthMode = 0xc8;
@@ -347,6 +353,7 @@ namespace Offsets {
          inline constexpr uintptr_t Sit = 0x1d3;
          inline constexpr uintptr_t TargetPoint = 0x140;
          inline constexpr uintptr_t UseJumpPower = 0x1d6;
+         inline constexpr uintptr_t WalkSpeed = 0x1c4;
          inline constexpr uintptr_t Walkspeed = 0x1c4;
     }
 
@@ -403,6 +410,10 @@ namespace Offsets {
          inline constexpr uintptr_t ByteCode = 0x178;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
+    }
+
+    namespace LuaTable {
+         inline constexpr uintptr_t ReadOnly = 0x6;
     }
 
     namespace MaterialColors {
@@ -517,6 +528,13 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x1c4;
     }
 
+    namespace PrimitiveFlags {
+         inline constexpr uintptr_t Anchored = 0x2;
+         inline constexpr uintptr_t CanCollide = 0x8;
+         inline constexpr uintptr_t CanQuery = 0x20;
+         inline constexpr uintptr_t CanTouch = 0x10;
+    }
+
     namespace PropertyDescriptor {
          inline constexpr uintptr_t GetSetImpl = 0xb0;
          inline constexpr uintptr_t TType = 0x70;
@@ -534,9 +552,18 @@ namespace Offsets {
     }
 
     namespace RakNet {
-         inline constexpr uintptr_t RakNetEncrypt = 0x289d913;
+         inline constexpr uintptr_t RakNetEncrypt = 0x289d580;
+         inline constexpr uintptr_t RakNetReceive = 0x2897490;
+         inline constexpr uintptr_t RakNetReliabilityLayerSend = 0x2888720;
+         inline constexpr uintptr_t RakNetSend = 0x28735c0;
+         inline constexpr uintptr_t RakPeerProcessNetworkPacket = 0x287fa90;
+         inline constexpr uintptr_t RakPeerReceive = 0x286aa50;
          inline constexpr uintptr_t RakPeerVirtualTable = 0x70e84b8;
-         inline constexpr uintptr_t convertItemEnumToString = 0x491ede4;
+         inline constexpr uintptr_t RaknetHandleConnectionState = 0x49b94c0;
+         inline constexpr uintptr_t RaknetReportNetworkError = 0x48bd910;
+         inline constexpr uintptr_t SendPacketsToSelf = 0x2868f40;
+         inline constexpr uintptr_t UpdateNetworkLoop = 0x2864e70;
+         inline constexpr uintptr_t convertItemEnumToString = 0x491ec20;
     }
 
     namespace Raycast {
@@ -547,10 +574,16 @@ namespace Offsets {
     namespace RemoteSpy {
          inline constexpr uintptr_t BaseRemoteEventVtableRva = 0x713f188;
          inline constexpr uintptr_t DescribedBaseRemoteEventVtableRva = 0x713ef20;
+         inline constexpr uintptr_t FireServerRva = 0x3587060;
+         inline constexpr uintptr_t FireServerVtableByteOffset = 0x260;
+         inline constexpr uintptr_t FireServerVtableSlot = 0x4c;
          inline constexpr uintptr_t InstanceParentOffset = 0x60;
          inline constexpr uintptr_t InstanceVtableRva = 0x70d0b68;
          inline constexpr uintptr_t RemoteEventVtableRva = 0x7143958;
          inline constexpr uintptr_t RemoteFuncVTableRva = 0x71436f0;
+         inline constexpr uintptr_t RemoteFunctionInvokeServerRva = 0x35831c0;
+         inline constexpr uintptr_t UnreliableRemoteEventFireServerRva = 0x34d03b0;
+         inline constexpr uintptr_t UnreliableRemoteEventFireServerSlotByte = 0x260;
          inline constexpr uintptr_t UnreliableRemoteEventVtableRva = 0x7140488;
     }
 
@@ -562,6 +595,8 @@ namespace Offsets {
 
     namespace RenderView {
          inline constexpr uintptr_t DeviceD3D11 = 0x10;
+         inline constexpr uintptr_t LightingValid = 0x281;
+         inline constexpr uintptr_t SkyValid = 0x280;
          inline constexpr uintptr_t VisualEngine = 0x20;
     }
 
