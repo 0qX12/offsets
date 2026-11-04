@@ -3,17 +3,17 @@
 /*                        f4_byteDumper                         
 /* -------------------------------------------------------------
 /*  Dumped With     : f4_byteDumper                             
-/*  Roblox Version  : version-4dcf516fd7214b1c
+/*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 12:43 04/11/2026 (GMT)
-/*  Total Offsets   : 501
+/*  Dumped At       : 15:38 04/11/2026 (GMT)
+/*  Total Offsets   : 528
 /* =============================================================
 */
 
 #include <cstdint>
 #include <string>
 namespace Structs {
-    inline std::string ClientVersion = "version-4dcf516fd7214b1c";
+    inline std::string ClientVersion = "version-5a21b87bbc2641cf";
 
     struct Vector2 { float x, y; };
     struct Vector3 { float x, y, z; };
@@ -23,9 +23,9 @@ namespace Structs {
     struct UDim2 { uint8_t raw[16]; };
     struct ViewMatrix_t { float data[16]; };
 
-    inline constexpr uintptr_t LS_ENC = 0x3;
+    inline constexpr uintptr_t LS_ENC = 0x2;
     inline constexpr uintptr_t LUAI_STACKSIZE = 0x2d;
-    inline constexpr uintptr_t OFF_STACKSIZE = 0x78;
+    inline constexpr uintptr_t OFF_STACKSIZE = 0x70;
 
     struct AirProperties {
         char pad_0[0x18];
@@ -84,29 +84,29 @@ namespace Structs {
         uintptr_t ComponentMap; // 0x38
         char pad_1[0x18];
         uintptr_t Size; // 0x58
-        char pad_2[0x8e31750];
-        uintptr_t TypeRange; // 0x8e317b0
+        char pad_2[0x8c87740];
+        uintptr_t TypeRange; // 0x8c877a0
         char pad_3[0x288];
-        uintptr_t TypeBrickColor; // 0x8e31a40
+        uintptr_t TypeBrickColor; // 0x8c87a30
         char pad_4[0xe8];
-        uintptr_t TypeUDim; // 0x8e31b30
+        uintptr_t TypeUDim; // 0x8c87b20
         char pad_5[0x48];
-        uintptr_t TypeUDim2; // 0x8e31b80
+        uintptr_t TypeUDim2; // 0x8c87b70
         char pad_6[0x708];
-        uintptr_t TypeBool; // 0x8e32290
+        uintptr_t TypeBool; // 0x8c88280
         char pad_7[0x138];
-        uintptr_t TypeNumber; // 0x8e323d0
+        uintptr_t TypeNumber; // 0x8c883c0
         char pad_8[0x48];
-        uintptr_t TypeString; // 0x8e32420
+        uintptr_t TypeString; // 0x8c88410
         char pad_9[0x48];
-        uintptr_t TypeVector3; // 0x8e32470
+        uintptr_t TypeVector3; // 0x8c88460
         char pad_10[0x48];
-        uintptr_t TypeVector2; // 0x8e324c0
+        uintptr_t TypeVector2; // 0x8c884b0
         char pad_11[0x228];
-        uintptr_t TypeColor3; // 0x8e326f0
+        uintptr_t TypeColor3; // 0x8c886e0
         char pad_12[0x378];
-        uintptr_t TypeCFrame; // 0x8e32a70
-    }; // sizeof = 0x8e32a78
+        uintptr_t TypeCFrame; // 0x8c88a60
+    }; // sizeof = 0x8c88a68
 
     struct AttributesMap {
         char pad_0[0x8];
@@ -306,9 +306,9 @@ namespace Structs {
         uintptr_t SwapChainPtr; // 0x30
         char pad_2[0x178];
         uintptr_t ContextObj; // 0x1b0
-        char pad_3[0x70e77e8];
-        uintptr_t VTableRva; // 0x70e79a0
-    }; // sizeof = 0x70e79a8
+        char pad_3[0x6f5e390];
+        uintptr_t VTableRva; // 0x6f5e548
+    }; // sizeof = 0x6f5e550
 
     struct DragDetector {
         char pad_0[0xb0];
@@ -331,16 +331,16 @@ namespace Structs {
     }; // sizeof = 0x28c
 
     struct FFlag {
-        char pad_0[0x81889f0];
-        uintptr_t RenderFastClusterOcclusionCulling4; // 0x81889f0
-    }; // sizeof = 0x81889f8
+        char pad_0[0x7fe7e10];
+        uintptr_t RenderFastClusterOcclusionCulling4; // 0x7fe7e10
+    }; // sizeof = 0x7fe7e18
 
     struct FakeDataModel {
         char pad_0[0x1f8];
         uintptr_t RealDataModel; // 0x1f8
-        char pad_1[0x8eb6760];
-        uintptr_t Pointer; // 0x8eb6960
-    }; // sizeof = 0x8eb6968
+        char pad_1[0x8d06400];
+        uintptr_t Pointer; // 0x8d06600
+    }; // sizeof = 0x8d06608
 
     struct FastCluster {
         char pad_0[0x48];
@@ -348,23 +348,23 @@ namespace Structs {
         uintptr_t EntityEnd; // 0x50
         char pad_1[0x38];
         uintptr_t BindingSubobject; // 0x90
-        char pad_2[0x714b7a8];
-        uintptr_t VTableRva; // 0x714b840
+        char pad_2[0x6fc1e88];
+        uintptr_t VTableRva; // 0x6fc1f20
         char pad_3[0x18];
-        uintptr_t VTableRvaSub; // 0x714b860
-    }; // sizeof = 0x714b868
+        uintptr_t VTableRvaSub; // 0x6fc1f40
+    }; // sizeof = 0x6fc1f48
 
     struct FastClusterBinding {
         char pad_0[0x60];
         uintptr_t Owner; // 0x60
-        char pad_1[0x714c9b0];
-        uintptr_t VTableRva; // 0x714ca18
-    }; // sizeof = 0x714ca20
+        char pad_1[0x6fc2f70];
+        uintptr_t VTableRva; // 0x6fc2fd8
+    }; // sizeof = 0x6fc2fe0
 
     struct FastClusterEntity {
-        char pad_0[0x714caf0];
-        uintptr_t VTableRva; // 0x714caf0
-    }; // sizeof = 0x714caf8
+        char pad_0[0x6fc30b0];
+        uintptr_t VTableRva; // 0x6fc30b0
+    }; // sizeof = 0x6fc30b8
 
     struct FileMeshData {
         uintptr_t Vertices; // 0x0
@@ -378,9 +378,9 @@ namespace Structs {
     }; // sizeof = 0x198
 
     struct GeometryD3D11 {
-        char pad_0[0x70e7ec0];
-        uintptr_t VTableRva; // 0x70e7ec0
-    }; // sizeof = 0x70e7ec8
+        char pad_0[0x6f5ea50];
+        uintptr_t VTableRva; // 0x6f5ea50
+    }; // sizeof = 0x6f5ea58
 
     struct GuiBase2D {
         char pad_0[0xf4];
@@ -392,9 +392,9 @@ namespace Structs {
     }; // sizeof = 0x560
 
     struct GuiObject {
-        char pad_0[0x490];
-        bool ScreenGui_Enabled; // 0x490
-        char pad_1[0x47];
+        char pad_0[0x48c];
+        bool ScreenGui_Enabled; // 0x48c
+        char pad_1[0x4b];
         UDim2 Position; // 0x4d8
         char pad_2[0x10];
         UDim2 Size; // 0x4f8
@@ -420,6 +420,13 @@ namespace Structs {
         Color3 TextColor3; // 0xeb8
     }; // sizeof = 0xec4
 
+    struct GuiService {
+        char pad_0[0x588];
+        float UIScale; // 0x588
+        float AutoUIScale; // 0x58c
+        // unsigned __int32 UIScaleMultiplierHundredths; // 0x590 (type unresolved)
+    }; // sizeof = 0x590
+
     struct Highlight {
         char pad_0[0x98];
         uintptr_t Prop; // 0x98
@@ -431,12 +438,13 @@ namespace Structs {
         char pad_3[0x4];
         uintptr_t DepthMode; // 0xc8
         // alias: FillTransparency = 0xcc (unsigned __int64)
+        uintptr_t LineThickness; // 0xd0
+        // alias: OutlineTransparency = 0xd4 (unsigned __int64)
         char pad_4[0x4];
-        uintptr_t OutlineTransparency; // 0xd4
         uintptr_t Enabled; // 0xdc
-        char pad_5[0xc0133c];
-        uintptr_t SetEnabled; // 0xc01420
-    }; // sizeof = 0xc01428
+        char pad_5[0xbee53c];
+        uintptr_t SetEnabled; // 0xbee620
+    }; // sizeof = 0xbee628
 
     struct Humanoid {
         char pad_0[0xa0];
@@ -470,6 +478,7 @@ namespace Structs {
         int RigType; // 0x1b4
         char pad_8[0xc];
         float Walkspeed; // 0x1c4
+        // alias: WalkSpeed = 0x1c4 (unsigned __int64)
         bool AutoJumpEnabled; // 0x1c8
         bool AutoRotate; // 0x1c9
         bool AutomaticScalingEnabled; // 0x1ca
@@ -568,9 +577,9 @@ namespace Structs {
     }; // sizeof = 0x1a8
 
     struct LuaTable {
-        char pad_0[0x6];
-        uintptr_t ReadOnly; // 0x6
-    }; // sizeof = 0xe
+        char pad_0[0x5];
+        uintptr_t ReadOnly; // 0x5
+    }; // sizeof = 0xd
 
     struct MaterialColors {
         char pad_0[0x6];
@@ -579,7 +588,7 @@ namespace Structs {
         ColorUint_8 Concrete; // 0xc
         ColorUint_8 Brick; // 0xf
         ColorUint_8 Sand; // 0x12
-        char pad_1[0x3];
+        ColorUint_8 WoodPlanks; // 0x15
         ColorUint_8 Rock; // 0x18
         ColorUint_8 Glacier; // 0x1b
         ColorUint_8 Snow; // 0x1e
@@ -595,9 +604,7 @@ namespace Structs {
         ColorUint_8 Salt; // 0x3c
         ColorUint_8 Limestone; // 0x3f
         ColorUint_8 Pavement; // 0x42
-        char pad_2[0x30];
-        ColorUint_8 WoodPlanks; // 0x75
-    }; // sizeof = 0x78
+    }; // sizeof = 0x45
 
     struct MemEnforcedLRUCache {
         char pad_0[0x8];
@@ -728,6 +735,16 @@ namespace Structs {
         unsigned short Material; // 0x24e
     }; // sizeof = 0x250
 
+    struct PrimitiveFlags {
+        char pad_0[0x2];
+        uintptr_t Anchored; // 0x2
+        // alias: CanCollide = 0x8 (unsigned __int64)
+        char pad_1[0x6];
+        uintptr_t CanTouch; // 0x10
+        char pad_2[0x8];
+        uintptr_t CanQuery; // 0x20
+    }; // sizeof = 0x28
+
     struct PropertyDescriptor {
         char pad_0[0x70];
         uintptr_t TType; // 0x70
@@ -750,37 +767,66 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct RakNet {
-        char pad_0[0x289d913];
-        uintptr_t RakNetEncrypt; // 0x289d913
-        char pad_1[0x20814c9];
-        uintptr_t convertItemEnumToString; // 0x491ede4
-        char pad_2[0x27c96cc];
-        uintptr_t RakPeerVirtualTable; // 0x70e84b8
-    }; // sizeof = 0x70e84c0
+        char pad_0[0x280ffe0];
+        uintptr_t UpdateNetworkLoop; // 0x280ffe0
+        char pad_1[0x40c8];
+        uintptr_t SendPacketsToSelf; // 0x28140b0
+        char pad_2[0x1ae8];
+        uintptr_t RakPeerReceive; // 0x2815ba0
+        char pad_3[0x8b68];
+        uintptr_t RakNetSend; // 0x281e710
+        char pad_4[0xc588];
+        uintptr_t RakPeerProcessNetworkPacket; // 0x282aca0
+        char pad_5[0x8c88];
+        uintptr_t RakNetReliabilityLayerSend; // 0x2833930
+        char pad_6[0xec68];
+        uintptr_t RakNetReceive; // 0x28425a0
+        char pad_7[0x60f8];
+        uintptr_t RakNetEncrypt; // 0x28486a0
+        char pad_8[0x1fa98c8];
+        uintptr_t RaknetReportNetworkError; // 0x47f1f70
+        char pad_9[0x5ff88];
+        uintptr_t convertItemEnumToString; // 0x4851f00
+        char pad_10[0x97098];
+        uintptr_t RaknetHandleConnectionState; // 0x48e8fa0
+        char pad_11[0x26760d8];
+        uintptr_t RakPeerVirtualTable; // 0x6f5f080
+    }; // sizeof = 0x6f5f088
 
     struct Raycast {
         char pad_0[0xb0];
         uintptr_t RaycastBoundFn; // 0xb0
-        char pad_1[0x863da58];
-        uintptr_t RaycastBoundDesc; // 0x863db10
-    }; // sizeof = 0x863db18
+        char pad_1[0x8494f38];
+        uintptr_t RaycastBoundDesc; // 0x8494ff0
+    }; // sizeof = 0x8494ff8
 
     struct RemoteSpy {
-        char pad_0[0x60];
+        char pad_0[0x4c];
+        uintptr_t FireServerVtableSlot; // 0x4c
+        char pad_1[0xc];
         uintptr_t InstanceParentOffset; // 0x60
-        char pad_1[0x70d0b00];
-        uintptr_t InstanceVtableRva; // 0x70d0b68
-        char pad_2[0x6e3b0];
-        uintptr_t DescribedBaseRemoteEventVtableRva; // 0x713ef20
-        char pad_3[0x260];
-        uintptr_t BaseRemoteEventVtableRva; // 0x713f188
-        char pad_4[0x12f8];
-        uintptr_t UnreliableRemoteEventVtableRva; // 0x7140488
-        char pad_5[0x3260];
-        uintptr_t RemoteFuncVTableRva; // 0x71436f0
-        char pad_6[0x260];
-        uintptr_t RemoteEventVtableRva; // 0x7143958
-    }; // sizeof = 0x7143960
+        char pad_2[0x1f8];
+        uintptr_t FireServerVtableByteOffset; // 0x260
+        // alias: UnreliableRemoteEventFireServerSlotByte = 0x260 (unsigned __int64)
+        char pad_3[0x3477308];
+        uintptr_t UnreliableRemoteEventFireServerRva; // 0x3477570
+        char pad_4[0xab078];
+        uintptr_t RemoteFunctionInvokeServerRva; // 0x35225f0
+        char pad_5[0x3ea8];
+        uintptr_t FireServerRva; // 0x35264a0
+        char pad_6[0x3a20f08];
+        uintptr_t InstanceVtableRva; // 0x6f473b0
+        char pad_7[0x6e188];
+        uintptr_t DescribedBaseRemoteEventVtableRva; // 0x6fb5540
+        char pad_8[0x260];
+        uintptr_t BaseRemoteEventVtableRva; // 0x6fb57a8
+        char pad_9[0x15e8];
+        uintptr_t UnreliableRemoteEventVtableRva; // 0x6fb6d98
+        char pad_10[0x2f40];
+        uintptr_t RemoteFuncVTableRva; // 0x6fb9ce0
+        char pad_11[0x4e0];
+        uintptr_t RemoteEventVtableRva; // 0x6fba1c8
+    }; // sizeof = 0x6fba1d0
 
     struct RenderJob {
         char pad_0[0x38];
@@ -792,11 +838,14 @@ namespace Structs {
     }; // sizeof = 0x1f8
 
     struct RenderView {
-        char pad_0[0x10];
-        uintptr_t DeviceD3D11; // 0x10
+        char pad_0[0x8];
+        uintptr_t DeviceD3D11; // 0x8
         char pad_1[0x8];
-        uintptr_t VisualEngine; // 0x20
-    }; // sizeof = 0x28
+        uintptr_t VisualEngine; // 0x18
+        char pad_2[0x258];
+        bool SkyValid; // 0x278
+        bool LightingValid; // 0x279
+    }; // sizeof = 0x27a
 
     struct RunService {
         char pad_0[0xc8];
@@ -813,9 +862,9 @@ namespace Structs {
     }; // sizeof = 0x1a8
 
     struct ScriptContext {
-        char pad_0[0xb71];
-        uintptr_t RequireBypass; // 0xb71
-    }; // sizeof = 0xb79
+        char pad_0[0xb50];
+        uintptr_t RequireBypass; // 0xb50
+    }; // sizeof = 0xb58
 
     struct Seat {
         char pad_0[0x200];
@@ -849,17 +898,17 @@ namespace Structs {
         char pad_0[0xb0];
         std::string SoundId; // 0xb0
         uintptr_t SoundGroup; // 0xd0
-        char pad_1[0x34];
-        float PlaybackSpeed; // 0x10c
-        float RollOffMaxDistance; // 0x110
-        float RollOffMinDistance; // 0x114
+        char pad_1[0x2c];
+        float PlaybackSpeed; // 0x104
+        float RollOffMaxDistance; // 0x108
+        float RollOffMinDistance; // 0x10c
         char pad_2[0x8];
-        float Volume; // 0x120
+        float Volume; // 0x118
         char pad_3[0x9];
-        bool Looped; // 0x12d
+        bool Looped; // 0x125
         char pad_4[0x2];
-        bool IsPlaying; // 0x130
-    }; // sizeof = 0x131
+        bool IsPlaying; // 0x128
+    }; // sizeof = 0x129
 
     struct SpawnLocation {
         char pad_0[0x1d0];
@@ -911,9 +960,9 @@ namespace Structs {
         char pad_2[0x10];
         uintptr_t JobStart; // 0xc8
         uintptr_t JobEnd; // 0xd0
-        char pad_3[0x8e4d6e0];
-        uintptr_t Pointer; // 0x8e4d7b8
-    }; // sizeof = 0x8e4d7c0
+        char pad_3[0x8c9d5c0];
+        uintptr_t Pointer; // 0x8c9d698
+    }; // sizeof = 0x8c9d6a0
 
     struct Team {
         char pad_0[0xa0];
@@ -980,11 +1029,11 @@ namespace Structs {
         uintptr_t FakeDataModel; // 0xaf0
         char pad_2[0x18];
         Vector2 Dimensions; // 0xb10
-        char pad_3[0x138];
-        uintptr_t RenderView; // 0xc50
-        char pad_4[0x89421e0];
-        uintptr_t Pointer; // 0x8942e38
-    }; // sizeof = 0x8942e40
+        char pad_3[0x128];
+        uintptr_t RenderView; // 0xc40
+        char pad_4[0x87995d0];
+        uintptr_t Pointer; // 0x879a218
+    }; // sizeof = 0x879a220
 
     struct Weld {
         char pad_0[0x100];
@@ -1014,9 +1063,9 @@ namespace Structs {
         uintptr_t CurrentCamera; // 0x4a0
         char pad_2[0x18];
         double DistributedGameTime; // 0x4c0
-        char pad_3[0x508];
-        float ReadOnlyGravity; // 0x9d0
-    }; // sizeof = 0x9d4
+        char pad_3[0x4f8];
+        float ReadOnlyGravity; // 0x9c0
+    }; // sizeof = 0x9c4
 
     struct World {
         char pad_0[0x20c];
@@ -1027,10 +1076,10 @@ namespace Structs {
         uintptr_t AirProperties; // 0x230
         char pad_3[0x68];
         uintptr_t Primitives; // 0x2a0
-        char pad_4[0x5c0];
-        float worldStepsPerSec; // 0x868
-        // alias: WorldSteps = 0x868 (float)
-    }; // sizeof = 0x86c
+        char pad_4[0x5b0];
+        float worldStepsPerSec; // 0x858
+        // alias: WorldSteps = 0x858 (float)
+    }; // sizeof = 0x85c
 
     struct datamodel {
         char pad_0[0x178];
@@ -1040,16 +1089,16 @@ namespace Structs {
         uintptr_t real; // 0x1f8
         char pad_2[0x388];
         uintptr_t game_loaded; // 0x588
-        char pad_3[0x8eb63d0];
-        uintptr_t pointer; // 0x8eb6960
-    }; // sizeof = 0x8eb6968
+        char pad_3[0x8d06070];
+        uintptr_t pointer; // 0x8d06600
+    }; // sizeof = 0x8d06608
 
     struct global_State {
-        char pad_0[0x78];
-        uintptr_t mainthread; // 0x78
-        char pad_1[0x5b0];
-        uintptr_t ref_table; // 0x630
-    }; // sizeof = 0x638
+        char pad_0[0x70];
+        uintptr_t mainthread; // 0x70
+        char pad_1[0x5a0];
+        uintptr_t ref_table; // 0x618
+    }; // sizeof = 0x620
 
     struct instance {
         uintptr_t name_str; // 0x0
@@ -1067,19 +1116,22 @@ namespace Structs {
 
     struct lua_state {
         char pad_0[0x10];
-        uintptr_t userdata; // 0x10
+        uintptr_t ci_last; // 0x10
+        uintptr_t ci_base; // 0x18
+        uintptr_t userdata; // 0x20
         char pad_1[0x8];
-        uintptr_t ci_last; // 0x20
-        uintptr_t ci_base; // 0x28
-        uintptr_t CallInfoSize; // 0x30
-        char pad_2[0x10];
-        uintptr_t stack; // 0x48
-        uintptr_t global; // 0x50
-        uintptr_t top; // 0x58
-        uintptr_t base; // 0x60
-        uintptr_t stack_last; // 0x68
-        uintptr_t ci; // 0x70
-    }; // sizeof = 0x78
+        uintptr_t ci; // 0x30
+        // alias: CallInfoSize = 0x30 (unsigned __int64)
+        uintptr_t global; // 0x38
+        uintptr_t stack; // 0x40
+        uintptr_t top; // 0x48
+        uintptr_t base; // 0x50
+        uintptr_t stack_last; // 0x58
+        char pad_2[0x5428];
+        uintptr_t g_ptrenckey_new; // 0x5488
+        char pad_3[0x38];
+        uintptr_t g_ptrenc_active; // 0x54c8
+    }; // sizeof = 0x54d0
 
     struct lua_thread {
         char pad_0[0x310];
@@ -1106,15 +1158,13 @@ namespace Structs {
     }; // sizeof = 0x188
 
     struct task_scheduler {
-        char pad_0[0x81715b0];
-        uintptr_t target_fps; // 0x81715b0
-    }; // sizeof = 0x81715b8
+        char pad_0[0x7fd07c8];
+        uintptr_t target_fps; // 0x7fd07c8
+    }; // sizeof = 0x7fd07d0
 
     struct userdata {
-        char pad_0[0x70];
-        uintptr_t Identity; // 0x70
-        char pad_1[0xc0];
-        uintptr_t Capabilities; // 0x138
-    }; // sizeof = 0x140
+        char pad_0[0x60];
+        uintptr_t Identity; // 0x60
+    }; // sizeof = 0x68
 
 }

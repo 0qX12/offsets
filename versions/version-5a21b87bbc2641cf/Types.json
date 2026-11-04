@@ -2,7 +2,7 @@
     "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "00:00 04/11/2026",
+    "Dumped At": "15:38 04/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -565,20 +565,18 @@
             "target_fps": "unsigned __int64"
         },
         "ScriptContext": {
-            "RequireBypass": "unsigned __int64",
-            "CoreState": "unsigned __int64",
-            "CoreStateEncoding": "int"
+            "RequireBypass": "unsigned __int64"
         },
         "script": {
             "modulescript::detection": "unsigned __int64",
+            "modulescript::module_state": "unsigned __int64",
             "modulescript::pointer": "unsigned __int64",
             "localscript::pointer": "unsigned __int64",
             "pointer": "unsigned __int64",
             "size": "unsigned __int64"
         },
         "userdata": {
-            "Identity": "unsigned __int64",
-            "Capabilities": "unsigned __int64"
+            "Identity": "unsigned __int64"
         },
         "Raycast": {
             "RaycastBoundDesc": "unsigned __int64",
@@ -636,7 +634,6 @@
             "LS_ENC": "int"
         },
         "lua_state": {
-            "userdata": "unsigned __int64",
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
             "base": "unsigned __int64",
@@ -647,7 +644,8 @@
             "CallInfoSize": "unsigned __int64",
             "global": "unsigned __int64",
             "g_ptrenckey_new": "unsigned __int64",
-            "g_ptrenc_active": "unsigned __int64"
+            "g_ptrenc_active": "unsigned __int64",
+            "userdata": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",

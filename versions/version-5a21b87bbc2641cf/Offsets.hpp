@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:00 04/11/2026 (GMT)
-/*  Total Offsets   : 530
+/*  Dumped At       : 15:38 04/11/2026 (GMT)
+/*  Total Offsets   : 528
 /* =============================================================
 */
 
@@ -54,7 +54,7 @@ namespace Offsets {
 
     namespace Attribute {
          inline constexpr uintptr_t Color3Value = 0x18;
-         inline constexpr uintptr_t ComponentId = 0xb;
+         inline constexpr uintptr_t ComponentId = 0x9;
          inline constexpr uintptr_t ComponentIdOffset = 0x8;
          inline constexpr uintptr_t ComponentMap = 0x38;
          inline constexpr uintptr_t ComponentStride = 0x10;
@@ -134,7 +134,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x40;
+         inline constexpr uintptr_t FileMeshData = 0x28;
     }
 
     namespace Camera {
@@ -375,7 +375,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x40;
+         inline constexpr uintptr_t CachedItem = 0x38;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -611,8 +611,6 @@ namespace Offsets {
     }
 
     namespace ScriptContext {
-         inline constexpr uintptr_t CoreState = 0x530;
-         inline constexpr uintptr_t CoreStateEncoding = 0x1;
          inline constexpr uintptr_t RequireBypass = 0xb50;
     }
 
@@ -701,7 +699,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x4c8;
     }
 
     namespace Tool {
@@ -819,6 +817,7 @@ namespace Offsets {
     namespace script {
          inline constexpr uintptr_t localscript_pointer = 0x178;
          inline constexpr uintptr_t modulescript_detection = 0x180;
+         inline constexpr uintptr_t modulescript_module_state = 0x158;
          inline constexpr uintptr_t modulescript_pointer = 0x120;
          inline constexpr uintptr_t pointer = 0x10;
          inline constexpr uintptr_t size = 0x20;
@@ -829,7 +828,6 @@ namespace Offsets {
     }
 
     namespace userdata {
-         inline constexpr uintptr_t Capabilities = 0x80;
          inline constexpr uintptr_t Identity = 0x60;
     }
 

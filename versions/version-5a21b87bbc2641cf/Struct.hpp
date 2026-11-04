@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-5a21b87bbc2641cf
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:00 04/11/2026 (GMT)
-/*  Total Offsets   : 530
+/*  Dumped At       : 15:38 04/11/2026 (GMT)
+/*  Total Offsets   : 528
 /* =============================================================
 */
 
@@ -73,7 +73,7 @@ namespace Structs {
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
-        // alias: ComponentId = 0xb (unsigned __int16)
+        // alias: ComponentId = 0x9 (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
         uintptr_t Value; // 0x18
         // alias: Payload = 0x18 (unsigned __int64)
@@ -182,9 +182,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -525,9 +525,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb0];
@@ -862,11 +862,7 @@ namespace Structs {
     }; // sizeof = 0x1a8
 
     struct ScriptContext {
-        char pad_0[0x1];
-        int CoreStateEncoding; // 0x1
-        char pad_1[0x52b];
-        uintptr_t CoreState; // 0x530
-        char pad_2[0x618];
+        char pad_0[0xb50];
         uintptr_t RequireBypass; // 0xb50
     }; // sizeof = 0xb58
 
@@ -990,8 +986,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1153,7 +1150,9 @@ namespace Structs {
         uintptr_t size; // 0x20
         char pad_2[0xf8];
         uintptr_t modulescript_pointer; // 0x120
-        char pad_3[0x50];
+        char pad_3[0x30];
+        uintptr_t modulescript_module_state; // 0x158
+        char pad_4[0x18];
         uintptr_t localscript_pointer; // 0x178
         uintptr_t modulescript_detection; // 0x180
     }; // sizeof = 0x188
@@ -1166,8 +1165,6 @@ namespace Structs {
     struct userdata {
         char pad_0[0x60];
         uintptr_t Identity; // 0x60
-        char pad_1[0x18];
-        uintptr_t Capabilities; // 0x80
-    }; // sizeof = 0x88
+    }; // sizeof = 0x68
 
 }

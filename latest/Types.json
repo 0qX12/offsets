@@ -1,8 +1,8 @@
 {
-    "Roblox Version": "version-4dcf516fd7214b1c",
+    "Roblox Version": "version-5a21b87bbc2641cf",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "12:43 04/11/2026",
+    "Dumped At": "15:38 04/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -24,7 +24,9 @@
         },
         "RenderView": {
             "DeviceD3D11": "unsigned __int64",
-            "VisualEngine": "unsigned __int64"
+            "VisualEngine": "unsigned __int64",
+            "SkyValid": "bool",
+            "LightingValid": "bool"
         },
         "Instance": {
             "This": "unsigned __int64",
@@ -261,7 +263,8 @@
             "HumanoidState": "int",
             "HumanoidStateID": "int",
             "FloorMaterial": "int",
-            "TargetPoint": "Vector3"
+            "TargetPoint": "Vector3",
+            "WalkSpeed": "unsigned __int64"
         },
         "Seat": {
             "Occupant": "unsigned __int64"
@@ -550,6 +553,11 @@
             "Faces": "unsigned __int64",
             "FacesEnd": "unsigned __int64"
         },
+        "GuiService": {
+            "UIScale": "float",
+            "AutoUIScale": "float",
+            "UIScaleMultiplierHundredths": "unsigned __int32"
+        },
         "LuaTable": {
             "ReadOnly": "unsigned __int64"
         },
@@ -568,12 +576,17 @@
             "size": "unsigned __int64"
         },
         "userdata": {
-            "Identity": "unsigned __int64",
-            "Capabilities": "unsigned __int64"
+            "Identity": "unsigned __int64"
         },
         "Raycast": {
             "RaycastBoundDesc": "unsigned __int64",
             "RaycastBoundFn": "unsigned __int64"
+        },
+        "PrimitiveFlags": {
+            "Anchored": "unsigned __int64",
+            "CanCollide": "unsigned __int64",
+            "CanTouch": "unsigned __int64",
+            "CanQuery": "unsigned __int64"
         },
         "FastClusterEntity": {
             "VTableRva": "unsigned __int64"
@@ -583,8 +596,14 @@
             "BaseRemoteEventVtableRva": "unsigned __int64",
             "DescribedBaseRemoteEventVtableRva": "unsigned __int64",
             "InstanceVtableRva": "unsigned __int64",
+            "FireServerRva": "unsigned __int64",
+            "FireServerVtableSlot": "unsigned __int64",
+            "FireServerVtableByteOffset": "unsigned __int64",
             "InstanceParentOffset": "unsigned __int64",
             "UnreliableRemoteEventVtableRva": "unsigned __int64",
+            "UnreliableRemoteEventFireServerRva": "unsigned __int64",
+            "UnreliableRemoteEventFireServerSlotByte": "unsigned __int64",
+            "RemoteFunctionInvokeServerRva": "unsigned __int64",
             "RemoteFuncVTableRva": "unsigned __int64"
         },
         "ClassDescriptor": {
@@ -615,7 +634,6 @@
             "LS_ENC": "int"
         },
         "lua_state": {
-            "userdata": "unsigned __int64",
             "stack": "unsigned __int64",
             "top": "unsigned __int64",
             "base": "unsigned __int64",
@@ -624,7 +642,10 @@
             "ci_base": "unsigned __int64",
             "ci_last": "unsigned __int64",
             "CallInfoSize": "unsigned __int64",
-            "global": "unsigned __int64"
+            "global": "unsigned __int64",
+            "g_ptrenckey_new": "unsigned __int64",
+            "g_ptrenc_active": "unsigned __int64",
+            "userdata": "unsigned __int64"
         },
         "global_State": {
             "mainthread": "unsigned __int64",
@@ -654,6 +675,15 @@
             "value_base": "string"
         },
         "RakNet": {
+            "RakNetReceive": "unsigned __int64",
+            "RaknetReportNetworkError": "unsigned __int64",
+            "RaknetHandleConnectionState": "unsigned __int64",
+            "RakNetSend": "unsigned __int64",
+            "RakNetReliabilityLayerSend": "unsigned __int64",
+            "RakPeerProcessNetworkPacket": "unsigned __int64",
+            "UpdateNetworkLoop": "unsigned __int64",
+            "SendPacketsToSelf": "unsigned __int64",
+            "RakPeerReceive": "unsigned __int64",
             "convertItemEnumToString": "unsigned __int64",
             "RakNetEncrypt": "unsigned __int64",
             "RakPeerVirtualTable": "unsigned __int64"
@@ -664,6 +694,7 @@
             "Enabled": "unsigned __int64",
             "FillColor": "unsigned __int64",
             "FillTransparency": "unsigned __int64",
+            "LineThickness": "unsigned __int64",
             "OutlineColor": "unsigned __int64",
             "OutlineTransparency": "unsigned __int64",
             "Prop": "unsigned __int64",
