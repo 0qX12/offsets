@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 01:17 05/11/2026 (GMT)
+/*  Dumped At       : 01:30 05/11/2026 (GMT)
 /*  Total Offsets   : 526
 /* =============================================================
 */
@@ -199,9 +199,9 @@ namespace Structs {
         float FieldOfView; // 0x128
         char pad_4[0x158];
         short Viewport; // 0x284
-        char pad_5[0x2];
-        uintptr_t ViewportSize; // 0x288
-        char pad_6[0x44];
+        char pad_5[0x3e];
+        Vector2 ViewportSize; // 0x2c4
+        char pad_6[0x8];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 

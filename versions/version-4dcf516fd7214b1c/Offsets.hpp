@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 01:17 05/11/2026 (GMT)
+/*  Dumped At       : 01:30 05/11/2026 (GMT)
 /*  Total Offsets   : 526
 /* =============================================================
 */
@@ -146,7 +146,7 @@ namespace Offsets {
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
          inline constexpr uintptr_t Viewport = 0x284;
-         inline constexpr uintptr_t ViewportSize = 0x288;
+         inline constexpr uintptr_t ViewportSize = 0x2c4;
     }
 
     namespace CharacterMesh {
