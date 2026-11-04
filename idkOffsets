@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:39 05/11/2026 (GMT)
-/*  Total Offsets   : 524
+/*  Dumped At       : 01:17 05/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -146,7 +146,7 @@ namespace Offsets {
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
          inline constexpr uintptr_t Viewport = 0x284;
-         inline constexpr uintptr_t ViewportSize = 0x2c4;
+         inline constexpr uintptr_t ViewportSize = 0x288;
     }
 
     namespace CharacterMesh {
@@ -334,13 +334,15 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0x450;
+         inline constexpr uintptr_t HumanoidStateID = 0x190;
+         inline constexpr uintptr_t IsWalking = 0xa2e;
          inline constexpr uintptr_t Jump = 0x1d0;
          inline constexpr uintptr_t JumpHeight = 0x194;
          inline constexpr uintptr_t JumpPower = 0x198;
          inline constexpr uintptr_t MaxHealth = 0x19c;
          inline constexpr uintptr_t MaxSlopeAngle = 0x1a0;
          inline constexpr uintptr_t MoveDirection = 0x134;
+         inline constexpr uintptr_t MoveToPart = 0x100;
          inline constexpr uintptr_t MoveToPoint = 0x158;
          inline constexpr uintptr_t NameDisplayDistance = 0x1a4;
          inline constexpr uintptr_t NameOcclusion = 0x1a8;

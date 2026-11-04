@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:39 05/11/2026 (GMT)
-/*  Total Offsets   : 524
+/*  Dumped At       : 01:17 05/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -199,9 +199,9 @@ namespace Structs {
         float FieldOfView; // 0x128
         char pad_4[0x158];
         short Viewport; // 0x284
-        char pad_5[0x3e];
-        Vector2 ViewportSize; // 0x2c4
-        char pad_6[0x8];
+        char pad_5[0x2];
+        uintptr_t ViewportSize; // 0x288
+        char pad_6[0x44];
         float ImagePlaneDepth; // 0x2d4
     }; // sizeof = 0x2d8
 
@@ -451,21 +451,23 @@ namespace Structs {
         std::string DisplayName; // 0xa0
         char pad_1[0x30];
         uintptr_t SeatPart; // 0xf0
-        char pad_2[0x18];
+        char pad_2[0x8];
+        uintptr_t MoveToPart; // 0x100
+        char pad_3[0x8];
         Vector3 CameraOffset; // 0x110
-        char pad_3[0x18];
+        char pad_4[0x18];
         Vector3 MoveDirection; // 0x134
         Vector3 TargetPoint; // 0x140
-        char pad_4[0xc];
+        char pad_5[0xc];
         Vector3 MoveToPoint; // 0x158
-        char pad_5[0x10];
+        char pad_6[0x10];
         int DisplayDistanceType; // 0x174
         int FloorMaterial; // 0x178
         float HealthDisplayDistance; // 0x17c
         int HealthDisplayType; // 0x180
         float Health; // 0x184
         uintptr_t HipHeight; // 0x188
-        char pad_6[0x4];
+        int HumanoidStateID; // 0x190
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
         float MaxHealth; // 0x19c
@@ -491,13 +493,13 @@ namespace Structs {
         bool RequiresNeck; // 0x1d4
         char pad_12[0x1];
         bool UseJumpPower; // 0x1d6
-        char pad_13[0x279];
-        int HumanoidStateID; // 0x450
-        char pad_14[0xc];
+        char pad_13[0x289];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_15[0x440];
+        char pad_14[0x440];
         int HumanoidState; // 0x8a8
-    }; // sizeof = 0x8ac
+        char pad_15[0x182];
+        bool IsWalking; // 0xa2e
+    }; // sizeof = 0xa2f
 
     struct Instance {
         uintptr_t Name; // 0x0
