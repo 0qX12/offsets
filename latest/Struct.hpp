@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 00:29 05/11/2026 (GMT)
-/*  Total Offsets   : 526
+/*  Dumped At       : 00:39 05/11/2026 (GMT)
+/*  Total Offsets   : 524
 /* =============================================================
 */
 
@@ -182,9 +182,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -451,23 +451,21 @@ namespace Structs {
         std::string DisplayName; // 0xa0
         char pad_1[0x30];
         uintptr_t SeatPart; // 0xf0
-        char pad_2[0x8];
-        uintptr_t MoveToPart; // 0x100
-        char pad_3[0x8];
+        char pad_2[0x18];
         Vector3 CameraOffset; // 0x110
-        char pad_4[0x18];
+        char pad_3[0x18];
         Vector3 MoveDirection; // 0x134
         Vector3 TargetPoint; // 0x140
-        char pad_5[0xc];
+        char pad_4[0xc];
         Vector3 MoveToPoint; // 0x158
-        char pad_6[0x10];
+        char pad_5[0x10];
         int DisplayDistanceType; // 0x174
         int FloorMaterial; // 0x178
         float HealthDisplayDistance; // 0x17c
         int HealthDisplayType; // 0x180
         float Health; // 0x184
         uintptr_t HipHeight; // 0x188
-        int HumanoidStateID; // 0x190
+        char pad_6[0x4];
         float JumpHeight; // 0x194
         float JumpPower; // 0x198
         float MaxHealth; // 0x19c
@@ -493,13 +491,13 @@ namespace Structs {
         bool RequiresNeck; // 0x1d4
         char pad_12[0x1];
         bool UseJumpPower; // 0x1d6
-        char pad_13[0x289];
+        char pad_13[0x279];
+        int HumanoidStateID; // 0x450
+        char pad_14[0xc];
         uintptr_t HumanoidRootPart; // 0x460
-        char pad_14[0x440];
+        char pad_15[0x440];
         int HumanoidState; // 0x8a8
-        char pad_15[0x182];
-        bool IsWalking; // 0xa2e
-    }; // sizeof = 0xa2f
+    }; // sizeof = 0x8ac
 
     struct Instance {
         uintptr_t Name; // 0x0
@@ -525,9 +523,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb0];
@@ -582,42 +580,29 @@ namespace Structs {
     }; // sizeof = 0xe
 
     struct MaterialColors {
-        char pad_0[0x9];
+        char pad_0[0x6];
+        ColorUint_8 Grass; // 0x6
         ColorUint_8 Slate; // 0x9
-        char pad_1[0x3];
+        ColorUint_8 Concrete; // 0xc
         ColorUint_8 Brick; // 0xf
         ColorUint_8 Sand; // 0x12
         ColorUint_8 WoodPlanks; // 0x15
-        char pad_2[0x3];
+        ColorUint_8 Rock; // 0x18
         ColorUint_8 Glacier; // 0x1b
         ColorUint_8 Snow; // 0x1e
-        char pad_3[0x6];
+        ColorUint_8 Sandstone; // 0x21
+        ColorUint_8 Mud; // 0x24
         ColorUint_8 Basalt; // 0x27
-        char pad_4[0x6];
+        ColorUint_8 Ground; // 0x2a
+        ColorUint_8 CrackedLava; // 0x2d
         ColorUint_8 Asphalt; // 0x30
-        char pad_5[0x3];
+        ColorUint_8 Cobblestone; // 0x33
         ColorUint_8 Ice; // 0x36
         ColorUint_8 LeafyGrass; // 0x39
         ColorUint_8 Salt; // 0x3c
-        char pad_6[0x3];
+        ColorUint_8 Limestone; // 0x3f
         ColorUint_8 Pavement; // 0x42
-        char pad_7[0xe1];
-        ColorUint_8 Grass; // 0x126
-        char pad_8[0x3];
-        ColorUint_8 Concrete; // 0x12c
-        char pad_9[0x9];
-        ColorUint_8 Rock; // 0x138
-        char pad_10[0x6];
-        ColorUint_8 Sandstone; // 0x141
-        ColorUint_8 Mud; // 0x144
-        char pad_11[0x3];
-        ColorUint_8 Ground; // 0x14a
-        ColorUint_8 CrackedLava; // 0x14d
-        char pad_12[0x3];
-        ColorUint_8 Cobblestone; // 0x153
-        char pad_13[0x9];
-        ColorUint_8 Limestone; // 0x15f
-    }; // sizeof = 0x162
+    }; // sizeof = 0x45
 
     struct MemEnforcedLRUCache {
         char pad_0[0x8];
@@ -999,9 +984,8 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        char pad_1[0x2e0];
-        std::string Texture_Texture; // 0x4c8
-    }; // sizeof = 0x4e8
+        // alias: Texture_Texture = 0x1c8 (string)
+    }; // sizeof = 0x1e8
 
     struct Tool {
         char pad_0[0x348];

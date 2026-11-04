@@ -2,7 +2,7 @@
     "Roblox Version": "version-4dcf516fd7214b1c",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "00:29 05/11/2026",
+    "Dumped At": "00:39 05/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -257,9 +257,7 @@
             "RequiresNeck": "bool",
             "AutoJumpEnabled": "bool",
             "AutoRotate": "bool",
-            "IsWalking": "bool",
             "MoveToPoint": "Vector3",
-            "MoveToPart": "unsigned __int64",
             "HumanoidState": "int",
             "HumanoidStateID": "int",
             "FloorMaterial": "int",
