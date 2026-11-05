@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:42 05/11/2026 (GMT)
-/*  Total Offsets   : 522
+/*  Dumped At       : 14:55 05/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -552,12 +552,16 @@ namespace Structs {
         char pad_6[0x4];
         float ShadowSoftness; // 0x124
         char pad_7[0x4];
-        uintptr_t GlobalShadows; // 0x12c
-        char pad_8[0x28];
+        bool GlobalShadows; // 0x12c
+        char pad_8[0xb];
+        Color3 GradientTop; // 0x138
+        Color3 LightColor; // 0x144
+        Vector3 LightDirection; // 0x150
         int Source; // 0x15c
         Vector3 SunPosition; // 0x160
         Vector3 MoonPosition; // 0x16c
-        char pad_9[0x38];
+        Color3 GradientBottom; // 0x178
+        char pad_9[0x2c];
         uintptr_t Sky; // 0x1b0
         char pad_10[0x8];
         uintptr_t Atmosphere; // 0x1c0

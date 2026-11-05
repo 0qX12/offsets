@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:42 05/11/2026 (GMT)
-/*  Total Offsets   : 522
+/*  Dumped At       : 14:55 05/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -394,6 +394,10 @@ namespace Offsets {
          inline constexpr uintptr_t FogStart = 0x118;
          inline constexpr uintptr_t GeographicLatitude = 0x11c;
          inline constexpr uintptr_t GlobalShadows = 0x12c;
+         inline constexpr uintptr_t GradientBottom = 0x178;
+         inline constexpr uintptr_t GradientTop = 0x138;
+         inline constexpr uintptr_t LightColor = 0x144;
+         inline constexpr uintptr_t LightDirection = 0x150;
          inline constexpr uintptr_t MoonPosition = 0x16c;
          inline constexpr uintptr_t OutdoorAmbient = 0xf0;
          inline constexpr uintptr_t ShadowSoftness = 0x124;
