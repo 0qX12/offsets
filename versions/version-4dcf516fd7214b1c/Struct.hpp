@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 01:39 05/11/2026 (GMT)
-/*  Total Offsets   : 526
+/*  Dumped At       : 14:42 05/11/2026 (GMT)
+/*  Total Offsets   : 522
 /* =============================================================
 */
 
@@ -73,7 +73,7 @@ namespace Structs {
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
-        // alias: ComponentId = 0x9 (unsigned __int16)
+        // alias: ComponentId = 0xb (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
         uintptr_t Value; // 0x18
         // alias: Payload = 0x18 (unsigned __int64)
@@ -182,9 +182,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x40];
-        uintptr_t FileMeshData; // 0x40
-    }; // sizeof = 0x48
+        char pad_0[0x28];
+        uintptr_t FileMeshData; // 0x28
+    }; // sizeof = 0x30
 
     struct Camera {
         char pad_0[0xb0];
@@ -525,9 +525,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x10];
-        uintptr_t CachedItem; // 0x40
-    }; // sizeof = 0x48
+        char pad_1[0x8];
+        uintptr_t CachedItem; // 0x38
+    }; // sizeof = 0x40
 
     struct Lighting {
         char pad_0[0xb0];
@@ -552,16 +552,12 @@ namespace Structs {
         char pad_6[0x4];
         float ShadowSoftness; // 0x124
         char pad_7[0x4];
-        bool GlobalShadows; // 0x12c
-        char pad_8[0xb];
-        Color3 GradientTop; // 0x138
-        Color3 LightColor; // 0x144
-        Vector3 LightDirection; // 0x150
+        uintptr_t GlobalShadows; // 0x12c
+        char pad_8[0x28];
         int Source; // 0x15c
         Vector3 SunPosition; // 0x160
         Vector3 MoonPosition; // 0x16c
-        Color3 GradientBottom; // 0x178
-        char pad_9[0x2c];
+        char pad_9[0x38];
         uintptr_t Sky; // 0x1b0
         char pad_10[0x8];
         uintptr_t Atmosphere; // 0x1c0
@@ -986,8 +982,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
