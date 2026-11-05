@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 16:46 05/11/2026 (GMT)
-/*  Total Offsets   : 528
+/*  Dumped At       : 17:06 05/11/2026 (GMT)
+/*  Total Offsets   : 526
 /* =============================================================
 */
 
@@ -1095,9 +1095,7 @@ namespace Structs {
     struct global_State {
         char pad_0[0x78];
         uintptr_t mainthread; // 0x78
-        char pad_1[0x5b0];
-        uintptr_t ref_table; // 0x630
-    }; // sizeof = 0x638
+    }; // sizeof = 0x80
 
     struct instance {
         uintptr_t name_str; // 0x0
@@ -1114,22 +1112,20 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x10];
-        uintptr_t userdata; // 0x10
-        char pad_1[0x8];
+        char pad_0[0x20];
         uintptr_t ci_last; // 0x20
         uintptr_t ci_base; // 0x28
         uintptr_t CallInfoSize; // 0x30
-        char pad_2[0x10];
+        char pad_1[0x10];
         uintptr_t stack; // 0x48
         uintptr_t global; // 0x50
         uintptr_t top; // 0x58
         uintptr_t base; // 0x60
         uintptr_t stack_last; // 0x68
         uintptr_t ci; // 0x70
-        char pad_3[0x5420];
+        char pad_2[0x5420];
         uintptr_t g_ptrenckey_new; // 0x5498
-        char pad_4[0x38];
+        char pad_3[0x38];
         uintptr_t g_ptrenc_active; // 0x54d8
     }; // sizeof = 0x54e0
 
