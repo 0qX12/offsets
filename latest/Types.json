@@ -2,7 +2,7 @@
     "Roblox Version": "version-4dcf516fd7214b1c",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "15:14 05/11/2026",
+    "Dumped At": "15:18 05/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -643,6 +643,8 @@
             "ci_last": "unsigned __int64",
             "CallInfoSize": "unsigned __int64",
             "global": "unsigned __int64",
+            "g_ptrenckey_new": "unsigned __int64",
+            "g_ptrenc_active": "unsigned __int64",
             "userdata": "unsigned __int64"
         },
         "global_State": {

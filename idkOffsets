@@ -5,8 +5,8 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 15:14 05/11/2026 (GMT)
-/*  Total Offsets   : 526
+/*  Dumped At       : 15:18 05/11/2026 (GMT)
+/*  Total Offsets   : 528
 /* =============================================================
 */
 
@@ -797,6 +797,8 @@ namespace Offsets {
          inline constexpr uintptr_t ci = 0x70;
          inline constexpr uintptr_t ci_base = 0x28;
          inline constexpr uintptr_t ci_last = 0x20;
+         inline constexpr uintptr_t g_ptrenc_active = 0x54d8;
+         inline constexpr uintptr_t g_ptrenckey_new = 0x5498;
          inline constexpr uintptr_t global = 0x50;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x68;
