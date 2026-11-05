@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:55 05/11/2026 (GMT)
+/*  Dumped At       : 15:04 05/11/2026 (GMT)
 /*  Total Offsets   : 526
 /* =============================================================
 */
@@ -986,9 +986,8 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        char pad_1[0x2e0];
-        std::string Texture_Texture; // 0x4c8
-    }; // sizeof = 0x4e8
+        // alias: Texture_Texture = 0x1c8 (string)
+    }; // sizeof = 0x1e8
 
     struct Tool {
         char pad_0[0x348];

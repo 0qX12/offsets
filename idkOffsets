@@ -5,7 +5,7 @@
 /*  Dumped With     : f4_byteDumper                             
 /*  Roblox Version  : version-4dcf516fd7214b1c
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 14:55 05/11/2026 (GMT)
+/*  Dumped At       : 15:04 05/11/2026 (GMT)
 /*  Total Offsets   : 526
 /* =============================================================
 */
@@ -699,7 +699,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x4c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {
