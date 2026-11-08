@@ -3,17 +3,17 @@
 /*                        f4_byteDumper                         
 /* -------------------------------------------------------------
 /*  Dumped With     : f4_byteDumper                             
-/*  Roblox Version  : version-4dcf516fd7214b1c
+/*  Roblox Version  : version-f0ea5da9412f4e35
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:06 05/11/2026 (GMT)
-/*  Total Offsets   : 526
+/*  Dumped At       : 00:10 09/11/2026 (GMT)
+/*  Total Offsets   : 496
 /* =============================================================
 */
 
 #include <cstdint>
 #include <string>
 namespace Structs {
-    inline std::string ClientVersion = "version-4dcf516fd7214b1c";
+    inline std::string ClientVersion = "version-f0ea5da9412f4e35";
 
     struct Vector2 { float x, y; };
     struct Vector3 { float x, y, z; };
@@ -73,7 +73,7 @@ namespace Structs {
         // unsigned __int16 ComponentIdOffset; // 0x8 (type unresolved)
         // unsigned __int32 Count; // 0x8 (type unresolved)
         uintptr_t Type; // 0x8
-        // alias: ComponentId = 0xb (unsigned __int16)
+        // alias: ComponentId = 0x9 (unsigned __int16)
         uintptr_t ComponentStride; // 0x10
         uintptr_t Value; // 0x18
         // alias: Payload = 0x18 (unsigned __int64)
@@ -182,9 +182,9 @@ namespace Structs {
     }; // sizeof = 0x30
 
     struct CachedItem {
-        char pad_0[0x28];
-        uintptr_t FileMeshData; // 0x28
-    }; // sizeof = 0x30
+        char pad_0[0x40];
+        uintptr_t FileMeshData; // 0x40
+    }; // sizeof = 0x48
 
     struct Camera {
         char pad_0[0xb0];
@@ -420,13 +420,6 @@ namespace Structs {
         Color3 TextColor3; // 0xeb8
     }; // sizeof = 0xec4
 
-    struct GuiService {
-        char pad_0[0x588];
-        float UIScale; // 0x588
-        float AutoUIScale; // 0x58c
-        // unsigned __int32 UIScaleMultiplierHundredths; // 0x590 (type unresolved)
-    }; // sizeof = 0x590
-
     struct Highlight {
         char pad_0[0x98];
         uintptr_t Prop; // 0x98
@@ -478,7 +471,6 @@ namespace Structs {
         int RigType; // 0x1b4
         char pad_8[0xc];
         float Walkspeed; // 0x1c4
-        // alias: WalkSpeed = 0x1c4 (unsigned __int64)
         bool AutoJumpEnabled; // 0x1c8
         bool AutoRotate; // 0x1c9
         bool AutomaticScalingEnabled; // 0x1ca
@@ -525,9 +517,9 @@ namespace Structs {
         uintptr_t Next; // 0x0
         char pad_0[0x8];
         std::string AssetID; // 0x10
-        char pad_1[0x8];
-        uintptr_t CachedItem; // 0x38
-    }; // sizeof = 0x40
+        char pad_1[0x10];
+        uintptr_t CachedItem; // 0x40
+    }; // sizeof = 0x48
 
     struct Lighting {
         char pad_0[0xb0];
@@ -735,16 +727,6 @@ namespace Structs {
         unsigned short Material; // 0x24e
     }; // sizeof = 0x250
 
-    struct PrimitiveFlags {
-        char pad_0[0x2];
-        uintptr_t Anchored; // 0x2
-        // alias: CanCollide = 0x8 (unsigned __int64)
-        char pad_1[0x6];
-        uintptr_t CanTouch; // 0x10
-        char pad_2[0x8];
-        uintptr_t CanQuery; // 0x20
-    }; // sizeof = 0x28
-
     struct PropertyDescriptor {
         char pad_0[0x70];
         uintptr_t TType; // 0x70
@@ -767,29 +749,13 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct RakNet {
-        char pad_0[0x2864e70];
-        uintptr_t UpdateNetworkLoop; // 0x2864e70
-        char pad_1[0x40c8];
-        uintptr_t SendPacketsToSelf; // 0x2868f40
-        char pad_2[0x1b08];
-        uintptr_t RakPeerReceive; // 0x286aa50
-        char pad_3[0x8b68];
-        uintptr_t RakNetSend; // 0x28735c0
-        char pad_4[0xc4c8];
-        uintptr_t RakPeerProcessNetworkPacket; // 0x287fa90
-        char pad_5[0x8c88];
-        uintptr_t RakNetReliabilityLayerSend; // 0x2888720
-        char pad_6[0xed68];
-        uintptr_t RakNetReceive; // 0x2897490
-        char pad_7[0x60e8];
-        uintptr_t RakNetEncrypt; // 0x289d580
-        char pad_8[0x2020388];
-        uintptr_t RaknetReportNetworkError; // 0x48bd910
-        char pad_9[0x61308];
-        uintptr_t convertItemEnumToString; // 0x491ec20
-        char pad_10[0x9a898];
-        uintptr_t RaknetHandleConnectionState; // 0x49b94c0
-        char pad_11[0x272eff0];
+        char pad_0[0x289d913];
+        uintptr_t RakNetEncrypt; // 0x289d913
+        char pad_1[0x20814c9];
+        uintptr_t convertItemEnumToString; // 0x491ede4
+        char pad_2[0x97a5b];
+        uintptr_t RaknetReportNetworkError; // 0x49b6847
+        char pad_3[0x2731c69];
         uintptr_t RakPeerVirtualTable; // 0x70e84b8
     }; // sizeof = 0x70e84c0
 
@@ -801,30 +767,19 @@ namespace Structs {
     }; // sizeof = 0x863db18
 
     struct RemoteSpy {
-        char pad_0[0x4c];
-        uintptr_t FireServerVtableSlot; // 0x4c
-        char pad_1[0xc];
+        char pad_0[0x60];
         uintptr_t InstanceParentOffset; // 0x60
-        char pad_2[0x1f8];
-        uintptr_t FireServerVtableByteOffset; // 0x260
-        // alias: UnreliableRemoteEventFireServerSlotByte = 0x260 (unsigned __int64)
-        char pad_3[0x34d0148];
-        uintptr_t UnreliableRemoteEventFireServerRva; // 0x34d03b0
-        char pad_4[0xb2e08];
-        uintptr_t RemoteFunctionInvokeServerRva; // 0x35831c0
-        char pad_5[0x3e98];
-        uintptr_t FireServerRva; // 0x3587060
-        char pad_6[0x3b49b00];
+        char pad_1[0x70d0b00];
         uintptr_t InstanceVtableRva; // 0x70d0b68
-        char pad_7[0x6e3b0];
+        char pad_2[0x6e3b0];
         uintptr_t DescribedBaseRemoteEventVtableRva; // 0x713ef20
-        char pad_8[0x260];
+        char pad_3[0x260];
         uintptr_t BaseRemoteEventVtableRva; // 0x713f188
-        char pad_9[0x12f8];
+        char pad_4[0x12f8];
         uintptr_t UnreliableRemoteEventVtableRva; // 0x7140488
-        char pad_10[0x3260];
+        char pad_5[0x3260];
         uintptr_t RemoteFuncVTableRva; // 0x71436f0
-        char pad_11[0x260];
+        char pad_6[0x260];
         uintptr_t RemoteEventVtableRva; // 0x7143958
     }; // sizeof = 0x7143960
 
@@ -842,10 +797,7 @@ namespace Structs {
         uintptr_t DeviceD3D11; // 0x10
         char pad_1[0x8];
         uintptr_t VisualEngine; // 0x20
-        char pad_2[0x258];
-        bool SkyValid; // 0x280
-        bool LightingValid; // 0x281
-    }; // sizeof = 0x282
+    }; // sizeof = 0x28
 
     struct RunService {
         char pad_0[0xc8];
@@ -986,8 +938,9 @@ namespace Structs {
     struct Textures {
         char pad_0[0x1c8];
         std::string Decal_Texture; // 0x1c8
-        // alias: Texture_Texture = 0x1c8 (string)
-    }; // sizeof = 0x1e8
+        char pad_1[0x2e0];
+        std::string Texture_Texture; // 0x4c8
+    }; // sizeof = 0x4e8
 
     struct Tool {
         char pad_0[0x348];
@@ -1093,9 +1046,9 @@ namespace Structs {
     }; // sizeof = 0x8eb6968
 
     struct global_State {
-        char pad_0[0x78];
-        uintptr_t mainthread; // 0x78
-    }; // sizeof = 0x80
+        char pad_0[0x18];
+        uintptr_t mainthread; // 0x18
+    }; // sizeof = 0x20
 
     struct instance {
         uintptr_t name_str; // 0x0
@@ -1112,22 +1065,15 @@ namespace Structs {
     }; // sizeof = 0x120
 
     struct lua_state {
-        char pad_0[0x20];
-        uintptr_t ci_last; // 0x20
-        uintptr_t ci_base; // 0x28
-        uintptr_t CallInfoSize; // 0x30
-        char pad_1[0x10];
+        char pad_0[0x10];
+        uintptr_t global; // 0x10
+        char pad_1[0x30];
         uintptr_t stack; // 0x48
-        uintptr_t global; // 0x50
+        char pad_2[0x8];
         uintptr_t top; // 0x58
         uintptr_t base; // 0x60
         uintptr_t stack_last; // 0x68
-        uintptr_t ci; // 0x70
-        char pad_2[0x5420];
-        uintptr_t g_ptrenckey_new; // 0x5498
-        char pad_3[0x38];
-        uintptr_t g_ptrenc_active; // 0x54d8
-    }; // sizeof = 0x54e0
+    }; // sizeof = 0x70
 
     struct lua_thread {
         char pad_0[0x310];

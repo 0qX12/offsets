@@ -3,17 +3,17 @@
 /*                        f4_byteDumper                         
 /* -------------------------------------------------------------
 /*  Dumped With     : f4_byteDumper                             
-/*  Roblox Version  : version-4dcf516fd7214b1c
+/*  Roblox Version  : version-f0ea5da9412f4e35
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:06 05/11/2026 (GMT)
-/*  Total Offsets   : 526
+/*  Dumped At       : 00:10 09/11/2026 (GMT)
+/*  Total Offsets   : 496
 /* =============================================================
 */
 
 #include <cstdint>
 #include <string>
 namespace Offsets {
-    inline std::string ClientVersion = "version-4dcf516fd7214b1c";
+    inline std::string ClientVersion = "version-f0ea5da9412f4e35";
 
     namespace  {
          inline constexpr uintptr_t LS_ENC = 0x3;
@@ -54,7 +54,7 @@ namespace Offsets {
 
     namespace Attribute {
          inline constexpr uintptr_t Color3Value = 0x18;
-         inline constexpr uintptr_t ComponentId = 0xb;
+         inline constexpr uintptr_t ComponentId = 0x9;
          inline constexpr uintptr_t ComponentIdOffset = 0x8;
          inline constexpr uintptr_t ComponentMap = 0x38;
          inline constexpr uintptr_t ComponentStride = 0x10;
@@ -134,7 +134,7 @@ namespace Offsets {
     }
 
     namespace CachedItem {
-         inline constexpr uintptr_t FileMeshData = 0x28;
+         inline constexpr uintptr_t FileMeshData = 0x40;
     }
 
     namespace Camera {
@@ -299,12 +299,6 @@ namespace Offsets {
          inline constexpr uintptr_t ZIndex = 0x56c;
     }
 
-    namespace GuiService {
-         inline constexpr uintptr_t AutoUIScale = 0x58c;
-         inline constexpr uintptr_t UIScale = 0x588;
-         inline constexpr uintptr_t UIScaleMultiplierHundredths = 0x590;
-    }
-
     namespace Highlight {
          inline constexpr uintptr_t Adornee = 0xa0;
          inline constexpr uintptr_t DepthMode = 0xc8;
@@ -353,7 +347,6 @@ namespace Offsets {
          inline constexpr uintptr_t Sit = 0x1d3;
          inline constexpr uintptr_t TargetPoint = 0x140;
          inline constexpr uintptr_t UseJumpPower = 0x1d6;
-         inline constexpr uintptr_t WalkSpeed = 0x1c4;
          inline constexpr uintptr_t Walkspeed = 0x1c4;
     }
 
@@ -375,7 +368,7 @@ namespace Offsets {
 
     namespace LRUNode {
          inline constexpr uintptr_t AssetID = 0x10;
-         inline constexpr uintptr_t CachedItem = 0x38;
+         inline constexpr uintptr_t CachedItem = 0x40;
          inline constexpr uintptr_t Next = 0x0;
     }
 
@@ -528,13 +521,6 @@ namespace Offsets {
          inline constexpr uintptr_t Size = 0x1c4;
     }
 
-    namespace PrimitiveFlags {
-         inline constexpr uintptr_t Anchored = 0x2;
-         inline constexpr uintptr_t CanCollide = 0x8;
-         inline constexpr uintptr_t CanQuery = 0x20;
-         inline constexpr uintptr_t CanTouch = 0x10;
-    }
-
     namespace PropertyDescriptor {
          inline constexpr uintptr_t GetSetImpl = 0xb0;
          inline constexpr uintptr_t TType = 0x70;
@@ -552,18 +538,10 @@ namespace Offsets {
     }
 
     namespace RakNet {
-         inline constexpr uintptr_t RakNetEncrypt = 0x289d580;
-         inline constexpr uintptr_t RakNetReceive = 0x2897490;
-         inline constexpr uintptr_t RakNetReliabilityLayerSend = 0x2888720;
-         inline constexpr uintptr_t RakNetSend = 0x28735c0;
-         inline constexpr uintptr_t RakPeerProcessNetworkPacket = 0x287fa90;
-         inline constexpr uintptr_t RakPeerReceive = 0x286aa50;
+         inline constexpr uintptr_t RakNetEncrypt = 0x289d913;
          inline constexpr uintptr_t RakPeerVirtualTable = 0x70e84b8;
-         inline constexpr uintptr_t RaknetHandleConnectionState = 0x49b94c0;
-         inline constexpr uintptr_t RaknetReportNetworkError = 0x48bd910;
-         inline constexpr uintptr_t SendPacketsToSelf = 0x2868f40;
-         inline constexpr uintptr_t UpdateNetworkLoop = 0x2864e70;
-         inline constexpr uintptr_t convertItemEnumToString = 0x491ec20;
+         inline constexpr uintptr_t RaknetReportNetworkError = 0x49b6847;
+         inline constexpr uintptr_t convertItemEnumToString = 0x491ede4;
     }
 
     namespace Raycast {
@@ -574,16 +552,10 @@ namespace Offsets {
     namespace RemoteSpy {
          inline constexpr uintptr_t BaseRemoteEventVtableRva = 0x713f188;
          inline constexpr uintptr_t DescribedBaseRemoteEventVtableRva = 0x713ef20;
-         inline constexpr uintptr_t FireServerRva = 0x3587060;
-         inline constexpr uintptr_t FireServerVtableByteOffset = 0x260;
-         inline constexpr uintptr_t FireServerVtableSlot = 0x4c;
          inline constexpr uintptr_t InstanceParentOffset = 0x60;
          inline constexpr uintptr_t InstanceVtableRva = 0x70d0b68;
          inline constexpr uintptr_t RemoteEventVtableRva = 0x7143958;
          inline constexpr uintptr_t RemoteFuncVTableRva = 0x71436f0;
-         inline constexpr uintptr_t RemoteFunctionInvokeServerRva = 0x35831c0;
-         inline constexpr uintptr_t UnreliableRemoteEventFireServerRva = 0x34d03b0;
-         inline constexpr uintptr_t UnreliableRemoteEventFireServerSlotByte = 0x260;
          inline constexpr uintptr_t UnreliableRemoteEventVtableRva = 0x7140488;
     }
 
@@ -595,8 +567,6 @@ namespace Offsets {
 
     namespace RenderView {
          inline constexpr uintptr_t DeviceD3D11 = 0x10;
-         inline constexpr uintptr_t LightingValid = 0x281;
-         inline constexpr uintptr_t SkyValid = 0x280;
          inline constexpr uintptr_t VisualEngine = 0x20;
     }
 
@@ -699,7 +669,7 @@ namespace Offsets {
 
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x1c8;
+         inline constexpr uintptr_t Texture_Texture = 0x4c8;
     }
 
     namespace Tool {
@@ -776,7 +746,7 @@ namespace Offsets {
     }
 
     namespace global_State {
-         inline constexpr uintptr_t mainthread = 0x78;
+         inline constexpr uintptr_t mainthread = 0x18;
     }
 
     namespace instance {
@@ -791,14 +761,8 @@ namespace Offsets {
     }
 
     namespace lua_state {
-         inline constexpr uintptr_t CallInfoSize = 0x30;
          inline constexpr uintptr_t base = 0x60;
-         inline constexpr uintptr_t ci = 0x70;
-         inline constexpr uintptr_t ci_base = 0x28;
-         inline constexpr uintptr_t ci_last = 0x20;
-         inline constexpr uintptr_t g_ptrenc_active = 0x54d8;
-         inline constexpr uintptr_t g_ptrenckey_new = 0x5498;
-         inline constexpr uintptr_t global = 0x50;
+         inline constexpr uintptr_t global = 0x10;
          inline constexpr uintptr_t stack = 0x48;
          inline constexpr uintptr_t stack_last = 0x68;
          inline constexpr uintptr_t top = 0x58;

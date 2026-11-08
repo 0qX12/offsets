@@ -3,9 +3,9 @@
 /*                        f4_byteDumper                         
 /* -------------------------------------------------------------
 /*  Dumped With     : f4_byteDumper                             
-/*  Roblox Version  : version-4dcf516fd7214b1c
+/*  Roblox Version  : version-f0ea5da9412f4e35
 /*  Dumper Version  : 1.0
-/*  Dumped At       : 17:06 05/11/2026 (GMT)
+/*  Dumped At       : 00:10 09/11/2026 (GMT)
 /*  Total Offsets   : 15307
 /* =============================================================
 */
@@ -13,7 +13,7 @@
 #include <cstdint>
 #include <string>
 namespace FFlagOffsets {
-    inline std::string ClientVersion = "version-4dcf516fd7214b1c";
+    inline std::string ClientVersion = "version-f0ea5da9412f4e35";
 
     namespace FFlagList {
          inline constexpr uintptr_t Pointer = 0x858f8e8;
