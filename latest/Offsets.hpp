@@ -1,12 +1,13 @@
 #pragma once
 /* =============================================================
-/*                        f4_byteDumper                         
+/*  dumped by aimbot.h on discord
 /* -------------------------------------------------------------
-/*  Dumped With     : f4_byteDumper                             
-/*  Roblox Version  : version-2c6fd5e09aaf4cfa
-/*  Dumper Version  : 1.0
-/*  Dumped At       : 18:20 22/11/2026 (GMT)
-/*  Total Offsets   : 483
+/*  Roblox Version   : version-2c6fd5e09aaf4cfa
+/*  Dumped At        : 19:08 17/11/2026
+/*  Time To Dump     : 63.62s
+/*  Total Offsets    : 492
+/*  Total FFlags     : 15273
+/*  Validated        : 51 ok, 5 missing
 /* =============================================================
 */
 
@@ -23,7 +24,7 @@ namespace Offsets {
     namespace AnimationTrack {
          inline constexpr uintptr_t Animation = 0xa0;
          inline constexpr uintptr_t Animator = 0xf8;
-         inline constexpr uintptr_t IsPlaying = 0xa41;
+         inline constexpr uintptr_t IsPlaying = 0xa40;
          inline constexpr uintptr_t Looped = 0xcd;
          inline constexpr uintptr_t Speed = 0xbc;
          inline constexpr uintptr_t TimePosition = 0xc0;
@@ -47,48 +48,22 @@ namespace Offsets {
     }
 
     namespace Attribute {
-         inline constexpr uintptr_t Color3Value = 0x18;
-         inline constexpr uintptr_t ComponentId = 0x9;
-         inline constexpr uintptr_t ComponentIdOffset = 0x8;
-         inline constexpr uintptr_t ComponentMap = 0x38;
-         inline constexpr uintptr_t ComponentStride = 0x10;
-         inline constexpr uintptr_t Count = 0x8;
-         inline constexpr uintptr_t Key = 0x0;
-         inline constexpr uintptr_t NumberValue = 0x18;
-         inline constexpr uintptr_t Payload = 0x18;
-         inline constexpr uintptr_t Size = 0x58;
-         inline constexpr uintptr_t Type = 0x8;
-         inline constexpr uintptr_t TypeBool = 0x8d8a770;
-         inline constexpr uintptr_t TypeBrickColor = 0x8d897e0;
-         inline constexpr uintptr_t TypeCFrame = 0x8d8af50;
-         inline constexpr uintptr_t TypeColor3 = 0x8d8abd0;
-         inline constexpr uintptr_t TypeNumber = 0x8d8a8b0;
-         inline constexpr uintptr_t TypeRange = 0x8d89550;
-         inline constexpr uintptr_t TypeString = 0x8d8a900;
-         inline constexpr uintptr_t TypeUDim = 0x8d898d0;
-         inline constexpr uintptr_t TypeUDim2 = 0x8d89920;
-         inline constexpr uintptr_t TypeVector2 = 0x8d8a9a0;
-         inline constexpr uintptr_t TypeVector3 = 0x8d8a950;
-         inline constexpr uintptr_t Value = 0x18;
-         inline constexpr uintptr_t Vector3Value = 0x18;
-    }
-
-    namespace AttributesMap {
-         inline constexpr uintptr_t Attributes = 0x18;
-         inline constexpr uintptr_t Length = 0x8;
+         inline constexpr uintptr_t ToNext = 0x10;
+         inline constexpr uintptr_t ToNextAlt = 0x0;
+         inline constexpr uintptr_t ToValue = 0x20;
+         inline constexpr uintptr_t ToValueAlt = 0x30;
     }
 
     namespace BasePart {
          inline constexpr uintptr_t CastShadow = 0x120;
          inline constexpr uintptr_t ClusterNode = 0x180;
-         inline constexpr uintptr_t Color = 0x11c;
          inline constexpr uintptr_t Color3 = 0x11c;
+         inline constexpr uintptr_t LocalTransparencyModifier = 0x110;
          inline constexpr uintptr_t Locked = 0x121;
          inline constexpr uintptr_t Massless = 0x122;
          inline constexpr uintptr_t Primitive = 0x178;
          inline constexpr uintptr_t Reflectance = 0xf4;
          inline constexpr uintptr_t Shape = 0x1a0;
-         inline constexpr uintptr_t Size = 0x1c4;
          inline constexpr uintptr_t Transparency = 0x118;
     }
 
@@ -121,10 +96,8 @@ namespace Offsets {
     }
 
     namespace ByteCode {
-         inline constexpr uintptr_t CacheKey = 0x0;
-         inline constexpr uintptr_t Capacity = 0x30;
-         inline constexpr uintptr_t Pointer = 0x18;
-         inline constexpr uintptr_t Size = 0x28;
+         inline constexpr uintptr_t Pointer = 0x10;
+         inline constexpr uintptr_t Size = 0x20;
     }
 
     namespace CachedItem {
@@ -136,6 +109,7 @@ namespace Offsets {
          inline constexpr uintptr_t CameraSubject = 0xb0;
          inline constexpr uintptr_t CameraType = 0x120;
          inline constexpr uintptr_t FieldOfView = 0x128;
+         inline constexpr uintptr_t Focus = 0xf0;
          inline constexpr uintptr_t ImagePlaneDepth = 0x2d4;
          inline constexpr uintptr_t Position = 0xe4;
          inline constexpr uintptr_t Rotation = 0xc0;
@@ -150,18 +124,13 @@ namespace Offsets {
          inline constexpr uintptr_t OverlayTextureId = 0x110;
     }
 
-    namespace ClassDescriptor {
-         inline constexpr uintptr_t ClassName = 0x8;
-         inline constexpr uintptr_t EventDescriptors = 0x88;
-         inline constexpr uintptr_t FunctionDescriptors = 0xd0;
-         inline constexpr uintptr_t PropertyCount = 0x48;
-         inline constexpr uintptr_t PropertyDescriptors = 0x40;
-         inline constexpr uintptr_t Superclass = 0x1b8;
-    }
-
     namespace ClickDetector {
          inline constexpr uintptr_t MaxActivationDistance = 0xd0;
          inline constexpr uintptr_t MouseIcon = 0xb0;
+    }
+
+    namespace Closure {
+         inline constexpr uintptr_t isC = 0x6;
     }
 
     namespace Clothing {
@@ -189,8 +158,8 @@ namespace Offsets {
          inline constexpr uintptr_t PlaceId = 0x1a0;
          inline constexpr uintptr_t PlaceVersion = 0x1bc;
          inline constexpr uintptr_t PrimitiveCount = 0x430;
+         inline constexpr uintptr_t ScriptContext = 0x440;
          inline constexpr uintptr_t ServerIP = 0x5a0;
-         inline constexpr uintptr_t Services = 0x78;
          inline constexpr uintptr_t ToRenderView1 = 0x1d8;
          inline constexpr uintptr_t ToRenderView2 = 0x8;
          inline constexpr uintptr_t ToRenderView3 = 0x28;
@@ -205,15 +174,15 @@ namespace Offsets {
          inline constexpr uintptr_t NearIntensity = 0xac;
     }
 
-    namespace Descriptor {
-         inline constexpr uintptr_t Name = 0x8;
-    }
-
     namespace DeviceD3D11Gfx {
          inline constexpr uintptr_t ContextObj = 0x1b8;
-         inline constexpr uintptr_t ContextPtr = 0x20;
-         inline constexpr uintptr_t DevicePtr = 0x18;
-         inline constexpr uintptr_t SwapChainPtr = 0x30;
+         inline constexpr uintptr_t ContextObjDrawSlot = 0x1b;
+         inline constexpr uintptr_t ContextObjToContext = 0x18;
+         inline constexpr uintptr_t ContextObjVTableRva = 0x704e4c0;
+         inline constexpr uintptr_t ContextPtr = 0x188;
+         inline constexpr uintptr_t DevicePtr = 0x180;
+         inline constexpr uintptr_t SwapChainDevice = 0xd8;
+         inline constexpr uintptr_t SwapChainPtr = 0x80;
          inline constexpr uintptr_t VTableRva = 0x704e048;
     }
 
@@ -232,34 +201,67 @@ namespace Offsets {
     }
 
     namespace FakeDataModel {
-         inline constexpr uintptr_t Pointer = 0x8df3e60;
+         inline constexpr uintptr_t Pointer = 0x8e16368;
          inline constexpr uintptr_t RealDataModel = 0x1f8;
     }
 
     namespace FastCluster {
-         inline constexpr uintptr_t BindingSubobject = 0x90;
+         inline constexpr uintptr_t BindingSubobject = 0x138;
          inline constexpr uintptr_t EntityBegin = 0x48;
          inline constexpr uintptr_t EntityEnd = 0x50;
+         inline constexpr uintptr_t MaterialColor = 0x24;
+         inline constexpr uintptr_t MaterialFillMode = 0x11;
+         inline constexpr uintptr_t MaterialFlags = 0x20;
+         inline constexpr uintptr_t MaterialMatFlags = 0x18;
+         inline constexpr uintptr_t MaterialParam = 0x1c;
+         inline constexpr uintptr_t MaterialStride = 0x88;
+         inline constexpr uintptr_t Subobject = 0x90;
+         inline constexpr uintptr_t TechniqueBegin = 0x0;
+         inline constexpr uintptr_t TechniqueEnd = 0x8;
          inline constexpr uintptr_t VTableRva = 0x70b2d98;
          inline constexpr uintptr_t VTableRvaSub = 0x70b2c60;
     }
 
     namespace FastClusterBinding {
-         inline constexpr uintptr_t Owner = 0x60;
+         inline constexpr uintptr_t Cluster = 0x60;
+         inline constexpr uintptr_t Owner = 0x10;
          inline constexpr uintptr_t VTableRva = 0x70b4208;
     }
 
     namespace FastClusterEntity {
+         inline constexpr uintptr_t AlphaByte = 0x14;
+         inline constexpr uintptr_t BBoxMaxX = 0xa4;
+         inline constexpr uintptr_t BBoxMaxY = 0xa8;
+         inline constexpr uintptr_t BBoxMaxZ = 0xac;
+         inline constexpr uintptr_t BBoxMinX = 0x98;
+         inline constexpr uintptr_t BBoxMinY = 0x9c;
+         inline constexpr uintptr_t BBoxMinZ = 0xa0;
+         inline constexpr uintptr_t ContextPtr = 0x8;
+         inline constexpr uintptr_t DecalMaterialPtr = 0x48;
+         inline constexpr uintptr_t MaterialPtr = 0x20;
+         inline constexpr uintptr_t MeshVTableRva = 0x704e800;
+         inline constexpr uintptr_t PrimitiveIndexArrayPtr = 0x80;
+         inline constexpr uintptr_t RenderQueueId = 0x10;
+         inline constexpr uintptr_t TechniqueArrayPtr = 0x70;
          inline constexpr uintptr_t VTableRva = 0x70b42e0;
     }
 
     namespace FileMeshData {
          inline constexpr uintptr_t AABBMax = 0x18c;
          inline constexpr uintptr_t AABBMin = 0x180;
+         inline constexpr uintptr_t FaceStride = 0xc;
          inline constexpr uintptr_t Faces = 0x30;
          inline constexpr uintptr_t FacesEnd = 0x38;
+         inline constexpr uintptr_t VertexStride = 0x18;
          inline constexpr uintptr_t Vertices = 0x0;
          inline constexpr uintptr_t VerticesEnd = 0x8;
+    }
+
+    namespace GCObject {
+         inline constexpr uintptr_t FIXEDBIT = 0x3;
+         inline constexpr uintptr_t marked = 0x1;
+         inline constexpr uintptr_t memcat = 0x2;
+         inline constexpr uintptr_t tt = 0x0;
     }
 
     namespace GeometryD3D11 {
@@ -268,38 +270,25 @@ namespace Offsets {
 
     namespace GuiBase2D {
          inline constexpr uintptr_t AbsolutePosition = 0xf4;
-         inline constexpr uintptr_t AbsoluteRotation = 0x32c;
+         inline constexpr uintptr_t AbsoluteRotation = 0xd0;
          inline constexpr uintptr_t AbsoluteSize = 0xfc;
     }
 
     namespace GuiObject {
          inline constexpr uintptr_t BackgroundColor3 = 0x2d8;
-         inline constexpr uintptr_t BackgroundTransparency = 0x2fc;
+         inline constexpr uintptr_t BackgroundTransparency = 0x2e4;
          inline constexpr uintptr_t BorderColor3 = 0x2e4;
          inline constexpr uintptr_t Image = 0x670;
          inline constexpr uintptr_t LayoutOrder = 0x314;
          inline constexpr uintptr_t Position = 0x2a8;
          inline constexpr uintptr_t RichText = 0x7c8;
-         inline constexpr uintptr_t Rotation = 0x32c;
-         inline constexpr uintptr_t ScreenGui_Enabled = 0x40d;
+         inline constexpr uintptr_t Rotation = 0xd0;
+         inline constexpr uintptr_t ScreenGui_Enabled = 0x404;
          inline constexpr uintptr_t Size = 0x2c8;
          inline constexpr uintptr_t Text = 0xa30;
          inline constexpr uintptr_t TextColor3 = 0xae0;
-         inline constexpr uintptr_t Visible = 0x345;
-         inline constexpr uintptr_t ZIndex = 0x33c;
-    }
-
-    namespace Highlight {
-         inline constexpr uintptr_t Adornee = 0xa0;
-         inline constexpr uintptr_t DepthMode = 0xc8;
-         inline constexpr uintptr_t Enabled = 0xdc;
-         inline constexpr uintptr_t FillColor = 0xb0;
-         inline constexpr uintptr_t FillTransparency = 0xcc;
-         inline constexpr uintptr_t LineThickness = 0xd0;
-         inline constexpr uintptr_t OutlineColor = 0xbc;
-         inline constexpr uintptr_t OutlineTransparency = 0xd4;
-         inline constexpr uintptr_t Prop = 0x98;
-         inline constexpr uintptr_t SetEnabled = 0xb88fb0;
+         inline constexpr uintptr_t Visible = 0x504;
+         inline constexpr uintptr_t ZIndex = 0x13;
     }
 
     namespace Humanoid {
@@ -318,7 +307,7 @@ namespace Offsets {
          inline constexpr uintptr_t HipHeight = 0x188;
          inline constexpr uintptr_t HumanoidRootPart = 0x460;
          inline constexpr uintptr_t HumanoidState = 0x8a8;
-         inline constexpr uintptr_t HumanoidStateID = 0x190;
+         inline constexpr uintptr_t HumanoidStateID = 0x20;
          inline constexpr uintptr_t IsWalking = 0xa3e;
          inline constexpr uintptr_t Jump = 0x1d4;
          inline constexpr uintptr_t JumpHeight = 0x198;
@@ -331,19 +320,21 @@ namespace Offsets {
          inline constexpr uintptr_t NameDisplayDistance = 0x1a8;
          inline constexpr uintptr_t NameOcclusion = 0x1ac;
          inline constexpr uintptr_t PlatformStand = 0x1d5;
-         inline constexpr uintptr_t RequiresNeck = 0x1d7;
+         inline constexpr uintptr_t RequiresNeck = 0x1d6;
          inline constexpr uintptr_t RigType = 0x1b8;
          inline constexpr uintptr_t SeatPart = 0xf0;
          inline constexpr uintptr_t Sit = 0x1d6;
          inline constexpr uintptr_t TargetPoint = 0x140;
          inline constexpr uintptr_t UseJumpPower = 0x1d9;
-         inline constexpr uintptr_t WalkSpeed = 0x1c8;
+         inline constexpr uintptr_t WalkTimer = 0x3e8;
          inline constexpr uintptr_t Walkspeed = 0x1c8;
+         inline constexpr uintptr_t WalkspeedCheck = 0x39c;
     }
 
     namespace Instance {
          inline constexpr uintptr_t ChildrenEnd = 0x8;
          inline constexpr uintptr_t ChildrenStart = 0x70;
+         inline constexpr uintptr_t ChildrenStride = 0x10;
          inline constexpr uintptr_t ClassBase = 0x1b8;
          inline constexpr uintptr_t ClassDescriptor = 0x18;
          inline constexpr uintptr_t ClassName = 0x8;
@@ -351,6 +342,24 @@ namespace Offsets {
          inline constexpr uintptr_t NameContainer = 0x68;
          inline constexpr uintptr_t Parent = 0x60;
          inline constexpr uintptr_t This = 0x8;
+    }
+
+    namespace InstancedBinding {
+         inline constexpr uintptr_t Entity = 0x70;
+         inline constexpr uintptr_t Part = 0x10;
+         inline constexpr uintptr_t SpecialMeshVTableRva = 0x70b03f0;
+         inline constexpr uintptr_t VTableRva = 0x70b0138;
+    }
+
+    namespace InstancedEntity {
+         inline constexpr uintptr_t Bindings = 0xd0;
+         inline constexpr uintptr_t BindingsEnd = 0xd8;
+         inline constexpr uintptr_t MeshResource = 0x98;
+         inline constexpr uintptr_t VTableRva = 0x70b0270;
+    }
+
+    namespace IntValue {
+         inline constexpr uintptr_t Value = 0xa0;
     }
 
     namespace LRUHolder {
@@ -363,13 +372,17 @@ namespace Offsets {
          inline constexpr uintptr_t Next = 0x0;
     }
 
+    namespace Legacy {
+         inline constexpr uintptr_t FakeDataModelPointer = 0x8e16368;
+         inline constexpr uintptr_t VisualEnginePointer = 0x8896b98;
+    }
+
     namespace Lighting {
-         inline constexpr uintptr_t Ambient = 0xc0;
-         inline constexpr uintptr_t Atmosphere = 0x1c8;
+         inline constexpr uintptr_t Ambient = 0xb8;
          inline constexpr uintptr_t Brightness = 0x100;
          inline constexpr uintptr_t ClockTime = 0xb0;
-         inline constexpr uintptr_t ColorShift_Bottom = 0xc4;
-         inline constexpr uintptr_t ColorShift_Top = 0xd0;
+         inline constexpr uintptr_t ColorShift_Bottom = 0xd0;
+         inline constexpr uintptr_t ColorShift_Top = 0xc4;
          inline constexpr uintptr_t EnvironmentDiffuseScale = 0x104;
          inline constexpr uintptr_t EnvironmentSpecularScale = 0x108;
          inline constexpr uintptr_t ExposureCompensation = 0x10c;
@@ -383,21 +396,22 @@ namespace Offsets {
          inline constexpr uintptr_t LightColor = 0x14c;
          inline constexpr uintptr_t LightDirection = 0x158;
          inline constexpr uintptr_t MoonPosition = 0x174;
-         inline constexpr uintptr_t OutdoorAmbient = 0xf0;
-         inline constexpr uintptr_t ShadowSoftness = 0x128;
+         inline constexpr uintptr_t OutdoorAmbient = 0xe8;
          inline constexpr uintptr_t Sky = 0x1b8;
          inline constexpr uintptr_t Source = 0x164;
          inline constexpr uintptr_t SunPosition = 0x168;
     }
 
     namespace LocalScript {
-         inline constexpr uintptr_t ByteCode = 0x178;
+         inline constexpr uintptr_t ByteCode = 0x0;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
 
-    namespace LuaTable {
-         inline constexpr uintptr_t ReadOnly = 0x5;
+    namespace LuaVM {
+         inline constexpr uintptr_t SetGC = 0x8;
+         inline constexpr uintptr_t collectgarbage = 0x41d82a0;
+         inline constexpr uintptr_t lua_gc = 0x2569bb0;
     }
 
     namespace MaterialColors {
@@ -424,6 +438,15 @@ namespace Offsets {
          inline constexpr uintptr_t WoodPlanks = 0x15;
     }
 
+    namespace MaterialLayer {
+         inline constexpr uintptr_t ColorData = 0x24;
+         inline constexpr uintptr_t FillModeByte = 0x11;
+         inline constexpr uintptr_t Flags2 = 0x20;
+         inline constexpr uintptr_t MatFlags = 0x18;
+         inline constexpr uintptr_t Param = 0x1c;
+         inline constexpr uintptr_t Stride = 0x88;
+    }
+
     namespace MemEnforcedLRUCache {
          inline constexpr uintptr_t Head = 0x8;
     }
@@ -433,9 +456,15 @@ namespace Offsets {
     }
 
     namespace MeshPart {
+         inline constexpr uintptr_t MeshContent = 0x2f8;
          inline constexpr uintptr_t MeshId = 0x2f8;
-         inline constexpr uintptr_t MeshSize = 0x210;
          inline constexpr uintptr_t Texture = 0x328;
+    }
+
+    namespace MeshResource {
+         inline constexpr uintptr_t RangeStride = 0x28;
+         inline constexpr uintptr_t Ranges = 0xd0;
+         inline constexpr uintptr_t VTableRva = 0x70af6c8;
     }
 
     namespace Misc {
@@ -451,14 +480,18 @@ namespace Offsets {
     }
 
     namespace ModuleScript {
-         inline constexpr uintptr_t ByteCode = 0x120;
+         inline constexpr uintptr_t ByteCode = 0x680;
          inline constexpr uintptr_t GUID = 0xb8;
+         inline constexpr uintptr_t Hash = 0x0;
+         inline constexpr uintptr_t IsCoreScript = 0x0;
     }
 
     namespace MouseService {
-         inline constexpr uintptr_t InputObject = 0xe8;
-         inline constexpr uintptr_t InputObject2 = 0xf8;
-         inline constexpr uintptr_t MousePosition = 0xbc;
+         inline constexpr uintptr_t SensitivityPointer = 0x0;
+    }
+
+    namespace NumberValue {
+         inline constexpr uintptr_t Value = 0xa0;
     }
 
     namespace ParticleEmitter {
@@ -496,6 +529,10 @@ namespace Offsets {
          inline constexpr uintptr_t UserId = 0xb8;
     }
 
+    namespace PlayerConfigurer {
+         inline constexpr uintptr_t Pointer = 0x0;
+    }
+
     namespace PlayerMouse {
          inline constexpr uintptr_t Icon = 0xb0;
          inline constexpr uintptr_t Workspace = 0x138;
@@ -504,17 +541,21 @@ namespace Offsets {
     namespace Primitive {
          inline constexpr uintptr_t AssemblyAngularVelocity = 0xec;
          inline constexpr uintptr_t AssemblyLinearVelocity = 0xe0;
+         inline constexpr uintptr_t CFrame = 0xb0;
          inline constexpr uintptr_t Flags = 0x1be;
          inline constexpr uintptr_t Material = 0x256;
          inline constexpr uintptr_t Owner = 0x220;
          inline constexpr uintptr_t Position = 0xd4;
          inline constexpr uintptr_t Rotation = 0xb0;
          inline constexpr uintptr_t Size = 0x1c4;
+         inline constexpr uintptr_t Validate = 0x6;
     }
 
-    namespace PropertyDescriptor {
-         inline constexpr uintptr_t GetSetImpl = 0xb0;
-         inline constexpr uintptr_t TType = 0x70;
+    namespace PrimitiveFlags {
+         inline constexpr uintptr_t Anchored = 0x2;
+         inline constexpr uintptr_t CanCollide = 0x8;
+         inline constexpr uintptr_t CanQuery = 0x20;
+         inline constexpr uintptr_t CanTouch = 0x10;
     }
 
     namespace ProximityPrompt {
@@ -528,24 +569,10 @@ namespace Offsets {
          inline constexpr uintptr_t RequiresLineOfSight = 0x11f;
     }
 
-    namespace RakNet {
-         inline constexpr uintptr_t RakPeerVirtualTable = 0x704ee60;
-         inline constexpr uintptr_t convertItemEnumToString = 0x47a4534;
-    }
-
     namespace Raycast {
          inline constexpr uintptr_t RaycastBoundDesc = 0x858fbe0;
          inline constexpr uintptr_t RaycastBoundFn = 0xb0;
-    }
-
-    namespace RemoteSpy {
-         inline constexpr uintptr_t BaseRemoteEventVtableRva = 0x70a6810;
-         inline constexpr uintptr_t DescribedBaseRemoteEventVtableRva = 0x70a65a8;
-         inline constexpr uintptr_t InstanceParentOffset = 0x60;
-         inline constexpr uintptr_t InstanceVtableRva = 0x70372f8;
-         inline constexpr uintptr_t RemoteEventVtableRva = 0x70ab2d8;
-         inline constexpr uintptr_t RemoteFuncVTableRva = 0x70aadf0;
-         inline constexpr uintptr_t UnreliableRemoteEventVtableRva = 0x70a7da8;
+         inline constexpr uintptr_t RaycastDescriptorRva = 0x858fbe0;
     }
 
     namespace RenderJob {
@@ -556,21 +583,19 @@ namespace Offsets {
 
     namespace RenderView {
          inline constexpr uintptr_t DeviceD3D11 = 0x10;
-         inline constexpr uintptr_t VisualEngine = 0x20;
-    }
-
-    namespace RunService {
-         inline constexpr uintptr_t HeartbeatFPS = 0xc8;
-         inline constexpr uintptr_t HeartbeatTask = 0xd8;
+         inline constexpr uintptr_t LightingValid = 0x0;
+         inline constexpr uintptr_t SkyValid = 0x0;
+         inline constexpr uintptr_t VisualEngine = 0x0;
     }
 
     namespace Script {
+         inline constexpr uintptr_t ByteCode = 0x0;
          inline constexpr uintptr_t GUID = 0xb8;
          inline constexpr uintptr_t Hash = 0x188;
     }
 
     namespace ScriptContext {
-         inline constexpr uintptr_t RequireBypass = 0xbc4;
+         inline constexpr uintptr_t RequireBypass = 0x0;
     }
 
     namespace Seat {
@@ -578,8 +603,11 @@ namespace Offsets {
     }
 
     namespace Sky {
+         inline constexpr uintptr_t DrawAdv = 0x1c44010;
+         inline constexpr uintptr_t DrawCube = 0x1c396e0;
          inline constexpr uintptr_t MoonAngularSize = 0x22c;
          inline constexpr uintptr_t MoonTextureId = 0xb0;
+         inline constexpr uintptr_t ShaderSetup = 0x1c1f1a0;
          inline constexpr uintptr_t SkyboxBk = 0xe0;
          inline constexpr uintptr_t SkyboxDn = 0x110;
          inline constexpr uintptr_t SkyboxFt = 0x140;
@@ -588,7 +616,7 @@ namespace Offsets {
          inline constexpr uintptr_t SkyboxRt = 0x1a0;
          inline constexpr uintptr_t SkyboxUp = 0x1d0;
          inline constexpr uintptr_t StarCount = 0x230;
-         inline constexpr uintptr_t SunAngularSize = 0x234;
+         inline constexpr uintptr_t SunAngularSize = 0x224;
          inline constexpr uintptr_t SunTextureId = 0x200;
     }
 
@@ -613,7 +641,12 @@ namespace Offsets {
 
     namespace SpecialMesh {
          inline constexpr uintptr_t MeshId = 0xe0;
+         inline constexpr uintptr_t Offset = 0x9c;
          inline constexpr uintptr_t Scale = 0xac;
+    }
+
+    namespace StatsItem {
+         inline constexpr uintptr_t Value = 0x98;
     }
 
     namespace SunRaysEffect {
@@ -646,6 +679,12 @@ namespace Offsets {
          inline constexpr uintptr_t BrickColor = 0xa0;
     }
 
+    namespace TechniqueArray {
+         inline constexpr uintptr_t BeginOffset = 0x0;
+         inline constexpr uintptr_t EndOffset = 0x8;
+         inline constexpr uintptr_t EntryStride = 0x88;
+    }
+
     namespace Terrain {
          inline constexpr uintptr_t GrassLength = 0x1d8;
          inline constexpr uintptr_t MaterialColors = 0x4a0;
@@ -656,9 +695,13 @@ namespace Offsets {
          inline constexpr uintptr_t WaterWaveSpeed = 0x1ec;
     }
 
+    namespace TextButton {
+         inline constexpr uintptr_t Text = 0xa30;
+    }
+
     namespace Textures {
          inline constexpr uintptr_t Decal_Texture = 0x1c8;
-         inline constexpr uintptr_t Texture_Texture = 0x4c8;
+         inline constexpr uintptr_t Texture_Texture = 0x1c8;
     }
 
     namespace Tool {
@@ -677,6 +720,10 @@ namespace Offsets {
 
     namespace UserInputService {
          inline constexpr uintptr_t WindowInputState = 0x288;
+    }
+
+    namespace Value {
+         inline constexpr uintptr_t Value = 0xa0;
     }
 
     namespace VehicleSeat {
@@ -712,7 +759,7 @@ namespace Offsets {
 
     namespace Workspace {
          inline constexpr uintptr_t CurrentCamera = 0x4a0;
-         inline constexpr uintptr_t DistributedGameTime = 0x4c0;
+         inline constexpr uintptr_t DistributedGameTime = 0x93;
          inline constexpr uintptr_t ReadOnlyGravity = 0x9c8;
          inline constexpr uintptr_t World = 0x3f8;
     }
@@ -722,47 +769,25 @@ namespace Offsets {
          inline constexpr uintptr_t FallenPartsDestroyHeight = 0x20c;
          inline constexpr uintptr_t Gravity = 0x218;
          inline constexpr uintptr_t Primitives = 0x2a0;
-         inline constexpr uintptr_t WorldSteps = 0x868;
          inline constexpr uintptr_t worldStepsPerSec = 0x868;
     }
 
-    namespace datamodel {
-         inline constexpr uintptr_t game_id = 0x198;
-         inline constexpr uintptr_t game_loaded = 0x5b8;
-         inline constexpr uintptr_t place_id = 0x1a0;
-         inline constexpr uintptr_t pointer = 0x8df3e60;
-         inline constexpr uintptr_t real = 0x1f8;
+    namespace WorldRoot {
+         inline constexpr uintptr_t RaycastBoundDesc = 0x858fbe0;
+         inline constexpr uintptr_t RaycastBoundFn = 0xb0;
+         inline constexpr uintptr_t RaycastBoundFnRva = 0xca0ef0;
+         inline constexpr uintptr_t RaycastDescriptorRva = 0x858fbe0;
     }
 
-    namespace instance {
-         inline constexpr uintptr_t children_end = 0x8;
-         inline constexpr uintptr_t children_start = 0x70;
-         inline constexpr uintptr_t class_desc = 0x18;
-         inline constexpr uintptr_t class_name = 0x8;
-         inline constexpr uintptr_t local_player = 0x118;
-         inline constexpr uintptr_t name = 0x68;
-         inline constexpr uintptr_t name_str = 0x0;
-         inline constexpr uintptr_t value_base = 0xa0;
+    namespace global_State {
+         inline constexpr uintptr_t mainthread = 0xa0;
     }
 
-    namespace lua_thread {
-         inline constexpr uintptr_t Value_Ref_Id = 0x334;
-         inline constexpr uintptr_t control = 0x318;
-         inline constexpr uintptr_t thread = 0x328;
-         inline constexpr uintptr_t thread_ref_id = 0x330;
-    }
-
-    namespace script {
-         inline constexpr uintptr_t localscript_pointer = 0x178;
-         inline constexpr uintptr_t modulescript_detection = 0x180;
-         inline constexpr uintptr_t modulescript_module_state = 0x138;
-         inline constexpr uintptr_t modulescript_pointer = 0x120;
-         inline constexpr uintptr_t pointer = 0x18;
-         inline constexpr uintptr_t size = 0x28;
-    }
-
-    namespace task_scheduler {
-         inline constexpr uintptr_t target_fps = 0x8104130;
+    namespace lua_State {
+         inline constexpr uintptr_t base = 0x98;
+         inline constexpr uintptr_t ci = 0xb8;
+         inline constexpr uintptr_t global = 0xb0;
+         inline constexpr uintptr_t top = 0x90;
     }
 
 }
