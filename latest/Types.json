@@ -1,8 +1,8 @@
 {
-    "Roblox Version": "version-f0ea5da9412f4e35",
+    "Roblox Version": "version-2c6fd5e09aaf4cfa",
     "Dumper Version": "1.0",
     "Dumped With": "f4_byteDumper",
-    "Dumped At": "00:10 09/11/2026",
+    "Dumped At": "18:20 22/11/2026",
     "Types": {
         "TaskScheduler": {
             "Pointer": "unsigned __int64",
@@ -261,7 +261,8 @@
             "HumanoidState": "int",
             "HumanoidStateID": "int",
             "FloorMaterial": "int",
-            "TargetPoint": "Vector3"
+            "TargetPoint": "Vector3",
+            "WalkSpeed": "unsigned __int64"
         },
         "Seat": {
             "Occupant": "unsigned __int64"
@@ -567,9 +568,6 @@
             "pointer": "unsigned __int64",
             "size": "unsigned __int64"
         },
-        "userdata": {
-            "Identity": "unsigned __int64"
-        },
         "Raycast": {
             "RaycastBoundDesc": "unsigned __int64",
             "RaycastBoundFn": "unsigned __int64"
@@ -602,26 +600,10 @@
             "GetSetImpl": "unsigned __int64"
         },
         "lua_thread": {
-            "ref": "unsigned __int64",
             "thread": "unsigned __int64",
             "thread_ref_id": "unsigned __int64",
             "control": "unsigned __int64",
             "Value_Ref_Id": "unsigned __int64"
-        },
-        "": {
-            "OFF_STACKSIZE": "int",
-            "LUAI_STACKSIZE": "int",
-            "LS_ENC": "int"
-        },
-        "lua_state": {
-            "stack": "unsigned __int64",
-            "top": "unsigned __int64",
-            "base": "unsigned __int64",
-            "stack_last": "unsigned __int64",
-            "global": "unsigned __int64"
-        },
-        "global_State": {
-            "mainthread": "unsigned __int64"
         },
         "ByteCode": {
             "Pointer": "unsigned __int64",
@@ -647,9 +629,7 @@
             "value_base": "string"
         },
         "RakNet": {
-            "RaknetReportNetworkError": "unsigned __int64",
             "convertItemEnumToString": "unsigned __int64",
-            "RakNetEncrypt": "unsigned __int64",
             "RakPeerVirtualTable": "unsigned __int64"
         },
         "Highlight": {
@@ -684,9 +664,6 @@
             "BindingSubobject": "unsigned __int64",
             "EntityBegin": "unsigned __int64",
             "EntityEnd": "unsigned __int64"
-        },
-        "FFlag": {
-            "RenderFastClusterOcclusionCulling4": "unsigned __int64"
         }
     }
 }
